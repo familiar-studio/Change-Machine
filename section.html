@@ -1,0 +1,289 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<script src="/jslibrary/1351189248000/sfdc/JiffyStubs.js"></script><script src="/resource/1354817911000/LESSCSSJS" type="text/javascript"></script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+ 
+    
+    
+  <link href="css/changemachine.css" REL="stylesheet" type="text/css" />
+
+    
+    
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="/resource/1350669682000/BootstrapJS/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+ (function() {
+   var config = {
+     kitId: 'auk4xrm',
+     scriptTimeout: 3000
+   };
+   var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+ })();
+</script>
+
+  <script>
+    $j = jQuery.noConflict();
+    
+    $j(document).ready(function() {
+
+    $j('.showDetails').click(function() {
+        var actionId = $j(this).attr('actionId');
+        console.log('this is the actionID'+actionId);
+        $j('#details'+actionId).toggle();
+        return false;
+      });
+    });
+  </script>
+
+</head>
+<body> 
+ 
+ <div class="container">
+  <header>
+    <div class="topWrapper">
+      <div class="row">
+        <div class="span4">
+          <a class="brand" href="/">
+                  <img src="https://c.cs10.content.force.com/servlet/servlet.ImageServer?id=015J0000000DIOT&amp;oid=00DJ00000007ll1&amp;lastMod=1350943434000" style="height:50px; width:auto;" />
+          </a>
+        </div>
+        <div class="span2 offset4">
+                &nbsp;
+        </div>
+        <div class="span2">
+          <div class="btn-group">
+            <a class="dropdown-toggle btn" data-toggle="dropdown">
+              Learn <b class="caret"></b>
+            </a>
+
+            <ul class="dropdown-menu">
+            <li><A href="/learn">&#10004; Learn</A></li>
+            <li><A href="/customers"> Coach</A></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- topWrapper -->
+    
+<div class="midWrapper">
+  <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          
+          
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+               <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Goals">
+                  
+                  Goals
+                </a>
+                </li>
+               <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Assets">
+                  
+                  Assets
+                </a>
+                </li>
+               <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Banking">
+                  
+                  Banking
+                </a>
+                </li>
+               <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Credit">
+                  
+                  Credit
+                </a>
+                </li>
+               <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Debt">
+                  
+                  Debt
+                </a>
+                </li>
+               <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Taxes">
+                  
+                  Taxes
+                </a>
+                </li>
+            </ul>
+            
+              <form action="/search/SearchResults" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
+                  <input id="searchType" name="searchType" type="hidden" value="2" />
+                  
+                  <input id="sen" name="sen" type="hidden" value="0" />
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="sbstr" placeholder="Search" size="27" title="Enter search keywords" type="text" />
+        </form>
+              
+              
+              
+              
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- midWrapper -->
+</header>
+  
+  <div class="wrapper">
+            
+        
+        <div class="page-header">
+            <div class="row">
+                <div class="span2">
+         <h1>Credit</h1>
+                </div>
+                <div class="span8" style="padding-top:15px">
+          <h2>Outcome <small>Improve Credit Score</small></h2>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="row">
+            
+           
+           <div class="span8"><span id="j_id0:j_id1:j_id27">
+               <h3>Overview</h3>
+               <hr /></span>
+                  
+                  <h4> <a href="/milestone/Customer-Pulls-Credit-Report-Alone"> Customer Pulls Credit Report Alone</a></h4>
+                      <ul>
+                           <li>Action: Customer connects importance of improving credit to the action driven goal
+                          
+                           </li>
+                           <li>Action: Customer chooses 1 of 3 ways to pull a credit report
+                          
+                           </li>
+                           <li>Roadbloack: Customer can't download credit report
+                          
+                           </li>
+                           <li>Action: Coach or customer pulls credit report alone
+                          
+                           </li>
+                       </ul>
+                  <hr />
+                  
+                  <h4> <a href="/milestone/CRAs-makes-requested"> CRAs makes requested changes</a></h4>
+                      <ul>
+                           <li>Roadbloack: Customer Is a Victim of Identity Theft
+                          
+                           </li>
+                           <li>Roadbloack: Customer Has a Judgment
+                          
+                           </li>
+                           <li>Action: Customer and Coach Interpret Credit Report and Check for Errors
+                          
+                           </li>
+                           <li>Roadbloack: CRAs Do Not Make Requested Changes on Credit Report
+                          
+                           </li>
+                           <li>Action: Customer Sends Letters Requesting Cras to Correct Errors on Credit Report
+                          
+                           </li>
+                       </ul>
+                  <hr />
+                  
+                  <h4> <a href="/milestone/Customer-Executes-a-strategy-to-improve-credit"> Customer Executes a strategy to improve credit</a></h4>
+                      <ul>
+                           <li>Action: Customer Adds a Personal Statement to Credit Report
+                          
+                           </li>
+                           <li>Action: Customer Builds an Alternative Credit File
+                          
+                           </li>
+                           <li>Action: Customer Calls Credit Card Companies to Line up Due Dates
+                          
+                           </li>
+                           <li>Action: Customer Obtains a Secured Credit Card or Secured Loan
+                          
+                           </li>
+                           <li>Action: Customer Opens New Line of Credit to Optimize Utilization
+                          
+                           </li>
+                           <li>Action: Customer Opts out of Unsolicited Credit Offers
+                          
+                           </li>
+                           <li>Action: Customer Pulls Credit Score
+                          
+                           </li>
+                           <li>Action: Customer Develops a Strategy to Improve or Maintain Credit
+                          
+                           </li>
+                       </ul>
+                  <hr />
+            
+          </div>
+          <div class="span4">
+        
+             
+                    <h5>Worksheets</h5>
+          <ul>
+               <li><a href="/worksheet/How-to-Shop-for-a-Secure-Loan">How to Shop for a Secure Loan</a>
+               
+               </li>
+               <li><a href="/worksheet/Should-My-Customer-Apply-for-a-Secured-Credit-Product?">Should My Customer Apply for a Secured Credit Product?</a>
+               
+               </li>
+               <li><a href="/worksheet/Credit-Report-Inspection">Credit Report Inspection</a>
+               
+               </li>
+          </ul>
+              
+              
+                 <h5>Tipsheets</h5>
+          <ul>
+               <li><a href="/tipsheet/5-Ways-To-Protect-Yourself-Against-Identity-Theft" target="_blank">5 Ways To Protect Yourself Against Identity Theft</a>
+               
+               </li>
+               <li><a href="/tipsheet/Dealing-With-Judgments-On-Your-Credit-Report" target="_blank">Dealing With Judgments On Your Credit Report</a>
+               
+               </li>
+               <li><a href="/tipsheet/The-Secured-Loan:-A-Simple-Solution-To-Building-Better-Credit" target="_blank">The Secured Loan: A Simple Solution To Building Better Credit</a>
+               
+               </li>
+               <li><a href="/tipsheet/7-Steps-To-Deal-With-Identity-Theft" target="_blank">7 Steps To Deal With Identity Theft</a>
+               
+               </li>
+               <li><a href="/tipsheet/How-Does-My-Secured-Credit-Card-Work?" target="_blank">How Does My Secured Credit Card Work?</a>
+               
+               </li>
+               <li><a href="/tipsheet/Make-Your-Credit-Report-Work-For-You" target="_blank">Make Your Credit Report Work For You</a>
+               
+               </li>
+               <li><a href="/tipsheet/What-Should-I-Look-For-In-A-Secured-Credit-Card?" target="_blank">What Should I Look For In A Secured Credit Card?</a>
+               
+               </li>
+               <li><a href="/tipsheet/When-it-comes-to-credit-score,-look-to-the-future" target="_blank">When it comes to credit score, look to the future</a>
+               
+               </li>
+               <li><a href="/tipsheet/How-to-Write-a-Credit-Report-Dispute-Letter" target="_blank">How to Write a Credit Report Dispute Letter</a>
+               
+               </li>
+               <li><a href="/tipsheet/7-Steps-to-Take-When-Identity-Theft-Has-Occurred" target="_blank">7 Steps to Take When Identity Theft Has Occurred</a>
+               
+               </li>
+          </ul>
+              </div>
+          </div>
+  </div>
+    </div>
+</body>
+</html>

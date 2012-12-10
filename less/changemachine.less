@@ -1,0 +1,372 @@
+@import "bootstrap.less";
+
+/* ----- START UNIVERSAL CSS ----- */
+
+
+/* ----- Fonts ----- */
+
+.proximaL {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+.proximaR {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+.proximaB {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+.metaBook {
+	font-family: "ff-meta-serif-web-pro",serif;
+	font-style: normal;
+	font-weight: 500;
+}
+.metaBold {
+	font-family: "ff-meta-serif-web-pro",serif;
+	font-style: normal;
+	font-weight: 700;
+}
+.omnesB {
+	font-family: "omnes-pro",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+/* ----- End Fonts ----- */
+
+body {
+	.proximaR();
+	background-color: @blue;
+}
+
+.container {
+	background-color: @lighterblue;
+}
+ 
+/* body .topWrapper {
+	background-color: @lightblue;
+	border-left: 10px solid @blue;
+	border-right: 10px solid @blue;
+	width: @gridRowWidth;
+	margin: 0 auto;
+	padding-left: 10px;
+} */
+
+.topWrapper {
+	background-color: @lightblue;
+	border-left: 10px solid @lightblue;
+	border-right: 10px solid @lightblue;
+	width: @gridRowWidth;
+	margin: 0 auto;
+	padding-left: 10px;
+}
+
+.midWrapper {
+	background-color: @lighterblue;
+	border-left: 10px solid @lighterblue;
+	border-right: 10px solid @lighterblue;
+	width: @gridRowWidth;
+	margin: 0 auto;
+	padding-left: 10px;
+}
+
+body .wrapper {
+	background-color: @white;
+	border-left: 10px solid @lighterblue;
+	border-right: 10px solid @lighterblue;
+	width: @gridRowWidth;
+	margin: 0 auto;
+	padding-left: 10px;
+}
+
+.page-header {
+	background-color: @white;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	// margin-left: -10px;
+}
+
+.navbar-inner {
+	background-color: none;
+	background-image: none;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+    box-shadow: none;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	.proximaB();
+	font-size: 36px;
+	color: @pink;
+	text-transform: capitalize;
+}
+
+h2 {
+	font-size: 14px;
+	color: @green;
+}
+
+h3 {
+	.proximaB();
+	font-size: 16px;
+	color: @blue;
+}
+
+h4 {
+	font-size: 22px;
+	color: @black;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+	line-height: 1em;
+}
+
+
+/* ----- Header ----- */
+
+header {
+	background-color: @lightblue;
+	width: @gridRowWidth;
+	margin: 0 auto;
+}
+
+.navbar .nav > li {
+	.proximaB();
+	text-transform: uppercase;
+	color: @black;
+	border: none;
+	font-size: 20px;
+	> a {
+	    color: @black;
+	    float: none;
+	    text-decoration: none;
+	    text-shadow: none;
+	    padding: 10px;
+	    &:hover {
+			color: @green;
+		}
+		&:focus {
+			background-color: @green;
+			color: @white;
+		}
+	}
+}
+
+/* ----- Header ----- */
+
+.container .page-header div.row div.span8 {
+	padding-top: 0 !important;
+}
+
+.container .page-header div.row div.span8 h2 {
+	.metaBold();
+	color: @lightgreen;
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	small {
+		.metaBold();
+		font-size: 17px;
+		display: block;
+		clear: both;
+		color: @green;
+	}
+}
+
+.utilityNav {
+	.proximaR();
+	background-color: @lightblue;
+	color: @blue;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 5px;
+	&:hover {
+		color: @black;
+	}
+}
+
+.footerNav {
+	.proximaR();
+	text-transform: capitalize;
+	background-color: @blue;
+	color: @black;
+	padding: 5px;
+	&:hover {
+		color: @white;
+	}
+}
+
+.menu ul li.active:before {
+	content:"•";
+	color: @green;
+	position: relative;
+	margin-right: 5px;
+}
+
+
+.menu {
+	font-size: 18px;
+	text-transform: uppercase;
+	a {
+		color: @white;
+	}
+	ul {
+		border-radius: 0 0 5px 5px;
+		li {
+			.proximaB();
+			background-color: @green;
+			border-radius: 5px;
+			a {
+				padding: 10px;
+				display: inline-block;
+			}
+			ul {
+				background-color: @white;
+				border: 2px solid @lightblue;
+				text-transform: capitalize;
+				box-shadow: 2px 2px 2px @lighterblue;
+				text-align: left;
+				li {
+					.proximaR();
+					background-color: @white;
+					border-radius: 0;
+					padding: 10px;
+					&:first-child {
+						&:hover {
+							background-color: @white;
+							color: @black;
+						}
+					}
+					&:last-child {
+						border-radius: 0 0 3px 3px;
+					}
+					a {
+						color: @black;
+					}
+					&:hover {
+						background-color: @green;
+						a {
+							color: @white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.currentCustomer {
+	color: @lightgreen;
+	span {
+		color: @green;
+	}
+	ul li {
+		background-color: @lightergreen;
+		color: @lightgreen;
+	}
+	ul li.active:before {
+		margin: 0 -5px 0 5px;
+	}
+}
+
+.dashboard {
+	.customer {
+		font-size: 20px;
+		text-transform: capitalize;
+	}
+	label {
+		.proximaR();
+		font-size: 14px;
+		text-transform: uppercase;
+		color: @lightgray;
+		span {
+			color: @green;
+			margin-left: .5em;
+		}
+	}
+	.number {
+		font-size: 24px;
+		color: @green;
+	}
+}
+
+.milestoneButton {
+	.proximaB();
+	color: @white;
+	background-color: @blue;
+	padding: 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 7px;
+	box-shadow: 2px 2px 2px @lighterblue;
+	&:hover {
+		box-shadow: inset 3px 3px 0px @lightergray;
+		padding: 13px 10px 7px;
+	}
+}
+
+.progressBar {
+	visibility: visible;
+	ul {
+		list-style-type: none;
+		box-shadow: 2px 2px 2px @lighterblue;
+		overflow: visible;
+		li {
+			.proximaR();
+			font-size: 20px;
+			text-transform: uppercase;
+			color: @white;
+			border-radius: none;
+			float: left;
+			margin-right: 2px;
+			padding: 14px;
+			box-shadow: 2px 2px 2px @lighterblue;
+			&:last-child {
+				margin-right: none;
+				border-radius: 0px 7px 7px 0;
+			}
+			&:nth-child(1) {
+				background-color: @blue;
+				border-radius: 7px 0 0 7px;
+			}
+			&:nth-child(2) {
+				background-color: @green;
+			}
+			&:nth-child(3) {
+				background-color: @red;
+			}
+			&:nth-child(4) {
+				background-color: @lightgray;
+			}
+			&:hover {
+				box-shadow: inset 3px 3px 0px @lightergray;
+				padding: 17px 14px 11px;
+			}
+		}
+	}
+}
+
+
