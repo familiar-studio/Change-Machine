@@ -11,8 +11,6 @@
     
   <link href="css/changemachine.css" REL="stylesheet" type="text/css" />
 
-    
-    
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
   <script src="/resource/1350669682000/BootstrapJS/bootstrap.min.js"></script>
     
@@ -37,6 +35,16 @@
         $j('#details'+actionId).toggle();
         return false;
       });
+      
+      $j('.overviewTab h3').click(function() {
+      	$j('.overviewText').toggle();
+      	return false;
+      });
+      
+       $j('.sidebar-block h5').click(function() {
+      	$j(this).parent().children('ul').toggle();
+      	return false;
+      });
     });
   </script>
 
@@ -52,21 +60,18 @@
                   <img src="https://c.cs10.content.force.com/servlet/servlet.ImageServer?id=015J0000000DIOT&amp;oid=00DJ00000007ll1&amp;lastMod=1350943434000" style="height:50px; width:auto;" />
           </a>
         </div>
+        
+        <div class="span2">
+               <ul class="unstyled cls-menu">
+            	<li  class="active"><A href="/learn">Learn</a></li>
+            	<li ><A href="/customers"> Coach</a></li>
+                <li ><A href="/customers"> Share</a></li>
+              </ul>
+          </div>
         <div class="span2 offset4">
                 &nbsp;
         </div>
-        <div class="span2">
-          <div class="btn-group">
-            <a class="dropdown-toggle btn" data-toggle="dropdown">
-              Learn <b class="caret"></b>
-            </a>
-
-            <ul class="dropdown-menu">
-            <li><A href="/learn">&#10004; Learn</A></li>
-            <li><A href="/customers"> Coach</A></li>
-            </ul>
-          </div>
-        </div>
+       
       </div>
     </div><!-- topWrapper -->
     
@@ -104,7 +109,7 @@
                   Banking
                 </a>
                 </li>
-               <li>
+               <li class="active">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Credit">
                   
                   Credit
@@ -128,7 +133,8 @@
                   <input id="searchType" name="searchType" type="hidden" value="2" />
                   
                   <input id="sen" name="sen" type="hidden" value="0" />
-                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="sbstr" placeholder="Search" size="27" title="Enter search keywords" type="text" />
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="sbstr" size="27" title="Enter search keywords" type="text" />
+                  <button type="submit" class="btn">Search</button>
         </form>
               
               
@@ -160,80 +166,84 @@
         <div class="row">
             
            
-           <div class="span8"><span id="j_id0:j_id1:j_id27">
-               <h3>Overview</h3>
-               <hr /></span>
-                  
-                  <h4> <a href="/milestone/Customer-Pulls-Credit-Report-Alone"> Customer Pulls Credit Report Alone</a></h4>
+           <div class="span8">
+               <div class="overviewTab">
+               		<span id="j_id0:j_id1:j_id27">
+	               	<h3>Overview</h3><h3>+</h3>
+	               	</span>
+	               	
+	               	<div class="overviewText" >
+              		 	<p>Credit has become an integral part of everyday life. Without good credit, consumers can have a hard time obtaining credit cards, which makes certain routine transactions like renting a car or buying airline tickets quite difficult. Increasingly and disturbingly, employers are using credit reports as part of the hiring process.  For all these reasons, it is essential that customers know how to obtain their credit report, interpret it, dispute negative information, and know what they can do to improve their scores. When it comes to credit, there is a lot of misinformation and confusion about what affects one’s score, how to improve one’s score, and how long it will take for a score to improve. The truth is that damaged credit cannot be fixed overnight. It takes time, effort, and patience, but with a well-designed credit action plan, customers can see significant score increases.</p>
+                    </div>
+               </div>
+                  <div class="milestone-block">
+                  <h4> <a href="/milestone/Customer-Pulls-Credit-Report-Alone"> Customer Pulls Credit Report Alone</a><A href="/milestone/Customer-Pulls-Credit-Report-Alone" class="btn">Start this milestone</a></h4>
                       <ul>
-                           <li>Action: Customer connects importance of improving credit to the action driven goal
+                           <li class="action"> Customer connects importance of improving credit to the action driven goal</li>
+                           <li class="action"> Customer chooses 1 of 3 ways to pull a credit report</li>
+                           <li class="roadblock"> Customer can't download credit report
+                           
+                           </li>
+                           <li class="action"> Coach or customer pulls credit report alone
+                           
+                           </li>
+                       </ul>
+
+                  </div>
+                  <div class="milestone-block">
+                  <h4> <a href="/milestone/CRAs-makes-requested"> CRAs makes requested changes</a><A href="/milestone/CRAs-makes-requested" class="btn pull-right">Start this milestone</a></h4>
+                      <ul>
+                           <li class="roadblock"> Customer Is a Victim of Identity Theft
                           
                            </li>
-                           <li>Action: Customer chooses 1 of 3 ways to pull a credit report
+                           <li class="roadblock"> Customer Has a Judgment
                           
                            </li>
-                           <li>Roadbloack: Customer can't download credit report
+                           <li class="action"> Customer and Coach Interpret Credit Report and Check for Errors
                           
                            </li>
-                           <li>Action: Coach or customer pulls credit report alone
+                           <li class="roadblock"> CRAs Do Not Make Requested Changes on Credit Report
+                          
+                           </li>
+                           <li class="action"> Customer Sends Letters Requesting Cras to Correct Errors on Credit Report
                           
                            </li>
                        </ul>
-                  <hr />
-                  
-                  <h4> <a href="/milestone/CRAs-makes-requested"> CRAs makes requested changes</a></h4>
+                 </div>
+                   <div class="milestone-block">
+                  <h4><a href="/milestone/Customer-Executes-a-strategy-to-improve-credit"> Customer Executes a strategy to improve credit</a><A href="/milestone/Customer-Executes-a-strategy-to-improve-credit" class="btn pull-right">Start this milestone</a></h4>
                       <ul>
-                           <li>Roadbloack: Customer Is a Victim of Identity Theft
+                           <li class="action"> Customer Adds a Personal Statement to Credit Report
                           
                            </li>
-                           <li>Roadbloack: Customer Has a Judgment
+                           <li class="action"> Customer Builds an Alternative Credit File
                           
                            </li>
-                           <li>Action: Customer and Coach Interpret Credit Report and Check for Errors
+                           <li class="action"> Customer Calls Credit Card Companies to Line up Due Dates
                           
                            </li>
-                           <li>Roadbloack: CRAs Do Not Make Requested Changes on Credit Report
+                           <li class="action"> Customer Obtains a Secured Credit Card or Secured Loan
                           
                            </li>
-                           <li>Action: Customer Sends Letters Requesting Cras to Correct Errors on Credit Report
+                           <li class="action"> Customer Opens New Line of Credit to Optimize Utilization
+                          
+                           </li>
+                           <li class="action"> Customer Opts out of Unsolicited Credit Offers
+                          
+                           </li>
+                           <li class="action"> Customer Pulls Credit Score
+                          
+                           </li>
+                           <li class="action"> Customer Develops a Strategy to Improve or Maintain Credit
                           
                            </li>
                        </ul>
-                  <hr />
-                  
-                  <h4> <a href="/milestone/Customer-Executes-a-strategy-to-improve-credit"> Customer Executes a strategy to improve credit</a></h4>
-                      <ul>
-                           <li>Action: Customer Adds a Personal Statement to Credit Report
-                          
-                           </li>
-                           <li>Action: Customer Builds an Alternative Credit File
-                          
-                           </li>
-                           <li>Action: Customer Calls Credit Card Companies to Line up Due Dates
-                          
-                           </li>
-                           <li>Action: Customer Obtains a Secured Credit Card or Secured Loan
-                          
-                           </li>
-                           <li>Action: Customer Opens New Line of Credit to Optimize Utilization
-                          
-                           </li>
-                           <li>Action: Customer Opts out of Unsolicited Credit Offers
-                          
-                           </li>
-                           <li>Action: Customer Pulls Credit Score
-                          
-                           </li>
-                           <li>Action: Customer Develops a Strategy to Improve or Maintain Credit
-                          
-                           </li>
-                       </ul>
-                  <hr />
+                   </div>
             
           </div>
           <div class="span4">
         
-             
+             <div class="sidebar-block">
                     <h5>Worksheets</h5>
           <ul>
                <li><a href="/worksheet/How-to-Shop-for-a-Secure-Loan">How to Shop for a Secure Loan</a>
@@ -246,6 +256,9 @@
                
                </li>
           </ul>
+             </div>
+             
+             <div class="sidebar-block">
               
               
                  <h5>Tipsheets</h5>
@@ -281,6 +294,7 @@
                
                </li>
           </ul>
+             </div>
               </div>
           </div>
   </div>

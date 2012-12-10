@@ -31,8 +31,8 @@
 @lightblue:		rgba(199,209,228,1);
 @lighterblue:	rgba(227,232,242,1);
 @green:			#73a534;
-@lightgreen:	#dce9cc;
-@lightergreen:	#eaf1e0;
+@lightgreen:	rgba(115,165,51,.5);
+@lightergreen:	rgba(115,165,51,.25);
 @black:			rgba(0,0,0,1);
 @gray:			rgba(0,0,0,.75);
 @lightgray:		rgba(0,0,0,.5);
@@ -96,9 +96,9 @@
 
 // Buttons
 // -------------------------
-@btnBackground:                     @white;
-@btnBackgroundHighlight:            darken(@white, 10%);
-@btnBorder:                         #bbb;
+@btnBackground:                     @blue;
+@btnBackgroundHighlight:            @blue;
+@btnBorder:                         @blue;
 
 @btnPrimaryBackground:              @linkColor;
 @btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
@@ -106,14 +106,14 @@
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;
 
-@btnSuccessBackground:              #62c462;
-@btnSuccessBackgroundHighlight:     #51a351;
+@btnSuccessBackground:              @green;
+@btnSuccessBackgroundHighlight:     @green;
 
 @btnWarningBackground:              lighten(@orange, 15%);
 @btnWarningBackgroundHighlight:     @orange;
 
-@btnDangerBackground:               #ee5f5b;
-@btnDangerBackgroundHighlight:      #bd362f;
+@btnDangerBackground:               @red;
+@btnDangerBackgroundHighlight:      @red;
 
 @btnInverseBackground:              #444;
 @btnInverseBackgroundHighlight:     @grayDarker;
