@@ -5317,6 +5317,7 @@ header {
   border: none;
   box-shadow: none;
   padding: 0;
+  border-top: 3px solid #c7d1e4;
 }
 .navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
@@ -5345,9 +5346,14 @@ header {
   background-color: #73a534;
   color: #ffffff;
 }
-.navbar .nav > li.active a {
-  background-color: #73a534;
-  color: #ffffff;
+.navbar .nav > li.active a,
+.navbar .nav > li.active a:hover {
+  background-color: #ffffff;
+  color: #73a534;
+  box-shadow: none;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  top: -2px;
 }
 /* ----- End Header ----- */
 /* ----- Main Content ----- */

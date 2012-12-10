@@ -212,6 +212,7 @@ header {
 	border: none;
 	box-shadow: none;
 	padding: 0;
+	border-top: 3px solid @lightblue;
 }
 
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
@@ -239,9 +240,14 @@ header {
 		}
 	}
 }
-.navbar .nav > li.active a {
-	background-color: @green;
-	color: @white;
+.navbar .nav > li.active a,
+.navbar .nav > li.active a:hover {
+	background-color: @white;
+	color: @green;
+	box-shadow: none;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+	top: -2px;
 }
 
 /* ----- End Header ----- */
