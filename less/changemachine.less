@@ -147,13 +147,15 @@ header {
 	margin: 0 auto;
 }
 
+/*
 .topWrapper:before {
-	content: url("images/cm_logo_web-rev.png");
+	content: url("https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png");
 	position: absolute;
 	top: 0;
 	left: 0;
 	float: left;
 }
+*/
 
 .topWrapper {
 	background-color: @lightblue;
@@ -346,10 +348,6 @@ body .wrapper {
 	margin: 20px 0;
 	padding: 0 5px 15px;
 	border-bottom: 5px solid black;
-	h4, ul li {
-		padding-left: 25px;
-		overflow: hidden;
-	}
 	ul {
 		list-style-type: none;
 		li {
@@ -361,8 +359,15 @@ body .wrapper {
 	h4, li {
 		border-bottom: 2px dotted @lightergray;
 		padding-bottom: 5px;
+		padding-left: 25px;
+		overflow: hidden;
 	}
-	h4 a.btn {
+	h4 {
+		min-height: 45px;
+		width: 95.9%; /* 587px */
+		overflow: inherit;
+	}
+	a.btn {
 		float: right;
 		overflow: hidden;
 	}

@@ -5259,13 +5259,15 @@ header {
   width: 938px;
   margin: 0 auto;
 }
+/*
 .topWrapper:before {
-  content: url("images/cm_logo_web-rev.png");
-  position: absolute;
-  top: 0;
-  left: 0;
-  float: left;
+	content: url("https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png");
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
 }
+*/
 .topWrapper {
   background-color: #c7d1e4;
   border-left: 10px solid #c7d1e4;
@@ -5450,11 +5452,6 @@ body .wrapper {
   padding: 0 5px 15px;
   border-bottom: 5px solid black;
 }
-.milestone-block h4,
-.milestone-block ul li {
-  padding-left: 25px;
-  overflow: hidden;
-}
 .milestone-block ul {
   list-style-type: none;
 }
@@ -5469,8 +5466,17 @@ body .wrapper {
 .milestone-block li {
   border-bottom: 2px dotted rgba(0, 0, 0, 0.25);
   padding-bottom: 5px;
+  padding-left: 25px;
+  overflow: hidden;
 }
-.milestone-block h4 a.btn {
+.milestone-block h4 {
+  min-height: 45px;
+  width: 95.9%;
+  /* 587px */
+
+  overflow: inherit;
+}
+.milestone-block a.btn {
   float: right;
   overflow: hidden;
 }
