@@ -5433,11 +5433,25 @@ body .wrapper {
   box-shadow: inset 3px 3px 0px #c7d1e4;
   border-bottom: 5px solid #000000;
 }
+.overviewTab h3 {
+  padding: 0;
+}
 .overviewTab h3:first-child {
   float: left;
 }
 .overviewTab h3:nth-child(2) {
   float: right;
+  /* 		background: url("/images/open_close.png") -30px 18px; */
+
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin: 10px 0;
+  background-size: 78px 45px;
+  /* odd fix */
+
+  /* 		background-position: -30px 18px; */
+
 }
 .overviewTab .overviewText {
   clear: both;
@@ -5445,6 +5459,12 @@ body .wrapper {
   font-style: normal;
   font-weight: 500;
   font-size: 1.2em;
+}
+.milestone-hide {
+  background: url("/images/open_close.png") -30px 18px;
+}
+.milestone-show {
+  background: url("/images/open_close.png") -30px 0px;
 }
 .milestone-block {
   margin: 20px 0;
@@ -5485,6 +5505,16 @@ body .wrapper {
 
   margin-bottom: 50px;
 }
+.milestone-block .Roadblock {
+  color: #a72c32;
+  background-image: url("/images/roadblock.png");
+  background-repeat: no-repeat;
+  background-size: 18px auto;
+}
+.milestone-block .Roadblock img {
+  width: 10px;
+  height: auto;
+}
 .sidebar-block {
   background-color: rgba(115, 165, 51, 0.25);
   border-radius: 5px;
@@ -5494,7 +5524,7 @@ body .wrapper {
   box-shadow: inset 3px 3px 0px rgba(115, 165, 51, 0.25);
 }
 .sidebar-block h5 {
-  margin-left: 25px;
+  padding-left: 25px;
 }
 .sidebar-block ul {
   list-style-type: none;
@@ -5510,7 +5540,20 @@ body .wrapper {
 .sidebar-block ul li a {
   color: #000000;
 }
+.worksheets h5 {
+  background-image: url("/images/related-worksheets.png");
+  background-repeat: no-repeat;
+  background-size: 18px auto;
+}
+.tipsheets h5 {
+  background-image: url("/images/related-tipsheets.png");
+  background-repeat: no-repeat;
+  background-size: 18px auto;
+}
 /* ----- Footer ----- */
+footer {
+  margin-bottom: 20px;
+}
 .footerLogo {
   margin: -35px 20px 0;
   height: 110px;
@@ -5518,7 +5561,10 @@ body .wrapper {
 }
 .footerRays {
   position: relative;
-  top: -650px;
+  /* 	top: -590px; */
+  /* rays.png */
+
+  top: -741px;
   left: -400px;
   z-index: -5;
   margin-bottom: -1000px;

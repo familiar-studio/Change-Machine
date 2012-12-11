@@ -37,6 +37,11 @@
       
       $j('.overviewTab h3').click(function() {
        $j('.overviewText').toggle();
+       if ($j('.overviewText').is(":visible")) {
+       	$j('.overviewTab h3:last').removeClass('milestone-show').addClass('milestone-hide'); 
+       } else {
+	    $j('.overviewTab h3:last').removeClass('milestone-hide').addClass('milestone-show');   
+       }
        return false;
       });
       
@@ -46,6 +51,7 @@
       });
     });
   </script>
+
   
 
 </head>
@@ -181,10 +187,12 @@
            
            <div class="span8">
                
-                    
                     <div class="overviewTab">
-                        <h3>Overview</h3><h3>+</h3>
+                                        
+                        <h3>Overview</h3><h3 class="milestone-hide"></h3>
                     <div class="overviewText" style="">
+                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                    
                     </div>
                </div>
                   <div class="milestone-block">
@@ -199,7 +207,7 @@
                            <li class="Action">Customer chooses 1 of 3 ways to pull a credit report
                           
                            </li>
-                           <li class="Roadbloack">Customer can't download credit report
+                           <li class="Roadblock">Customer can't download credit report
                           
                            </li>
                            <li class="Action">Coach or customer pulls credit report alone
@@ -213,16 +221,16 @@
                   
                   
                       <ul class="unstyled">
-                           <li class="Roadbloack">Customer Is a Victim of Identity Theft
+                           <li class="Roadblock">Customer Is a Victim of Identity Theft
                           
                            </li>
-                           <li class="Roadbloack">Customer Has a Judgment
+                           <li class="Roadblock">Customer Has a Judgment
                           
                            </li>
                            <li class="Action">Customer and Coach Interpret Credit Report and Check for Errors
                           
                            </li>
-                           <li class="Roadbloack">CRAs Do Not Make Requested Changes on Credit Report
+                           <li class="Roadblock">CRAs Do Not Make Requested Changes on Credit Report
                           
                            </li>
                            <li class="Action">Customer Sends Letters Requesting Cras to Correct Errors on Credit Report
@@ -266,7 +274,7 @@
           </div>
           <div class="span4">
         
-             <div class="sidebar-block">
+             <div class="sidebar-block worksheets">
                     <h5>Worksheets</h5>
           <ul>
                <li><a href="/worksheet/How-to-Shop-for-a-Secure-Loan">How to Shop for a Secure Loan</a>
@@ -280,7 +288,7 @@
                </li>
           </ul>
               </div>
-              <div class="sidebar-block">
+              <div class="sidebar-block tipsheets">
                  <h5>Tipsheets</h5>
           <ul>
                <li><a href="/tipsheet/5-Ways-To-Protect-Yourself-Against-Identity-Theft" target="_blank">5 Ways To Protect Yourself Against Identity Theft</a>
@@ -322,7 +330,7 @@
   <footer>
     <div class="container">
         <img src="images/change-machine-footer-logo.png" class="footerLogo" />
-        <img src="images/rays.png" class="footerRays" />
+        <img src="images/raysCropped.png" class="footerRays" />
           <ul class="">
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Terms of Use</a></li>

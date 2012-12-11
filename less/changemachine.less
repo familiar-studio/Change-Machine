@@ -342,11 +342,21 @@ body .wrapper {
     padding: 5px 15px 0;
     box-shadow: inset 3px 3px 0px @lightblue;
     border-bottom: 5px solid @black;
+	h3 {
+		padding: 0;
+	}
 	h3:first-child {
 		float: left;
 	}
 	h3:nth-child(2) {
 		float: right;
+/* 		background: url("/images/open_close.png") -30px 18px; */
+		position: relative;
+		width: 18px;
+		height: 18px;
+		margin: 10px 0;
+		background-size: 78px 45px;    /* odd fix */
+/* 		background-position: -30px 18px; */
 	}
 	.overviewText {
 		clear:both;
@@ -354,6 +364,14 @@ body .wrapper {
 		font-size: 1.2em;
 	}
 }
+
+.milestone-hide {
+	background: url("/images/open_close.png") -30px 18px;
+}
+.milestone-show {
+	background: url("/images/open_close.png") -30px 0px;
+}
+
 
 .milestone-block {
 	margin: 20px 0;
@@ -388,6 +406,18 @@ body .wrapper {
 	}
 }
 
+.milestone-block .Roadblock {
+	color: @red;
+	background-image: url("/images/roadblock.png");
+	background-repeat: no-repeat;
+    background-size: 18px auto;
+}
+
+.milestone-block .Roadblock img {
+	width: 10px;
+	height: auto;
+}
+
 .sidebar-block {
 	background-color: @lightergreen;
 	border-radius: 5px;
@@ -396,7 +426,7 @@ body .wrapper {
     margin-bottom: 20px;
     box-shadow: inset 3px 3px 0px @lightergreen;
     h5 {
-	    margin-left: 25px;
+	    padding-left: 25px;
     }
     ul {
 		list-style-type: none;
@@ -412,9 +442,26 @@ body .wrapper {
 	}
 }
 
+.worksheets h5 {
+	background-image: url("/images/related-worksheets.png");
+	background-repeat: no-repeat;
+    background-size: 18px auto;
+}
+
+.tipsheets h5 {
+	background-image: url("/images/related-tipsheets.png");
+	background-repeat: no-repeat;
+    background-size: 18px auto;
+}
+
+
+
 
 /* ----- Footer ----- */
 
+footer {
+	margin-bottom: 20px;
+}
 
 .footerLogo {
 	margin: -35px 20px 0;
@@ -423,7 +470,8 @@ body .wrapper {
 }
 .footerRays {
 	position: relative;
-	top: -650px;
+/* 	top: -590px; */			/* rays.png */
+	top: -741px;
 	left: -400px;
 	z-index: -5;
 	margin-bottom: -1000px;
