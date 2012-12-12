@@ -5153,8 +5153,24 @@ h1 {
   margin: 0;
 }
 h2 {
-  font-size: 13px;
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(115, 165, 51, 0.5);
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-top: 2px;
+}
+h2 small {
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  display: block;
+  clear: both;
   color: #73a534;
+  margin-top: 1px;
 }
 h3 {
   font-family: "proxima-nova", sans-serif;
@@ -5424,6 +5440,13 @@ body .wrapper {
   color: #73a534;
   margin-top: 1px;
 }
+.page-header h1 {
+  display: inline-block;
+}
+.page-header h2 {
+  margin-left: 10px;
+  display: inline-block;
+}
 .overviewTab {
   background-color: #e3e8f2;
   border-radius: 5px 5px 0 0;
@@ -5466,7 +5489,7 @@ body .wrapper {
 }
 .milestone-block {
   margin: 20px 0;
-  padding: 0 5px 15px;
+  padding: 0 0 15px;
   border-bottom: 5px solid black;
 }
 .milestone-block ul {

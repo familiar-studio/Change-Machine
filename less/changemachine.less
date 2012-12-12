@@ -78,8 +78,20 @@ h1 {
 }
 
 h2 {
-	font-size: 13px;
-	color: @green;
+	.metaBold();
+	color: @lightgreen;
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding-top: 2px;
+	small {
+		.metaBold();
+		font-size: 17px;
+		display: block;
+		clear: both;
+		color: @green;
+		margin-top: 1px;
+	}
 }
 
 h3 {
@@ -347,6 +359,15 @@ body .wrapper {
 	}
 }
 
+.page-header h1 {
+	display: inline-block;
+}
+
+.page-header h2 {
+	margin-left: 10px;
+	display: inline-block;
+}
+
 .overviewTab {
 	background-color: @lighterblue;
 	border-radius: 5px 5px 0 0;
@@ -390,7 +411,7 @@ body .wrapper {
 
 .milestone-block {
 	margin: 20px 0;
-	padding: 0 5px 15px;
+	padding: 0 0 15px;
 	border-bottom: 5px solid black;
 	ul {
 		list-style-type: none;
