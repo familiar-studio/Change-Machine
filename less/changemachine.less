@@ -51,16 +51,14 @@ body {
 	transition: 		all 0.15s ease;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
-a:focus {
-  outline: none;
-}
-
 a {
 	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		outline: none;
+	}
 }
 
 h1 {
@@ -68,6 +66,7 @@ h1 {
 	font-size: 40px;
 	color: @pink;
 	text-transform: capitalize;
+	margin: 5px 0;
 }
 
 h2 {
@@ -77,22 +76,26 @@ h2 {
 
 h3 {
 	.proximaB();
-	font-size: 16px;
+	font-size: 20px;
 	color: @blue;
+	margin: 0 0 5px;
 }
 
 h4, h4 a {
 	.metaBold();
 	font-size: 22px;
 	color: @black;
+	margin: 5px 0;
+	&:hover {
+		color: @blue;
+	}
 }
-
-
 
 h5 {
 	color: @green;
 	.metaBold();
 	font-size: 20px;
+	margin: 3px 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -162,19 +165,12 @@ header {
 	border-left: 10px solid @lighterblue;
 	border-right: 10px solid @lighterblue;
 	width: @gridRowWidth;
-	margin: -40px auto 0;
-	padding: 0 10px 5px;
+	margin: -30px auto 0;
+	padding: 0 10px;
 }
 
 .midWrapper .container {
 	margin-left: 10px;
-}
-
-.page-header {
-	background-color: @white;
-	border: none;
-	margin: 0;
-	padding: 0;
 }
 
 .brand img {
@@ -183,7 +179,7 @@ header {
     position: relative;
     top: 0;
     width: 300px;
-    z-index: 12;
+    z-index: 10;
 }
 
 .navbar {
@@ -191,18 +187,23 @@ header {
 }
 
 .navbar-inner {
-	background-color: @lighterblue;
+	background-color: none !important;
 	background-image: none;
 	border: none;
 	box-shadow: none;
 	padding: 0;
 	border-top: 3px solid @lightblue;
 	position: relative;
-    z-index: 5;
+    z-index: 15;
 }
 
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
     box-shadow: none;
+    background-color: none !important;
+}
+
+.navbar .btn-navbar {
+	background-color: none !important;
 }
 
 .navbar .nav {
@@ -210,29 +211,32 @@ header {
 	display: block;
     float: left;
     left: 0;
-    margin: 0 10px 0 130px;
+    margin: 0 10px 0 94px;
     position: absolute;
+    z-index: 20;
 	> li {
 		.proximaB();
 		text-transform: uppercase;
 		color: @black;
 		border: none;
-		font-size: 16px;
+		font-size: 17px;
+		margin-right: 8px;
 		> a {
 		    color: @black;
 		    float: none;
 		    text-decoration: none;
 		    text-shadow: none;
-		    padding: 15px 12px 12px;
+		    padding: 11px 12px 9px;
 		    &:hover {
 				color: @green;
+				background-color: @lighterblue;
 			}
 			&:focus {
 				background-color: @green;
 				color: @white;
 				border-radius: 5px 5px 0 0;
 				position: relative;
-				top: -2px;
+				top: -1px;
 			}
 		}
 	}
@@ -241,19 +245,19 @@ header {
 .navbar .nav > li.active a:hover {
 	background-color: @white;
 	color: @green;
-	box-shadow: none;
 	border-radius: 5px 5px 0 0;
 	position: relative;
 	top: -2px;
+	box-shadow: 0 -7px 12px 1px @lightblue;
 }
 
 form#sbsearch {
-	margin-top: 5px;
+	margin-top: 4px;
 	input {
-		height: 27px;
+		height: 22px;
 		border-radius: 5px 0 0 5px;
 		margin-right: -5px;
-		box-shadow: inset 3px 3px 2px @lightergray;
+		box-shadow: inset 3px 3px 2px @lightblue;
 		border: none;
 	}
 	button {
@@ -261,10 +265,17 @@ form#sbsearch {
 		color: @white;
 		margin: 0;
 		border-radius: 0 5px 5px 0;
-		height: 35px;
+		height: 30px;
 		box-shadow: 2px 2px 2px @lightblue;
+		font-size: 12px;
 		&:hover {
 			box-shadow: inset 3px 3px 0px @lightergray;
+		}
+	}
+	.btn {
+		padding: 5px 10px;
+		&:hover {
+			padding: 8px 10px 2px;
 		}
 	}
 }
@@ -275,17 +286,21 @@ form#sbsearch {
 	padding: 3px;
 	text-align: center;
 	border-radius: 3px;
-	margin: 10px 0 10px 10px;
+	margin: 10px 10px 10px 0;
 	list-style-type: none;
 	box-shadow: inset 1px 1px 1px @lightergray;
 	a {
 		color: @white;
-		font-size: 12px;
+		font-size: 11px;
 		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	li {
+		line-height: 14px;
 	}
 	li.active {
 		background-color: @lightblue;
-		padding: 2px;
+		padding: 0;
 		border-radius: 3px;
 		box-shadow: 1px 1px 1px @lightergray;
 		a {
@@ -312,7 +327,7 @@ body .wrapper {
 	background-color: @white;
 	border: none;
 	margin: 0;
-	padding: 20px 0 0;
+	padding: 10px 0 0;
 }
 
 .container .page-header div.row div.span8 {
@@ -325,7 +340,7 @@ body .wrapper {
 	display: block;
 	font-size: 14px;
 	text-transform: uppercase;
-	padding-top: 5px;
+	padding-top: 2px;
 	small {
 		.metaBold();
 		font-size: 17px;
@@ -340,7 +355,7 @@ body .wrapper {
 	border-radius: 5px 5px 0 0;
     overflow: hidden;
     padding: 5px 15px 0;
-    box-shadow: inset 3px 3px 0px @lightblue;
+    box-shadow: inset 2px 2px 0px @lightblue;
     border-bottom: 5px solid @black;
 	h3 {
 		padding: 0;
@@ -354,7 +369,7 @@ body .wrapper {
 		position: relative;
 		width: 18px;
 		height: 18px;
-		margin: 10px 0;
+		margin: 3px 0 5px;
 		background-size: 78px 45px;    /* odd fix */
 /* 		background-position: -30px 18px; */
 	}
@@ -362,6 +377,9 @@ body .wrapper {
 		clear:both;
 		.metaBook();
 		font-size: 1.2em;
+		background-color: @lightestblue;
+		margin: -10px -15px -10px -13px;
+		padding: 13px 15px 12px;
 	}
 }
 
@@ -382,7 +400,7 @@ body .wrapper {
 		li {
 			.proximaR();
 			font-size: 16px;
-			margin: 10px 0;
+			margin: 5px 0;
 		}
 	}
 	h4, li {
@@ -424,19 +442,25 @@ body .wrapper {
     overflow: hidden;
     padding: 5px 15px;
     margin-bottom: 20px;
-    box-shadow: inset 3px 3px 0px @lightergreen;
+    box-shadow: inset 2px 2px 0px @lightergreen;
     h5 {
 	    padding-left: 25px;
+	    padding-bottom: 10px;
     }
     ul {
 		list-style-type: none;
-		margin: 0;
+		background-color: @lightestgreen;
+		margin: -10px -15px -10px -13px;
+		padding: 1px 15px 12px;
 		li {
 			.proximaR();
 			font-size: 16px;
 			margin: 15px 0;
 			a {
 				color: @black;
+				&:hover {
+					color: @green;
+				}
 			}
 		}
 	}
@@ -445,24 +469,40 @@ body .wrapper {
 .worksheets h5 {
 	background-image: url("https://www.visualaids.org/changemachine/images/related-worksheets.png");
 	background-repeat: no-repeat;
-    background-size: 18px auto;
+    background-size: 16px auto;
 }
 
 .tipsheets h5 {
 	background-image: url("https://www.visualaids.org/changemachine/images/related-tipsheets.png");
 	background-repeat: no-repeat;
-    background-size: 18px auto;
+    background-size: 16px auto;
 }
 
 
+/* ----- Pagination ----- */
+
+ul.pager {
+	margin-bottom: 60px;
+	a {
+		.proximaB();
+		background-color: none;
+		color: @lightergray;
+		border: none;
+		padding: 0;
+		text-transform: uppercase;
+		font-size: 20px;
+		&:hover {
+			background-color: none;
+			color: @black;
+		}
+	}
+}
+
+/* ----- End Pagination ----- */
 
 
 /* ----- Footer ----- */
 
-footer {
-	padding-bottom: 20px;
-	height: 140px;
-}
 
 footer .container {
 	height: 140px;
@@ -473,13 +513,13 @@ footer .container {
 	height: 110px;
 	width: auto;
 	position: relative;
-	top: -641px;
+	margin-top: -259px;
 	
 }
 .footerRays {
 	position: relative;
 /* 	top: -590px; */			/* rays.png */
-	top: -500px;
+	margin-top: -490px;
 	left: -400px;
 	z-index: -5;
 	margin-bottom: 0;
@@ -489,7 +529,7 @@ footer .container {
 footer ul {
 	float: right;
 	position: relative;
-	top: -600px;
+	margin-top: -130px;
 	list-style-type: none;
 	li {
 		float: left;
@@ -685,5 +725,4 @@ footer ul {
 		}
 	}
 }
-
 
