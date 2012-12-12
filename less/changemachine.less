@@ -38,6 +38,13 @@
 
 /* ----- End Fonts ----- */
 
+/*
+html,body,iv,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup, tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding:0; font-size:100%; vertical-align:baseline; }
+body { line-height:1; }
+*/
+
+
+
 body {
 	.proximaR();
 	background-color: @blue;
@@ -49,6 +56,7 @@ body {
   	-ms-transition:     all 0.15s ease;
   	-o-transition:      all 0.15s ease; 
 	transition: 		all 0.15s ease;
+	vertical-align: top;
 }
 
 a {
@@ -63,14 +71,14 @@ a {
 
 h1 {
 	.proximaB();
-	font-size: 40px;
+	font-size: 47px;
 	color: @pink;
 	text-transform: capitalize;
-	margin: 5px 0;
+	margin: 0;
 }
 
 h2 {
-	font-size: 14px;
+	font-size: 13px;
 	color: @green;
 }
 
@@ -141,16 +149,6 @@ header {
 	margin: 0 auto;
 }
 
-/*
-.topWrapper:before {
-	content: url("https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png");
-	position: absolute;
-	top: 0;
-	left: 0;
-	float: left;
-}
-*/
-
 .topWrapper {
 	background-color: @lightblue;
 	border-left: 10px solid @lightblue;
@@ -182,10 +180,6 @@ header {
     z-index: 10;
 }
 
-.navbar {
-	// margin-left: -10px;
-}
-
 .navbar-inner {
 	background-color: none !important;
 	background-image: none;
@@ -207,7 +201,6 @@ header {
 }
 
 .navbar .nav {
-/* 	margin-left: -194px; */ /* bad fix */
 	display: block;
     float: left;
     left: 0;
@@ -235,8 +228,9 @@ header {
 				background-color: @green;
 				color: @white;
 				border-radius: 5px 5px 0 0;
+				box-shadow: 0 -7px 12px 1px @lightblue;
 				position: relative;
-				top: -1px;
+				top: -2px;
 			}
 		}
 	}
@@ -301,10 +295,12 @@ form#sbsearch {
 	li.active {
 		background-color: @lightblue;
 		padding: 0;
+		margin: 1px 0;
 		border-radius: 3px;
 		box-shadow: 1px 1px 1px @lightergray;
 		a {
 			color: @green;
+			line-height: 1.4em;
 		}
 	}
 }
@@ -347,6 +343,7 @@ body .wrapper {
 		display: block;
 		clear: both;
 		color: @green;
+		margin-top: 1px;
 	}
 }
 
@@ -370,15 +367,15 @@ body .wrapper {
 		width: 18px;
 		height: 18px;
 		margin: 3px 0 5px;
-		background-size: 78px 45px;    /* odd fix */
-/* 		background-position: -30px 18px; */
+		background-size: 78px 45px;
+
 	}
 	.overviewText {
 		clear:both;
 		.metaBook();
 		font-size: 1.2em;
 		background-color: @lightestblue;
-		margin: -10px -15px -10px -13px;
+		margin: -10px -15px 0 -13px;
 		padding: 13px 15px 12px;
 	}
 }
@@ -426,7 +423,7 @@ body .wrapper {
 
 .milestone-block .Roadblock {
 	color: @red;
-	background-image: url("https://www.visualaids.org/changemachine/images/roadblock.png");
+	background-image: url("/images/roadblockRED.png");
 	background-repeat: no-repeat;
     background-size: 18px auto;
 }
@@ -478,6 +475,13 @@ body .wrapper {
     background-size: 16px auto;
 }
 
+.videos h5 {
+	background-image: url("https://www.visualaids.org/changemachine/images/related-videos.png");
+	background-repeat: no-repeat;
+    background-size: 16px auto;
+}
+
+/* ----- End Main Content ----- */
 
 /* ----- Pagination ----- */
 
@@ -500,25 +504,25 @@ ul.pager {
 
 /* ----- End Pagination ----- */
 
-
 /* ----- Footer ----- */
 
+footer * {
+	margin: 0;
+}
 
 footer .container {
 	height: 140px;
 }
 
 .footerLogo {
-	margin: -35px 20px 0;
+	margin: -188px 20px 0;
 	height: 110px;
 	width: auto;
-	position: relative;
-	margin-top: -259px;
+	vertical-align: top;
 	
 }
 .footerRays {
 	position: relative;
-/* 	top: -590px; */			/* rays.png */
 	margin-top: -490px;
 	left: -400px;
 	z-index: -5;
@@ -542,7 +546,6 @@ footer ul {
 		}
 	}
 }
-
 
 /* ----- End Footer ----- */
 
