@@ -5218,28 +5218,27 @@ a {
   color: #ffffff;
   text-shadow: none;
 }
+/*
 .btn-group {
-  background-color: #73a534;
-  border-radius: 10px;
-  margin-top: 10px;
-  float: right;
+	background-color: @green;
+	border-radius: 10px;
+	margin-top: 10px;
+	float: right;
+	.btn, .dropdown-toggle {
+		background-color: @green;
+		background-image: none;
+		box-shadow: none;
+		padding: 5px 10px;
+		&:hover {
+			padding: 5px 10px;
+			box-shadow: none;
+		}
+		.caret {
+			border-top: 4px solid #FFFFFF;
+		}
+	}
 }
-.btn-group .btn,
-.btn-group .dropdown-toggle {
-  background-color: #73a534;
-  background-image: none;
-  box-shadow: none;
-  padding: 5px 10px;
-}
-.btn-group .btn:hover,
-.btn-group .dropdown-toggle:hover {
-  padding: 5px 10px;
-  box-shadow: none;
-}
-.btn-group .btn .caret,
-.btn-group .dropdown-toggle .caret {
-  border-top: 4px solid #FFFFFF;
-}
+*/
 .roadblock {
   color: #a72c32;
 }
@@ -5528,7 +5527,7 @@ body .wrapper {
 }
 .milestone-block .Roadblock {
   color: #a72c32;
-  background-image: url("/images/roadblockRED.png");
+  background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
   background-repeat: no-repeat;
   background-size: 18px auto;
 }
@@ -5581,6 +5580,60 @@ body .wrapper {
   background-image: url("https://www.visualaids.org/changemachine/images/related-videos.png");
   background-repeat: no-repeat;
   background-size: 16px auto;
+}
+/* Coach View */
+.topWrapper div.row div.span2 div.btn-group {
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.topWrapper div.row div.span2 div.btn-group a {
+  color: #ffffff;
+}
+.topWrapper div.row div.span2 div.btn-group ul {
+  border-radius: 0 0 5px 5px;
+}
+.topWrapper div.row div.span2 div.btn-group ul li {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  background-color: #73a534;
+  border-radius: 5px;
+}
+.topWrapper div.row div.span2 div.btn-group ul li a {
+  padding: 10px;
+  display: inline-block;
+}
+.topWrapper div.row div.span2 div.btn-group ul li ul {
+  background-color: #ffffff;
+  border: 2px solid #c7d1e4;
+  text-transform: capitalize;
+  box-shadow: 2px 2px 2px #e3e8f2;
+  text-align: left;
+}
+.topWrapper div.row div.span2 div.btn-group ul li ul li {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #ffffff;
+  border-radius: 0;
+  padding: 10px;
+}
+.topWrapper div.row div.span2 div.btn-group ul li ul li:first-child:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.topWrapper div.row div.span2 div.btn-group ul li ul li:last-child {
+  border-radius: 0 0 3px 3px;
+}
+.topWrapper div.row div.span2 div.btn-group ul li ul li a {
+  color: #000000;
+}
+.topWrapper div.row div.span2 div.btn-group ul li ul li:hover {
+  background-color: #73a534;
+}
+.topWrapper div.row div.span2 div.btn-group ul li ul li:hover a {
+  color: #ffffff;
 }
 /* ----- End Main Content ----- */
 /* ----- Pagination ----- */
