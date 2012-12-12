@@ -1,0 +1,394 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<script src="/jslibrary/1351189248000/sfdc/JiffyStubs.js"></script><script src="/resource/1354817911000/LESSCSSJS" type="text/javascript"></script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+    
+  <link href="https://www.visualaids.org/changemachine/CSS/changemachine.css" REL="stylesheet" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  
+   
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'auk4xrm',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+  </script>
+    
+
+  <script>
+    $j = jQuery.noConflict();
+    
+    $j(document).ready(function() {
+
+    $j('.showDetails').click(function() {
+        var actionId = $j(this).attr('actionId');
+        console.log('this is the actionID'+actionId);
+        $j('#details'+actionId).toggle();
+        return false;
+      });
+      
+      $j('.overviewTab h3').click(function() {
+       $j('.overviewText').toggle();
+        if ($j('.overviewText').is(":visible")) { 
+         $j('.overviewTab h3:last').removeClass('milestone-show').addClass('milestone-hide');  
+       } else { 
+       $j('.overviewTab h3:last').removeClass('milestone-hide').addClass('milestone-show');    
+       } 
+       return false;
+      });
+      
+      $j('.sidebar-block h5').click(function() {
+       $j(this).parent().children('ul').toggle();
+       return false;
+      });
+    });
+  </script>
+
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div class="topWrapper">
+      <div class="row">
+        <div class="span3">
+          <a class="brand" href="/">
+          	<img src="https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png" />
+          </a>
+        </div>
+          
+          <div class="span1">
+               <ul class="unstyled cls-menu">
+            	<li class=""><A href="/learn">Learn</A></li>
+            	<li class="active"><A href="/customers"> Coach</A></li>
+                <li class=""><A href="/share"> Share</A></li>
+              </ul>
+          </div>
+          
+        <div class="span2 pull-right"><span id="j_id0:j_id1:j_id5">
+
+          <div class="btn-group">
+            <a class="btn" href="/changemachine_customer?id=a09J00000026hz5IAA">
+              Billy Bob
+            </a>
+            <a class="dropdown-toggle btn customer-menu" data-toggle="dropdown" href="#">
+              <b class="caret"></b>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a href="/changemachine_customer?id=a09J0000003XlbJIAS">
+                  Amy Roa</a>
+                </li>
+                <li><a href="/changemachine_customer?id=a09J00000026hz5IAA">
+                    &#10004;
+                  Billy Bob</a>
+                </li>
+                <li><a href="/changemachine_customer?id=a09J00000026TjmIAE">
+                  John Smith</a>
+                </li>
+                <li><a href="/changemachine_customer?id=a09J00000026hzFIAQ">
+                  Ian Customer</a>
+                </li>
+              
+              <li class="divider"></li>
+              <li><a href="/changemachine_customer_new">Add a new customer</a></li>
+              <li><a href="/customers">View all my customers</a></li>
+            </ul>
+          </div></span>
+        </div>
+       
+        </div>
+      </div> 
+	<div class="midWrapper">
+  <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          
+          
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Goals">
+                  
+                  Goals
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="active">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Assets">
+                  
+                  Assets
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Banking">
+                  
+                  Banking
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Credit">
+                  
+                  Credit
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Debt">
+                  
+                  Debt
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Taxes">
+                  
+                  Taxes
+                </a>
+                </li>
+            </ul>
+            
+              <form action="/changemachine_search" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
+
+             
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="q" placeholder="Search" size="27" title="Enter search keywords" type="text" />
+        	<button class="btn" type="submit">Search</button>
+              
+               </form>
+              
+      
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </header>
+<div class="wrapper">
+            
+        
+        <div class="page-header">
+            
+         <h1>Assets</h1>
+                
+          <h2>Outcome <small> Save Consistantly</small></h2>
+               
+        </div>
+        
+        <div class="row">
+            
+           
+           <div class="span8">
+                 <div class="overviewTab">
+                        <h3>Overview</h3><h3 class="milestone-hide"></h3>
+                    <div class="overviewText" style="display:none;">Through financial coaching you empower customers to build, organize, and take control of their financial lives by making informed financial choices. Regardless of your customers’ current financial situation, building assets is vital to achieve financial security. Research has shown that even people who have very low income can save and build assets. Assets range from bank and retirement accounts, to insurance and public-sponsored safety nets like food stamps. Not all of these will be appropriate for all customers, but it is essential that every customer saves consistently for an action-driven goal, even if the amount is small. Remember savings is an activity, not an amount. Your goal here is to remind customers it’s not important how much you save; it’s that you establish a regular savings habit.
+                    </div>
+               </div>
+                  <div class="milestone-block">
+                  <A class="btn pull-right" href="/milestone/Customer-Maximizes-Cash-Flow">
+                    Start this milestone
+                  </A>
+                  <h4> <a href="/milestone/Customer-Maximizes-Cash-Flow"> Customer Maximizes Cash Flow</a></h4>
+                  
+                  
+                      <ul class="unstyled">
+                           <li class="Action  ">Customer Develops A Monthly Spending Plan
+                               
+                          
+                               
+                               
+                           </li>
+                           <li class="Roadblock  ">Customer Has A Monthly Cash Flow Deficit
+                               
+                          
+                               
+                               
+                           </li>
+                           <li class="Action  ">Customer Maximizes Income Supports
+                               
+                          
+                               
+                               
+                           </li>
+                           <li class="Action  ">Customer Maximizes Employee Benefits
+                               
+                          
+                               
+                               
+                           </li>
+                           <li class="Action  ">Customer Puts Child Care Plan In Place
+                               
+                          
+                               
+                               
+                           </li>
+                       </ul>
+                      
+                      
+                  </div>
+                  <div class="milestone-block">
+                  <A class="btn pull-right" href="/milestone/Customer-Implements-Regular-Savings-Plan">
+                    Start this milestone
+                  </A>
+                  <h4> <a href="/milestone/Customer-Implements-Regular-Savings-Plan"> Customer Implements Regular Savings Plan</a></h4>
+                  
+                  
+                      <ul class="unstyled">
+                           <li class="Action  ">Customer Develops A Savings Plan For An Action-Driven Goal
+                               
+                          
+                               
+                               
+                           </li>
+                           <li class="Action  ">Customer Establishes Auto-Deduct For A Regular Savings Amount
+                               
+                          
+                               
+                               
+                           </li>
+                       </ul>
+                      
+                      
+                  </div>
+                  <div class="milestone-block">
+                  <A class="btn pull-right" href="/milestone/Customer-implements-asset-development-and-protection-strategies">
+                    Start this milestone
+                  </A>
+                  <h4> <a href="/milestone/Customer-implements-asset-development-and-protection-strategies"> Customer implements asset development and protection strategies</a></h4>
+                  
+                  
+                      <ul class="unstyled">
+                           <li class="Action  ">Customer Establishes Health Insurance
+                               
+                          
+                               
+                               
+                           </li>
+                           <li class="Action  ">Customer Establishes Retirement Plan
+                               
+                          
+                               
+                               
+                           </li>
+                           <li class="Action  ">Customer Establishes Life Insurance
+                               
+                          
+                               
+                               
+                           </li>
+                           <li class="Action  ">Customer Establishes Appropriate Property, Renters, And Auto Insurance
+                               
+                          
+                               
+                               
+                           </li>
+                           <li class="Action  ">Customer Establishes Disability Insurance
+                               
+                          
+                               
+                               
+                           </li>
+                           <li class="Action  ">Customer Establishes An Education Savings Account
+                               
+                          
+                               
+                               
+                           </li>
+                       </ul>
+                      
+                      
+                  </div>
+            
+          </div>
+          <div class="span4">
+
+            <div class="sidebar-block worksheets">
+              <h5>Worksheets</h5>
+                <ul>
+                    <li><a href="/worksheet/Jumpstart-your-saving">Jumpstart your saving</a>
+               
+                    </li>
+                    <li><a href="/worksheet/Financial-Tune-Up-Calculator">Financial Tune Up Calculator</a>
+               
+                    </li>
+                    <li><a href="/worksheet/5-Steps-to-my-goal">5 Steps to my goal</a>
+               
+                    </li>
+                    <li><a href="/worksheet/Monthly-Income">Monthly Income</a>
+               
+                    </li>
+                    <li><a href="/worksheet/Monthly-Expenses">Monthly Expenses</a>
+               
+                    </li>
+                    <li><a href="/worksheet/Gear-Up-For-Homeownership">Gear Up For Homeownership</a>
+               
+                    </li>
+                    <li><a href="/worksheet/Daily-Expenses">Daily Expenses</a>
+               
+                    </li>
+                    <li><a href="/worksheet/Debt-Management">Debt Management</a>
+               
+                    </li>
+               </ul>
+           </div>
+          <div class="sidebar-block tipsheets">
+            <h5>Tipsheets</h5>
+          <ul>
+               <li><a href="/tipsheet/Save-Strategically-In-Foreclosure" target="_blank">Save Strategically In Foreclosure</a>
+               
+               </li>
+               <li><a href="/tipsheet/Get-On-Track-For-Retirement" target="_blank">Get On Track For Retirement</a>
+               
+               </li>
+               <li><a href="/tipsheet/Jumpstart-Your-Savings" target="_blank">Jumpstart Your Savings</a>
+               
+               </li>
+          </ul>
+              </div>
+              </div>
+          </div>
+     </div>
+  </div>
+  <footer>
+    <div class="container">
+         
+    <img class="footerRays" src="https://www.visualaids.org/changemachine/images/raysCropped.png" /> 
+        <img class="footerLogo" src="https://www.visualaids.org/changemachine/images/change-machine-footer-logo.png" />
+
+          <ul class="nav nav-pills">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+       	 </ul>
+      </div>
+   </footer>
+</body>
+</html>
