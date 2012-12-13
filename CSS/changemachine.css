@@ -5172,6 +5172,10 @@ h5 {
   font-weight: 700;
   font-size: 20px;
   margin: 3px 0;
+  padding-left: 25px;
+}
+.milestone-block h5 {
+  color: #8ea2ca;
 }
 h1,
 h2,
@@ -5418,7 +5422,9 @@ body .wrapper {
   margin-left: 10px;
   display: inline-block;
 }
-.overviewTab {
+.overviewTab,
+#questions,
+#paths {
   background-color: #e3e8f2;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
@@ -5426,13 +5432,19 @@ body .wrapper {
   box-shadow: inset 2px 2px 0px #c7d1e4;
   border-bottom: 5px solid #000000;
 }
-.overviewTab h3 {
+.overviewTab h3,
+#questions h3,
+#paths h3 {
   padding: 0;
 }
-.overviewTab h3:first-child {
+.overviewTab h3:first-child,
+#questions h3:first-child,
+#paths h3:first-child {
   float: left;
 }
-.overviewTab h3:nth-child(2) {
+.overviewTab h3:nth-child(2),
+#questions h3:nth-child(2),
+#paths h3:nth-child(2) {
   float: right;
   /* 		background: url("/images/open_close.png") -30px 18px; */
 
@@ -5442,7 +5454,12 @@ body .wrapper {
   margin: 3px 0 5px;
   background-size: 78px 45px;
 }
-.overviewTab .overviewText {
+.overviewTab .overviewText,
+#questions .overviewText,
+#paths .overviewText,
+.overviewTab .accordion-inner,
+#questions .accordion-inner,
+#paths .accordion-inner {
   clear: both;
   font-family: "ff-meta-serif-web-pro", serif;
   font-style: normal;
@@ -5466,12 +5483,14 @@ body .wrapper {
 .milestone-block ul {
   list-style-type: none;
 }
-.milestone-block ul li {
+.milestone-block ul li,
+.milestone-block ul li a {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   margin: 5px 0;
+  color: #000000;
 }
 .milestone-block h4,
 .milestone-block li {
@@ -5497,6 +5516,9 @@ body .wrapper {
 
   margin-bottom: 50px;
 }
+.milestone-block h5 {
+  padding-left: 25px;
+}
 .milestone-block .Roadblock {
   color: #a72c32;
   background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
@@ -5506,6 +5528,15 @@ body .wrapper {
 .milestone-block .Roadblock img {
   width: 10px;
   height: auto;
+}
+.milestone-block .worksheets ul li {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.milestone-block .worksheets ul li a {
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.25);
+  display: inline-block;
 }
 .sidebar-block {
   background-color: rgba(115, 165, 51, 0.25);
@@ -5588,7 +5619,7 @@ body .wrapper {
 }
 .topWrapper .btn-group a.btn .caret {
   border-top: 4px solid #73a534;
-  margin-top: 20px;
+  margin-top: 26px;
 }
 .topWrapper .btn-group a.dropdown-toggle {
   padding-left: 0;
@@ -5679,6 +5710,58 @@ body .wrapper {
   top: 11px;
   width: 8px;
   background-color: #73a534;
+}
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form {
+  margin: 0;
+}
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group {
+  margin: 0;
+}
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a {
+  padding: 5px 10px;
+  background-image: none;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: none;
+  float: left;
+  margin-right: 2px;
+  box-shadow: 2px 2px 2px #e3e8f2;
+  color: #ffffff;
+}
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:last-child {
+  margin-right: none;
+  border-radius: 0px 5px 5px 0;
+}
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:nth-child(1) {
+  background-color: #8ea2ca;
+  border-radius: 5px 0 0 5px;
+}
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:nth-child(2) {
+  background-color: #73a534;
+}
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:nth-child(3) {
+  background-color: #a72c32;
+}
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:nth-child(4) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:hover {
+  box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.25);
+  padding: 7px 10px 3px;
+}
+.actionDetails {
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-style: normal;
+  font-weight: 500;
+  padding: 10px 0 0;
+  color: rgba(0, 0, 0, 0.75);
+}
+.actionDetails ol,
+.actionDetails ul {
+  margin-bottom: 20px;
 }
 /* ----- End Main Content ----- */
 /* ----- Pagination ----- */
@@ -6018,9 +6101,15 @@ footer ul li a:hover {
 				    width: 8px;
 					background-color: @green;
 					
-/*
+
 					font-family: verdana;
 					content: "•";
 					color: @green;
 					font-size: 20px;
+
+				}
+			}
+		}
+	}
+}
 */

@@ -116,6 +116,10 @@ h5 {
 	.metaBold();
 	font-size: 20px;
 	margin: 3px 0;
+	padding-left: 25px;
+}
+.milestone-block h5 {
+	color: @blue;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -370,7 +374,7 @@ body .wrapper {
 	display: inline-block;
 }
 
-.overviewTab {
+.overviewTab, #questions, #paths {
 	background-color: @lighterblue;
 	border-radius: 5px 5px 0 0;
     overflow: hidden;
@@ -393,7 +397,7 @@ body .wrapper {
 		background-size: 78px 45px;
 
 	}
-	.overviewText {
+	.overviewText, .accordion-inner {
 		clear:both;
 		.metaBook();
 		font-size: 1.2em;
@@ -417,10 +421,11 @@ body .wrapper {
 	border-bottom: 5px solid black;
 	ul {
 		list-style-type: none;
-		li {
+		li, li a {
 			.proximaR();
 			font-size: 16px;
 			margin: 5px 0;
+			color: @black;
 		}
 	}
 	h4, li {
@@ -442,6 +447,9 @@ body .wrapper {
 	&:last-child {				/* temporary? for adding space below for styling footer */
 		margin-bottom: 50px;
 	}
+	h5 {
+		padding-left: 25px;
+	}
 }
 
 .milestone-block .Roadblock {
@@ -454,6 +462,16 @@ body .wrapper {
 .milestone-block .Roadblock img {
 	width: 10px;
 	height: auto;
+}
+
+.milestone-block .worksheets ul li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	a {
+		border-bottom: 2px dotted @lightergray;
+		display: inline-block;
+	}
 }
 
 .sidebar-block {
@@ -534,7 +552,7 @@ body .wrapper {
 		}
 		.caret {
 			border-top: 4px solid @green;
-			margin-top: 20px;
+			margin-top: 26px;
 		}
 	}
 	a.dropdown-toggle {
@@ -628,6 +646,54 @@ body .wrapper {
 	}
 }
 
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form {
+	margin: 0;
+}
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group {
+	margin: 0;
+	a {
+		padding: 5px 10px;
+		background-image: none;
+		.proximaR();
+		font-size: 16px;
+		text-transform: uppercase;
+		border-radius: none;
+		float: left;
+		margin-right: 2px;
+		box-shadow: 2px 2px 2px @lighterblue;
+		color: @white;
+		&:last-child {
+			margin-right: none;
+			border-radius: 0px 5px 5px 0;
+		}
+		&:nth-child(1) {
+			background-color: @blue;
+			border-radius: 5px 0 0 5px;
+		}
+		&:nth-child(2) {
+			background-color: @green;
+		}
+		&:nth-child(3) {
+			background-color: @red;
+		}
+		&:nth-child(4) {
+			background-color: @lightgray;
+		}
+		&:hover {
+			box-shadow: inset 3px 3px 0px @lightergray;
+			padding: 7px 10px 3px;
+		}
+	}
+}
+
+.actionDetails {
+	.metaBook();
+	padding: 10px 0 0;
+	color: @gray;
+	ol, ul {
+		margin-bottom: 20px;
+	}
+}
 
 /* ----- End Main Content ----- */
 
@@ -982,12 +1048,12 @@ footer ul {
 				    width: 8px;
 					background-color: @green;
 					
-/*
+
 					font-family: verdana;
 					content: "•";
 					color: @green;
 					font-size: 20px;
-*/
+
 				}
 			}
 		}
