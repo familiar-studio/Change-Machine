@@ -1,0 +1,84 @@
+@import "bootstrap.less";
+
+/* ----- Print Style Sheet ----- */
+
+@page {
+	margin: 200cm;
+	/* Landscape orientation */
+	size:landscape;
+	/* Put page numbers in the top right corner of each
+	page in the pdf document. */
+}
+	@bottom-right {
+		content: "Page " counter(page) " of " counter(pages);
+	}
+
+body {
+	font-family: georgia, serif;
+}
+
+h5 {
+	color: @lightergray;
+	font-family: georgia, serif;
+	text-transform: uppercase;
+}
+
+.page-header {
+	border-bottom: 3px solid @blue;
+}
+
+h1 {
+	color: @blue;
+	font-family: helvetica;
+}
+
+ol, ul {
+	margin: 20px;
+	font-family: helvetica, sans-serif;
+	li {
+		font-family: georgia, serif;
+		margin-bottom: 10px;
+	}
+}
+
+li > strong {
+	color: @blue;
+	font-family: helvetica, sans-serif;
+	display: block;
+}
+a {
+	color: @blue;
+}
+a:after {
+	content: " [" attr(href) "] ";
+	color: @blue;
+}
+
+footer {
+/*
+	position: fixed;
+	bottom: 0;
+*/
+	width: 100%;
+	padding-top: 5px;
+	border-top: 1px solid @blue;
+}
+
+footer img, footer div {
+	float: left;
+	margin-right: 20px;
+}
+
+footer img {
+	max-width: 100px;
+}
+
+.tips {
+	width: 100px;
+	color: @blue;
+	font-family: helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	margin: 9px 0 0 20px;
+}
+
