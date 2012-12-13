@@ -116,7 +116,6 @@ h5 {
 	.metaBold();
 	font-size: 20px;
 	margin: 3px 0;
-	padding-left: 25px;
 }
 .milestone-block h5 {
 	color: @blue;
@@ -427,6 +426,10 @@ body .wrapper {
 			margin: 5px 0;
 			color: @black;
 		}
+		li a:hover {
+			color: @blue;
+			cursor: pointer;
+		}
 	}
 	h4, li {
 		border-bottom: 2px dotted @lightergray;
@@ -679,7 +682,7 @@ body div.container div.wrapper div.row div.span8 ul.unstyled li span span form d
 		&:nth-child(4) {
 			background-color: @lightgray;
 		}
-		&:hover {
+		&:hover, .active {
 			box-shadow: inset 3px 3px 0px @lightergray;
 			padding: 7px 10px 3px;
 		}
@@ -694,6 +697,8 @@ body div.container div.wrapper div.row div.span8 ul.unstyled li span span form d
 		margin-bottom: 20px;
 	}
 }
+
+
 
 /* ----- End Main Content ----- */
 

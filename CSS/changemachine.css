@@ -5172,7 +5172,6 @@ h5 {
   font-weight: 700;
   font-size: 20px;
   margin: 3px 0;
-  padding-left: 25px;
 }
 .milestone-block h5 {
   color: #8ea2ca;
@@ -5492,6 +5491,10 @@ body .wrapper {
   margin: 5px 0;
   color: #000000;
 }
+.milestone-block ul li a:hover {
+  color: #8ea2ca;
+  cursor: pointer;
+}
 .milestone-block h4,
 .milestone-block li {
   border-bottom: 2px dotted rgba(0, 0, 0, 0.25);
@@ -5748,7 +5751,8 @@ body div.container div.wrapper div.row div.span8 ul.unstyled li span span form d
 body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:nth-child(4) {
   background-color: rgba(0, 0, 0, 0.5);
 }
-body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:hover {
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:hover,
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a .active {
   box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.25);
   padding: 7px 10px 3px;
 }
