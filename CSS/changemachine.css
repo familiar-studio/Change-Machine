@@ -5795,22 +5795,22 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 	top: -40px;
 }
 */
-.milestone-block ul li.in-progress {
+.milestone-block ul li.In-Progress {
   background-image: url("https://www.visualaids.org/changemachine/images/status-cw-in_progress.gif");
   background-repeat: no-repeat;
   background-size: 18px auto;
 }
-.milestone-block ul li.completed {
+.milestone-block ul li.Completed {
   background-image: url("https://www.visualaids.org/changemachine/images/status-completed.png");
   background-repeat: no-repeat;
   background-size: 18px auto;
 }
-.milestone-block ul li.stalled {
+.milestone-block ul li.Stalled {
   background-image: url("https://www.visualaids.org/changemachine/images/status-stalled.png");
   background-repeat: no-repeat;
   background-size: 18px auto;
 }
-.milestone-block ul li.applicable {
+.milestone-block ul li.Applicable {
   color: rgba(0, 0, 0, 0.5);
 }
 .actionDetails {
