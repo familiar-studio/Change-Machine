@@ -5505,6 +5505,7 @@ body .wrapper {
   font-size: 16px;
   margin: 5px 0;
   color: #000000;
+  overflow: inherit;
 }
 .milestone-block ul.action-list li a:hover {
   color: #8ea2ca;
@@ -5512,12 +5513,10 @@ body .wrapper {
 }
 .milestone-block ul.action-list ol,
 .milestone-block ul.action-list ul {
-  list-style-type: circle;
+  list-style-type: disc !important;
 }
 .milestone-block ul.action-list ol li,
-.milestone-block ul.action-list ul li,
-.milestone-block ul.action-list ol li a,
-.milestone-block ul.action-list ul li a {
+.milestone-block ul.action-list ul li {
   padding-left: 0;
   border-bottom: none;
 }
@@ -5563,6 +5562,7 @@ body .wrapper {
   margin: 0;
   padding: 0;
   border: none;
+  list-style-type: none;
 }
 .milestone-block .worksheets ul li a {
   border-bottom: 2px dotted rgba(0, 0, 0, 0.25);

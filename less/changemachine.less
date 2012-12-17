@@ -439,14 +439,15 @@ body .wrapper {
 			font-size: 16px;
 			margin: 5px 0;
 			color: @black;
+			overflow: inherit;
 		}
 		li a:hover {
 			color: @blue;
 			cursor: pointer;
 		}
 		ol, ul {
-			list-style-type: circle;
-			li, li a {
+			list-style-type: disc !important;
+			li {
 				padding-left: 0;
 				border-bottom: none;
 			}
@@ -493,6 +494,7 @@ body .wrapper {
 	margin: 0;
 	padding: 0;
 	border: none;
+	list-style-type: none;
 	a {
 		border-bottom: 2px dotted @lightergray;
 		display: inline-block;
