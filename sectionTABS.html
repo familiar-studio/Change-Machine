@@ -1,0 +1,380 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<script src="/jslibrary/1351189248000/sfdc/JiffyStubs.js"></script><script src="/resource/1354817911000/LESSCSSJS" type="text/javascript"></script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+    
+  <link href="CSS/changemachine.css" REL="stylesheet" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="/resource/1350669682000/BootstrapJS/bootstrap.min.js"></script>
+  
+   
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'auk4xrm',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+  </script>
+    
+
+  <script>
+    $j = jQuery.noConflict();
+    
+    $j(document).ready(function() {
+
+    $j('.showDetails').click(function() {
+        var actionId = $j(this).attr('actionId');
+        console.log('this is the actionID'+actionId);
+        $j('#details'+actionId).toggle();
+        return false;
+      });
+      
+      $j('.overviewTab h3').click(function() {
+       $j('.overviewText').toggle();
+       if ($j('.overviewText').is(":visible")) {
+       	$j('.overviewTab h3:last').removeClass('milestone-show').addClass('milestone-hide'); 
+       } else {
+	    $j('.overviewTab h3:last').removeClass('milestone-hide').addClass('milestone-show');   
+       }
+       return false;
+      });
+      
+      $j('.sidebar-block h5').click(function() {
+       $j(this).parent().children('ul').toggle();
+       return false;
+      });
+    });
+  </script>
+
+  
+
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div class="topWrapper">
+      <div class="row">
+        <div class="span3">
+          <a class="brand" href="/">
+          	<img src="https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png" />
+          </a>
+        </div>
+          
+          <div class="span1">
+               <ul class="unstyled cls-menu">
+            	<li class=""><A href="/learn">Learn</A></li>
+            	<li class="active"><A href="/customers"> Coach</A></li>
+                <li class=""><A href="/share"> Share</A></li>
+              </ul>
+          </div>
+          
+        <div class="span8 pull-right"><span id="j_id0:j_id1:j_id5">
+
+          <div class="btn-group">
+            <a class="btn" href="/changemachine_customer?id=a09J00000026hz5IAA">
+              <span>current customer</span>
+              Billy Bob
+            </a>
+            <a class="dropdown-toggle btn customer-menu" data-toggle="dropdown" href="#">
+              <b class="caret"></b>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li class="">
+
+                  <a href="/changemachine_customer?id=a09J0000003XlbJIAS">
+                  
+
+                  Amy Roa</a>
+                </li>
+                <li class="">
+
+                  <a href="/changemachine_customer?id=a09J00000026hz5IAA">
+                  
+
+                  Billy Bob</a>
+                </li>
+                <li class="">
+
+                  <a href="/changemachine_customer?id=a09J00000026TjmIAE">
+                  
+
+                  John Smith</a>
+                </li>
+                <li class="">
+
+                  <a href="/changemachine_customer?id=a09J00000026hzFIAQ">
+                  
+
+                  Ian Customer</a>
+                </li>
+              
+              <li class="divider"></li>
+              <li><a href="/changemachine_customer_new">Add a new customer</a></li>
+              <li class="divider"></li>
+              <li><a href="/customers">View all my customers</a></li>
+            </ul>
+          </div></span>
+        </div>
+       
+        </div>
+      </div> 
+	<div class="midWrapper">
+  <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          
+          
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Goals">
+                  
+                  Goals
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Assets">
+                  
+                  Assets
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Banking">
+                  
+                  Banking
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Credit">
+                  
+                  Credit
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Debt">
+                  
+                  Debt
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Taxes">
+                  
+                  Taxes
+                </a>
+                </li>
+            </ul>
+            
+              <form action="/changemachine_search" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
+
+             
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="q" placeholder="Search" size="27" title="Enter search keywords" type="text" />
+        	<button class="btn" type="submit">Search</button>
+              
+               </form>
+              
+      
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </header>
+<div class="wrapper">
+        
+        
+           <div class="page-header">
+
+           <div class="row">
+
+           <div class="span4">
+        <h1>Billy Bob</h1>
+
+        </div>
+
+        <div class="span4">
+        <h5>Totals</h5>
+        <ul class="unstyled">
+          <li><strong>Income:</strong> $3250.0 |  <strong>Expenses:</strong> $2350.0</li>
+          <li><strong>Weekly Savings Commitment:</strong> $1283.95</li>
+          <li><strong>Monthly Minimum Debt Payments:</strong> $250.0</li>
+          </ul>
+        </div>
+
+
+
+                <div class=" span4 pull-right">
+                    
+                     
+                      <a class="btn" href="/changemachine_sendEmail?id=a09J00000026hz5IAA">Send Email</a>
+                      <a class="btn" href="/changemachine_sendSMS?id=a09J00000026hz5IAA">Send a Text</a>
+                  
+                  </div>
+                  </div>
+        </div>
+
+        <ul class="nav nav-tabs customer-tabs">
+          <li class="active">
+            <a href="/changemachine_customer?id=a09J00000026hz5IAA">Dashboard</a>
+          </li>
+          <li><a href="/changemachine_customer_details?id=a09J00000026hz5IAA">Personal Info</a></li>
+
+          <li><a href="/changemachine_customer_income?id=a09J00000026hz5IAA">Income and Expenses</a></li>
+         
+        </ul>
+
+        <hr />
+                    
+
+        <Div class="row">
+          <div class="span8">
+            <h2>Section Progress</h2>
+
+            <ul class="thumbnails">
+              <li class="span4 ">
+                <div class="thumbnail">
+                <a href="/section/Taxes"><h3>Taxes </h3></a>
+              
+                 <div class="progress progress-striped active">
+                    <div class="bar" style="width: 0.0%;"></div>
+                  </div> 
+                  <a class="btn btn-small" href="/section/Taxes">Go</a>
+                  </div>
+
+               </li>
+              <li class="span4 ">
+                <div class="thumbnail">
+                <a href="/section/Goals"><h3>Goals </h3></a>
+              
+                 <div class="progress progress-striped active">
+                    <div class="bar" style="width: 100.0%;"></div>
+                  </div> 
+                  <a class="btn btn-small" href="/section/Goals">Go</a>
+                  </div>
+
+               </li>
+              <li class="span4 ">
+                <div class="thumbnail">
+                <a href="/section/Credit"><h3>Credit </h3></a>
+              
+                 <div class="progress progress-striped active">
+                    <div class="bar" style="width: 12.5%;"></div>
+                  </div> 
+                  <a class="btn btn-small" href="/section/Credit">Go</a>
+                  </div>
+
+               </li>
+              <li class="span4 ">
+                <div class="thumbnail">
+                <a href="/section/Debt"><h3>Debt </h3></a>
+              
+                 <div class="progress progress-striped active">
+                    <div class="bar" style="width: 15.384615384615385%;"></div>
+                  </div> 
+                  <a class="btn btn-small" href="/section/Debt">Go</a>
+                  </div>
+
+               </li>
+              <li class="span4 ">
+                <div class="thumbnail">
+                <a href="/section/Banking"><h3>Banking </h3></a>
+              
+                 <div class="progress progress-striped active">
+                    <div class="bar" style="width: 0.0%;"></div>
+                  </div> 
+                  <a class="btn btn-small" href="/section/Banking">Go</a>
+                  </div>
+
+               </li>
+              <li class="span4 ">
+                <div class="thumbnail">
+                <a href="/section/Assets"><h3>Assets </h3></a>
+              
+                 <div class="progress progress-striped active">
+                    <div class="bar" style="width: 0.0%;"></div>
+                  </div> 
+                  <a class="btn btn-small" href="/section/Assets">Go</a>
+                  </div>
+
+               </li>
+            </ul>
+          </div>
+          <div class="span4">
+            <div class="sidebar-block goals">
+                <h5>Customer Goals</h5><span id="j_id0:j_id1:j_id21">
+
+                <ul>
+                    <li><A href="/a0IJ0000000ZtkoMAC">This is it</A></li>
+                    <li><A href="/a0IJ0000000ZSsfMAG">Test goal</A></li>
+                    <li><A href="/a0IJ0000000ZSsaMAG">Save to go to disney land 2</A></li>
+                    <li><A href="/a0IJ0000000Ztl3MAC">Christmas Gifts</A></li>
+                    <li><A href="/a0IJ0000000ZT4tMAG">buy a car</A></li>
+                    <li><A href="/a0IJ0000000ZtkjMAC">new regular goal</A></li>
+                    <li><A href="/a0IJ0000000ZtkuMAC">a0IJ0000000Ztku</A></li>
+                    <a class="btn btn-small" href="/changemachine_goal_type">New Goal</a>
+                </ul></span>
+
+              </div>
+
+              <div class="sidebar-block meetings">
+                <h5>Upcoming Meetings</h5><span id="j_id0:j_id1:j_id29">
+
+                <ul>
+                  <li><a href="a0XJ00000017W2lMAE"> Wed , 11/07/2012 06:26 GMT
+                  </a></li>
+                  <a class="btn btn-small" href="#">New Meeting</a>
+                </ul></span>
+                
+              </div>
+          </div>
+
+        </Div>
+     </div>
+  </div>
+  <footer>
+    <div class="container">
+         
+    <img class="footerRays" src="https://www.visualaids.org/changemachine/images/raysCropped.png" /> 
+        <img class="footerLogo" src="https://www.visualaids.org/changemachine/images/change-machine-footer-logo.png" />
+
+          <ul class="nav nav-pills">
+              <li><a href="/_ui/core/portal/PortalUserMyProfilePage/d">My Account</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+       	 </ul>
+      </div>
+   </footer>
+</body>
+</html>
