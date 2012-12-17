@@ -5098,13 +5098,15 @@ body {
   font-weight: 400;
   background-color: #8ea2ca;
 }
+/*
 * {
-  -webkit-transition: all 0.15s ease;
-  -moz-transition: all 0.15s ease;
-  -ms-transition: all 0.15s ease;
-  -o-transition: all 0.15s ease;
-  transition: all 0.15s ease;
+	-webkit-transition: all 0.15s ease;
+  	-moz-transition:    all 0.15s ease;
+  	-ms-transition:     all 0.15s ease;
+  	-o-transition:      all 0.15s ease; 
+	transition: 		all 0.15s ease;
 }
+*/
 a {
   text-decoration: none;
 }
@@ -5491,11 +5493,11 @@ body .wrapper {
   padding: 0 0 15px;
   border-bottom: 5px solid black;
 }
-.milestone-block ul {
+.milestone-block ul.action-list {
   list-style-type: none;
 }
-.milestone-block ul li,
-.milestone-block ul li a {
+.milestone-block ul.action-list li,
+.milestone-block ul.action-list li a {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -5503,9 +5505,17 @@ body .wrapper {
   margin: 5px 0;
   color: #000000;
 }
-.milestone-block ul li a:hover {
+.milestone-block ul.action-list li a:hover {
   color: #8ea2ca;
   cursor: pointer;
+}
+.milestone-block ul.action-list ol {
+  list-style-type: circle;
+}
+.milestone-block ul.action-list ol li,
+.milestone-block ul.action-list ol li a {
+  padding-left: 0;
+  border-bottom: none;
 }
 .milestone-block h4,
 .milestone-block li {
@@ -5785,24 +5795,22 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 }
 */
 .milestone-block ul li.in-progress {
-  background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
+  background-image: url("https://www.visualaids.org/changemachine/images/status-cw-in_progress.gif");
   background-repeat: no-repeat;
   background-size: 18px auto;
 }
 .milestone-block ul li.completed {
-  background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
+  background-image: url("https://www.visualaids.org/changemachine/images/status-completed.png");
   background-repeat: no-repeat;
   background-size: 18px auto;
 }
 .milestone-block ul li.stalled {
-  background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
+  background-image: url("https://www.visualaids.org/changemachine/images/status-cw-in_progress.gif");
   background-repeat: no-repeat;
   background-size: 18px auto;
 }
-.milestone-block ul li.not-applicable {
-  background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
-  background-repeat: no-repeat;
-  background-size: 18px auto;
+.milestone-block ul li.applicable {
+  color: rgba(0, 0, 0, 0.5);
 }
 .actionDetails {
   font-family: "ff-meta-serif-web-pro", serif;
