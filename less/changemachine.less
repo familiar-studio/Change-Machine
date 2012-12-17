@@ -480,7 +480,8 @@ body .wrapper {
 	color: @red;
 	background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
 	background-repeat: no-repeat;
-    background-size: 18px auto;
+    background-size: 16px auto;
+    background-position: 2px 2px;
 }
 
 .milestone-block .Roadblock img {
@@ -737,7 +738,7 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
     background-size: 18px auto;
 }
 .milestone-block ul li.stalled {
-	background-image: url("https://www.visualaids.org/changemachine/images/status-cw-in_progress.gif");
+	background-image: url("https://www.visualaids.org/changemachine/images/status-stalled.png");
 	background-repeat: no-repeat;
     background-size: 18px auto;
 }
@@ -756,8 +757,10 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 		line-height: 1.5em;
 		font-size: 16px;
 	}
-	p b {
-		.proximaB();
+	p b, h4 {
+		.metaBold();
+		margin-top: 20px;
+		display: block;
 	}
 }
 

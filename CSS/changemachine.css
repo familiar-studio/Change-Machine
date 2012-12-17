@@ -5548,7 +5548,8 @@ body .wrapper {
   color: #a72c32;
   background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
   background-repeat: no-repeat;
-  background-size: 18px auto;
+  background-size: 16px auto;
+  background-position: 2px 2px;
 }
 .milestone-block .Roadblock img {
   width: 10px;
@@ -5805,7 +5806,7 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
   background-size: 18px auto;
 }
 .milestone-block ul li.stalled {
-  background-image: url("https://www.visualaids.org/changemachine/images/status-cw-in_progress.gif");
+  background-image: url("https://www.visualaids.org/changemachine/images/status-stalled.png");
   background-repeat: no-repeat;
   background-size: 18px auto;
 }
@@ -5827,10 +5828,13 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
   line-height: 1.5em;
   font-size: 16px;
 }
-.actionDetails p b {
-  font-family: "proxima-nova", sans-serif;
+.actionDetails p b,
+.actionDetails h4 {
+  font-family: "ff-meta-serif-web-pro", serif;
   font-style: normal;
   font-weight: 700;
+  margin-top: 20px;
+  display: block;
 }
 .milestone-block a.worksheets,
 .milestone-block a.tipsheets {
