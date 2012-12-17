@@ -1,35 +1,81 @@
-@import "bootstrap.less";
+@blue:			#8ea2ca;
+@lightblue:		rgba(199,209,228,1);
+@lighterblue:	rgba(227,232,242,1);
+@lightestblue:	#eaecf4;
+@green:			#73a534;
+@lightgreen:	rgba(115,165,51,.5);
+@lightergreen:	rgba(115,165,51,.25);
+@lightestgreen: #e2ebd7;
+@black:			rgba(0,0,0,1);
+@gray:			#333;
+@lightgray:		rgba(0,0,0,.5);
+@lightergray:	#939598;
+@white:			rgba(255,255,255,1);
+@red:			rgba(167,44,50,1);
+@pink:			rgba(244,154,193,1);
 
 /* ----- Print Style Sheet ----- */
 
 @page {
-	margin: 200cm;
-	/* Landscape orientation */
-	size:landscape;
-	/* Put page numbers in the top right corner of each
-	page in the pdf document. */
-}
-	@bottom-right {
-		content: "Page " counter(page) " of " counter(pages);
+	page-break-before: bottom;
+	margin: 1cm 1cm 2cm;
+	@top-left {
+		content:element(header);
 	}
+	@bottom-left {
+	    border-top: 1px solid #8ea2ca;
+	    color: #8ea2ca;
+	    font-family: helvetica, sans-serif;
+	    font-size: 12px;
+		line-height: 20px;
+		content: "These Tips Are Provided By:";
+	}
+	/*
+  @bottom-center {
+	 border-top: 1px solid #8ea2ca;
+	 background-image: url("https://cs10.salesforce.com/resource/1355504427000/CMlogoprint");
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: 90px 0px;
+  }
+  @bottom-right {
+    border-top: 1px solid #8ea2ca;
+	 background-image: url("https://cs10.salesforce.com/resource/1355504427000/CMlogoprint");
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: 90px 0px;
+  }
+*/
+	@bottom-right-corner {
+		font-family: helvetica, arial, sans-serif;
+		font-size: 16px;
+		content: counter(page);
+	}
+}
 
 body {
 	font-family: georgia, serif;
+	color: @lightgray;
 }
 
 h5 {
 	color: @lightergray;
 	font-family: georgia, serif;
 	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	position: running(header);
 }
 
 .page-header {
 	border-bottom: 3px solid @blue;
+	margin-bottom: 20px;
 }
 
 h1 {
 	color: @blue;
-	font-family: helvetica;
+	font-family: helvetica, sans-serif;
+	margin-bottom: 10px;
 }
 
 ol, ul {
@@ -41,11 +87,30 @@ ol, ul {
 	}
 }
 
-li > strong {
+strong,
+b {
+	color: @blue;
+	font-family: helvetica, sans-serif;
+	display: inline;
+}
+
+li > strong,
+li > b {
 	color: @blue;
 	font-family: helvetica, sans-serif;
 	display: block;
 }
+
+blockquote strong,
+blockquote b,
+p > strong {
+	color: @green;
+	font-family: georgia, serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-right: 5px;
+}
+
 a {
 	color: @blue;
 }
@@ -54,31 +119,74 @@ a:after {
 	color: @blue;
 }
 
+
 footer {
-/*
-	position: fixed;
-	bottom: 0;
-*/
 	width: 100%;
 	padding-top: 5px;
 	border-top: 1px solid @blue;
+	height: 200px;
+	
+	position: running(thebottom);
 }
 
 footer img, footer div {
-	float: left;
+
 	margin-right: 20px;
+	position: running(thebottom);
 }
 
 footer img {
 	max-width: 100px;
+	position: running(thebottom);
 }
 
+
 .tips {
-	width: 100px;
+	width: 200px;
+	height: 48px;
 	color: @blue;
 	font-family: helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 20px;
-	margin: 9px 0 0 20px;
+	margin: 9px 0 10px 20px;
+	position: running(thebottom);
+	background-image: url("https://cs10.salesforce.com/resource/1355442534000/ChangeMachineLogo_Footer");
+	background-size: 100px 48px;
+	background-repeat: no-repeat;
+	background-position: 90px 0px;
 }
+
+/*
+.tips {
+  width: 200px;
+  height: 48px;
+  color: #8ea2ca;
+  font-family: helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 9px 0 10px 20px;
+  position: running(thebottom);
+  background-image: url("https://cs10.salesforce.com/resource/1355504427000/CMlogoprint");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 90px 0px;
+}
+
+
+.partner-logo {
+	position: running(thebottom);
+	background-image: url("https://cs10.salesforce.com/resource/1355504427000/CMlogoprint");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 90px 0px;
+}
+
+.clinic-logo {
+	position: running(clinic);
+	background-image: url("https://cs10.salesforce.com/resource/1355504427000/CMlogoprint");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 90px 0px;
+}
+*/
 

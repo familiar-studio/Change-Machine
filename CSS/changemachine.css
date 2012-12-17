@@ -3254,7 +3254,7 @@ input[type="submit"].btn.btn-mini {
 }
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: none;
 }
 .nav > li > a > img {
   max-width: none;
@@ -5104,7 +5104,6 @@ body {
   -ms-transition: all 0.15s ease;
   -o-transition: all 0.15s ease;
   transition: all 0.15s ease;
-  vertical-align: top;
 }
 a {
   text-decoration: none;
@@ -5192,6 +5191,15 @@ a {
   font-weight: 700;
   color: #ffffff;
   text-shadow: none;
+}
+.thumbnail .btn,
+.sidebar-block .btn {
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+.thumbnail .btn:hover,
+.sidebar-block .btn:hover {
+  padding: 4px 10px 0px;
 }
 /*
 .btn-group {
@@ -5390,6 +5398,10 @@ body .wrapper {
   border: none;
   margin: 0;
   padding: 10px 0 0;
+}
+.page-header .btn {
+  float: right;
+  margin-left: 10px;
 }
 .container .page-header div.row div.span8 {
   padding-top: 0 !important;
@@ -5752,9 +5764,45 @@ body div.container div.wrapper div.row div.span8 ul.unstyled li span span form d
   background-color: rgba(0, 0, 0, 0.5);
 }
 body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:hover,
-body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a .active {
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a.active {
   box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.25);
   padding: 7px 10px 3px;
+}
+body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a.active {
+  /*
+background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+			background-position: 0 0;
+*/
+
+  color: rgba(255, 255, 255, 0.5);
+}
+/*
+.btn-success.active:before {
+	content: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
+	position: relative;
+	left: -100px;
+	top: -40px;
+}
+*/
+.milestone-block ul li.in-progress {
+  background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
+  background-repeat: no-repeat;
+  background-size: 18px auto;
+}
+.milestone-block ul li.completed {
+  background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
+  background-repeat: no-repeat;
+  background-size: 18px auto;
+}
+.milestone-block ul li.stalled {
+  background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
+  background-repeat: no-repeat;
+  background-size: 18px auto;
+}
+.milestone-block ul li.not-applicable {
+  background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
+  background-repeat: no-repeat;
+  background-size: 18px auto;
 }
 .actionDetails {
   font-family: "ff-meta-serif-web-pro", serif;
@@ -5766,6 +5814,65 @@ body div.container div.wrapper div.row div.span8 ul.unstyled li span span form d
 .actionDetails ol,
 .actionDetails ul {
   margin-bottom: 20px;
+}
+.actionDetails p {
+  line-height: 1.5em;
+  font-size: 16px;
+}
+.actionDetails p b {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.milestone-block a.worksheets,
+.milestone-block a.tipsheets {
+  background-repeat: no-repeat;
+  background-size: 13px auto;
+  padding-left: 17px;
+  margin-left: 5px;
+  text-transform: capitalize;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.25);
+}
+.milestone-block a.worksheets.worksheets,
+.milestone-block a.tipsheets.worksheets {
+  background-image: url("https://www.visualaids.org/changemachine/images/related-worksheets.png");
+}
+.milestone-block a.worksheets.tipsheets,
+.milestone-block a.tipsheets.tipsheets {
+  background-image: url("https://www.visualaids.org/changemachine/images/related-tipsheets.png");
+}
+.customer-tabs li {
+  color: #8ea2ca;
+  border: 1px solid transparent;
+  border-radius: 8px 8px 0 0;
+}
+.customer-tabs li.active {
+  border: 1px solid #DDDDDD;
+  box-shadow: 0px -3px 5px #eaecf4;
+}
+.customer-tabs li:hover {
+  border: 1px solid #DDDDDD;
+}
+.customer-tabs li a {
+  color: #8ea2ca;
+  border: 1px solid transparent;
+}
+.customer-tabs li a:hover {
+  border: 1px solid transparent;
+}
+.span8 ul li a {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 5px 0;
+  color: #000000;
+}
+.progress {
+  margin-bottom: 5px;
+}
+.progress-striped .bar {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /* ----- End Main Content ----- */
 /* ----- Pagination ----- */
@@ -5823,6 +5930,7 @@ footer ul li a {
 }
 footer ul li a:hover {
   background-color: none;
+  color: rgba(0, 0, 0, 0.5);
 }
 /* ----- End Footer ----- */
 .utilityNav {
