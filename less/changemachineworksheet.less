@@ -68,7 +68,7 @@ body, html, tfaContent {
 }
 
 .wForm .required > .label:after {
-    color: @red;
+    color: @red !important;
 }
 
 input[type="radio"] {
@@ -95,7 +95,7 @@ input[type="radio"] {
 		border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
 		border: 2px solid transparent;
 	    display: inline-block;
-	    float: left;
+	    float: left !important;
 	    margin-left: 10px;
 	    padding: 10px;
 	    width: auto;
@@ -135,13 +135,23 @@ input[type="radio"] {
 }
 
 .wFormContainer .errFld {
-    border: none;
+    border: none !important;
 }
 
 .wFormContainer .errMsg {
-	color: @red;
+	color: @red !important;
 	.proximaB();
 	font-size: 18px;
+}
+
+.supportInfo a {
+	color: @green;
+	.metaBook();
+	font-size: 14px;
+	&:hover {
+		text-decoration: none;
+		color: @lightgreen;
+	}
 }
 
 /* ----- Final Page ----- */

@@ -5120,7 +5120,7 @@ tfaContent {
   font-size: 18px;
 }
 .wForm .required > .label:after {
-  color: #a72c32;
+  color: #a72c32 !important;
 }
 input[type="radio"] {
   border: none;
@@ -5148,7 +5148,7 @@ input[type="radio"] {
   background-color: #8ea2ca;
   border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
   border: 2px solid transparent;
-  float: left;
+  float: left !important;
   margin-left: 10px;
   padding: 10px;
   width: auto;
@@ -5191,14 +5191,25 @@ input[type="radio"] {
   padding: 4px 10px 0px;
 }
 .wFormContainer .errFld {
-  border: none;
+  border: none !important;
 }
 .wFormContainer .errMsg {
-  color: #a72c32;
+  color: #a72c32 !important;
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+}
+.supportInfo a {
+  color: #73a534;
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+.supportInfo a:hover {
+  text-decoration: none;
+  color: rgba(115, 165, 51, 0.5);
 }
 /* ----- Final Page ----- */
 .wFormThankYou h1 {
