@@ -1,0 +1,170 @@
+@import "bootstrap.less";
+
+/* ----- START UNIVERSAL CSS ----- */
+
+
+/* ----- Fonts ----- */
+
+.proximaL {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+.proximaR {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+.proximaB {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+.metaBook {
+	font-family: "ff-meta-serif-web-pro",serif;
+	font-style: normal;
+	font-weight: 500;
+}
+.metaBold {
+	font-family: "ff-meta-serif-web-pro",serif;
+	font-style: normal;
+	font-weight: 700;
+}
+.omnesB {
+	font-family: "omnes-pro",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+/* ----- End Fonts ----- */
+
+body, html, tfaContent {
+	background-color: @lighterblue;
+	color: @gray;
+}
+
+/*
+#tfaContent .wFormContainer #tfa_0-WRPR.wForm form#tfa_0.hintsBelow #tfa_6.section #tfa_1-D.oneField label#tfa_1-L.label {
+	background-color: transparent;
+	color: @gray;
+}
+*/
+
+
+#tfaContent label {
+	background-color: @lighterblue;
+	color: @gray;
+	font-size: 22px;
+	font-weight: normal;
+	text-shadow: none;
+	.proximaL();
+	margin-bottom: 20px;
+	vertical-align: baseline;
+	&.preField {
+		.metaBook();
+		margin-bottom: 40px;
+		font-size: 18px;
+	}
+}
+
+.wForm .required > .label:after {
+    color: @red;
+}
+
+input[type="radio"] {
+	border: none;
+	background-image: none;
+	vertical-align: top;
+}
+
+.wForm .section,
+.wFormThankYou {
+	border-bottom: 5px solid @black;
+	padding-bottom: 20px;
+}
+
+.wForm form .wfPagingButtons,
+.actions {
+	float: right;
+	margin: 20px 0 0;
+	padding: 0;
+	input[type="button"],
+	input[type="submit"] {
+		.proximaB();
+		background-color: @blue;
+		border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+		border: 2px solid transparent;
+	    display: inline-block;
+	    float: left;
+	    margin-left: 10px;
+	    padding: 10px;
+	    width: auto;
+		color: @white;
+		text-shadow: none;
+		background-color: #8EA2CA;
+	    background-image: linear-gradient(to bottom, #8EA2CA, #8EA2CA);
+	    background-repeat: repeat-x;
+	    border: medium none;
+	    border-radius: 4px 4px 4px 4px;
+	    box-shadow: 2px 2px 2px @lightblue;
+	    cursor: pointer;
+	    display: inline-block;
+	    font-size: 16px;
+	    line-height: 20px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    vertical-align: middle;
+		&:hover {
+			box-shadow: inset 3px 3px 0px @lightergray;
+			padding: 12px 10px 8px;
+		}
+		input[type="submit"] {
+			float: right;
+		}
+	}
+
+}
+
+.thumbnail .btn,
+.sidebar-block .btn {
+	margin-bottom: 5px;
+	color: @white;
+	&:hover {
+		padding: 4px 10px 0px;
+	}
+}
+
+.wFormContainer .errFld {
+    border: none;
+}
+
+.wFormContainer .errMsg {
+	color: @red;
+	.proximaB();
+	font-size: 18px;
+}
+
+/* ----- Final Page ----- */
+
+.wFormThankYou {
+	h1 {
+		.proximaR();
+		font-size: 40px;
+		margin: 0;
+		span {
+			color: @green;
+			.metaBook();
+			font-size: 30px;
+		}
+	}
+	p {
+		.metaBook();
+		font-size: 20px;
+		line-height: 35px;
+	}
+	.page-header {
+		border-bottom: 1px solid @lightergray;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+}
