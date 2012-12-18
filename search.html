@@ -1,0 +1,272 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<script src="/jslibrary/1351189248000/sfdc/JiffyStubs.js"></script><script src="/resource/1354817911000/LESSCSSJS" type="text/javascript"></script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+    
+  <link href="CSS/changemachine.css" REL="stylesheet" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="/resource/1350669682000/BootstrapJS/bootstrap.min.js"></script>
+  
+   
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'auk4xrm',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+  </script>
+    
+
+  <script>
+    $j = jQuery.noConflict();
+    
+    $j(document).ready(function() {
+
+    $j('.showDetails').click(function() {
+        var actionId = $j(this).attr('actionId');
+        console.log('this is the actionID'+actionId);
+        $j('#details'+actionId).toggle();
+        return false;
+      });
+      
+      $j('.overviewTab h3').click(function() {
+       $j('.overviewText').toggle();
+       if ($j('.overviewText').is(":visible")) {
+       	$j('.overviewTab h3:last').removeClass('milestone-show').addClass('milestone-hide'); 
+       } else {
+	    $j('.overviewTab h3:last').removeClass('milestone-hide').addClass('milestone-show');   
+       }
+       return false;
+      });
+      
+      $j('.sidebar-block h5').click(function() {
+       $j(this).parent().children('ul').toggle();
+       return false;
+      });
+    });
+  </script>
+
+  
+
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div class="topWrapper">
+       <div class="row">
+        <div class="span3">
+          <a class="brand" href="/">
+          	<img src="https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png" />
+          </a>
+        </div>
+          
+          <div class="span1">
+               <ul class="unstyled cls-menu">
+            	<li class="active"><A href="/learn">Learn</A></li>
+            	<li class=""><A href="/customers"> Coach</A></li>
+                <li class=""><A href="/share"> Share</A></li>
+              </ul>
+          </div>
+          
+        <div class="span8 pull-right">
+                &nbsp;
+        </div>
+       
+        </div>
+      </div> 
+	<div class="midWrapper">
+  <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          
+          
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Goals">
+                  
+                  Goals
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Assets">
+                  
+                  Assets
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Banking">
+                  
+                  Banking
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Credit">
+                  
+                  Credit
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Debt">
+                  
+                  Debt
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Taxes">
+                  
+                  Taxes
+                </a>
+                </li>
+            </ul>
+            
+              <form action="/changemachine_search" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
+
+             
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="q" placeholder="Search" size="27" title="Enter search keywords" type="text" />
+        	<button class="btn" type="submit">Search</button>
+              
+               </form>
+              
+      
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </header>
+<div class="wrapper">
+	<div class="searchPage">
+	<div class="row">
+	<div class="span8">
+        <h1>Search Results</h1><span id="j_id0:j_id1:j_id18" class="search-milestones">
+        <h3>Milestones</h3>
+            <h4><a href="/milestone/Customer-Implements-Regular-Savings-Plan">Customer Implements Regular Savings Plan</a></h4>
+            <h4><a href="/milestone/Customer-executes-a-debt-reduction-plan">Customer executes a debt reduction plan</a></h4></span>
+        <span id="j_id0:j_id1:j_id23" class="search-actions">
+        <h3>Actions</h3>
+            <h4><a href="/milestone/Customer-executes-a-debt-reduction-plan">Customer Implements "Snowflake" Or "Snowball" Plan To Reduce Debt</a></h4>
+            <h4><a href="/milestone/Customer-Implements-Regular-Savings-Plan">Customer Develops A Savings Plan For An Action-Driven Goal</a></h4>
+            <h4><a href="/milestone/Customer-executes-a-strategy-to-achieve-an-action-driven-goal">Customer Develops A Short-Term Strategy To Achieve Goal</a></h4>
+            <h4><a href="/milestone/Customer-executes-a-debt-reduction-plan">Customer Is Enrolled In A Debt Settlement Plan</a></h4>
+            <h4><a href="/milestone/Customer-executes-a-debt-reduction-plan">Customer Considers Debt Management Plans (DMPs) And/Or Debt Consolidation Strate</a></h4>
+            <h4><a href="/milestone/Customer-Maximizes-Cash-Flow">Customer Puts Child Care Plan In Place</a></h4>
+            <h4><a href="/milestone/Customer-executes-a-debt-reduction-plan">Customer Considers Bankruptcy</a></h4>
+            <h4><a href="/milestone/Customer-Maximizes-Cash-Flow">Customer Develops A Monthly Spending Plan</a></h4>
+            <h4><a href="/milestone/Customer-calculates-total-debt">Customer Links Debt Reduction Plan To Goals</a></h4>
+            <h4><a href="/milestone/Customer-executes-a-strategy-to-achieve-an-action-driven-goal">Customer Identifies Area(s) of Financial Security To Focus On In Order To Achiev</a></h4>
+            <h4><a href="/milestone/Customer-Executes-a-strategy-to-improve-credit">Customer Develops a Strategy to Improve or Maintain Credit</a></h4>
+            <h4><a href="/milestone/Customer-calculates-total-debt">Customer Gathers Documents To Organize Debt</a></h4>
+            <h4><a href="/milestone/Customer-Maximizes-Cash-Flow">Customer Has A Monthly Cash Flow Deficit</a></h4>
+            <h4><a href="/milestone/Customer-executes-a-strategy-to-achieve-an-action-driven-goal">Customer Has A Deficit-Oriented Goal</a></h4>
+            <h4><a href="/milestone/Customer-calculates-cost-of-fringe-and-traditional-banking-services">Customer Gathers Three Months of Bank Statements</a></h4>
+            <h4><a href="/milestone/Customer-implements-asset-development-and-protection-strategies">Customer Establishes Retirement Plan</a></h4>
+            <h4><a href="/milestone/Customer-executes-a-strategy-to-achieve-an-action-driven-goal">Customer Identifies A Short-Term, Action-Driven Goal</a></h4>
+            <h4><a href="/milestone/Customer-Pulls-Credit-Report-Alone">Customer can't download credit report</a></h4>
+            <h4><a href="/milestone/Customer-executes-a-debt-reduction-plan">Customer Prioritizes Creditors And Debts</a></h4>
+            <h4><a href="/milestone/Customer-Maximizes-Cash-Flow">Customer Maximizes Employee Benefits</a></h4>
+            <h4><a href="/milestone/Customer-Maximizes-tax-Credits-and-Deductions-to-Achieve-Goals">Customer Saves A Portion of The Tax Refund For A Financial Goal</a></h4>
+            <h4><a href="/milestone/Customer-Maximizes-tax-Credits-and-Deductions-to-Achieve-Goals">Customer Considers Ways To Reduce Taxable Income</a></h4>
+            <h4><a href="/milestone/Customer-executes-a-debt-reduction-plan">Customer Negotiates With Creditors For Better Terms Or Reduced Debt</a></h4></span>
+        <span id="j_id0:j_id1:j_id28" class="search-tipsheets">
+        <h3>Tipsheets</h3>
+     		<h4><a href="/tipsheet/Plan-To-Get-Out-Of-Debt" target="_blank">Plan To Get Out Of Debt</a></h4>
+
+            <p>Do you carry over credit card balances every month? Do you wonder if you&#8217;ll ever finish paying off your creditors? This TipSheet will help you take control, plan ahead and ensure you have enough to cover essentials.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Plan Out All Spending&lt;/strong&gt; If you&#8217;re feeling overwhelmed, don&#8217;t s</p>
+     		<h4><a href="/tipsheet/4-Steps-To-Take-If-You-Have-Fallen-Prey-To-A-Debt-Settlement-Plan" target="_blank">4 Steps To Take If You Have Fallen Prey To A Debt Settlement Plan</a></h4>
+
+            <p>Were you lured into a debt settlement plan with empty promises of relief from debt collectors? Here are four things you should do to regain control of your finances.&lt;br&gt;&lt;strong&gt;&lt;br&gt;Stop Paying, Drop&nbsp;Out, And Ask For Your Money Back&lt;/strong&gt; Call the company and cancel your plan. You may need to clos</p>
+     		<h4><a href="/tipsheet/Get-On-Track-For-Retirement" target="_blank">Get On Track For Retirement</a></h4>
+
+            <p>Retirement is probably one of the last things on your mind as you devote a lot of time and energy to your work and family responsibilities. However, even though you may not retire for years, saving a little money now can make your retirement easier and more comfortable. This TipSheet will help you t</p>
+     		<h4><a href="/tipsheet/5-Strategies-To-Manage-Student-Loan-Debt" target="_blank">5 Strategies To Manage Student Loan Debt</a></h4>
+
+            <p>Student loan delinquency and default can have serious consequences on your financial health and creditworthiness. Your monthly student loan payment should be a routine expense in your spending plan. Treat your loan expense the same way you treat your rent. Here are some tips that will make repaying </p>
+     		<h4><a href="/tipsheet/Bankruptcy:-Is-It-Right-For-Me?" target="_blank">Bankruptcy: Is It Right For Me?</a></h4>
+
+            <p>Bankruptcy is a legal process that eliminates some, or all of your debt. Bankruptcy is often a last resort for people who have already tried other ways of dealing with their debt. You can file for bankruptcy with a lawyer, or in the simplest cases, by yourself (with help from the court). There are t</p>
+     		<h4><a href="/tipsheet/7-Healthy-Things-To-Do-With-Your-Tax-Refund" target="_blank">7 Healthy Things To Do With Your Tax Refund</a></h4>
+
+            <p>Congratulations! You&amp;#39;ve worked hard this year and your tax refund reflects it. Here are some ways you can use your refund. Check which ones you will use and the amount you&amp;#39;ll allocate, then prioritize.&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;Reward Yourself &lt;/strong&gt;you&amp;#39;ve worked hard and you deserve a rewar</p>
+     		<h4><a href="/tipsheet/Debt-Settlement-Plans-And-Why-You-Should-Avoid-Them" target="_blank">Debt Settlement Plans And Why You Should Avoid Them</a></h4>
+
+            <p>In over your head with debt? Struggling to pay minimum balances? Tempted to contact debt settlement companies to settle your debts? If so, think twice. Many states, including New York, are filing lawsuits against debt settlement companies for deceiving and harming consumers through fraud and false a</p>
+     		<h4><a href="/tipsheet/Pre-Tax-Dollars:-Money-Back-In-Your-Pocket" target="_blank">Pre-Tax Dollars: Money Back In Your Pocket</a></h4>
+
+            <p>Some people go to great lengths to save a little money by cutting coupons, searching endlessly for deals or waiting for sales. But if you&#8217;re employed, chances are you can take a big shortcut by taking advantage of a variety of programs offered by your employer that will allow you to stretch a portio</p>
+     		<h4><a href="/tipsheet/Debt-Management-Plans-Pros-And-Cons" target="_blank">Debt Management Plans Pros And Cons</a></h4>
+
+            <p>Credit counseling services advertise debt management plans (DMPs) as the silver bullet that will solve all of your problems and get you out of debt. But many credit counseling services can be scams. Even reputable counseling services will charge you fees to work out a DMP that probably won&#8217;t be much</p>
+     		<h4><a href="/tipsheet/Jumpstart-Your-Savings" target="_blank">Jumpstart Your Savings</a></h4>
+
+            <p>Take charge of your money and build solid savings habits to achieve your financial goals. Establishing the habit is more important than the specific savings amount. Once the habit is in place, you can adjust the amount.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Why Save?&lt;/strong&gt;
+&lt;ul&gt;&lt;li&gt;You work hard for your money. You shou</p>
+     		<h4><a href="/tipsheet/6-Tips-For-Negotiating-With-Debt-Collectors" target="_blank">6 Tips For Negotiating With Debt Collectors</a></h4>
+
+            <p>Debt collectors are not always completely heartless. Sometimes a simple phone call and some aggressive negotiation techniques can help you save a lot of money. You really have nothing to lose! Try out these tips keeping the two following general rules in mind:
+&lt;ul&gt;&lt;li&gt;If your request gets turned dow</p>
+     		<h4><a href="/tipsheet/CDs-&amp;-Savings-Bonds:-A-Surefire-Way-To-Save" target="_blank">CDs &amp; Savings Bonds: A Surefire Way To Save</a></h4>
+
+            <p>When outlining a game plan to save for your financial goals, make sure you do your research. Educate yourself about all of the options out there, so that you can make an informed decision about what makes most sense for you. Certificates of Deposit (CDs) and savings bonds are a safe, easy, and relia</p>
+     		<h4><a href="/tipsheet/Which-Bills-Should-I-Pay-First?" target="_blank">Which Bills Should I Pay First?</a></h4>
+
+            <p>When money is scarce, prioritize which debts and expenses must be paid and what you can let slide. Some of the guidelines here may surprise you.&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;Pay For Necessities First&lt;/strong&gt; Your top priority should be paying for food and essential medical expenses for your family.&lt;/li&gt;&lt;li&gt;&lt;</p>
+     		<h4><a href="/tipsheet/The-Secured-Loan:-A-Simple-Solution-To-Building-Better-Credit" target="_blank">The Secured Loan: A Simple Solution To Building Better Credit</a></h4>
+
+            <p>A secured loan is a credit-building tool&#8212;it&#8217;s often referred to as a credit-builder loan. The sole purpose of the loan is to improve your credit history and your score. You provide the bank with a security deposit and, in turn, the bank will lend you the full loan amount once your application has be</p>
+     		<h4><a href="/tipsheet/Federal-Student-Loan-Consolidation:-How-To-Locate-The-Information-You-Need" target="_blank">Federal Student Loan Consolidation: How To Locate The Information You Need</a></h4>
+
+            <p>&lt;strong&gt;How To Find Your Fafsa Pin&lt;/strong&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;What&#8217;s my PIN? &lt;/strong&gt;Your PIN is a four-digit number used to access information on Federal Student Aid websites. You probably received one when you first applied for a federal student loan.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Reactivate your PIN.&lt;/strong&gt; I</p></span>
+		</div> <!-- span8 -->
+		</div> <!-- row -->
+		</div> <!-- searchPage -->
+     </div>
+  </div>
+  <footer>
+    <div class="container">
+         
+    <img class="footerRays" src="https://www.visualaids.org/changemachine/images/raysCropped.png" /> 
+        <img class="footerLogo" src="https://www.visualaids.org/changemachine/images/change-machine-footer-logo.png" />
+
+          <ul class="nav nav-pills">
+              <li><a href="/_ui/core/portal/PortalUserMyProfilePage/d">My Account</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+       	 </ul>
+      </div>
+   </footer>
+</body>
+</html>
