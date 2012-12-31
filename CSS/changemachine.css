@@ -5405,7 +5405,7 @@ body .wrapper {
   border-bottom: 10px solid #e3e8f2;
   width: 938px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 10px 20px;
 }
 .page-header {
   background-color: #ffffff;
@@ -6169,3 +6169,284 @@ footer ul li a:hover {
   font-size: 24px;
   color: #73a534;
 }
+.feedback .nav-pills > li > a {
+  color: #8ea2ca;
+}
+/* -------------------------------------------------------------------------- */
+/*                            Sales Force Styling                             */
+/* -------------------------------------------------------------------------- */
+img.skiplink {
+  display: none;
+}
+.bodyDiv {
+  font-size: 100%;
+  margin-bottom: 40px;
+}
+.bPageBlock,
+.individualPalette .bPageBlock {
+  border: none;
+}
+.bPageBlock .pbHeader {
+  background-color: #ffffff;
+}
+.bPageBlock .pbHeader h2 {
+  color: #f49ac1;
+  font-size: 47px;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.bPageBlock .pbHeader .pbButton {
+  float: right;
+}
+.bPageBlock .pbBottomButtons {
+  float: right;
+  margin-bottom: 20px;
+}
+.bPageBlock .pbBody {
+  padding: 20px 0;
+}
+.bPageBlock .pbBody .pbSubheader {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.bPageBlock .pbBody .pbSubheader h3,
+.bPageBlock .pbBody .pbSubheader h3 a {
+  color: #8ea2ca;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.bPageBlock .pbBody .pbSubsection {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.bPageBlock .pbBody .pbSubsection label {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 3px;
+}
+.requiredLegend {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.requiredExample {
+  border-left: none;
+  font-size: 80%;
+  vertical-align: 1px;
+  width: 100%;
+}
+.requiredExample:before {
+  content: "*";
+  font-size: 16px;
+  color: #a72c32;
+}
+.bPageBlock .requiredInput .requiredBlock {
+  background-color: #ffffff;
+  bottom: 1px;
+  left: -4px;
+  position: absolute;
+  top: 1px;
+  width: 1px;
+}
+.bPageBlock .requiredMark {
+  color: #a72c32;
+  margin-right: 3px;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #c7d1e4;
+  box-shadow: #eaecf4;
+}
+.detailList .labelCol {
+  font-size: 14px;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.bPageBlock .detailList tr td,
+.bPageBlock .detailList tr th {
+  border-bottom: none;
+}
+html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.bodyDiv table#bodyTable.outer tbody tr td#bodyCell.oRight form#editPage div.setup div#ep.bPageBlock div.pbBody div.message table.messageTable tbody tr td:first-child {
+  display: none;
+}
+.infoM6,
+.infoM4,
+.infoM3,
+.infoM2,
+.infoS1 {
+  border-color: #f9eec7;
+}
+.pbBody .message {
+  background-color: #fcf8e3;
+  color: #e8c31b;
+  margin-bottom: 20px;
+}
+.pbBody .message .messageCell {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #a72c32;
+}
+.bEditBlock .detailList .dataCol,
+.bEditBlock .detailList .data2Col.last,
+.detailList tbody tr td:nth-child(2) {
+  padding: 2px 2px 0 10px !important;
+}
+.pbSubsection input[type="checkbox"] {
+  float: left;
+  margin: 6px 10px 0 20px;
+}
+/* ----- IdeaList ----- */
+.ideaNavCommunity {
+  background-color: #ffffff !important;
+}
+.ideaFloatBlock label {
+  text-align: left;
+  font-size: 30px;
+  color: #f49ac1;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.outer td.ideaNavCommunityLinksCell {
+  vertical-align: middle;
+}
+.outer td.ideaNavCommunityLinksCell .myProfile a,
+.outer td.ideaNavCommunityLinksCell .recentReplies {
+  color: #8ea2ca;
+}
+.outer td.ideaNavCommunityLinksCell .myProfile a:hover,
+.outer td.ideaNavCommunityLinksCell .recentReplies:hover {
+  color: #73a534;
+}
+.communityIntro .banner {
+  border: none;
+  margin-bottom: 20px;
+}
+#ideaSubtabs {
+  margin-bottom: 5px;
+}
+#ideaSubtabs #nav a {
+  color: #8ea2ca;
+}
+#ideaSubtabs #nav a:hover {
+  text-decoration: none;
+}
+#ideaSubtabs .bg {
+  background: none !important;
+}
+#ideaSubtabs ul#nav li div {
+  border-left: 2px solid #8ea2ca !important;
+  border-right: 2px solid #8ea2ca !important;
+  border-top: 2px solid #8ea2ca !important;
+  font-family: "proxima-nova", sans-serif !important;
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0 5px !important;
+  padding: 5px 20px;
+  border-radius: 5px 5px 0 0;
+}
+#ideaSubtabs ul#nav li div .secondaryPalette {
+  background-color: #c7d1e4 !important;
+}
+#ideaSubtabs ul#nav .ideasCurrentTab div {
+  background-color: #c7d1e4 !important;
+}
+#ideaSubtabs ul#nav .ideasNonCurrentTab div {
+  background-color: #e3e8f2 !important;
+}
+.ideaPageBlock .bPageBlock,
+.ideaPageBlock .individualPalette .bPageBlock {
+  background-color: #c7d1e4;
+  border-radius: 4px 4px 0 0;
+}
+.ideaListContainer {
+  background-color: #c7d1e4;
+  border: 2px solid #8ea2ca;
+  border-radius: 5px;
+}
+.ideaListContainer .pbHeader,
+.ideaListContainer .pbBody {
+  background-color: #c7d1e4;
+}
+.ideaListContainer .pbHeader {
+  padding: 10px 0;
+  border-radius: 4px 4px 0 0;
+}
+.ideaListContainer .pbHeader td.pbTitle {
+  display: none;
+}
+.ideaListContainer .pbHeader td.pbButton {
+  float: right !important;
+  margin-top: 15px !important;
+  margin-right: 20px;
+}
+.ideaListContainer .pbHeader td.viewCategory {
+  float: left !important;
+  margin-left: 20px;
+}
+.ideaBlock .pbBody {
+  padding: 0;
+}
+.ideaList {
+  padding-top: 0px !important;
+}
+.ideaList li {
+  border-top: 2px solid #8ea2ca;
+  clear: both;
+  margin: 10px 0 10px !important;
+  padding: 0;
+}
+.feedIcon {
+  display: none !important;
+}
+/* ----- IdeaList ----- */
+/* -------------------------------------------------------------------------- */
+/*                          End Sales Force Styling                           */
+/* -------------------------------------------------------------------------- */

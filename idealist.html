@@ -1,0 +1,511 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class=""><head><script src="https://thefinancialclinic.change.cs10.force.com/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript?rel=1355882822000" type="text/javascript"></script>
+
+<link class="component" href="https://thefinancialclinic.change.cs10.force.com/faces/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/table.xcss/DATB/eAEz2rRkV-jyGdIAEoQD8g__" rel="stylesheet" type="text/css" />
+<script src="https://thefinancialclinic.change.cs10.force.com/jslibrary/1351189248000/sfdc/SfdcCore.js" type="text/javascript"></script>
+<script src="https://thefinancialclinic.change.cs10.force.com/static/111811/js/picklist.js" type="text/javascript"></script>
+<script src="https://thefinancialclinic.change.cs10.force.com/jslibrary/1351189248000/sfdc/VFState.js" type="text/javascript"></script>
+<script src="https://thefinancialclinic.change.cs10.force.com/static/111811/js/scriptaculous-1.9/prototype.js" type="text/javascript"></script>
+<script src="https://thefinancialclinic.change.cs10.force.com/static/111811/js/scriptaculous-1.9/effects.js" type="text/javascript"></script>
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354583016000/PortalDefault/dStandard.css" rel="stylesheet" type="text/css" />
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1355241226000/PortalDefault/00DJ00000007ll1/005J0000000GK7G/dCustom0.css" rel="stylesheet" type="text/css" />
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1355241226000/PortalDefault/00DJ00000007ll1/005J0000000GK7G/dCustom1.css" rel="stylesheet" type="text/css" />
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/extended.css" rel="stylesheet" type="text/css" />
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1356984408000/PortalDefault/00DJ00000007ll1/060J0000000D0ZH/portal.css" rel="stylesheet" type="text/css" />
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/setup.css" rel="stylesheet" type="text/css" />
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/static/100908/css/vote.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://thefinancialclinic.change.cs10.force.com/jslibrary/1351189248000/sfdc/JiffyStubs.js"></script>
+<title>Customer Portal</title>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/zen-componentsCompatible.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/elements.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/common.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354583016000/PortalDefault/dStandard.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1355241226000/PortalDefault/00DJ00000007ll1/005J0000000GK7G/dCustom0.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1355241226000/PortalDefault/00DJ00000007ll1/005J0000000GK7G/dCustom1.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/extended.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1356984408000/PortalDefault/00DJ00000007ll1/060J0000000D0ZH/portal.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/tableTabNavigation.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+
+<script  src="https://thefinancialclinic.change.cs10.force.com/jslibrary/1354563886000/sfdc/main.js" type="text/javascript"></script>
+<script  src="https://thefinancialclinic.change.cs10.force.com/jslibrary/labels/1355793284000/en_US.js" type="text/javascript"></script><script  type="text/javascript">window.sfdcPage = new GenericSfdcPage();
+UserContext.initialize({"networkId":"","locale":"en_US","labelLastModified":"1355793284000","isDefaultNetwork":true,"today":"12/31/2012 3:06 PM","timeFormat":"h:mm a","userPreferences":[{"index":112,"name":"HideInlineEditSplash","value":false},{"index":114,"name":"OverrideTaskSendNotification","value":false},{"index":115,"name":"DefaultTaskSendNotification","value":false},{"index":119,"name":"HideUserLayoutStdFieldInfo","value":false},{"index":116,"name":"HideRPPWarning","value":false},{"index":87,"name":"HideInlineSchedulingSplash","value":false},{"index":88,"name":"HideCRUCNotification","value":false},{"index":89,"name":"HideNewPLESplash","value":false},{"index":90,"name":"HideNewPLEWarnIE6","value":false},{"index":122,"name":"HideOverrideSharingMessage","value":false},{"index":91,"name":"HideProfileILEWarn","value":false},{"index":93,"name":"HideProfileElvVideo","value":false},{"index":97,"name":"ShowPicklistEditSplash","value":false},{"index":92,"name":"HideDataCategorySplash","value":false},{"index":128,"name":"ShowDealView","value":false},{"index":129,"name":"HideDealViewGuidedTour","value":false},{"index":132,"name":"HideKnowledgeFirstTimeSetupMsg","value":false},{"index":104,"name":"DefaultOffEntityPermsMsg","value":false},{"index":135,"name":"HideNewCsnSplash","value":false},{"index":101,"name":"HideBrowserWarning","value":false},{"index":139,"name":"HideDashboardBuilderGuidedTour","value":false},{"index":140,"name":"HideSchedulingGuidedTour","value":false},{"index":180,"name":"HideReportBuilderGuidedTour","value":false},{"index":183,"name":"HideAssociationQueueCallout","value":false},{"index":194,"name":"HideQTEBanner","value":false},{"index":193,"name":"HideChatterOnboardingSplash","value":false},{"index":195,"name":"HideSecondChatterOnboardingSplash","value":false},{"index":270,"name":"HideIDEGuidedTour","value":false},{"index":282,"name":"HideQueryToolGuidedTour","value":false},{"index":196,"name":"HideCSIGuidedTour","value":false},{"index":271,"name":"HideFewmetGuidedTour","value":false},{"index":272,"name":"HideEditorGuidedTour","value":false},{"index":205,"name":"HideApexTestGuidedTour","value":false},{"index":206,"name":"HideSetupProfileHeaderTour","value":false},{"index":207,"name":"HideSetupProfileObjectsAndTabsTour","value":false},{"index":213,"name":"DefaultOffArticleTypeEntityPermMsg","value":false},{"index":214,"name":"HideSelfInfluenceGetStarted","value":false},{"index":215,"name":"HideOtherInfluenceGetStarted","value":false},{"index":216,"name":"HideFeedToggleGuidedTour","value":false},{"index":268,"name":"ShowChatterTab178GuidedTour","value":false},{"index":275,"name":"HidePeopleTabDeprecationMsg","value":false},{"index":276,"name":"HideGroupTabDeprecationMsg","value":false},{"index":222,"name":"TouchExternalLinkReminderSuppression","value":false},{"index":224,"name":"HideUnifiedSearchGuidedTour","value":false},{"index":226,"name":"ShowDevContextMenu","value":true},{"index":227,"name":"HideWhatRecommenderForActivityQueues","value":false},{"index":228,"name":"HideLiveAgentFirstTimeSetupMsg","value":false},{"index":232,"name":"HideGroupAllowsGuestsMsgOnMemberWidget","value":false},{"index":233,"name":"HideGroupAllowsGuestsMsg","value":false},{"index":234,"name":"HideWhatAreGuestsMsg","value":false},{"index":235,"name":"HideNowAllowGuestsMsg","value":false},{"index":236,"name":"HideSocialAccountsAndContactsGuidedTour","value":false},{"index":237,"name":"HideAnalyticsHomeGuidedTour","value":false},{"index":238,"name":"ShowQuickCreateGuidedTour","value":false},{"index":245,"name":"HideFilePageGuidedTour","value":false},{"index":250,"name":"HideForecastingGuidedTour","value":false},{"index":242,"name":"TouchHideOptoutHover","value":false},{"index":251,"name":"HideBucketFieldGuide","value":false},{"index":263,"name":"HideSmartSearchCallOut","value":false},{"index":265,"name":"HideSocialProfilesKloutSplashScreen","value":false},{"index":273,"name":"ShowForecastingQuotaAttainment","value":false},{"index":280,"name":"HideForecastingQuotaColumn","value":false},{"index":283,"name":"HideManyWhoGuidedTour","value":false},{"index":284,"name":"HideExternalSharingModelGuidedTour","value":false},{"index":298,"name":"HideFileSyncBannerMsg","value":false},{"index":299,"name":"HideTestConsoleGuidedTour","value":false}],"orgPreferences":[{"index":257,"name":"TabOrganizer","value":true}],"startOfWeek":"1","isAccessibleMode":false,"ampm":["AM","PM"],"renderMode":"RETRO","userId":"005J0000000GK7G","dateTimeFormat":"M/d/yyyy h:mm a","dateFormat":"M/d/yyyy","uiSkin":"PortalDefault","language":"en_US","siteUrlPrefix":""});
+</script>
+<script  type="text/javascript">try{DynamicCss.addCssUrl("/sCSS/26.0/1354127940000/PortalDefault/default/zen-componentsCompatible.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("/sCSS/26.0/1354127940000/PortalDefault/default/elements.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("/sCSS/26.0/1354127940000/PortalDefault/default/common.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("/sCSS/26.0/1354583016000/PortalDefault/dStandard.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("/sCSS/26.0/1355241226000/PortalDefault/00DJ00000007ll1/005J0000000GK7G/dCustom0.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("/sCSS/26.0/1355241226000/PortalDefault/00DJ00000007ll1/005J0000000GK7G/dCustom1.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("/sCSS/26.0/1354127940000/PortalDefault/default/extended.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("/sCSS/26.0/1356984408000/PortalDefault/00DJ00000007ll1/060J0000000D0ZH/portal.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("/sCSS/26.0/1354127940000/PortalDefault/default/tableTabNavigation.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.doneLoading()}catch(e){}</script><link rel="shortcut icon" href="https://thefinancialclinic.change.cs10.force.com/favicon.ico" />
+<!-- <script  src="/jslibrary/1351189248000/sfdc/Security.js" type="text/javascript"></script><script  type="text/javascript">ClientHash.prototype.needsClientHash('sid_Client','0000000GK7G00000007ll1','98.14.103.211','/servlet/servlet.ClientHashValidator?ResponseRequestedURL=%2Fideas%2FideaList.apexp');</script></head><body onLoad="if(this.bodyOnLoad)bodyOnLoad();" onBeforeUnload="if(this.bodyOnBeforeUnload){var s=bodyOnBeforeUnload();if(s)return s;}" onUnload="if(this.bodyOnUnload)bodyOnUnload();" onFocus="if(this.bodyOnFocus)bodyOnFocus();" class="hasMotif ideaTab  sfdcBody brandQuaternaryBgr"> -->
+<!-- Main Body Starts Here -->
+<form  id="sessiontimeout" method="post" name="sessiontimeout" onsubmit="if (window.ffInAlert) { return false; }" ><input type="hidden" name="continueButton" id="continueButton" value="Continue Working" /><input type="hidden" name="doNotTimeoutLocation" id="doNotTimeoutLocation" value="/page/timeoutrefresh.jsp?sfdc.isPortalPage=1" /><input type="hidden" name="doTimeoutLocation" id="doTimeoutLocation" value="http://thefinancialclinic.change.cs10.force.com/" /><input type="hidden" name="logoutButton" id="logoutButton" value="Logout" /><input type="hidden" name="timeoutText" id="timeoutText" value="For security reasons, your session is about to time out.<br><br>What would you like to do?" /></form><script  type="text/javascript">var secondsLeftValue=31932;
+var secondsPopupValue=31902;
+var lastPageActivityTime=new Date().getTime();
+var forceLogout=false;
+function startSessionTimer(){
+schedulePopup(31902);
+}
+function schedulePopup(t){
+if (timeoutUniqueId!=null) {
+clearTimeout(timeoutUniqueId);
+}
+timeoutUniqueId=setTimeout(alertTimeout,t*1000);
+}
+function doLogout(){
+window.location="/secur/logout.jsp";
+}
+var alertWindow=null;
+var parentWindow=null;
+var timeoutUniqueId=null;
+function updateSessionTimeouts(secondsLeft,secondsUntilPopup){
+if (typeof(secondsLeft)!='undefined')secondsLeftValue=secondsLeft;
+if (typeof(secondsUntilPopup)!='undefined')secondsPopupValue=secondsUntilPopup;
+lastPageActivityTime=new Date().getTime();
+schedulePopup(secondsPopupValue);
+}
+function alertTimeout(){if(typeof getSTimeout=='function'){getSTimeout();}else{doAlertTimeout();}} function doAlertTimeout(){timeoutUniqueId=null;
+alertWindow=window.open('/page/timeoutwarn.jsp?sfdc.isPortalPage=1',"_sTothefinancialclinic_change_cs10_force_com",'width=360,height=280,location=no,dependent=no,resizable=yes,toolbar=no,status=no,directories=no,menubar=no,scrollbars=yes',false);
+parentWindow=window;
+if (!alertWindow&&forceLogout){
+setTimeout(parentWindow.doLogout(),25*1000)
+}
+document.body.onfocus=alertFocus;
+}
+function checkSessionTimeout(){
+var currentTime=new Date().getTime();
+var sessionTimeLeft=secondsLeftValue-((currentTime-lastPageActivityTime)/1000);
+if (sessionTimeLeft<=5){
+var url=window.location.pathname+window.location.hash;if(window.location.search&&window.location.search.length>1){
+url+=window.location.search;}
+var loc='/?ec=302&startURL='+encodeURIComponent(url);
+top.location=loc;
+} else {
+lastPageActivityTime=currentTime;
+startSessionTimer();
+}
+}
+function alertFocus(){
+if (alertWindow){
+if (!alertWindow.closed){
+alertWindow.focus();
+}else{
+alertWindow=null;
+document.body.onfocus=closePopup;
+}
+}
+}</script><a href="#skiplink" class="navSkipLink zen-skipLink zen-assistiveText">Skip to main content</a>
+<html>
+<head>
+    
+  <link  REL="stylesheet" type="text/css" href="CSS/changemachine.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="/resource/1350669682000/BootstrapJS/bootstrap.min.js"></script>
+  
+   
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'auk4xrm',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+  </script>  
+
+  <style>
+  ul li {
+	  
+	  margin-left: 0px;
+  }
+  
+  .sidebarCell, #AppBodyHeader, .bPageHeader, .tabNavigation, .bPageTitle, .bPageFooter {
+	  
+	  display: none;
+  }
+  
+  .bodyDiv {
+	  
+	  background-color: transparent;
+	  border-bottom: 0px;
+  }
+  </style>
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div class="topWrapper">
+      <div class="row">
+        <div class="span3">
+          <a class="brand" href="/" >
+          	<img src="https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png" />
+          </a>
+        </div>
+          
+          <div class="span1">
+               <ul class="unstyled cls-menu">
+            	<li  class=""><A href="/learn">Learn</a></li>
+            	<li class="active"><A href="/customers"> Coach</a></li>
+                <li class=""><A href="/share"> Share</a></li>
+              </ul>
+          </div>
+          
+       
+        </div><!-- / row -->
+      </div> <!-- / topWrapper -->
+	   <div class="midWrapper">
+
+      <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          
+          
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+                  
+                  
+                  
+               <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Goals">
+                  
+                  Goals
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Assets">
+                  
+                  Assets
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Banking">
+                  
+                  Banking
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Credit">
+                  
+                  Credit
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Debt">
+                  
+                  Debt
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Taxes">
+                  
+                  Taxes
+                </a>
+                </li>
+            </ul>
+            
+              <form action="/changemachine_search" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
+
+             
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="q" placeholder="Search" size="27" title="Enter search keywords" type="text">
+          <button class="btn" type="submit">Search</button>
+              
+               </form>
+              
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+      </div>
+  </header>
+<div class="wrapper"><div class="bPageHeader" id="AppBodyHeader"><table  class="tabsNewBar" border="0" cellpadding="0" cellspacing="0" id="tabsNewBar"><tr><td><div class="tabNavigation"><table  class="tab" border="0" cellpadding="0" cellspacing="0" id="tabBar"><tr><td nowrap="nowrap"><div id="home_Tab"><a href="/home/home.jsp" title="Home Tab">Home</a></div></td><td nowrap="nowrap"><div id="Case_Tab"><a href="/500/o" title="Cases Tab">Cases</a></div></td><td class="brandPrimaryBgr currentTab primaryPalette" nowrap="nowrap"><div id="Idea_Tab"><a href="/ideas/ideaList.apexp" class="brandPrimaryFgr" title="Ideas Tab - Selected">Ideas</a></div></td></tr>
+</table></div></td></tr>
+</table></div><div class="bodyDiv brdPalette brandPrimaryBrd"><div id="bd_l"></div><div id="bd_r"></div><div class="bgdPalette brandPrimaryBgr" id="motifCurve"><div class="bgdPalette brandPrimaryBgr" id="mc_l"></div><div class="bgdPalette brandPrimaryBgr" id="mc_r"></div></div><div id="bd_b"><div id="bd_bl"></div><div id="bd_br"></div></div><table class="outer" width="100%" id="bodyTable" border="0" cellspacing="0" cellpadding="0">
+<!-- Start page content table -->
+<tr><td id="sidebarCell" class=" sidebarCell"><div class="fixed sidebar" id="sidebarDiv"><div class="sidebarModulePortalWelcomeContainer sidebarModule"><div class="sidebarModuleHeader brandPrimaryBgr"><h2 class="brandPrimaryFgr">Welcome, Keith Mancuso - COACH</h2></div><div class="sidebarModuleBody"><a href="/_ui/core/portal/PortalUserMyProfilePage/d" class="sidebarModulePortalWelcome">My Profile</a>|<a href="/secur/logout.jsp" class="sidebarModulePortalWelcome">Logout</a></div></div><div class="recentItemModule sidebarModule"><div class="sidebarModuleHeader brandPrimaryBgr"><h2 class="brandPrimaryFgr">Recent Items</h2></div><div class="sidebarModuleBody"><div class="mruList individualPalette"><div class="mruItem" id="mrua09J0000003XlbJ"><a href="/a09J0000003XlbJ" class="Custom1Mru" accesskey="1" tabindex="0" title="[Alt+1]"><img src="/s.gif" alt="Customer: Roa"  class="mruIcon" title="Customer: Roa"/><span  class="mruText">Roa</span></a></div><div class="mruItem" id="mru087J000000001dW"><a href="/087J000000001dW" class="ideaMru" accesskey="2" tabindex="0" title="[Alt+2]"><img src="/s.gif" alt="Idea: I wish that it kept track of basketball games"  class="mruIcon" title="Idea: I wish that it kept track of basketball games"/><span  class="mruText">I wish that it kept track of basketball games</span></a></div><div class="mruItem" id="mrua0PJ0000000xlpc"><a href="/a0PJ0000000xlpc" class="Custom13Mru" accesskey="3" tabindex="0" title="[Alt+3]"><img src="/s.gif" alt="Customer Action: CA-0000000122"  class="mruIcon" title="Customer Action: CA-0000000122"/><span  class="mruText">CA-0000000122</span></a></div><div class="mruItem" id="mrua0PJ0000000xl7H"><a href="/a0PJ0000000xl7H" class="Custom13Mru" accesskey="4" tabindex="0" title="[Alt+4]"><img src="/s.gif" alt="Customer Action: CA-0000000102"  class="mruIcon" title="Customer Action: CA-0000000102"/><span  class="mruText">CA-0000000102</span></a></div><div class="mruItem" id="mrua0PJ0000000xkhk"><a href="/a0PJ0000000xkhk" class="Custom13Mru" accesskey="5" tabindex="0" title="[Alt+5]"><img src="/s.gif" alt="Customer Action: CA-0000000092"  class="mruIcon" title="Customer Action: CA-0000000092"/><span  class="mruText">CA-0000000092</span></a></div><div class="mruItem" id="mrua0PJ0000000xjrK"><a href="/a0PJ0000000xjrK" class="Custom13Mru" accesskey="6" tabindex="0" title="[Alt+6]"><img src="/s.gif" alt="Customer Action: CA-0000000030"  class="mruIcon" title="Customer Action: CA-0000000030"/><span  class="mruText">CA-0000000030</span></a></div><div class="mruItem" id="mrua0PJ0000000xkh6"><a href="/a0PJ0000000xkh6" class="Custom13Mru" accesskey="7" tabindex="0" title="[Alt+7]"><img src="/s.gif" alt="Customer Action: CA-0000000091"  class="mruIcon" title="Customer Action: CA-0000000091"/><span  class="mruText">CA-0000000091</span></a></div><div class="mruItem" id="mru500J0000001OFdt"><a href="/500J0000001OFdt" class="caseMru" accesskey="8" tabindex="0" title="[Alt+8]"><img src="/s.gif" alt="Case: 00001708"  class="mruIcon" title="Case: 00001708"/><span  class="mruText">00001708</span></a></div><div class="mruItem" id="mrua0PJ0000000xjrZ"><a href="/a0PJ0000000xjrZ" class="Custom13Mru" accesskey="9" tabindex="0" title="[Alt+9]"><img src="/s.gif" alt="Customer Action: CA-0000000034"  class="mruIcon" title="Customer Action: CA-0000000034"/><span  class="mruText">CA-0000000034</span></a></div><div class="mruItem" id="mrua0PJ0000000xjrQ"><a href="/a0PJ0000000xjrQ" class="Custom13Mru" accesskey="0" tabindex="0" title="[Alt+0]"><img src="/s.gif" alt="Customer Action: CA-0000000033"  class="mruIcon" title="Customer Action: CA-0000000033"/><span  class="mruText">CA-0000000033</span></a></div></div></div></div><div class="searchModule sidebarModule"><form  action="/search/SearchResults" id="sbsearch" method="GET" name="sbsearch" onsubmit="if (window.ffInAlert) { return false; }if(this.sbstr){this.sbstr.blur();}" ><input type="hidden" name="searchType" id="searchType" value="1" /><div class="sidebarModuleHeader brandPrimaryBgr"><h2 class="brandPrimaryFgr"><label for="sbstr">Search</label></h2></div><div class="sidebarModuleBody"><div class="standardSearchElementBody"><select  id="sen" name="sen" title="Search scope"><option value="0" title="Search All" selected="selected">Search All</option>
+<option value="500" title="Cases">Cases</option>
+<option value="550" title="Entitlements">Entitlements</option>
+<option value="02i" title="Assets">Assets</option>
+<option value="00T" title="Tasks">Tasks</option>
+<option value="002" title="Notes">Notes</option>
+<option value="098" title="Google Docs">Google Docs</option>
+<option value="087" title="Ideas">Ideas</option>
+<option value="0Bg" title="Idea Themes">Idea Themes</option>
+<option value="906" title="Questions">Questions</option>
+<option value="a07" title="Actions">Actions</option>
+<option value="a0P" title="Customer Actions">Customer Actions</option>
+<option value="a0D" title="Milestones">Milestones</option>
+<option value="a0M" title="Path Groups">Path Groups</option>
+<option value="a0E" title="Sections">Sections</option>
+<option value="a0s" title="Videos">Videos</option>
+</select><input type="hidden"  id="setLast" name="setLast" value="1" /><input  class="searchTextBox" autocomplete="off" id="sbstr" maxlength="80" name="sbstr" size="27" title="Enter search keywords" type="text" value="" /><input value=" Go! "  class="btn" name="search" title="Go!" type="submit" /></div><div class="searchFooter"><a href="/search/AdvancedSearch" onclick="document.getElementById('sbsearch').action='/search/AdvancedSearch';document.getElementById('sbsearch').submit(); return false;">Advanced Search...</a></div></div></form></div></div></td>
+<td class="oRight" id="bodyCell">
+<!-- Start page content -->
+<a name="skiplink"><img src="/s.gif" height='1' width='1' alt="Content Starts Here" class="skiplink skipLinkTargetInner zen-skipLinkTarget" title="Content Starts Here"/></a><span id="thePage"></span>
+
+	<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/Idea.css" media="screen" rel="Stylesheet" type="text/css" />
+	<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/IdeaPortal.css" media="screen" rel="Stylesheet" type="text/css" />
+            <table style="width:100%">
+                <tr>
+                    <td colspan="2"><div id="thePage:mainLayout:j_id5" class="sectionHeaderWithCommunityNavLinks"><div class="bPageTitle"><div class="ptBody secondaryPalette brandSecondaryBrd"><div class="content"><img src="/s.gif" class="pageTitleIcon" title="Idea" alt="Idea" /><h1 class="pageType">Ideas</h1><span class="titleSeparatingColon">:</span><h2 class="pageDescription">Popular Ideas</h2><div class="blank"></div></div></div></div><span id="thePage:mainLayout:incNavCommunityLinks"><div id="thePage:mainLayout:incNavCommunityLinks:ideaNavCommunityLinks:j_id8" class="ideaNavCommunity">
+        <table width="100%">
+            <tr><td class="ideaNavLabelCell">
+                    <div class="ideaFloatBlock">
+                                            <label for="c">Community</label>&nbsp;<span id="thePage:mainLayout:incNavCommunityLinks:ideaNavCommunityLinks:c" class="ideaCommunitySelect"><form  action="/ideas/ideaList.apexp" id="communityForm" method="GET" name="communityForm" onsubmit="if (window.ffInAlert) { return false; }" style="display:inline" ><input type="hidden"  id="communityForm:lsi" name="lsi" value="0" /><input type="hidden"  id="communityForm:u" name="u" value="005J0000000GK7G" /><select  id="c" name="c" onchange="javascript:document.getElementById('communityForm').submit();"><option value="09aJ00000004CjA" selected="selected">Change Machine</option>
+</select></form></span>
+
+                    </div>
+                    <div class="ideaFloatBlock ideaOutputTextBlock">
+                    </div>
+                </td>
+
+                    <td class="ideaNavCommunityLinksCell"><span class="welcomeNickMessage">Welcome <span class="myProfile"><a href="/ideas/ideaProfile.apexp?c=09aJ00000004CjA&u=005J0000000GK7G">keith+change</a></span></span>
+                        &nbsp;|&nbsp;&nbsp;<a href="/ideas/ideaList.apexp?c=09aJ00000004CjA&lsi=4" class="recentReplies">Recent Replies</a><span id="thePage:mainLayout:incNavCommunityLinks:ideaNavCommunityLinks:j_id29" style="display: none;"></span>&nbsp;
+                    </td>
+            </tr>
+        </table></div></span></div><span id="thePage:mainLayout:ideaPostingProcessIcons"><div id="thePage:mainLayout:ideaPostingProcessIcons:ideaPostingProcessIcons:j_id37" class="communityIntro"><div id="thePage:mainLayout:ideaPostingProcessIcons:ideaPostingProcessIcons:j_id38" class="banner clearfix">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="bannerIcon postIcon">
+                        <div class="title"><a href="/ideas/editIdea.apexp?c=09aJ00000004CjA&retURL=%2Fideas%2FideaList.apexp">Post Ideas</a>
+                        </div>
+                    </td>
+                    
+                    <td class="arrow"></td>
+                    
+                    <td class="bannerIcon voteIcon">
+                        <div class="title">Vote for Ideas</div>
+                    </td>
+                    
+                    <td class="arrow"></td>
+                    
+                    <td class="bannerIcon discussIcon">
+                        <div class="title">Add Comments</div>
+                    </td>
+                </tr>
+            </table></div></div></span>
+
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td class="ideasProfileSidebar" id="ideasProfileSidebar" width="0">
+                    </td>
+                    <td width="100%"><span id="thePage:mainLayout:ideaListSubtabs">
+    <div id="ideaSubtabs">
+        <div class="bg">
+            <ul class="" id="nav">
+                <li class="ideasCurrentTab" id="tabPopular" onclick="navigateToUrl('/ideas/ideaList.apexp?c=09aJ00000004CjA&amp;lsi=0')">
+                    <div class="secondaryPalette">
+                        <a href="#" id="linkPopular" title="Popular Ideas Tab - Selected">Popular Ideas</a>
+                    </div>
+                </li>
+                <li class="ideasNonCurrentTab ideasNonCurrentTabCenter ideasNonCurrentRightBorder" id="tabRecent" onclick="navigateToUrl('/ideas/ideaList.apexp?c=09aJ00000004CjA&amp;lsi=1')">
+                    <div class="secondaryPalette">
+                        <a href="#" id="linkRecent" title="Recent Ideas Tab">Recent Ideas</a>
+                    </div>
+                </li>
+                <li class="ideasNonCurrentTab ideasNonCurrentTabCenter ideasNonCurrentRightBorder" id="tabTop" onclick="navigateToUrl('/ideas/ideaList.apexp?c=09aJ00000004CjA&amp;lsi=2')">
+                    <div class="secondaryPalette">
+                        <a href="#" id="linkTop" title="Top All-Time Tab">Top All-Time</a>
+                    </div>
+                </li>
+                <li class="ideasNonCurrentTab ideasNonCurrentTabRight" id="tabRecentComments" onclick="navigateToUrl('/ideas/ideaList.apexp?c=09aJ00000004CjA&amp;lsi=3')">
+                    <div class="secondaryPalette">
+                        <a href="#" id="linkRecentComments" title="Comments Tab">Comments</a>
+                    </div>
+                </li>
+            </ul>
+            &nbsp;
+        </div>
+    </div></span><div id="thePage:mainLayout:j_id77" class="ideaPageBlock  ideaListContainer"><div class="apexp"><div class="individualPalette"><div class="ideaBlock"><div id="thePage:mainLayout:pbIdeaList" class="bPageBlock brandSecondaryBrd apexDefaultPageBlock secondaryPalette"><div class="pbHeader"><table>
+<tbody>
+<tr>
+<td class="pbTitle"></td>
+<td class="pbButton">
+<form id="thePage:mainLayout:pbIdeaList:formPostIdea" name="thePage:mainLayout:pbIdeaList:formPostIdea" method="post" action="/ideas/ideaList.apexp" enctype="application/x-www-form-urlencoded" style="display:inline;">
+<input type="hidden" name="thePage:mainLayout:pbIdeaList:formPostIdea" value="thePage:mainLayout:pbIdeaList:formPostIdea" />
+<input id="thePage:mainLayout:pbIdeaList:formPostIdea:buttonPostIdea" type="submit" name="thePage:mainLayout:pbIdeaList:formPostIdea:buttonPostIdea" value="Post Idea" onclick="location='/ideas/editIdea.apexp?c=09aJ00000004CjA&amp;retURL=%2Fideas%2FideaList.apexp';return false;" title="Post An idea" class="btn btn" /><div id="thePage:mainLayout:pbIdeaList:formPostIdea:j_id238"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="AJv1/YW+fASeWeWZAZZ1tEniHyIs" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateCSRF" name="com.salesforce.visualforce.ViewStateCSRF" value="riaxn.FtBuIUMFj6zWzBPLB081Gy5aoc2hT8.3mO9MrmUsU4_CTBMYl5hqon1dtwUqUd3FMPXwVUxZ2ZOpH6rVTWLWgK67ewnyRvjavXw9iWOkILX6mE3wMOkr9Yn6ybNCHGiWuGopRnVxRrSoweHGHiqVo=" /></span></span></td>
+<td class="viewCategory">
+                                            <label class="ideaViewCategory" for="category">Category:
+                                            </label><span class="ideaCategorySelect"><form  action="/ideas/ideaList.apexp" id="select_category" method="GET" name="select_category" onsubmit="if (window.ffInAlert) { return false; }" style="display:inline" ><input type="hidden"  id="select_category:c" name="c" value="09aJ00000004CjA" /><input type="hidden"  id="select_category:lsi" name="lsi" value="0" /><input type="hidden"  id="select_category:status" name="status" value="" /><select  id="category" name="category" onchange="javascript:document.getElementById('select_category').submit();"><option value="">All</option>
+<option value="Goals">Goals</option>
+<option value="Assets">Assets</option>
+<option value="Banking">Banking</option>
+<option value="Credit">Credit</option>
+<option value="Debt">Debt</option>
+<option value="Taxes">Taxes</option>
+</select></form></span></td>
+</tr>
+</tbody>
+</table>
+</div><div class="pbBody"><div id="thePage:mainLayout:pbIdeaList:j_id93" class="ideaListHelpMessage"></div><span id="thePage:mainLayout:pbIdeaList:compIdeaListStd">
+<form id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm" name="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm" method="post" action="/ideas/ideaList.apexp" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm" value="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm" />
+<ul class="ideaList" id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList"><li id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0" class="">
+        <div class="ideaSection"><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:ideaSide" class="ideaSide "><span id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote"><script  src="/jslibrary/1351189248000/sfdc/Vote.js" type="text/javascript"></script><span id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock"><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:j_id115" class="voteContainer"><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:voteButton"><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:voteButtonsRerender" class="voteButtons">
+                
+                <div class="voteButton" id="voteButtonsStyle"><a class="voteUp" href="#" id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteUpLink" name="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteUpLink" onclick="A4J.AJAX.Submit('thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm',event,{'oncomplete':function(request,event,data){animateVoteButton(['thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteUpLink', 'thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteDownLink'], 'thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:floater', 'thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:voteButton', '10', 'Up');},'similarityGroupingId':'thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteUpLink','parameters':{'firstParam':'Up','secondParam':'087J000000001dW','thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteUpLink':'thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteUpLink'} } );return false;" onmouseout="return setVoteStatusMsg('');" onmouseover="return setVoteStatusMsg('Click to promote this idea by 10 points')" title="Click to promote this idea by 10 points"><img id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:voteUpSpacer" src="/s.gif" alt="Click to promote this idea by 10 points" title="Click to promote this idea by 10 points" /><span id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:j_id122" class="insideVote"><span class="voteButtonText">promote</span></span><span id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:j_id124" class="insideVoted"><span class="voteButtonText">promoted</span></span></a><a class="voteDown" href="#" id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteDownLink" name="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteDownLink" onclick="A4J.AJAX.Submit('thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm',event,{'oncomplete':function(request,event,data){animateVoteButton(['thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteUpLink', 'thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteDownLink'], 'thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:floater', 'thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:voteButton', '10', 'Down');},'similarityGroupingId':'thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteDownLink','parameters':{'firstParam':'Down','secondParam':'087J000000001dW','thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteDownLink':'thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:VoteDownLink'} } );return false;" onmouseout="return setVoteStatusMsg('');" onmouseover="return setVoteStatusMsg('Click to demote this idea by 10 points')" title="Click to demote this idea by 10 points"><img id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:voteDownSpacer" src="/s.gif" alt="Click to demote this idea by 10 points" title="Click to demote this idea by 10 points" /><span id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:j_id128" class="insideVote"><span class="voteButtonText">demote</span></span><span id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:j_id130" class="insideVoted"><span class="voteButtonText">demoted</span></span></a>
+                </div></div><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:voteStatusBlock" class="voteStatusBlock"><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:ScoreBox" class="score">10</div><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:j_id136" class="label">Points</div></div><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:floater" style="visibility: hidden;" class="voteScoreFloater"></div></div></div></span></span></div>
+            <div class="ideaContentWidth ideaContent">
+                <div>
+                    <h3 class="ideaContentWidth ideaSubject"><a id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:linkTitle" name="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:linkTitle" href="/ideas/viewIdea.apexp?id=087J000000001dW" class="ideaSubjectLink">I wish that it kept track of basketball games</a>
+                    </h3>
+                </div><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:body" class="ideaContentWidth ideaBody"> sdhasjkhdkajshjksadhkads</div>
+                <div class="ideaContentWidth ideaFooter"><a id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:linkComments" name="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:linkComments" href="/ideas/viewIdea.apexp?id=087J000000001dW&lsr=0#comments" class="ideaComment ideaCommentIcon"><span class="ideaNumComments">0&nbsp;Comments</span>
+                        &raquo;</a>
+                    &nbsp;<span id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:cIdeaUserLabel"><span id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:cIdeaUserLabel:ideaUserLabel:postedByUserLink"><span class="userLink normalUserBadge">Posted by <a href="/ideas/ideaProfile.apexp?u=005G0000002eRmh">keith+changemachine</a></span> on 12/17/2012 4:50 PM</span></span>
+                </div>
+            </div>
+        </div></li><li id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1" class="">
+        <div class="ideaSection"><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:ideaSide" class="ideaSide "><span id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:vote"><script  src="/jslibrary/1351189248000/sfdc/Vote.js" type="text/javascript"></script><span id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:vote:vote:voteUpDownBlock"><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:j_id115" class="voteContainer"><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:voteButton"><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:voteButtonsRerender" class="voteButtons">
+                
+                <div class="votedButton votedUpButton" id="voteButtonsStyle"><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:votedButtonLabelUp" class="voteUp"><span class="voteButtonText">promoted</span></div><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:votedButtonLabelDown" class="voteDown"><span class="voteButtonText">demoted</span></div>
+                </div></div><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:voteStatusBlock" class="voteStatusBlock"><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:ScoreBox" class="score">10</div><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:vote:vote:voteUpDownBlock:componentVoteUpDownBlock:j_id136" class="label">Points</div></div></div></div></span></span></div>
+            <div class="ideaContentWidth ideaContent">
+                <div>
+                    <h3 class="ideaContentWidth ideaSubject"><a id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:linkTitle" name="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:linkTitle" href="/ideas/viewIdea.apexp?id=087J000000001Nk" class="ideaSubjectLink">I have a good idea</a>
+                    </h3>
+                </div><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:body" class="ideaContentWidth ideaBody">we should do this!!</div>
+                <div class="ideaContentWidth ideaFooter"><a id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:linkComments" name="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:linkComments" href="/ideas/viewIdea.apexp?id=087J000000001Nk&lsr=0#comments" class="ideaComment ideaCommentIcon"><span class="ideaNumComments">1&nbsp;Comment</span>
+                        &raquo;</a>
+                    &nbsp;<span id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:cIdeaUserLabel"><span id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:1:cIdeaUserLabel:ideaUserLabel:postedByUserLink"><span class="userLink normalUserBadge">Posted by <a href="/ideas/ideaProfile.apexp?u=005J0000000GK7G">keith+change</a></span> on 11/19/2012 4:17 PM</span></span>
+                </div>
+            </div>
+        </div></li></ul><div id="thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:j_id239"></div>
+</form></span><span id="thePage:mainLayout:pbIdeaList:bottomIdeaFeeds"><span id="thePage:mainLayout:pbIdeaList:bottomIdeaFeeds:ideaFeeds:j_id197"><a id="thePage:mainLayout:pbIdeaList:bottomIdeaFeeds:ideaFeeds:popularIdeasFeed" name="thePage:mainLayout:pbIdeaList:bottomIdeaFeeds:ideaFeeds:popularIdeasFeed" href="/services/xml/_idea_popular_all?name=All&community=09aJ00000004CjA&ideaTitleLink=%2Fideas%2FviewIdea.apexp" title="Subscribe to popular ideas" class="feedIcon"><img src="/s.gif" alt="Subscribe to popular ideas" title="Subscribe to popular ideas" /></a></span></span></div><div class="pbFooter secondaryPalette"><div class="bg"></div></div></div></div></div></div></div>
+                    </td> 
+                </tr>
+             </table>
+
+	<script src="/static/050311/ideas/idea.js" type="text/javascript"></script>
+            <script language="javascript" type="text/javascript">
+                document.title = "Change Machine: Popular Ideas";
+                ideaVoteButtonId = "thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm:ideaList:0:vote";
+                observeWidths(function(e){
+                  setWidthsForOverflowWithVoteButton(ideaVoteButtonId)
+                });
+                if(-1 != navigator.userAgent.indexOf ("MSIE")) {
+                    setElementDisplay('thePage:mainLayout:pbIdeaList:incIdeaList', 'block');
+                }
+            </script><div class="datePicker" id="datePicker"><div class="dateBar"><img src="/s.gif" alt="Previous Month"  class="calLeft" onblur="this.className = 'calLeft';" onclick="DatePicker.datePicker.prevMonth();" onfocus="this.className = 'calLeftOn';" onmouseout="this.className = 'calLeft';" onmouseover="this.className = 'calLeftOn';" title="Previous Month"/><select  id="calMonthPicker" name="calMonthPicker" title="Month"><option value="0">January</option>
+<option value="1">February</option>
+<option value="2">March</option>
+<option value="3">April</option>
+<option value="4">May</option>
+<option value="5">June</option>
+<option value="6">July</option>
+<option value="7">August</option>
+<option value="8">September</option>
+<option value="9">October</option>
+<option value="10">November</option>
+<option value="11">December</option>
+</select><img src="/s.gif" alt="Next Month"  class="calRight" onblur="this.className = 'calRight';" onclick="DatePicker.datePicker.nextMonth();" onfocus="this.className = 'calRightOn';" onmouseout="this.className = 'calRight';" onmouseover="this.className = 'calRightOn';" title="Next Month"/><select  id="calYearPicker" name="calYearPicker" title="Year"><option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+</select></div><div class="calBody"><table  class="calDays" border="0" cellpadding="0" cellspacing="0" id="datePickerCalendar"><tr><TH class="dayOfWeek" scope="col">Sun</TH><TH class="dayOfWeek" scope="col">Mon</TH><TH class="dayOfWeek" scope="col">Tue</TH><TH class="dayOfWeek" scope="col">Wed</TH><TH class="dayOfWeek" scope="col">Thu</TH><TH class="dayOfWeek" scope="col">Fri</TH><TH class="dayOfWeek" scope="col">Sat</TH></tr>
+<tr class="calRow" id="calRow1"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow2"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow3"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow4"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow5"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow6"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+</table><div class="buttonBar"><a href="javascript:%20void%280%29%3B" class="calToday" onclick="DatePicker.datePicker.selectDate('today');return false;">Today</a></div></div></div>
+    <script rendered="false" src="/jslibrary/1351189248000/sfdc/IdeaToggle.js" type="text/javascript"></script><script type="text/javascript">Sfdc.onReady(function(){
+	SfdcApp.Visualforce.VSManager.vfPrepareForms(["thePage:mainLayout:pbIdeaList:compIdeaListStd:ideaListStd:ideaListStdForm","thePage:mainLayout:pbIdeaList:formPostIdea"]);
+});</script>
+
+
+<!-- Body events -->
+<script type="text/javascript">function bodyOnLoad(){setFocusOnLoad();if (typeof(startSessionTimer)!='undefined') {startSessionTimer(); };if ((window.sfdcPage) && (sfdcPage.executeOnloadQueue)){sfdcPage.executeOnloadQueue();};new SidebarSearchAutoCompleteElement("sbstr","/_ui/common/search/client/ui/SidebarSearchAutoCompleteServlet",1,{},true,"sen","sbsearch");if (document.getElementById('sidebarDiv')){ Sidebar.prototype.theSidebar = new Sidebar(document.getElementById('sidebarDiv'), false); };; if (this.loadChatFrameJs) loadChatFrameJs();if(window.PreferenceBits){window.PreferenceBits.prototype.csrfToken="7r5ckBI6JD86cwU_8eHE7f7DiIntafixWJO9c9jqocY05AzNCaosv0Q2X1WtXzuPIMSBnknOf3OIwChyMtkXsrhgbL9p_SNznXiN7BA7W5saRN8Wf.7zE5Ws9bFZM6NYbnZquRcDbtudmcMLI9nNtpT6FongDscWngOGirfIdewY4UJ4X1b1K7hv4xdr2.PWdQGc5Q==";};if(window.Jiffy){if(Jiffy.onLoad)Jiffy.onLoad();if(Jiffy.ui&&Jiffy.ui.onLoad)Jiffy.ui.onLoad()}}function bodyOnBeforeUnload(){if ((window.sfdcPage) && (sfdcPage.executeOnBeforeUnloadQueue)){sfdcPage.executeOnBeforeUnloadQueue();};}function bodyOnFocus(){closePopupOnBodyFocus();}function bodyOnUnload(){}</script><div class="datePicker" id="datePicker"><div class="dateBar"><img src="/s.gif" alt="Previous Month"  class="calLeft" onblur="this.className = 'calLeft';" onclick="DatePicker.datePicker.prevMonth();" onfocus="this.className = 'calLeftOn';" onmouseout="this.className = 'calLeft';" onmouseover="this.className = 'calLeftOn';" title="Previous Month"/><select  id="calMonthPicker" name="calMonthPicker" title="Month"><option value="0">January</option>
+<option value="1">February</option>
+<option value="2">March</option>
+<option value="3">April</option>
+<option value="4">May</option>
+<option value="5">June</option>
+<option value="6">July</option>
+<option value="7">August</option>
+<option value="8">September</option>
+<option value="9">October</option>
+<option value="10">November</option>
+<option value="11">December</option>
+</select><img src="/s.gif" alt="Next Month"  class="calRight" onblur="this.className = 'calRight';" onclick="DatePicker.datePicker.nextMonth();" onfocus="this.className = 'calRightOn';" onmouseout="this.className = 'calRight';" onmouseover="this.className = 'calRightOn';" title="Next Month"/><select  id="calYearPicker" name="calYearPicker" title="Year"><option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+</select></div><div class="calBody"><table  class="calDays" border="0" cellpadding="0" cellspacing="0" id="datePickerCalendar"><tr><TH class="dayOfWeek" scope="col">Sun</TH><TH class="dayOfWeek" scope="col">Mon</TH><TH class="dayOfWeek" scope="col">Tue</TH><TH class="dayOfWeek" scope="col">Wed</TH><TH class="dayOfWeek" scope="col">Thu</TH><TH class="dayOfWeek" scope="col">Fri</TH><TH class="dayOfWeek" scope="col">Sat</TH></tr>
+<tr class="calRow" id="calRow1"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow2"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow3"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow4"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow5"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow6"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+</table><div class="buttonBar"><a href="javascript:%20void%280%29%3B" class="calToday" onclick="DatePicker.datePicker.selectDate('today');return false;">Today</a></div></div></div>
+<!-- End page content -->
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+<footer>
+    <div class="container">
+         
+    <img class="footerRays" src="https://www.visualaids.org/changemachine/images/raysCropped.png"> 
+        <img class="footerLogo" src="https://www.visualaids.org/changemachine/images/change-machine-footer-logo.png">
+
+          <ul class="nav nav-pills">
+          	 <li><a href="/_ui/core/portal/PortalUserMyProfilePage/d">My Account</a></li>
+          	 <li><a href="/secur/logout.jsp">Logout</a></li>
+              <li><a href="/changemachine_PrivacyPolicy">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+       	 </ul>
+      </div>
+   </footer>
+   
+    <div class="feedback">
+      <ul class="nav nav-pills">
+        <li><a href="/500/e?retURL=%2F500%2Fo">Issues/Problems?</a></li>
+        <li><a href="/ideas/ideaList.apexp">Ideas?</a></li>
+      </ul>
+      </div>
+   
+  </body>
+  </html><span class="rcCatcher" id="rcCatcher"></span><span class="rcCatcher2" id="rcCatcher2"></span></body></html>
+<!-- page generation time: 192ms -->
