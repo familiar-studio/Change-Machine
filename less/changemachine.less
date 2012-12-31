@@ -353,7 +353,7 @@ body .wrapper {
 	border-bottom: 10px solid @lighterblue;
 	width: @gridRowWidth;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 10px 20px;
 }
 
 .page-header {
@@ -1141,3 +1141,287 @@ footer ul {
 		color: @green;
 	}
 }
+
+.feedback .nav-pills > li > a {
+	color: @blue;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*                            Sales Force Styling                             */
+
+/* -------------------------------------------------------------------------- */
+
+img.skiplink {
+	display: none;
+}
+
+.bodyDiv {
+	font-size: 100%;
+	margin-bottom: 40px;
+}
+
+.bPageBlock, .individualPalette .bPageBlock {
+	border: none;
+}
+
+.bPageBlock .pbHeader {
+    background-color: @white;
+    h2 {
+	    color: @pink;
+	    font-size: 47px;
+	    .proximaB();
+	    text-transform: capitalize;
+    }
+    .pbButton {
+	    float: right;
+    }
+}
+
+.bPageBlock .pbBottomButtons {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.bPageBlock .pbBody {
+	padding: 20px 0;
+	.pbSubheader {
+		background-color: @white;
+		border-bottom: 1px solid @lightergray;
+		h3, h3 a {
+			color: @blue;
+			.proximaB();
+		}
+	}
+	.pbSubsection {
+		margin-top: 20px;
+		margin-bottom: 60px;
+		.proximaR();
+		label {
+			.proximaB();
+			margin-top: 3px;
+		}
+	}
+}
+
+.requiredLegend {
+	.proximaR();
+	font-size: 14px;
+}
+.requiredExample {
+    border-left: none;
+    font-size: 80%;
+    vertical-align: 1px;
+    width: 100%;
+    &:before {
+	    content: "*";
+	    font-size: 16px;
+	    color: @red;
+    }
+}
+.bPageBlock .requiredInput .requiredBlock {
+    background-color: @white;
+    bottom: 1px;
+    left: -4px;
+    position: absolute;
+    top: 1px;
+    width: 1px;
+}
+.bPageBlock .requiredMark {
+    color: @red;
+    margin-right: 3px;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    .proximaR();
+    &:focus {
+    	border-color: @lightblue;
+    	box-shadow: @lightestblue;
+    }
+}
+
+.detailList .labelCol {
+	font-size: 14px;
+	.proximaB();
+}
+
+.bPageBlock .detailList tr td, .bPageBlock .detailList tr th {
+    border-bottom: none;
+}
+
+html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.bodyDiv table#bodyTable.outer tbody tr td#bodyCell.oRight form#editPage div.setup div#ep.bPageBlock div.pbBody div.message table.messageTable tbody tr td:first-child {
+	display: none;
+}
+
+.infoM6, .infoM4, .infoM3, .infoM2, .infoS1 {
+    border-color: @lightyellow;
+}
+
+.pbBody .message {
+	background-color: @lighteryellow;
+	color: @yellow;
+	margin-bottom: 20px;
+	.messageCell {
+		.proximaR();
+		color: @red;
+	}
+}
+
+.bEditBlock .detailList .dataCol, .bEditBlock .detailList .data2Col.last,
+.detailList tbody tr td:nth-child(2) {
+    padding: 2px 2px 0 10px !important;
+}
+
+.pbSubsection input[type="checkbox"] {
+	float: left;
+    margin: 6px 10px 0 20px;
+}
+
+/* ----- IdeaList ----- */
+
+.ideaNavCommunity {
+	background-color: @white !important;
+}
+
+.ideaFloatBlock label {
+	text-align: left;
+	font-size: 30px;
+	color: @pink;
+	.proximaB();
+	margin-bottom: 10px;
+}
+
+.outer td.ideaNavCommunityLinksCell {
+	vertical-align: middle;
+	.myProfile a, .recentReplies {
+		color: @blue;
+		&:hover {
+			color: @green;
+		}
+	}
+}
+
+.communityIntro .banner {
+	border: none;
+	margin-bottom: 20px;
+}
+
+#ideaSubtabs {
+	margin-bottom: 5px;
+	#nav a {
+		color: @blue;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+#ideaSubtabs .bg {
+	background: none !important;
+}
+
+#ideaSubtabs ul#nav li div {
+    border-left: 2px solid @blue !important;
+    border-right: 2px solid @blue !important;
+    border-top: 2px solid @blue !important;
+    font-family: "proxima-nova", sans-serif !important;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0 5px !important;
+    padding: 5px 20px;
+    border-radius: 5px 5px 0 0;
+    .secondaryPalette {
+	    background-color: @lightblue !important;
+    }
+}
+
+#ideaSubtabs ul#nav .ideasCurrentTab {
+	div {
+	    background-color: @lightblue !important;
+	}
+}
+
+#ideaSubtabs ul#nav .ideasNonCurrentTab {
+	div {
+	    background-color: @lighterblue !important;
+	}
+}
+
+.ideaPageBlock .bPageBlock, .ideaPageBlock .individualPalette .bPageBlock {
+    background-color: @lightblue;
+    border-radius: 4px 4px 0 0;
+}
+
+.ideaListContainer {
+	background-color: @lightblue;
+	border: 2px solid @blue;
+	border-radius: 5px;
+	.pbHeader, .pbBody {
+		background-color: @lightblue;
+	}
+	.pbHeader {
+		padding: 10px 0;
+		border-radius: 4px 4px 0 0;
+		td.pbTitle {
+			display: none;
+		}
+		td.pbButton {
+			float: right !important;
+			margin-top: 15px !important;
+			margin-right: 20px;
+		}
+		td.viewCategory {
+			float: left !important;
+			margin-left: 20px;
+		}
+	}
+}
+
+.ideaBlock .pbBody {
+	padding: 0;
+}
+
+.ideaList {
+	padding-top: 0px !important;
+}
+
+.ideaList li {
+    border-top: 2px solid @blue;
+    clear: both;
+    margin: 10px 0 10px !important;
+    padding: 0;
+}
+
+.feedIcon {
+	display: none !important;
+}
+
+/* ----- IdeaList ----- */
+
+/* -------------------------------------------------------------------------- */
+
+/*                          End Sales Force Styling                           */
+
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

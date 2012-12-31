@@ -77,17 +77,18 @@ input[type="radio"] {
 	vertical-align: top;
 }
 
-.wForm .section,
+.wForm .pageSection,
 .wFormThankYou {
 	border-bottom: 5px solid @black;
 	padding-bottom: 20px;
+	overflow: hidden;
 }
 
 .wForm form .wfPagingButtons,
 .actions {
-	float: right;
-	margin: 20px 0 0;
-	padding: 0;
+	float: right !important;
+	margin: 20px 0 0 !important;
+	padding: 0 !important;
 	input[type="button"],
 	input[type="submit"] {
 		.proximaB();
@@ -152,6 +153,43 @@ input[type="radio"] {
 		text-decoration: none;
 		color: @lightgreen;
 	}
+}
+
+/* form with textareas */
+
+/*
+.wForm h3, .wForm h4 {
+	border: none;
+	padding: 0;
+	color: @lightergray;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 0 0 20px;
+}
+
+.oneField .preField, .oneField input {
+	float: left;
+	clear: both;
+}
+.oneField .preField {
+	text-align: right;
+	
+}
+.wForm .inputWrapper {
+	margin-top: -26px;
+}
+
+.oneChoice {
+	padding-top: 10px;
+}
+*/
+
+.wForm input[type="text"], .wForm input[type="time"], .wForm input[type="number"], .wForm input[type="url"], .wForm input[type="email"], .wForm textarea {
+    border-color: #ACAEB4 #DDE1E7 #E3E9EF;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
 }
 
 /* ----- Final Page ----- */
