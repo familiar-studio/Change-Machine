@@ -5215,6 +5215,9 @@ a {
 .sidebar-block .btn:hover {
   padding: 4px 10px 0px;
 }
+.hero-unit {
+  margin-top: 10px;
+}
 /*
 .btn-group {
 	background-color: @green;
@@ -6053,6 +6056,23 @@ footer ul li a:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 /* ----- End Footer ----- */
+/* ----- Feedback ----- */
+.feedback {
+  position: fixed;
+  bottom: 0px;
+  right: 100px;
+  background-color: white;
+  border-left: 5px solid #c7d1e4;
+  border-right: 5px solid #c7d1e4;
+  border-top: 5px solid #c7d1e4;
+}
+.feedback ul {
+  margin-bottom: 0px;
+}
+.feedback ul li {
+  font-size: 16px;
+}
+/* ----- End Feedback ----- */
 .utilityNav {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
