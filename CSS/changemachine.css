@@ -5649,20 +5649,20 @@ body .wrapper {
   background-repeat: no-repeat;
   background-size: 16px auto;
 }
-.span4 span h5 {
+.otherMilestones h5 {
   color: rgba(0, 0, 0, 0.5);
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 700;
 }
-.span4 span h5,
-.span4 ul li {
+.otherMilestones h5,
+.otherMilestones ul li {
   padding: 0 40px 0 0;
   margin-bottom: 20px;
   border-bottom: none;
   overflow: visible;
 }
-.span4 li a {
+.otherMilestones li a {
   font-family: "ff-meta-serif-web-pro", serif;
   font-style: normal;
   font-weight: 700;
@@ -5671,10 +5671,10 @@ body .wrapper {
   border-bottom: 2px dotted rgba(0, 0, 0, 0.25);
   line-height: 30px;
 }
-.span4 li a:hover {
+.otherMilestones li a:hover {
   color: #8ea2ca;
 }
-.span4 ul.unstyled.milestones {
+.otherMilestones ul.unstyled.milestones {
   margin-bottom: 40px;
 }
 /* Coach View */
