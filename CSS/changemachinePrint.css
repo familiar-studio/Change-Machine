@@ -1,25 +1,52 @@
 /* ----- Print Style Sheet ----- */
 @page  {
   page-break-before: bottom;
-  margin: 1cm 1cm 2cm;@top-left {
+  margin: 1cm 1cm 2cm;
+
+
+  @top-left {
+    margin-left: 1cm;
     content: element(header);
   }
+
+  @bottom-left-corner {
+
+    border-top: 1px solid #8ea2ca;
+  }
+
   @bottom-left {
     border-top: 1px solid #8ea2ca;
     color: #8ea2ca;
     font-family: helvetica, sans-serif;
     font-size: 12px;
     line-height: 20px;
-    content: "These Tips Are Provided By:";
+    content: 'These tips are provided by';
+    
+    width: 2.5cm;
+    text-align: top;
+    
+    
   }
-  /*
+  
     @bottom-center {
   	 border-top: 1px solid #8ea2ca;
   	 background-image: url("https://cs10.salesforce.com/resource/1355504427000/CMlogoprint");
        background-size: contain;
        background-repeat: no-repeat;
-       background-position: 90px 0px;
+       background-position: 10px 15px;
+       content: "test";
+       color: white;
+       
+       
     }
+
+    @bottom-right {
+    
+   
+
+     
+    }
+  /*
     @bottom-right {
       border-top: 1px solid #8ea2ca;
   	 background-image: url("https://cs10.salesforce.com/resource/1355504427000/CMlogoprint");
@@ -29,6 +56,7 @@
     }
   */
   @bottom-right-corner {
+
     font-family: helvetica, arial, sans-serif;
     font-size: 16px;
     content: counter(page);
@@ -45,10 +73,12 @@ h5 {
   font-size: 12px;
   font-weight: bold;
   position: running(header);
+ 
 }
 .page-header {
   border-bottom: 3px solid #8ea2ca;
   margin-bottom: 20px;
+   
 }
 h1 {
   color: #8ea2ca;
@@ -93,22 +123,18 @@ a:after {
   content: " [" attr(href) "] ";
   color: #8ea2ca;
 }
-footer {
-  width: 100%;
+
+
+div.footer {
+  width: 80%;
   padding-top: 5px;
-  border-top: 1px solid #8ea2ca;
-  height: 200px;
+//  border-top: 1px solid #8ea2ca;
+  height: 2cm;
   position: running(thebottom);
 }
-footer img,
-footer div {
-  margin-right: 20px;
-  position: running(thebottom);
-}
-footer img {
-  max-width: 100px;
-  position: running(thebottom);
-}
+
+
+
 .tips {
   width: 200px;
   height: 48px;
@@ -117,11 +143,14 @@ footer img {
   font-size: 12px;
   line-height: 20px;
   margin: 9px 0 10px 20px;
-  position: running(thebottom);
-  background-image: url("https://cs10.salesforce.com/resource/1355442534000/ChangeMachineLogo_Footer");
-  background-size: 100px 48px;
-  background-repeat: no-repeat;
-  background-position: 90px 0px;
+  
+   position: running(footer);
+   
+  //background-image: url("https://cs10.salesforce.com/resource/1355442534000/ChangeMachineLogo_Footer");
+  //background-size: 100px 48px;
+  //background-repeat: no-repeat;
+  //background-position: 90px 0px;
+  border: 1px solid blue;
 }
 /*
 .tips {
