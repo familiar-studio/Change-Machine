@@ -1,0 +1,524 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<script src="/jslibrary/1351189248000/sfdc/JiffyStubs.js"></script><script src="/resource/1354817911000/LESSCSSJS" type="text/javascript"></script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+    
+  <link href="CSS/changemachine.css" REL="stylesheet" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="/resource/1350669682000/BootstrapJS/bootstrap.min.js"></script>
+  
+   
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'auk4xrm',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+  </script>
+    
+
+  <script>
+    $j = jQuery.noConflict();
+    
+    $j(document).ready(function() {
+
+    $j('.showDetails').click(function() {
+        var actionId = $j(this).attr('actionId');
+        console.log('this is the actionID'+actionId);
+        $j('#details'+actionId).toggle();
+        return false;
+      });
+      
+      $j('.overviewTab h3').click(function() {
+       $j('.overviewText').toggle();
+       if ($j('.overviewText').is(":visible")) {
+       	$j('.overviewTab h3:last').removeClass('milestone-show').addClass('milestone-hide'); 
+       } else {
+	    $j('.overviewTab h3:last').removeClass('milestone-hide').addClass('milestone-show');   
+       }
+       return false;
+      });
+
+      
+      $j('.sidebar-block h3').click(function() {
+       $j(this).parent().children('ul').toggle();
+       if ($j(this).parent().children('ul').is(":visible")) {
+       	$j(this).removeClass('sidebar-show').addClass('sidebar-hide');
+       } else {
+	    $j(this).removeClass('sidebar-hide').addClass('sidebar-show'); 
+       }
+       return false;
+      });
+      
+    });
+  </script>
+
+  
+
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div class="topWrapper">
+      <div class="row">
+        <div class="span3">
+          <a class="brand" href="/">
+          	<img src="https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png" />
+          </a>
+        </div>
+          
+          <div class="span1">
+               <ul class="unstyled cls-menu">
+            	<li class="active"><A href="/learn">Learn</A></li>
+            	<li class=""><A href="/customers"> Coach</A></li>
+                <li class=""><A href="/share"> Share</A></li>
+              </ul>
+          </div>
+          
+        <div class="span8 pull-right">
+                &nbsp;
+        </div>
+       
+        </div>
+      </div> 
+	<div class="midWrapper">
+  <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          
+          
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Goals">
+                  
+                  Goals
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Assets">
+                  
+                  Assets
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Banking">
+                  
+                  Banking
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="active">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Credit">
+                  
+                  Credit
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Debt">
+                  
+                  Debt
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Taxes">
+                  
+                  Taxes
+                </a>
+                </li>
+            </ul>
+            
+              <form action="/changemachine_search" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
+
+             
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="q" placeholder="Search" size="27" title="Enter search keywords" type="text" />
+        	<button class="btn" type="submit">Search</button>
+              
+               </form>
+              
+      
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </header>
+<div class="wrapper">
+        
+            
+          <div class="page-header">
+            <a href="/section/Credit"><h1>Credit</h1></a>
+            <h2>Outcome <small> Improve credit score</small></h2>
+          </div>
+
+                  <div class="milestone-block">
+                     <div class="row">
+                      <div class="span8"><span id="j_id0:j_id1:j_id20:0:j_id22">
+                          <h4>
+                            Customer Pulls Credit Report Alone
+                          </h4></span>
+
+
+
+
+                        <ul class="unstyled action-list">
+                          <li class="Roadblock " id="Customer-can't-download-credit-report">
+                    	     <a actionId="a07J0000003Nn7uIAC" class="">
+                     		     Roadblock: Customer can't download credit report 
+                            </a>
+                          <input id="hidden" name="hidden" type="hidden" />
+                          
+                          <div class="actionDetails" id="detailsa07J0000003Nn7uIAC" style=""><p class="p1">Occasionally customers will not be able to access their free credit report online. Have customers make a note under the Credit section on the ACTION PLAN to mail for the credit reports and include proper identification.</p>
+<p class="p1"><b>DON’T BE DISCOURAGED</b></p>
+<p class="p1">Customers may be blocked from receiving their free credit report for various reasons. If they only have one line of credit, or had credit years ago, they have a “thin” credit file. If they have a thin credit file or</p>
+<p class="p1">no credit file, answered the security questions incorrectly, or have recently had several addresses, the best way to obtain the report is through the mail.</p>
+<p class="p1"><b>WHAT THEY WILL NEED</b></p>
+<p class="p1">Customers can still get their credit report in two to three weeks by completing the mail-in form. Complete the Annual Credit Report Request Form located in this ToolKit or find it here <a href="http://www.ftc.gov/bcp/edu/" target="_blank">www.ftc.gov/bcp/edu/</a> resources/forms/requestformfinal.pdf. Customers must include copies of one document from the identity column and one document from the address column.</p>
+<p class="p1"><b>Identity:</b></p>
+<p class="p1">Social Security Number must appear on the document</p>
+<ul class="ul1"><li class="li1">Social Security card</li><li class="li1">Pay stub with Social Security Number</li><li class="li1">W-2 Form</li></ul>
+<p class="p1"><b>Address:</b></p>
+<p class="p1"><i>Address must appear on the document</i></p>
+<ul class="ul1"><li class="li1">Driver&#39;s license</li><li class="li1">Rental or lease agreement/house deed</li><li class="li1">Pay stub with address</li><li class="li1">Utility bill (gas, electric, water, cable, residential telephone bills)</li></ul>
+<p class="p1">Make sure the copies are legible and do not contain highlighting or any other marks.</p>
+                          </div><span id="j_id0:j_id1:j_id20:0:worksheets-block">
+                            <div class="related-block" id="related-worksheets">
+                              <h5>Related Worksheets</h5>
+                          
+                              <ul class="unstyled">
+                                  <li><a href="/worksheet/5-Steps-to-my-goal">5 Steps to my goal</a></li>
+                              </ul>
+                            </div></span><span id="j_id0:j_id1:j_id20:0:tipsheets-block">
+                            <div class="related-block" id="related-tipsheets">
+                              <h5>Related Tipsheets</h5>
+                              
+                              <ul class="unstyled">
+                                  <li><a href="/worksheet/Which-Bills-Should-I-Pay-First" target="_blank">Which Bills Should I Pay First?</a></li>
+                                  <li><a href="/worksheet/Bankruptcy:-Is-It-Right-For-Me" target="_blank">Bankruptcy: Is It Right For Me?</a></li>
+                              </ul>
+                            </div></span><span id="j_id0:j_id1:j_id20:0:videos-block">
+                              <div class="related-block" id="related-videos">
+                                <h5>Related Videos </h5>
+                                
+                                <ul class="unstyled">
+                                    <li><a href="/worksheet/http://thefinancialclinic.adobeconnect.com/p8ausyhh0a5/" target="_blank">2012 Cash Earners Tax Campaign</a></li>
+                                </ul>
+                              </div></span>
+                         
+
+
+                          </li>
+                </ul>
+
+
+
+                          </div> 
+
+                          <div class="span4"><span id="j_id0:j_id1:j_id20:0:j_id73">
+                            <h5>Other Credit Milestones </h5>
+                            <ul class="unstyled milestones">
+                               <li><a href="/milestone/CRAs-makes-requested">CRAs makes requested changes</a></li>
+                               <li><a href="/milestone/Customer-Executes-a-strategy-to-improve-credit">Customer Executes a strategy to improve credit</a></li>
+                            </ul></span>
+
+                          <div class="milestone-sidebar" id="sidebara07J0000003Nn7uIAC" style=""><span id="j_id0:j_id1:j_id20:0:caution-block">
+                              <div class="alert">
+
+                                <strong>Caution</strong>
+                                  <p><p class="p1">If customers are unable to obtain a credit report because they have a “thin” or non- existent credit file, there are several tools they can explore to work on building their</p>
+<p class="p1">credit. Check out the ACTION: CUSTOMER OBTAINS A SECURED CREDIT CARD OR SECURED LOAN and screen your customer with the SHOULD MY CUSTOMER APPLY FOR A SECURED CREDIT PRODUCT? Coach Tool.</p>
+                                  </p>
+                              </div></span>
+                
+
+                      </div>
+                    </div> 
+                </div>
+                     <div class="row">
+                      <div class="span8">
+
+
+
+
+                        <ul class="unstyled action-list">
+                          <li class="Action " id="Customer-chooses-1-of-3-ways-to-pull-a-credit-report">
+                    	     <a actionId="a07J0000003Nn83IAC" class="">
+                     		      Customer chooses 1 of 3 ways to pull a credit report 
+                            </a>
+                          <input id="hidden" name="hidden" type="hidden" />
+                          
+                          <div class="actionDetails" id="detailsa07J0000003Nn83IAC" style=""><p class="p1">There are three ways to contact the Credit Reporting Agencies (CRAs) to pull the “Big Three” (Experian, TransUnion, and Equifax) credit reports. Have customers select a method that they will be most comfortable doing on their own in the future.</p>
+<p class="p2"><b>ONLINE</b></p>
+<p class="p1">is the often the best choice because it allows customers to obtain their report instantly at <a target="_blank" href="http://www.annualcreditreport.com/"><span class="s1">annualcreditreport.com.</span></a> </p>
+<p class="p1"><b>MAIL</b></p>
+<p class="p1">is a good option too; it just takes a couple of weeks to get the report. Be sure customers shade the circle at the bottom of the form to only include the last four digits of their social security number. For instructions about how to obtain</p>
+<p class="p1">a credit report by mail see ROADBLOCK: CUSTOMER CAN’T DOWNLOAD CREDIT REPORT.</p>
+<p class="p1"><b>PHONE</b></p>
+<p class="p1">is not the best option because it forces customers to use a voice-recognition system that doesn’t work that well and is only available in English.</p>
+                          </div><span id="j_id0:j_id1:j_id20:1:tipsheets-block">
+                            <div class="related-block" id="related-tipsheets">
+                              <h5>Related Tipsheets</h5>
+                              
+                              <ul class="unstyled">
+                                  <li><a href="/worksheet/Which-Bills-Should-I-Pay-First" target="_blank">Which Bills Should I Pay First?</a></li>
+                              </ul>
+                            </div></span>
+                         
+
+
+                          </li>
+                </ul>
+
+
+
+                          </div> 
+
+                          <div class="span4">
+
+                          <div class="milestone-sidebar" id="sidebara07J0000003Nn83IAC" style=""><span id="j_id0:j_id1:j_id20:1:caution-block">
+                              <div class="alert">
+
+                                <strong>Caution</strong>
+                                  <p><p class="p1">Dispel credit myths and have customers check their report without fear. One of the most common credit myths is that checking one’s score affects the score. It is not true. When people check their own credit report,</p>
+<p class="p1">it has no impact on their score whatsoever. Checking one’s own score counts as a “soft inquiry” that is only visible to the customer.</p>
+                                  </p>
+                              </div></span>
+                
+
+                      </div>
+                    </div> 
+                </div>
+                     <div class="row">
+                      <div class="span8">
+
+
+
+
+                        <ul class="unstyled action-list">
+                          <li class="Action " id="Coach-or-customer-pulls-credit-report-alone">
+                    	     <a actionId="a07J0000003Nn7UIAS" class="">
+                     		      Coach or customer pulls credit report alone 
+                            </a>
+                          <input id="hidden" name="hidden" type="hidden" />
+                          
+                          <div class="actionDetails" id="detailsa07J0000003Nn7UIAS" style=""><p class="p1">For customers reviewing their reports for the first time, be sure to encourage them to get all three. Customers are entitled to review all three reports one time each year for free. Each credit report contains different information and it is important to review all of the content on all three of the reports. Customers who have seen their report(s) before can choose to download all three reports at the same time or stagger them throughout the year.</p>
+<p class="p2"> </p>
+<p class="p1"><b>KNOW HOW TO PULL THE CREDIT REPORT ONLINE</b></p>
+<p class="p1">It may seem complicated, but if you follow these instructions carefully, you’ll be able to help customers obtain their reports. Try and get customers to do as much of the inputting as possible as you request the reports, so that they’ll also be able to do it without you next time.</p>
+<ol class="ol1"><li class="li1">Go to annualcreditreport.com. Be careful to go to this site only and not any of the other sites with similar names that offer “free” credit reports. These sites will ask for a credit card number and are not truly free.</li><li class="li1">Select the state where the customer resides and click on REQUEST REPORT.</li><li class="li1">Enter in all the requested information. For the customer’s “current address,” use the current address unless there was a very recent move, in which case the last address should be used. If the customer has lived at the current address for less than two years, also include the previous address. At the bottom of the page, enter in the alphanumerical code (it’s not case sensitive) and click on CONTINUE.</li><li class="li1">Select the credit report(s) you want to access (Experian, Equifax, and Transunion), then click on NEXT.</li><li class="li1">5 The site will confirm which report(s) you’ve selected and alert you that you’ll be transferred to that site. Click NEXT.</li><li class="li1">Depending on which credit report you’re downloading, the next screen might ask you to confirm that all the data you entered in previously is accurate. Assuming it is, click CONTINUE. If not, make the changes necessary and then click CONTINUE.</li><li class="li1">The next screen will have a series of questions about the customer (some of which may seem a little strange) to verify identity. An example of a common question is “Your credit file indicates you may have a mortgage account opened in or around 2008. Who is the credit provider for this account?” The customer should not be afraid to select “None of the above” if that response applies. As with any multiple- choice question, if you’re not certain what the answer is, guess. Once all the questions are answered, click CONTINUE.</li><li class="li1">The next screen should confirm that a credit report is being ordered and that the cost is $0.00. Click on SUBMIT ORDER.</li><li class="li1">The next screen varies from report to report, but you want to select the option for VIEW/PRINT report. Don’t be tempted by any of the services that cost money, such as purchasing a credit score. There are other cost-free ways to obtain credit scores discussed below.</li><li class="li1">The next screen typically provides you with a summary of the report. That summary may be helpful and you should definitely print it out, but that is not the full report. To get the full report, click on the link for PRINT REPORT. Congratulations! If you assisted your customer with this process, hopefully your customers can do it totally unassisted next time.</li></ol>
+<p class="p1"><b>HELP CUSTOMERS STAY ORGANIZED</b></p>
+<p class="p1">For record-keeping and document- preservation purposes, it may be helpful to create a PDF of the credit report by printing it with a program, such as doPDF, which you can access at dopdf.com and download for free. If your customer opts not to create a PDF file, be sure to print out at least two copies of the report, as you’ll want one to review and take notes on and another to use for the dispute process. Customers should use the MAKE YOUR CREDIT REPORT WORK FOR YOU WorkSheet to keep track of when they pulled each report, their credit scores, and what to look for on the report.</p>
+                          </div>
+                         
+
+
+                          </li>
+                </ul>
+
+
+
+                          </div> 
+
+                          <div class="span4">
+
+                          <div class="milestone-sidebar" id="sidebara07J0000003Nn7UIAS" style=""><span id="j_id0:j_id1:j_id20:2:caution-block">
+                              <div class="alert">
+
+                                <strong>Caution</strong>
+                                  <p><p class="p1">Identity theft is a serious problem affecting more than 8 million Americans and resulting in losses of $37 billion. Most commonly, identities are stolen by people in one’s circle such as family members, neighbors, or intimate partners, especially in relationships where there is domestic violence. Identity theft can also be perpetrated by complete strangers like a clerk at a store that skims credit card numbers or an Internet hacker.<br><br>Customers should review the 5 WAYS TO PROTECT YOURSELF AGAINST IDENTITY THEFT TipSheet to take appropriate precautions to reduce the risk of identity theft, which can be extremely damaging to customers’ credit.</p>
+                                  </p>
+                              </div></span><span id="j_id0:j_id1:j_id20:2:paths-block">
+                     
+                              
+                              <div class="accordion" id="paths">
+                                  <div class="accordion-group">
+                                    <div class="accordion-heading">
+                                      <a class="accordion-toggle" data-parent="#paths" data-toggle="collapse" href="#patha0LJ0000000UcGyMAK">
+                                      This is a custom path
+                                      </a>
+                                    </div>
+                                    <div class="accordion-body collapse" id="patha0LJ0000000UcGyMAK" style="height: 0px; ">
+                                      <div class="accordion-inner">this is where that content lives.this is where that content lives.this is where that content lives.this is where that content lives.this is where that content lives.this is where that content lives.this is where that content lives.this is where that content lives.this is where that content lives.this is where that content lives.this is where that content lives.v
+                                      </div>
+                                    </div>
+                                  </div>
+                               </div></span><span id="j_id0:j_id1:j_id20:2:questions-block">
+
+                                <h5>Questions from the community </h5>
+                                
+                                <div class="accordion" id="questions">
+                                    <div class="accordion-group">
+                                      <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-parent="#questions" data-toggle="collapse" href="#questiona0KJ0000000ItdBMAS">
+                                        Test Question
+                                        </a>
+                                      </div>
+                                      <div class="accordion-body collapse" id="questiona0KJ0000000ItdBMAS" style="height: 0px; ">
+                                        <div class="accordion-inner">test answer goes here
+                                        </div>
+                                      </div>
+                                  </div>
+                                 </div></span>
+                
+
+                      </div>
+                    </div> 
+                </div>
+                     <div class="row">
+                      <div class="span8">
+
+
+
+
+                        <ul class="unstyled action-list">
+                          <li class="Action " id="Customer-connects-importance-of-improving-credit-to-the">
+                    	     <a actionId="a07J0000003Nn88IAC" class="">
+                     		      Customer connects importance of improving credit to the action driven goal 
+                            </a>
+                          <input id="hidden" name="hidden" type="hidden" />
+                          
+                          <div class="actionDetails" id="detailsa07J0000003Nn88IAC" style=""><p class="p1">When customers are clear about their purpose in improving or establishing their score, it is much easier for them to make the tough behavior changes required to improve their credit.</p>
+<p class="p2"><b>Explain why credit is important</b></p>
+<p class="p2">Before customers embark on a mission to improve their credit, it is very important for coaches to help customers connect how improving credit is integral to their goals. Many customers want to improve their credit score just for the sake of improving it, and get overly focused on the number without thinking about why improving their score is important. Getting obsessed about one’s score is often not conducive to long-term credit health or financial security. </p>
+                          </div><span id="j_id0:j_id1:j_id20:3:worksheets-block">
+                            <div class="related-block" id="related-worksheets">
+                              <h5>Related Worksheets</h5>
+                          
+                              <ul class="unstyled">
+                                  <li><a href="/worksheet/Credit-Report-Inspection">Credit Report Inspection</a></li>
+                              </ul>
+                            </div></span>
+                         
+
+
+                          </li>
+                </ul>
+
+
+
+                          </div> 
+
+                          <div class="span4">
+
+                          <div class="milestone-sidebar" id="sidebara07J0000003Nn88IAC" style=""><span id="j_id0:j_id1:j_id20:3:caution-block">
+                              <div class="alert">
+
+                                <strong>Caution</strong>
+                                  <p><p class="p1">For customers with no credit, establishing a credit history can serve as a way to pass a prospective employer’s screening process, purchase a car to get to school and work, or have a credit card to use for emergencies.</p>
+                                  </p>
+                              </div></span><span id="j_id0:j_id1:j_id20:3:questions-block">
+
+                                <h5>Questions from the community </h5>
+                                
+                                <div class="accordion" id="questions">
+                                    <div class="accordion-group">
+                                      <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-parent="#questions" data-toggle="collapse" href="#questiona0KJ0000000J6BKMA0">
+                                        I don&#8217;t have a Social Security Number.  How can I build credit?
+                                        </a>
+                                      </div>
+                                      <div class="accordion-body collapse" id="questiona0KJ0000000J6BKMA0" style="height: 0px; ">
+                                        <div class="accordion-inner">Building credit without a Social Security Number is more difficult, but there are instances in which it is possible.  Some of the instances of which The Financial Clinic is aware occurred when undocumented individuals with mainstream bank accounts were offered credit cards by their banks.  A bank account is likely a necessity to building credit, since the bank may offer you a credit card that they can secure (establish collateral against) using your checking or savings account.  The bank may offer you credit if they believe they can seize your bank account if you refuse to pay your credit card bills.  In order to open a mainstream bank account, you will need to have an Individual Taxpayer Identification Number (ITIN), which is obtained when an undocumented individual files a U.S. federal income tax return.  If you have been able to access a secured or unsecured credit card under your ITIN, you should monitor your credit report.  However, Experian is the only credit reporting agency that shares credit files with undocumented individuals who have built a credit record.  To view the credit report of an undocumented individual who has established credit, visit annualcreditreport.com and click the hyperlink entitled &quot;request your report through the mail.&quot;  In place of a Social Security Number, enter the 9-digit ITIN and fill in the bubble to indicate that you are requesting the Experian report.  Pull this report once a year.
+                                        </div>
+                                      </div>
+                                  </div>
+                                    <div class="accordion-group">
+                                      <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-parent="#questions" data-toggle="collapse" href="#questiona0KJ0000000IeI2MAK">
+                                        How can I get credit monitoring without paying lots of fees?
+                                        </a>
+                                      </div>
+                                      <div class="accordion-body collapse" id="questiona0KJ0000000IeI2MAK" style="height: 0px; ">
+                                        <div class="accordion-inner"><p class="p1">Credit Karma allows individuals to check their credit scores for free as often as they would like, <a href="http://creditkarma.com/" target="_blank"><span class="s1">creditkarma.com</span></a>. The one caveat with using Credit Karma is that the site does not give</p>
+<p class="p2">customers a FICO score, which is considered by many to be the gold standard of credit scores. Still, the Credit Karma score tends to be (with some notable exceptions that defy easy explanation) very close to the FICO score.</p>
+<p class="p2">Considering that many companies charge ridiculous sums for similar services ($15-$20/month with a cancellation process that is purposely difficult to navigate), there&#39;s no reason why customers shouldn&#39;t take advantage of free credit monitoring as an additional precaution (in addition to monitoring credit reports regularly using <a href="http://annualcreditreport.com/" target="_blank"><span class="s1">annualcreditreport.com</span></a>) against identity theft and other developments that could compromise their credit scores.</p>
+<p class="p1">Now Credit Karma is offering a free credit monitoring</p>
+<p class="p2">what their credit monitoring service will do.</p>
+<p class="p1">Here is a description from Credit Karma of exactly</p>
+<p class="p2">&quot;Receive an email alert when a significant change has been identified in your credit report, such as new credit inquiries, new credit accounts, delinquent payments, improved payment history, new public records or updates to personal information.  Proactive email alerts will help protect you from fraudulent use of your identity to open new credit accounts and costly credit reporting errors.</p>
+<p style="color: rgb(95, 108, 116); font-size: 13px; ">Monitoring your credit with Credit Karma is completely free. There are no trial subscriptions or monthly fees.  Sign up for truly free credit monitoring, and you&#39;ll be on your way to better credit health!&quot;​</p>
+                                        </div>
+                                      </div>
+                                  </div>
+                                 </div></span>
+                
+
+                      </div>
+                    </div> 
+                </div>
+              
+                </div>
+               
+           <script>
+
+$j('.action-buttons a').click(function() {
+  var type = $j(this).attr('title');
+  $j(this).closest('li').removeClass('In-Progress Completed Stalled Applicable').addClass(type);
+});
+
+</script>
+     </div>
+  </div>
+  <footer>
+    <div class="container">
+         
+    <img class="footerRays" src="https://www.visualaids.org/changemachine/images/raysCropped.png" /> 
+        <img class="footerLogo" src="https://www.visualaids.org/changemachine/images/change-machine-footer-logo.png" />
+
+          <ul class="nav nav-pills">
+              <li><a href="/_ui/core/portal/PortalUserMyProfilePage/d">My Account</a></li>
+              <li><a href="/secur/logout.jsp">Logout</a></li>
+              <li><a href="/changemachine_PrivacyPolicy">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+       	 </ul>
+     
+
+   
+
+
+       </div>
+
+         
+   </footer><span id="j_id0:j_id1:j_id98">
+
+   
+
+    <div class="feedback">
+      <ul class="nav nav-pills">
+        <li><a href="/500/e?retURL=%2F500%2Fo">Issues/Problems?</a></li>
+        <li><a href="/ideas/ideaList.apexp">Ideas?</a></li>
+      </ul>
+      </div></span>
+</body>
+</html>

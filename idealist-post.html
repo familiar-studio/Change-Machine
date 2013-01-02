@@ -1,0 +1,500 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class=""><head><script src="https://thefinancialclinic.change.cs10.force.com/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript?rel=1355882822000" type="text/javascript"></script>
+
+<script src="https://thefinancialclinic.change.cs10.force.com/jslibrary/1351189248000/sfdc/SfdcCore.js" type="text/javascript"></script>
+<script src="https://thefinancialclinic.change.cs10.force.com/static/111811/js/picklist.js" type="text/javascript"></script>
+<script src="https://thefinancialclinic.change.cs10.force.com/jslibrary/1351189248000/sfdc/VFState.js" type="text/javascript"></script>
+<script src="https://thefinancialclinic.change.cs10.force.com/ckeditor/ckeditor-3.6.2/ckeditor.js?t=3.6.2.1" type="text/javascript"></script>
+<script src="https://thefinancialclinic.change.cs10.force.com/ckeditor/ckeditor-3.6.2/vf/link_override.js" type="text/javascript"></script>
+<script src="https://thefinancialclinic.change.cs10.force.com/ckeditor/ckeditor-3.6.2/vf/table_override.js" type="text/javascript"></script>
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354583016000/PortalDefault/dStandard.css" rel="stylesheet" type="text/css" />
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1355241226000/PortalDefault/00DJ00000007ll1/005J0000000GK7G/dCustom0.css" rel="stylesheet" type="text/css" />
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1355241226000/PortalDefault/00DJ00000007ll1/005J0000000GK7G/dCustom1.css" rel="stylesheet" type="text/css" />
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/extended.css" rel="stylesheet" type="text/css" />
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1357160793000/PortalDefault/00DJ00000007ll1/060J0000000D0ZH/portal.css" rel="stylesheet" type="text/css" />
+<link class="user" href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/setup.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://thefinancialclinic.change.cs10.force.com/jslibrary/1351189248000/sfdc/JiffyStubs.js"></script>
+<title>Customer Portal</title>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/zen-componentsCompatible.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/elements.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/common.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354583016000/PortalDefault/dStandard.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1355241226000/PortalDefault/00DJ00000007ll1/005J0000000GK7G/dCustom0.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1355241226000/PortalDefault/00DJ00000007ll1/005J0000000GK7G/dCustom1.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/extended.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1357160792000/PortalDefault/00DJ00000007ll1/060J0000000D0ZH/portal.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<link href="https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/tableTabNavigation.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css"/>
+<script  src="https://thefinancialclinic.change.cs10.force.com/jslibrary/1354563886000/sfdc/main.js" type="text/javascript"></script>
+<script  src="https://thefinancialclinic.change.cs10.force.com/jslibrary/labels/1355793284000/en_US.js" type="text/javascript"></script>
+<script  type="text/javascript">window.sfdcPage = new ApexDetailPage();
+UserContext.initialize({"networkId":"","locale":"en_US","labelLastModified":"1355793284000","isDefaultNetwork":true,"today":"1/2/2013 4:06 PM","timeFormat":"h:mm a","userPreferences":[{"index":112,"name":"HideInlineEditSplash","value":false},{"index":114,"name":"OverrideTaskSendNotification","value":false},{"index":115,"name":"DefaultTaskSendNotification","value":false},{"index":119,"name":"HideUserLayoutStdFieldInfo","value":false},{"index":116,"name":"HideRPPWarning","value":false},{"index":87,"name":"HideInlineSchedulingSplash","value":false},{"index":88,"name":"HideCRUCNotification","value":false},{"index":89,"name":"HideNewPLESplash","value":false},{"index":90,"name":"HideNewPLEWarnIE6","value":false},{"index":122,"name":"HideOverrideSharingMessage","value":false},{"index":91,"name":"HideProfileILEWarn","value":false},{"index":93,"name":"HideProfileElvVideo","value":false},{"index":97,"name":"ShowPicklistEditSplash","value":false},{"index":92,"name":"HideDataCategorySplash","value":false},{"index":128,"name":"ShowDealView","value":false},{"index":129,"name":"HideDealViewGuidedTour","value":false},{"index":132,"name":"HideKnowledgeFirstTimeSetupMsg","value":false},{"index":104,"name":"DefaultOffEntityPermsMsg","value":false},{"index":135,"name":"HideNewCsnSplash","value":false},{"index":101,"name":"HideBrowserWarning","value":false},{"index":139,"name":"HideDashboardBuilderGuidedTour","value":false},{"index":140,"name":"HideSchedulingGuidedTour","value":false},{"index":180,"name":"HideReportBuilderGuidedTour","value":false},{"index":183,"name":"HideAssociationQueueCallout","value":false},{"index":194,"name":"HideQTEBanner","value":false},{"index":193,"name":"HideChatterOnboardingSplash","value":false},{"index":195,"name":"HideSecondChatterOnboardingSplash","value":false},{"index":270,"name":"HideIDEGuidedTour","value":false},{"index":282,"name":"HideQueryToolGuidedTour","value":false},{"index":196,"name":"HideCSIGuidedTour","value":false},{"index":271,"name":"HideFewmetGuidedTour","value":false},{"index":272,"name":"HideEditorGuidedTour","value":false},{"index":205,"name":"HideApexTestGuidedTour","value":false},{"index":206,"name":"HideSetupProfileHeaderTour","value":false},{"index":207,"name":"HideSetupProfileObjectsAndTabsTour","value":false},{"index":213,"name":"DefaultOffArticleTypeEntityPermMsg","value":false},{"index":214,"name":"HideSelfInfluenceGetStarted","value":false},{"index":215,"name":"HideOtherInfluenceGetStarted","value":false},{"index":216,"name":"HideFeedToggleGuidedTour","value":false},{"index":268,"name":"ShowChatterTab178GuidedTour","value":false},{"index":275,"name":"HidePeopleTabDeprecationMsg","value":false},{"index":276,"name":"HideGroupTabDeprecationMsg","value":false},{"index":222,"name":"TouchExternalLinkReminderSuppression","value":false},{"index":224,"name":"HideUnifiedSearchGuidedTour","value":false},{"index":226,"name":"ShowDevContextMenu","value":true},{"index":227,"name":"HideWhatRecommenderForActivityQueues","value":false},{"index":228,"name":"HideLiveAgentFirstTimeSetupMsg","value":false},{"index":232,"name":"HideGroupAllowsGuestsMsgOnMemberWidget","value":false},{"index":233,"name":"HideGroupAllowsGuestsMsg","value":false},{"index":234,"name":"HideWhatAreGuestsMsg","value":false},{"index":235,"name":"HideNowAllowGuestsMsg","value":false},{"index":236,"name":"HideSocialAccountsAndContactsGuidedTour","value":false},{"index":237,"name":"HideAnalyticsHomeGuidedTour","value":false},{"index":238,"name":"ShowQuickCreateGuidedTour","value":false},{"index":245,"name":"HideFilePageGuidedTour","value":false},{"index":250,"name":"HideForecastingGuidedTour","value":false},{"index":242,"name":"TouchHideOptoutHover","value":false},{"index":251,"name":"HideBucketFieldGuide","value":false},{"index":263,"name":"HideSmartSearchCallOut","value":false},{"index":265,"name":"HideSocialProfilesKloutSplashScreen","value":false},{"index":273,"name":"ShowForecastingQuotaAttainment","value":false},{"index":280,"name":"HideForecastingQuotaColumn","value":false},{"index":283,"name":"HideManyWhoGuidedTour","value":false},{"index":284,"name":"HideExternalSharingModelGuidedTour","value":false},{"index":298,"name":"HideFileSyncBannerMsg","value":false},{"index":299,"name":"HideTestConsoleGuidedTour","value":false}],"orgPreferences":[{"index":257,"name":"TabOrganizer","value":true}],"startOfWeek":"1","isAccessibleMode":false,"ampm":["AM","PM"],"renderMode":"RETRO","userId":"005J0000000GK7G","dateTimeFormat":"M/d/yyyy h:mm a","dateFormat":"M/d/yyyy","uiSkin":"PortalDefault","language":"en_US","siteUrlPrefix":""});
+</script><script  type="text/javascript">try{DynamicCss.addCssUrl("https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/zen-componentsCompatible.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/elements.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/common.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354583016000/PortalDefault/dStandard.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1355241226000/PortalDefault/00DJ00000007ll1/005J0000000GK7G/dCustom0.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1355241226000/PortalDefault/00DJ00000007ll1/005J0000000GK7G/dCustom1.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/extended.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1357160792000/PortalDefault/00DJ00000007ll1/060J0000000D0ZH/portal.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.addCssUrl("https://thefinancialclinic.change.cs10.force.com/sCSS/26.0/1354127940000/PortalDefault/default/tableTabNavigation.css","handheld,print,projection,screen,tty,tv")}catch(e){}
+try{DynamicCss.doneLoading()}catch(e){}</script><link rel="shortcut icon" href="https://thefinancialclinic.change.cs10.force.com/favicon.ico" />
+<!-- <script  src="/jslibrary/1351189248000/sfdc/Security.js" type="text/javascript"></script><script  type="text/javascript">ClientHash.prototype.needsClientHash('sid_Client','0000000GK7G00000007ll1','98.14.103.211','/servlet/servlet.ClientHashValidator?ResponseRequestedURL=%2Fideas%2FeditIdea.apexp%3Fc%3D09aJ00000004CjA%26retURL%3D%252Fideas%252FideaList.apexp');</script></head><body onLoad="if(this.bodyOnLoad)bodyOnLoad();" onBeforeUnload="if(this.bodyOnBeforeUnload){var s=bodyOnBeforeUnload();if(s)return s;}" onUnload="if(this.bodyOnUnload)bodyOnUnload();" onFocus="if(this.bodyOnFocus)bodyOnFocus();" class="hasMotif ideaTab  sfdcBody brandQuaternaryBgr"> -->
+<!-- Main Body Starts Here -->
+<form  id="sessiontimeout" method="post" name="sessiontimeout" onsubmit="if (window.ffInAlert) { return false; }" ><input type="hidden" name="continueButton" id="continueButton" value="Continue Working" /><input type="hidden" name="doNotTimeoutLocation" id="doNotTimeoutLocation" value="/page/timeoutrefresh.jsp?sfdc.isPortalPage=1" /><input type="hidden" name="doTimeoutLocation" id="doTimeoutLocation" value="http://thefinancialclinic.change.cs10.force.com/" /><input type="hidden" name="logoutButton" id="logoutButton" value="Logout" /><input type="hidden" name="timeoutText" id="timeoutText" value="For security reasons, your session is about to time out.<br><br>What would you like to do?" /></form><script  type="text/javascript">var secondsLeftValue=21763;
+var secondsPopupValue=21733;
+var lastPageActivityTime=new Date().getTime();
+var forceLogout=false;
+function startSessionTimer(){
+schedulePopup(21733);
+}
+function schedulePopup(t){
+if (timeoutUniqueId!=null) {
+clearTimeout(timeoutUniqueId);
+}
+timeoutUniqueId=setTimeout(alertTimeout,t*1000);
+}
+function doLogout(){
+window.location="/secur/logout.jsp";
+}
+var alertWindow=null;
+var parentWindow=null;
+var timeoutUniqueId=null;
+function updateSessionTimeouts(secondsLeft,secondsUntilPopup){
+if (typeof(secondsLeft)!='undefined')secondsLeftValue=secondsLeft;
+if (typeof(secondsUntilPopup)!='undefined')secondsPopupValue=secondsUntilPopup;
+lastPageActivityTime=new Date().getTime();
+schedulePopup(secondsPopupValue);
+}
+function alertTimeout(){if(typeof getSTimeout=='function'){getSTimeout();}else{doAlertTimeout();}} function doAlertTimeout(){timeoutUniqueId=null;
+alertWindow=window.open('/page/timeoutwarn.jsp?sfdc.isPortalPage=1',"_sTothefinancialclinic_change_cs10_force_com",'width=360,height=280,location=no,dependent=no,resizable=yes,toolbar=no,status=no,directories=no,menubar=no,scrollbars=yes',false);
+parentWindow=window;
+if (!alertWindow&&forceLogout){
+setTimeout(parentWindow.doLogout(),25*1000)
+}
+document.body.onfocus=alertFocus;
+}
+function checkSessionTimeout(){
+var currentTime=new Date().getTime();
+var sessionTimeLeft=secondsLeftValue-((currentTime-lastPageActivityTime)/1000);
+if (sessionTimeLeft<=5){
+var url=window.location.pathname+window.location.hash;if(window.location.search&&window.location.search.length>1){
+url+=window.location.search;}
+var loc='/?ec=302&startURL='+encodeURIComponent(url);
+top.location=loc;
+} else {
+lastPageActivityTime=currentTime;
+startSessionTimer();
+}
+}
+function alertFocus(){
+if (alertWindow){
+if (!alertWindow.closed){
+alertWindow.focus();
+}else{
+alertWindow=null;
+document.body.onfocus=closePopup;
+}
+}
+}</script><a href="#skiplink" class="navSkipLink zen-skipLink zen-assistiveText">Skip to main content</a>
+<html>
+<head>
+    
+  <link  REL="stylesheet" type="text/css" href="CSS/changemachine.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="/resource/1350669682000/BootstrapJS/bootstrap.min.js"></script>
+  
+   
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'auk4xrm',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+  </script>  
+
+  <style>
+  ul li {
+	  
+	  margin-left: 0px;
+  }
+  
+  .sidebarCell, #AppBodyHeader, .bPageHeader, .tabNavigation, .bPageTitle, .bPageFooter {
+	  
+	  display: none;
+  }
+  
+  .bodyDiv {
+	  
+	  background-color: transparent;
+	  border-bottom: 0px;
+  }
+  </style>
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div class="topWrapper">
+      <div class="row">
+        <div class="span3">
+          <a class="brand" href="/" >
+          	<img src="https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png" />
+          </a>
+        </div>
+          
+          <div class="span1">
+               <ul class="unstyled cls-menu">
+            	<li  class=""><A href="/learn">Learn</a></li>
+            	<li class="active"><A href="/customers"> Coach</a></li>
+                <li class=""><A href="/share"> Share</a></li>
+              </ul>
+          </div>
+          
+       
+        </div><!-- / row -->
+      </div> <!-- / topWrapper -->
+	   <div class="midWrapper">
+
+      <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          
+          
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+                  
+                  
+                  
+               <li>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Goals">
+                  
+                  Goals
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Assets">
+                  
+                  Assets
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Banking">
+                  
+                  Banking
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Credit">
+                  
+                  Credit
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Debt">
+                  
+                  Debt
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Taxes">
+                  
+                  Taxes
+                </a>
+                </li>
+            </ul>
+            
+              <form action="/changemachine_search" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
+
+             
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="q" placeholder="Search" size="27" title="Enter search keywords" type="text">
+          <button class="btn" type="submit">Search</button>
+              
+               </form>
+              
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+      </div>
+  </header>
+<div class="wrapper"><div class="bPageHeader" id="AppBodyHeader"><table  class="tabsNewBar" border="0" cellpadding="0" cellspacing="0" id="tabsNewBar"><tr><td><div class="tabNavigation"><table  class="tab" border="0" cellpadding="0" cellspacing="0" id="tabBar"><tr><td nowrap="nowrap"><div id="home_Tab"><a href="/home/home.jsp" title="Home Tab">Home</a></div></td><td nowrap="nowrap"><div id="Case_Tab"><a href="/500/o" title="Cases Tab">Cases</a></div></td><td class="brandPrimaryBgr currentTab primaryPalette" nowrap="nowrap"><div id="Idea_Tab"><a href="/ideas/ideaList.apexp" class="brandPrimaryFgr" title="Ideas Tab - Selected">Ideas</a></div></td></tr>
+</table></div></td></tr>
+</table></div><div class="bodyDiv brdPalette brandPrimaryBrd"><div id="bd_l"></div><div id="bd_r"></div><div class="bgdPalette brandPrimaryBgr" id="motifCurve"><div class="bgdPalette brandPrimaryBgr" id="mc_l"></div><div class="bgdPalette brandPrimaryBgr" id="mc_r"></div></div><div id="bd_b"><div id="bd_bl"></div><div id="bd_br"></div></div><table class="outer" width="100%" id="bodyTable" border="0" cellspacing="0" cellpadding="0">
+<!-- Start page content table -->
+<tr><td id="sidebarCell" class=" sidebarCell"><div class="fixed sidebar" id="sidebarDiv"><div class="sidebarModulePortalWelcomeContainer sidebarModule"><div class="sidebarModuleHeader brandPrimaryBgr"><h2 class="brandPrimaryFgr">Welcome, Keith Mancuso - COACH</h2></div><div class="sidebarModuleBody"><a href="/_ui/core/portal/PortalUserMyProfilePage/d" class="sidebarModulePortalWelcome">My Profile</a>|<a href="/secur/logout.jsp" class="sidebarModulePortalWelcome">Logout</a></div></div><div class="recentItemModule sidebarModule"><div class="sidebarModuleHeader brandPrimaryBgr"><h2 class="brandPrimaryFgr">Recent Items</h2></div><div class="sidebarModuleBody"><div class="mruList individualPalette"><div class="mruItem" id="mrua09J0000003XlbJ"><a href="/a09J0000003XlbJ" class="Custom1Mru" accesskey="1" tabindex="0" title="[Alt+1]"><img src="/s.gif" alt="Customer: Roa"  class="mruIcon" title="Customer: Roa"/><span  class="mruText">Roa</span></a></div><div class="mruItem" id="mrua0PJ0000000xlpX"><a href="/a0PJ0000000xlpX" class="Custom13Mru" accesskey="2" tabindex="0" title="[Alt+2]"><img src="/s.gif" alt="Customer Action: CA-0000000121"  class="mruIcon" title="Customer Action: CA-0000000121"/><span  class="mruText">CA-0000000121</span></a></div><div class="mruItem" id="mrua0PJ0000000xloj"><a href="/a0PJ0000000xloj" class="Custom13Mru" accesskey="3" tabindex="0" title="[Alt+3]"><img src="/s.gif" alt="Customer Action: CA-0000000111"  class="mruIcon" title="Customer Action: CA-0000000111"/><span  class="mruText">CA-0000000111</span></a></div><div class="mruItem" id="mru087J000000001dW"><a href="/087J000000001dW" class="ideaMru" accesskey="4" tabindex="0" title="[Alt+4]"><img src="/s.gif" alt="Idea: I wish that it kept track of basketball games"  class="mruIcon" title="Idea: I wish that it kept track of basketball games"/><span  class="mruText">I wish that it kept track of basketball games</span></a></div><div class="mruItem" id="mrua0PJ0000000xlpc"><a href="/a0PJ0000000xlpc" class="Custom13Mru" accesskey="5" tabindex="0" title="[Alt+5]"><img src="/s.gif" alt="Customer Action: CA-0000000122"  class="mruIcon" title="Customer Action: CA-0000000122"/><span  class="mruText">CA-0000000122</span></a></div><div class="mruItem" id="mrua0PJ0000000xl7H"><a href="/a0PJ0000000xl7H" class="Custom13Mru" accesskey="6" tabindex="0" title="[Alt+6]"><img src="/s.gif" alt="Customer Action: CA-0000000102"  class="mruIcon" title="Customer Action: CA-0000000102"/><span  class="mruText">CA-0000000102</span></a></div><div class="mruItem" id="mrua0PJ0000000xkhk"><a href="/a0PJ0000000xkhk" class="Custom13Mru" accesskey="7" tabindex="0" title="[Alt+7]"><img src="/s.gif" alt="Customer Action: CA-0000000092"  class="mruIcon" title="Customer Action: CA-0000000092"/><span  class="mruText">CA-0000000092</span></a></div><div class="mruItem" id="mrua0PJ0000000xjrK"><a href="/a0PJ0000000xjrK" class="Custom13Mru" accesskey="8" tabindex="0" title="[Alt+8]"><img src="/s.gif" alt="Customer Action: CA-0000000030"  class="mruIcon" title="Customer Action: CA-0000000030"/><span  class="mruText">CA-0000000030</span></a></div><div class="mruItem" id="mrua0PJ0000000xkh6"><a href="/a0PJ0000000xkh6" class="Custom13Mru" accesskey="9" tabindex="0" title="[Alt+9]"><img src="/s.gif" alt="Customer Action: CA-0000000091"  class="mruIcon" title="Customer Action: CA-0000000091"/><span  class="mruText">CA-0000000091</span></a></div><div class="mruItem" id="mru500J0000001OFdt"><a href="/500J0000001OFdt" class="caseMru" accesskey="0" tabindex="0" title="[Alt+0]"><img src="/s.gif" alt="Case: 00001708"  class="mruIcon" title="Case: 00001708"/><span  class="mruText">00001708</span></a></div></div></div></div><div class="searchModule sidebarModule"><form  action="/search/SearchResults" id="sbsearch" method="GET" name="sbsearch" onsubmit="if (window.ffInAlert) { return false; }if(this.sbstr){this.sbstr.blur();}" ><input type="hidden" name="searchType" id="searchType" value="1" /><div class="sidebarModuleHeader brandPrimaryBgr"><h2 class="brandPrimaryFgr"><label for="sbstr">Search</label></h2></div><div class="sidebarModuleBody"><div class="standardSearchElementBody"><select  id="sen" name="sen" title="Search scope"><option value="0" title="Search All" selected="selected">Search All</option>
+<option value="500" title="Cases">Cases</option>
+<option value="550" title="Entitlements">Entitlements</option>
+<option value="02i" title="Assets">Assets</option>
+<option value="00T" title="Tasks">Tasks</option>
+<option value="002" title="Notes">Notes</option>
+<option value="098" title="Google Docs">Google Docs</option>
+<option value="087" title="Ideas">Ideas</option>
+<option value="0Bg" title="Idea Themes">Idea Themes</option>
+<option value="906" title="Questions">Questions</option>
+<option value="a07" title="Actions">Actions</option>
+<option value="a0P" title="Customer Actions">Customer Actions</option>
+<option value="a0D" title="Milestones">Milestones</option>
+<option value="a0M" title="Path Groups">Path Groups</option>
+<option value="a0E" title="Sections">Sections</option>
+<option value="a0s" title="Videos">Videos</option>
+</select><input type="hidden"  id="setLast" name="setLast" value="1" /><input  class="searchTextBox" autocomplete="off" id="sbstr" maxlength="80" name="sbstr" size="27" title="Enter search keywords" type="text" value="" /><input value=" Go! "  class="btn" name="search" title="Go!" type="submit" /></div><div class="searchFooter"><a href="/search/AdvancedSearch" onclick="document.getElementById('sbsearch').action='/search/AdvancedSearch';document.getElementById('sbsearch').submit(); return false;">Advanced Search...</a></div></div></form></div></div></td>
+<td class="oRight" id="bodyCell">
+<!-- Start page content -->
+<a name="skiplink"><img src="/s.gif" height='1' width='1' alt="Content Starts Here" class="skiplink skipLinkTargetInner zen-skipLinkTarget" title="Content Starts Here"/></a><span id="thePage"></span>
+
+	<link href="/sCSS/26.0/1354127940000/PortalDefault/default/Idea.css" media="screen" rel="Stylesheet" type="text/css" />
+	<link href="/sCSS/26.0/1354127940000/PortalDefault/default/IdeaPortal.css" media="screen" rel="Stylesheet" type="text/css" /><div class="bPageTitle"><div class="ptBody secondaryPalette brandSecondaryBrd"><div class="content"><img src="/s.gif" class="pageTitleIcon" title="Idea" alt="Idea" /><h1 class="pageType">Idea</h1><span class="titleSeparatingColon">:</span><h2 class="pageDescription">Post Idea</h2><div class="blank"></div></div></div></div>
+<form id="thePage:mainLayout:formIdea" name="thePage:mainLayout:formIdea" method="post" action="/ideas/editIdea.apexp" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="thePage:mainLayout:formIdea" value="thePage:mainLayout:formIdea" />
+<div id="thePage:mainLayout:formIdea:j_id3" class="ideaPageBlock "><div class="apexp"><div class="individualPalette"><div class="ideaBlock"><div id="thePage:mainLayout:formIdea:pb" class="bPageBlock brandSecondaryBrd apexDefaultPageBlock secondaryPalette"><div class="pbHeader"><table border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle"><h2 class="mainTitle">Describe Your Idea</h2></td><td id="thePage:mainLayout:formIdea:pb:pbb" class="pbButton "><input id="thePage:mainLayout:formIdea:pb:pbb:buttonSave" type="submit" name="thePage:mainLayout:formIdea:pb:pbb:buttonSave" value="Post" class="btn btn" /><input id="thePage:mainLayout:formIdea:pb:pbb:buttonCancel" type="submit" name="thePage:mainLayout:formIdea:pb:pbb:buttonCancel" value="Cancel" class="btn btn" /></td></tr></table></div><script>function twistSection(twisty, sectionId) {
+   var parentDiv = twisty;
+   while (parentDiv.tagName != 'DIV') { parentDiv = parentDiv.parentNode; }
+   var div = parentDiv.nextSibling; 
+   var elemWasOn = false; 
+   if (div.style.display != 'none') { 
+       div.style.display = 'none'; 
+       twisty.className ='showListButton';
+       twisty.alt = twisty.title = 'Show Section - '+twisty.name;
+       elemWasOn = true; 
+   } else {
+       div.style.display = 'block'; 
+       twisty.className = 'hideListButton';
+       twisty.alt = twisty.title = 'Hide Section - '+twisty.name;
+   } 
+  return !elemWasOn;
+}
+var registeredSections = new Array();
+function registerTwistableSection(headerId, mainTableId) {
+   var obj = new Object();
+   obj.headerId = headerId;
+   obj.mainTableId = mainTableId;
+   registeredSections[registeredSections.length] = obj;
+}
+function twistAllSections(on) {
+   for (var i = 0; i < registeredSections.length; i++) {
+      var obj = registeredSections[i];
+      var img;
+      img = document.getElementById('img_' + obj.headerId);
+    if (on && 'showListButton' == img.className) {
+         twistSection(img, obj.headerId, obj.mainTableId);
+     } else if (!on && 'hideListButton' == img.className) {
+         twistSection(img, obj.headerId, obj.mainTableId);
+       }
+   }
+}
+function toggleSection(headerId, on){
+    var sectionHead = document.getElementById('head_'+headerId+'_thePage_mainLayout_formIdea_pb');
+    var body = sectionHead.nextSibling;
+    var disp = on ? 'block' : 'none';
+    sectionHead.style.display = disp;
+    body.style.display = disp;
+}
+function registerTwistableSections_thePage_mainLayout_formIdea_pb() {
+registerTwistableSection('thePage_mainLayout_formIdea_pb_pbs', 'thePage_mainLayout_formIdea_pb');
+registerTwistableSection('thePage_mainLayout_formIdea_pb_ideaCustomFields', 'thePage_mainLayout_formIdea_pb');
+}
+registerTwistableSections_thePage_mainLayout_formIdea_pb();
+</script><div class="pbBody"><div id="thePage:mainLayout:formIdea:pb:pbs"><div class="pbSubsection"><table class="topPadding" style="margin-left: 20px">
+<tbody>
+<tr>
+<td class="labelCol requiredInput">Community</td>
+<td class=" dataCol commentDataCol"><div id="thePage:mainLayout:formIdea:pb:pbs:j_id7"><div id="thePage:mainLayout:formIdea:pb:pbs:j_id8" class="fieldCommunity"><input id="thePage:mainLayout:formIdea:pb:pbs:fieldCommunityId" type="hidden" name="thePage:mainLayout:formIdea:pb:pbs:fieldCommunityId" value="09aJ00000004CjA" /><span id="thePage:mainLayout:formIdea:pb:pbs:fieldCommunity">Change Machine</span>
+	                                         <script language="javascript" type="text/javascript">
+                                                var oldOpenLookup = openLookup,
+                                                    cidElm = document.getElementById('thePage:mainLayout:formIdea:pb:pbs:fieldCommunity' + '_lkid'),
+                                                    hiddenCommunityId = document.getElementById('thePage:mainLayout:formIdea:pb:pbs:fieldCommunityId'),
+                                                    onChangeFn;
+                                                openLookup = function(baseURL, width, modified, searchParam){
+                                                    var isIdeaTheme = baseURL.indexOf('lktp=0Bg') != -1;
+                                                    if (isIdeaTheme) {
+                                                        if (cidElm) {
+                                                            hiddenCommunityId.value = cidElm.value;
+                                                        }
+                                                        if (!hiddenCommunityId.value || hiddenCommunityId.value === Udd.EMPTY_KEY) {
+                                                            alert('Please select community');
+                                                            return;
+                                                        }
+                                                    baseURL += '&lpcomm=' + hiddenCommunityId.value;
+                                                }
+                                                oldOpenLookup(baseURL,width,modified,searchParam);
+                                             };
+
+                                             </script></div></div></td>
+</tr>
+<tr>
+<td class="labelCol requiredInput"><label for="thePage:mainLayout:formIdea:pb:pbs:fieldParent">
+Idea Theme</label></td>
+<td class=" dataCol commentDataCol"><span id="thePage:mainLayout:formIdea:pb:pbs:j_id11"><input type="hidden" name="thePage:mainLayout:formIdea:pb:pbs:fieldParent_lkid" id="thePage:mainLayout:formIdea:pb:pbs:fieldParent_lkid" value="000000000000000" /><input type="hidden" name="thePage:mainLayout:formIdea:pb:pbs:fieldParent_lkold" id="thePage:mainLayout:formIdea:pb:pbs:fieldParent_lkold" value="null" /><input type="hidden" name="thePage:mainLayout:formIdea:pb:pbs:fieldParent_lktp" id="thePage:mainLayout:formIdea:pb:pbs:fieldParent_lktp" value="0Bg" /><input type="hidden" name="thePage:mainLayout:formIdea:pb:pbs:fieldParent_lspf" id="thePage:mainLayout:formIdea:pb:pbs:fieldParent_lspf" value="0" /><input type="hidden" name="thePage:mainLayout:formIdea:pb:pbs:fieldParent_lspfsub" id="thePage:mainLayout:formIdea:pb:pbs:fieldParent_lspfsub" value="0" /><input type="hidden" name="thePage:mainLayout:formIdea:pb:pbs:fieldParent_mod" id="thePage:mainLayout:formIdea:pb:pbs:fieldParent_mod" value="0" /><span class="lookupInput"><input  class="fieldIdeaTheme" id="thePage:mainLayout:formIdea:pb:pbs:fieldParent" maxlength="255" name="thePage:mainLayout:formIdea:pb:pbs:fieldParent" onchange="getElementByIdCS('thePage:mainLayout:formIdea:pb:pbs:fieldParent_lkid').value='';getElementByIdCS('thePage:mainLayout:formIdea:pb:pbs:fieldParent_mod').value='1';" size="20" type="text" /><script  type="text/javascript">new ForeignKeyInputElement("thePage:mainLayout:formIdea:pb:pbs:fieldParent","/_ui/common/data/LookupValidationServlet",null,true,{"acent":"0Bg"});</script><a href="javascript:%20openLookup%28%27%2F_ui%2Fcommon%2Fdata%2FLookupPage%3Flkfm%3DthePage%253AmainLayout%253AformIdea%26lknm%3DthePage%253AmainLayout%253AformIdea%253Apb%253Apbs%253AfieldParent%26lktp%3D%27%20%2B%20getElementByIdCS%28%27thePage%3AmainLayout%3AformIdea%3Apb%3Apbs%3AfieldParent_lktp%27%29.value%2C670%2C%271%27%2C%27%26lksrch%3D%27%20%2B%20escapeUTF%28getElementByIdCS%28%27thePage%3AmainLayout%3AformIdea%3Apb%3Apbs%3AfieldParent%27%29.value.substring%280%2C%2080%29%29%29" class="fieldIdeaTheme" id="thePage:mainLayout:formIdea:pb:pbs:fieldParent_lkwgt" onclick="setLastMousePosition(event)" title="Idea Theme Lookup (New Window)"><img src="/s.gif" alt="Idea Theme Lookup (New Window)"  class="lookupIcon" onblur="this.className = 'lookupIcon';" onfocus="this.className = 'lookupIconOn';" onmouseout="this.className = 'lookupIcon';this.className = 'lookupIcon';" onmouseover="this.className = 'lookupIconOn';this.className = 'lookupIconOn';" title="Idea Theme Lookup (New Window)"/></a></span></span></td>
+</tr>
+<tr>
+<td class="labelCol requiredInput"><label for="thePage:mainLayout:formIdea:pb:pbs:fieldTitle">
+Title</label></td>
+<td class=" dataCol commentDataCol"><span id="thePage:mainLayout:formIdea:pb:pbs:j_id13"><div id="thePage:mainLayout:formIdea:pb:pbs:j_id14" class="fieldIdeaTitleContainer"><div class="requiredInput"><div class="requiredBlock"></div><input  class="fieldIdeaTitle" id="thePage:mainLayout:formIdea:pb:pbs:fieldTitle" maxlength="255" name="thePage:mainLayout:formIdea:pb:pbs:fieldTitle" onchange="beforeSearchSuggestedDuplicates(false);javascriptLoadSimilar(this.value)" size="20" type="text" /></div><script id="thePage:mainLayout:formIdea:pb:pbs:j_id17" type="text/javascript">javascriptLoadSimilar=function(title,communityId){A4J.AJAX.Submit('thePage:mainLayout:formIdea',null,{'oncomplete':function(request,event,data){afterSearchSuggestedDuplicates(false);},'similarityGroupingId':'thePage:mainLayout:formIdea:pb:pbs:j_id17','parameters':{'title':(typeof title!='undefined'&&title!=null)?title:'','thePage:mainLayout:formIdea:pb:pbs:j_id17':'thePage:mainLayout:formIdea:pb:pbs:j_id17','communityId':(typeof communityId!='undefined'&&communityId!=null)?communityId:'09aJ00000004CjA'} } )};
+</script>
+                                                <a class="similarResultsLoading pseudoLink" href="javascript:void(0);" id="similarResultsLoading" tabindex="-1" title="Searching for duplicates...">
+                                                    <img src="/img/loading.gif" />&nbsp;Searching for duplicates...
+                                                </a>
+                                                <div class="similarResultsContainer" id="similarResultsContainer"><div id="thePage:mainLayout:formIdea:pb:pbs:similarResults" class="similarResults">
+                                                        <a class="pseudoLink" href="javascript:void(0);" id="similarResultsText" tabindex="-1" title="Similar Ideas"><span class="similarResultsTitle">Similar Ideas</span><span class="similarResultsDesc">(Click to open in new window)</span>
+                                                        </a>
+                                                            <a class="pseudoLink" href="javascript:void(0);" id="similarResultsNone" tabindex="-1" title="No ideas found."><span class="similarResultsNone">No ideas found.</span>
+                                                            </a></div>
+                                                </div></div></span></td>
+</tr>
+<tr>
+<td class="labelCol requiredInput"><label for="thePage:mainLayout:formIdea:pb:pbs:fieldBody">
+Description</label><div class="textCounterOuter"><div class="textCounterMiddle"><div class="textCounter" id="thePage:mainLayout:formIdea:pb:pbs:fieldBody_counter">32000 remaining</div></div></div></td>
+<td class=" dataCol commentDataCol"><span id="thePage:mainLayout:formIdea:pb:pbs:j_id40" class="fieldIdeaBody"><textarea id="thePage:mainLayout:formIdea:pb:pbs:fieldBody:textAreaDelegate_body" name="thePage:mainLayout:formIdea:pb:pbs:fieldBody:textAreaDelegate_body"></textarea><script  type="text/javascript">CKEDITOR.timestamp = '3.6.2.1';
+var prototocolAndHost = window.location.protocol + '//' + window.location.host;
+var editor = CKEDITOR.replace('thePage:mainLayout:formIdea:pb:pbs:fieldBody:textAreaDelegate_body', {baseHref : prototocolAndHost + '/ckeditor/ckeditor-3.6.2/', customConfig : '/ckeditor/ckeditor-3.6.2/ckeditor.config.js', height : '200', bodyId : 'thePage:mainLayout:formIdea:pb:pbs:fieldBody:textAreaDelegate_body_rta_body', toolbar : 'Visualforce', sharedSpaces : { top : 'cke_topSpace', bottom : ' cke_bottomSpace' }, filebrowserImageUploadUrl : '/_ui/common/request/servlet/RtaImageUploadServlet', language : 'en-us',sfdcLabels : { CkeMediaEmbed : { title : 'Embed Multimedia Content', description : 'Use &lt;iframe&gt; code from DailyMotion, Vimeo, and Youtube.', subtitle : 'Paste &amp;lt;iframe&amp;gt; code here:', exampleTitle : 'Example:', iframeMissing : 'Invalid &lt;iframe&gt; element. Please use valid code from the approved sites.', example : '\n            \n                &lt;iframe width=\&quot;560\&quot; height=\&quot;315\&quot; src=\&quot;https://www.youtube.com/embed/KcOm0TNvKBA\&quot; frameborder=\&quot;0\&quot; allowfullscreen&gt;&lt;/iframe&gt;\n            \n        '}, sfdcSwitchToText : { sfdcSwitchToTextAlt : 'Use plain text'}, CkeImageDialog : { uploadTab : 'Upload Image', infoTab_url : 'URL', error : 'Error:', uploadTab_desc_info : 'Enter a description of the image for visually impaired users', uploadTab_desc : 'Description', infoTab_url_info : 'Example: http://www.mysite.com/myimage.jpg', btn_insert : 'Insert', missingUrlError : 'You must enter a URL', uploadTab_file : 'Select Image', infoTab_desc : 'Description', wrongFileTypeError : 'You can insert only .gif .jpeg and .png files.', btn_upadte : 'Update', infoTab : 'Web Address', title : 'Insert Image', infoTab_desc_info : 'Enter a description of the image for visually impaired users', uploadTab_file_info : 'Maximum size 1 MB. Only png, gif or jpeg'}, CkeImagePaste : { CkeImagePasteWarning : 'Pasting an image is not working properly with Firefox, please use [Copy Image location] instead.'}}});
+</script></span></td>
+</tr>
+<tr>
+<td class="labelCol requiredInput"><label for="thePage:mainLayout:formIdea:pb:pbs:Categories_unselected">
+Categories</label></td>
+<td class=" dataCol commentDataCol"><select  id="thePage:mainLayout:formIdea:pb:pbs:Categories" multiple="multiple" name="thePage:mainLayout:formIdea:pb:pbs:Categories" size="7" style="display:none;"><option value="Goals">Goals</option>
+<option value="Assets">Assets</option>
+<option value="Banking">Banking</option>
+<option value="Credit">Credit</option>
+<option value="Debt">Debt</option>
+<option value="Taxes">Taxes</option>
+</select><table class='multiSelectPicklistTable' border='0' cellspacing='0' cellpadding='0'><tr>
+<td><td colspan='100%' height='5'></td></tr>
+<tr class='multiSelectPicklistRow'><td>
+<select  id="thePage:mainLayout:formIdea:pb:pbs:Categories_unselected" title="Categories - Available" ondblclick="MultiSelectPicklist.handleMSPSelect('thePage:mainLayout:formIdea:pb:pbs:Categories'); " multiple="multiple" size="7"><optgroup style="font-size:9px;text-decoration:none;" label="Available"></optgroup><option value="0">Goals</option>
+<option value="1">Assets</option>
+<option value="2">Banking</option>
+<option value="3">Credit</option>
+<option value="4">Debt</option>
+<option value="5">Taxes</option>
+</select></td><td class='multiSelectPicklistCell'>
+<a href="javascript:MultiSelectPicklist.handleMSPSelect%28%27thePage%3AmainLayout%3AformIdea%3Apb%3Apbs%3ACategories%27%29%3B" title="Add"><img src="/s.gif" alt="Add"  class="picklistArrowRight" id="thePage:mainLayout:formIdea:pb:pbs:Categories_right_arrow" style="cursor:pointer;" title="Add"/></a><br><br>
+<a href="javascript:MultiSelectPicklist.handleMSPUnSelect%28%27thePage%3AmainLayout%3AformIdea%3Apb%3Apbs%3ACategories%27%29%3B" title="Remove"><img src="/s.gif" alt="Remove"  class="picklistArrowLeft" id="thePage:mainLayout:formIdea:pb:pbs:Categories_left_arrow" style="cursor:pointer;" title="Remove"/></a></td><td>
+<select  id="thePage:mainLayout:formIdea:pb:pbs:Categories_selected" title="Categories - Chosen" ondblclick="MultiSelectPicklist.handleMSPUnSelect('thePage:mainLayout:formIdea:pb:pbs:Categories'); " multiple="multiple" size="7"><optgroup style="font-size:9px;text-decoration:none;" label="Chosen"></optgroup></select></td></tr></table>
+</td>
+</tr>
+</tbody>
+</table>
+</div></div></div><div class="pbBottomButtons"><table border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle">&nbsp;</td><td id="thePage:mainLayout:formIdea:pb:pbb:bottom" class="pbButtonb "><input id="thePage:mainLayout:formIdea:pb:pbb:bottom:buttonSave" type="submit" name="thePage:mainLayout:formIdea:pb:pbb:bottom:buttonSave" value="Post" class="btn btn" /><input id="thePage:mainLayout:formIdea:pb:pbb:bottom:buttonCancel" type="submit" name="thePage:mainLayout:formIdea:pb:pbb:bottom:buttonCancel" value="Cancel" class="btn btn" /></td></tr></table></div><div class="pbFooter secondaryPalette"><div class="bg"></div></div></div></div></div></div></div><div id="thePage:mainLayout:formIdea:j_id53"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="ADgYMsy6cbKvJA7WULVQKwL3ui3i" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateCSRF" name="com.salesforce.visualforce.ViewStateCSRF" value="skjN7pZZvBxScvXcfdxnl9pq2GAyucPMHSgguUADnnsfWtIRl_g.oF3hrVYz_4ESbOjqPTH7nF5MIkoIwO56iVqxsUK6HVz6jdlfqKT4DuRRTv0xJkeMO1PFCRg7fnnpPSx8TE.5nkKlQ3qmkh19bCCZnvk=" /></span></span>
+
+	<script src="/static/050311/ideas/idea.js" type="text/javascript"></script>
+		    <script language="javascript" type="text/javascript">
+       document.title = "Change Machine Idea Edit: Post Idea";
+   </script><div class="datePicker" id="datePicker"><div class="dateBar"><img src="/s.gif" alt="Previous Month"  class="calLeft" onblur="this.className = 'calLeft';" onclick="DatePicker.datePicker.prevMonth();" onfocus="this.className = 'calLeftOn';" onmouseout="this.className = 'calLeft';" onmouseover="this.className = 'calLeftOn';" title="Previous Month"/><select  id="calMonthPicker" name="calMonthPicker" title="Month"><option value="0">January</option>
+<option value="1">February</option>
+<option value="2">March</option>
+<option value="3">April</option>
+<option value="4">May</option>
+<option value="5">June</option>
+<option value="6">July</option>
+<option value="7">August</option>
+<option value="8">September</option>
+<option value="9">October</option>
+<option value="10">November</option>
+<option value="11">December</option>
+</select><img src="/s.gif" alt="Next Month"  class="calRight" onblur="this.className = 'calRight';" onclick="DatePicker.datePicker.nextMonth();" onfocus="this.className = 'calRightOn';" onmouseout="this.className = 'calRight';" onmouseover="this.className = 'calRightOn';" title="Next Month"/><select  id="calYearPicker" name="calYearPicker" title="Year"><option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+</select></div><div class="calBody"><table  class="calDays" border="0" cellpadding="0" cellspacing="0" id="datePickerCalendar"><tr><TH class="dayOfWeek" scope="col">Sun</TH><TH class="dayOfWeek" scope="col">Mon</TH><TH class="dayOfWeek" scope="col">Tue</TH><TH class="dayOfWeek" scope="col">Wed</TH><TH class="dayOfWeek" scope="col">Thu</TH><TH class="dayOfWeek" scope="col">Fri</TH><TH class="dayOfWeek" scope="col">Sat</TH></tr>
+<tr class="calRow" id="calRow1"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow2"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow3"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow4"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow5"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow6"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+</table><div class="buttonBar"><a href="javascript:%20void%280%29%3B" class="calToday" onclick="DatePicker.datePicker.selectDate('today');return false;">Today</a></div></div></div><script type="text/javascript">Sfdc.onReady(function(){
+	SfdcApp.Visualforce.VSManager.vfPrepareForms(["thePage:mainLayout:formIdea"]);
+});</script>
+
+
+<!-- Body events -->
+<script type="text/javascript">function bodyOnLoad(){setFocusOnLoad();if (typeof(startSessionTimer)!='undefined') {startSessionTimer(); };if ((window.sfdcPage) && (sfdcPage.executeOnloadQueue)){sfdcPage.executeOnloadQueue();};new SidebarSearchAutoCompleteElement("sbstr","/_ui/common/search/client/ui/SidebarSearchAutoCompleteServlet",1,{},true,"sen","sbsearch");if (document.getElementById('sidebarDiv')){ Sidebar.prototype.theSidebar = new Sidebar(document.getElementById('sidebarDiv'), false); };; if (this.loadChatFrameJs) loadChatFrameJs();handleTextAreaElementChangeWithByteCheck('thePage:mainLayout:formIdea:pb:pbs:fieldBody', 32000, 0, 'remaining', 'over limit');MultiSelectPicklist.loadMSP('thePage:mainLayout:formIdea:pb:pbs:Categories');if(window.PreferenceBits){window.PreferenceBits.prototype.csrfToken="Jk0yCyYah4XtJ0S0lyfSd0UWQbezGfXs7KaSW_ooCZGc9aIHpqVGATgGm6p1bvZH77qlD9i9.GYbQcu9sNw9t_k.YqUUcL01SKqEUWIhYx3Z5vTSw.0aQozkkaYBHHwmh2SRKQkmXNsRx6bZ.0CzuPip0D5oCxJYCP8ylN8WBQorxacx0wHpVl8at8gJJiekvaI_uQ==";};if(window.Jiffy){if(Jiffy.onLoad)Jiffy.onLoad();if(Jiffy.ui&&Jiffy.ui.onLoad)Jiffy.ui.onLoad()}}function bodyOnBeforeUnload(){if ((window.sfdcPage) && (sfdcPage.executeOnBeforeUnloadQueue)){sfdcPage.executeOnBeforeUnloadQueue();};}function bodyOnFocus(){closePopupOnBodyFocus();}function bodyOnUnload(){}</script><div class="datePicker" id="datePicker"><div class="dateBar"><img src="/s.gif" alt="Previous Month"  class="calLeft" onblur="this.className = 'calLeft';" onclick="DatePicker.datePicker.prevMonth();" onfocus="this.className = 'calLeftOn';" onmouseout="this.className = 'calLeft';" onmouseover="this.className = 'calLeftOn';" title="Previous Month"/><select  id="calMonthPicker" name="calMonthPicker" title="Month"><option value="0">January</option>
+<option value="1">February</option>
+<option value="2">March</option>
+<option value="3">April</option>
+<option value="4">May</option>
+<option value="5">June</option>
+<option value="6">July</option>
+<option value="7">August</option>
+<option value="8">September</option>
+<option value="9">October</option>
+<option value="10">November</option>
+<option value="11">December</option>
+</select><img src="/s.gif" alt="Next Month"  class="calRight" onblur="this.className = 'calRight';" onclick="DatePicker.datePicker.nextMonth();" onfocus="this.className = 'calRightOn';" onmouseout="this.className = 'calRight';" onmouseover="this.className = 'calRightOn';" title="Next Month"/><select  id="calYearPicker" name="calYearPicker" title="Year"><option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+</select></div><div class="calBody"><table  class="calDays" border="0" cellpadding="0" cellspacing="0" id="datePickerCalendar"><tr><TH class="dayOfWeek" scope="col">Sun</TH><TH class="dayOfWeek" scope="col">Mon</TH><TH class="dayOfWeek" scope="col">Tue</TH><TH class="dayOfWeek" scope="col">Wed</TH><TH class="dayOfWeek" scope="col">Thu</TH><TH class="dayOfWeek" scope="col">Fri</TH><TH class="dayOfWeek" scope="col">Sat</TH></tr>
+<tr class="calRow" id="calRow1"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow2"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow3"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow4"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow5"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow6"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+</table><div class="buttonBar"><a href="javascript:%20void%280%29%3B" class="calToday" onclick="DatePicker.datePicker.selectDate('today');return false;">Today</a></div></div></div>
+<!-- End page content -->
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+<footer>
+    <div class="container">
+         
+    <img class="footerRays" src="https://www.visualaids.org/changemachine/images/raysCropped.png"> 
+        <img class="footerLogo" src="https://www.visualaids.org/changemachine/images/change-machine-footer-logo.png">
+
+          <ul class="nav nav-pills">
+          	 <li><a href="/_ui/core/portal/PortalUserMyProfilePage/d">My Account</a></li>
+          	 <li><a href="/secur/logout.jsp">Logout</a></li>
+              <li><a href="/changemachine_PrivacyPolicy">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+       	 </ul>
+      </div>
+   </footer>
+   
+    <div class="feedback">
+      <ul class="nav nav-pills">
+        <li><a href="/500/e?retURL=%2F500%2Fo">Issues/Problems?</a></li>
+        <li><a href="/ideas/ideaList.apexp">Ideas?</a></li>
+      </ul>
+      </div>
+   
+  </body>
+  </html><span class="rcCatcher" id="rcCatcher"></span><span class="rcCatcher2" id="rcCatcher2"></span></body></html>
+<!-- page generation time: 169ms -->

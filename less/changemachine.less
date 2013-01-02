@@ -385,6 +385,7 @@ body .wrapper {
 
 .page-header h1 {
 	display: inline-block;
+	margin-bottom: 10px;
 }
 
 .page-header h2 {
@@ -424,6 +425,9 @@ body .wrapper {
 		padding: 13px 15px 12px;
 	}
 }
+#questions, #paths {
+	border-bottom: none;
+}
 
 .milestone-hide {
 	background: url("https://www.visualaids.org/changemachine/images/open_close.png") -30px 18px;
@@ -451,7 +455,7 @@ body .wrapper {
 			cursor: pointer;
 		}
 		ol, ul {
-			list-style-type: disc !important;
+			list-style-type: disc;
 			li {
 				padding-left: 0;
 				border-bottom: none;
@@ -510,17 +514,17 @@ body .wrapper {
 	background-color: @lightergreen;
 	border-radius: 5px;
     overflow: hidden;
-    padding: 5px 15px;
+    padding: 5px 15px 0px;
     margin-bottom: 20px;
     box-shadow: inset 2px 2px 0px @lightergreen;
     h5 {
 	    padding-left: 25px;
-	    padding-bottom: 10px;
+	    display: inline-block;
     }
     ul {
 		list-style-type: none;
 		background-color: @lightestgreen;
-		margin: -10px -15px -10px -13px;
+		margin: 0 -15px -10px -13px;
 		padding: 1px 15px 12px;
 		li {
 			.proximaR();
@@ -534,6 +538,22 @@ body .wrapper {
 			}
 		}
 	}
+	h3 {
+		float: right;
+		position: relative;
+		width: 18px;
+		height: 18px;
+		margin: 3px 0 5px;
+	}
+}
+
+.sidebar-hide {
+	background: url("https://www.visualaids.org/changemachine/images/open_close.png") -60px 18px;
+	background-size: 78px 45px;
+}
+.sidebar-show {
+	background: url("https://www.visualaids.org/changemachine/images/open_close.png") -60px 0px;
+	background-size: 78px 45px;
 }
 
 .worksheets h5 {
@@ -552,6 +572,32 @@ body .wrapper {
 	background-image: url("https://www.visualaids.org/changemachine/images/related-videos.png");
 	background-repeat: no-repeat;
     background-size: 16px auto;
+}
+
+.span4 {
+	span h5 {
+		color: @lightgray;
+		.proximaB();
+	}
+	span h5, ul li {
+		padding: 0 40px 0 0;
+		margin-bottom: 20px;
+		border-bottom: none;
+		overflow: visible;
+	}
+	li a {
+		.metaBold();
+		color: @black;
+		font-size: 16px;
+		border-bottom: 2px dotted @lightergray;
+		line-height: 30px;
+		&:hover {
+			color: @blue;
+		}
+	}
+	ul.unstyled.milestones {
+		margin-bottom: 40px;
+	}
 }
 
 /* Coach View */
@@ -765,6 +811,8 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 	    font-size: 1.2em;
 	    font-style: normal;
 	    font-weight: 500;
+	    color: @darkyellow;
+	    line-height: 1.4em;
 	}
 	p {
 		margin: -9px -36px -9px -12px;
@@ -779,10 +827,11 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 		    overflow: visible;
 		    margin-top: 10px;
 		    border-bottom: none;
+		    line-height: 1.4em;
 	    }
 	}
-	strong {
-		color: @yellow;
+	strong, b {
+		color: @darkyellow !important;
 		display: block;
 		margin-bottom: 15px;
 	}
@@ -811,6 +860,19 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 	}
 }
 
+.related-block {
+	display: inline-block;
+	margin: 10px 0 20px;
+	width: 49%;
+	ul {
+		list-style-type: none !important;
+		margin-left: 25px;
+		li a {
+			border-bottom: 1px dotted @lightgray;
+		}
+	}
+}
+
 .milestone-block a.worksheets,
 .milestone-block a.tipsheets {
 	background-repeat: no-repeat;
@@ -827,6 +889,32 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 	}
 }
 
+.milestone-block {
+	h5 {
+		background-repeat: no-repeat;
+		background-size: 18px 20px;
+	}
+	#related-worksheets {
+		h5 {
+			background-image: url("https://www.visualaids.org/changemachine/images/related-worksheets.png");
+		}
+	}
+	#related-tipsheets {
+		h5 {
+			background-image: url("https://www.visualaids.org/changemachine/images/related-tipsheets.png");
+		}
+	}
+	#related-worksheets {
+		h5 {
+			background-image: url("https://www.visualaids.org/changemachine/images/related-worksheets.png");
+		}
+	}
+	#related-videos {
+		h5 {
+			background-image: url("https://www.visualaids.org/changemachine/images/related-videos.png");
+		}
+	}
+}
 
 .customer-tabs {
 	li {
@@ -904,7 +992,7 @@ ul.pager {
 	}
 	.search-actions {
 		h4 {
-			margin: 10px 0;
+			margin: 10px 0 15px;
 			a {
 				.proximaR();
 				font-size: 16px;
@@ -913,14 +1001,30 @@ ul.pager {
 		}
 	}
 	.search-tipsheets {
-		h4 a {
-			.proximaR();
-			font-size: 14px;
+		h4 {
+				margin-bottom: 2px;
+			a {
+				.proximaR();
+				font-size: 16px;
+			}
 		}
 		p {
 			.metaBook();
-			color: @gray;
+			color: @lightgray;
 			margin-bottom: 30px;
+			font-size: 16px;
+		}
+	}
+	p.searchMore {
+		margin-top: 20px;
+		a {
+			.metaBook();
+			color: @green;
+			font-size: 16px;
+			border-bottom: 1px dotted @lightgray;
+			&:hover {
+				color: @blue;
+			}
 		}
 	}
 }
@@ -935,9 +1039,21 @@ body .worksheet-page .page-header {
 }
 
 .worksheet-page {
+	.page-header {
+		margin: 0 105px;
+		padding-top: 40px;
+	}
 	h1 {
 		color: @green;
 		font-size: 40px;
+	}
+	.btn {
+		font-size: 12px;
+		padding: 2px 10px;
+		margin-top: 13px;
+		&:hover {
+			padding: 4px 10px 0px;
+		}
 	}
 }
 
@@ -1116,7 +1232,6 @@ footer ul {
 	color: @blue;
 }
 
-
 /* -------------------------------------------------------------------------- */
 
 /*                            Sales Force Styling                             */
@@ -1146,6 +1261,9 @@ img.skiplink {
     }
     .pbButton {
 	    float: right;
+    }
+    .pbTitle {
+	    width: 80%;
     }
 }
 
@@ -1368,6 +1486,36 @@ html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.
 }
 
 /* ----- IdeaList ----- */
+
+/* ----- Post Idea ----- */
+
+#thePage:mainLayout:formIdea:pb {
+	background-color: @white;
+}
+
+.pbBottomButtons {
+	width: 240px;
+	.pbTitle {
+		width: 30%;
+		input[type="submit"] {
+			margin-right: 10px;
+		}
+	}
+}
+
+.multiSelectPicklistRow select[multiple], 
+.multiSelectPicklistRow select[size] {
+    height: 130px;
+}
+
+.multiSelectPicklistTable .multiSelectPicklistRow .multiSelectPicklistCell {
+    background-color: @white;
+    a {
+	    margin: 0 5px;
+    }
+}
+
+/* ----- Post Idea ----- */
 
 /* -------------------------------------------------------------------------- */
 

@@ -50,6 +50,9 @@ body, html, tfaContent {
 }
 */
 
+.wFormTitle {
+	display: none;
+}
 
 #tfaContent label {
 	background-color: @lighterblue;
@@ -86,7 +89,7 @@ input[type="radio"] {
 
 .wForm form .wfPagingButtons,
 .actions {
-	float: right !important;
+/* 	float: right !important; */
 	margin: 20px 0 0 !important;
 	padding: 0 !important;
 	input[type="button"],
@@ -96,8 +99,8 @@ input[type="radio"] {
 		border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
 		border: 2px solid transparent;
 	    display: inline-block;
-	    float: left !important;
-	    margin-left: 10px;
+	    /* float: left !important; */
+	    /* margin-left: 10px; */
 	    padding: 10px;
 	    width: auto;
 		color: @white;
@@ -111,6 +114,7 @@ input[type="radio"] {
 	    cursor: pointer;
 	    display: inline-block;
 	    font-size: 16px;
+/* 	    float: right; */
 	    line-height: 20px;
 	    text-align: center;
 	    text-transform: uppercase;
@@ -123,7 +127,6 @@ input[type="radio"] {
 			float: right;
 		}
 	}
-
 }
 
 .thumbnail .btn,
@@ -145,14 +148,33 @@ input[type="radio"] {
 	font-size: 18px;
 }
 
-.supportInfo a {
-	color: @green;
-	.metaBook();
-	font-size: 14px;
-	&:hover {
-		text-decoration: none;
-		color: @lightgreen;
+.supportInfo {
+	margin-top: 20px;
+	a {
+		color: @green;
+		.metaBook();
+		font-size: 14px;
+		&:hover {
+			text-decoration: none;
+			color: @lightgreen;
+		}
 	}
+}
+
+#foo:checked::before,
+input[type="checkbox"] {
+    position:absolute;
+    clip: rect(0,0,0,0);
+    clip: rect(0 0 0 0);
+}
+
+/* ----- radio buttons ----- */
+#foo:checked,
+input[type="checkbox"] + label::before {
+    content: url('checkbox.png');
+}
+input[type="checkbox"]:checked + label::before {
+    content: url('checkbox-checked.png');
 }
 
 /* form with textareas */

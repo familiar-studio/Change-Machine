@@ -5100,6 +5100,9 @@ tfaContent {
 	color: @gray;
 }
 */
+.wFormTitle {
+  display: none;
+}
 #tfaContent label {
   background-color: #e3e8f2;
   color: rgba(0, 0, 0, 0.75);
@@ -5135,7 +5138,8 @@ input[type="radio"] {
 }
 .wForm form .wfPagingButtons,
 .actions {
-  float: right !important;
+  /* 	float: right !important; */
+
   margin: 20px 0 0 !important;
   padding: 0 !important;
 }
@@ -5149,8 +5153,10 @@ input[type="radio"] {
   background-color: #8ea2ca;
   border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
   border: 2px solid transparent;
-  float: left !important;
-  margin-left: 10px;
+  /* float: left !important; */
+
+  /* margin-left: 10px; */
+
   padding: 10px;
   width: auto;
   color: #ffffff;
@@ -5164,6 +5170,8 @@ input[type="radio"] {
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
+  /* 	    float: right; */
+
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -5201,6 +5209,9 @@ input[type="radio"] {
   font-weight: 700;
   font-size: 18px;
 }
+.supportInfo {
+  margin-top: 20px;
+}
 .supportInfo a {
   color: #73a534;
   font-family: "ff-meta-serif-web-pro", serif;
@@ -5211,6 +5222,20 @@ input[type="radio"] {
 .supportInfo a:hover {
   text-decoration: none;
   color: rgba(115, 165, 51, 0.5);
+}
+#foo:checked::before,
+input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  clip: rect(0 0 0 0);
+}
+/* ----- radio buttons ----- */
+#foo:checked,
+input[type="checkbox"] + label::before {
+  content: url('checkbox.png');
+}
+input[type="checkbox"]:checked + label::before {
+  content: url('checkbox-checked.png');
 }
 /* form with textareas */
 /*

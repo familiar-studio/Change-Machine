@@ -44,11 +44,18 @@
        }
        return false;
       });
+
       
-      $j('.sidebar-block h5').click(function() {
+      $j('.sidebar-block h3').click(function() {
        $j(this).parent().children('ul').toggle();
+       if ($j(this).parent().children('ul').is(":visible")) {
+       	$j(this).removeClass('sidebar-show').addClass('sidebar-hide');
+       } else {
+	    $j(this).removeClass('sidebar-hide').addClass('sidebar-show'); 
+       }
        return false;
       });
+      
     });
   </script>
 
@@ -278,7 +285,7 @@
           <div class="span4">
         
              <div class="sidebar-block worksheets">
-                    <h5>Worksheets</h5>
+                    <h5>Worksheets</h5><h3 class="sidebar-hide"></h3>
           <ul>
                <li><a href="/worksheet/How-to-Shop-for-a-Secure-Loan">How to Shop for a Secure Loan</a>
                
@@ -292,7 +299,7 @@
           </ul>
               </div>
               <div class="sidebar-block tipsheets">
-                 <h5>Tipsheets</h5>
+                 <h5>Tipsheets</h5><h3 class="sidebar-hide"></h3>
           <ul>
                <li><a href="/tipsheet/5-Ways-To-Protect-Yourself-Against-Identity-Theft" target="_blank">5 Ways To Protect Yourself Against Identity Theft</a>
                
