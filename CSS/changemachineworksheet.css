@@ -5114,6 +5114,7 @@ tfaContent {
   font-weight: 300;
   margin-bottom: 20px;
   vertical-align: baseline;
+  line-height: 1.2em;
 }
 #tfaContent label.preField {
   font-family: "ff-meta-serif-web-pro", serif;
@@ -5224,20 +5225,24 @@ input[type="radio"] {
   text-decoration: none;
   color: rgba(115, 165, 51, 0.5);
 }
+/*
 #foo:checked::before,
 input[type="checkbox"] {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  clip: rect(0 0 0 0);
+    position:absolute;
+    clip: rect(0,0,0,0);
+    clip: rect(0 0 0 0);
 }
-/* ----- radio buttons ----- */
+
+----- radio buttons ----- 
+
 #foo:checked,
 input[type="checkbox"] + label::before {
-  content: url('checkbox.png');
+    content: url('checkbox.png');
 }
 input[type="checkbox"]:checked + label::before {
-  content: url('checkbox-checked.png');
+    content: url('checkbox-checked.png');
 }
+*/
 /* form with textareas */
 /*
 .wForm h3, .wForm h4 {

@@ -5718,7 +5718,14 @@ body .wrapper {
 }
 #questions .accordion-heading,
 #paths .accordion-heading {
-  padding: 10px 15px 0;
+  padding: 0 15px;
+}
+#questions .accordion-heading h5,
+#paths .accordion-heading h5 {
+  width: 90%;
+  padding-left: 0;
+  font-size: 16px;
+  display: inline-block;
 }
 #questions .accordion-heading h3,
 #paths .accordion-heading h3 {
@@ -5727,7 +5734,7 @@ body .wrapper {
   width: 18px;
   height: 18px;
   margin: 3px 0 5px;
-  top: -5px;
+  display: inline-block;
 }
 .accordion-hide {
   background: url("https://www.visualaids.org/changemachine/images/open_close.png") -30px 18px;
@@ -5740,6 +5747,7 @@ body .wrapper {
 .accordion-group:nth-child(n+2) {
   border-top: 2px solid #c7d1e4;
   border-radius: 0 0 0 0;
+  padding-top: 5px;
 }
 /* ----- End Sidebar ----- */
 /* Coach View */
@@ -6021,7 +6029,7 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 }
 .related-block {
   display: inline-block;
-  margin: 10px 0 20px;
+  margin: 10px 0;
   /* 	width: 49%; */
 
   vertical-align: top;
@@ -6203,6 +6211,7 @@ body .worksheet-page .page-header {
 .worksheet-page h1 {
   color: #73a534;
   font-size: 40px;
+  width: 90%;
 }
 .worksheet-page .btn {
   font-size: 12px;
