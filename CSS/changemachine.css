@@ -6584,7 +6584,7 @@ html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.
 form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageBlock div.apexp div.individualPalette div.ideaBlock div#thePage:mainLayout:formIdea:pb.bPageBlock {
   background-color: #ffffff !important;
 }
-table tbody tr td div#thePage:mainLayout:j_id77.ideaPageBlock div.apexp div.individualPalette div.ideaBlock div#thePage:mainLayout:pbIdeaList.bPageBlock #thePage:mainLayout:formIdea:pb {
+#thePage\:mainLayout\:formIdea\:pb {
   background-color: #ffffff !important;
 }
 .pbBottomButtons {
