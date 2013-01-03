@@ -5189,6 +5189,14 @@ h5 {
 .milestone-block h5 {
   color: #8ea2ca;
 }
+h6 {
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  padding-left: 15px;
+}
 h1,
 h2,
 h3,
@@ -5514,6 +5522,7 @@ body .wrapper {
   border-bottom: 5px solid black;
 }
 .milestone-block ul.action-list {
+  overflow: hidden;
   /* 		list-style-type: none; */
 
 }
@@ -5567,6 +5576,9 @@ body .wrapper {
 .milestone-block h5 {
   padding-left: 25px;
 }
+.page-header + .milestone-block {
+  border-bottom: none;
+}
 .milestone-block .Roadblock {
   color: #a72c32;
   background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
@@ -5588,6 +5600,7 @@ body .wrapper {
   border-bottom: 2px dotted rgba(0, 0, 0, 0.25);
   display: inline-block;
 }
+/* ----- Sidebar ----- */
 .sidebar-block {
   background-color: rgba(115, 165, 51, 0.25);
   border-radius: 5px;
@@ -5677,6 +5690,58 @@ body .wrapper {
 .otherMilestones ul.unstyled.milestones {
   margin-bottom: 40px;
 }
+.milestone-sidebar #questions,
+.milestone-sidebar #paths {
+  overflow: hidden;
+  padding: 5px 0 0 2px;
+  margin-bottom: 20px;
+}
+.milestone-sidebar #questions .accordion-inner,
+.milestone-sidebar #paths .accordion-inner {
+  padding: 20px 30px;
+  line-height: 1.5em;
+}
+.milestone-sidebar #questions .accordion-inner p,
+.milestone-sidebar #paths .accordion-inner p {
+  line-height: 1.5em;
+}
+#questions .accordion-heading a.accordion-toggle,
+#paths .accordion-heading a.accordion-toggle {
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #8ea2ca;
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+}
+#questions .accordion-heading,
+#paths .accordion-heading {
+  padding: 10px 15px 0;
+}
+#questions .accordion-heading h3,
+#paths .accordion-heading h3 {
+  float: right;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin: 3px 0 5px;
+  top: -5px;
+}
+.accordion-hide {
+  background: url("https://www.visualaids.org/changemachine/images/open_close.png") -30px 18px;
+  background-size: 78px 45px;
+}
+.accordion-show {
+  background: url("https://www.visualaids.org/changemachine/images/open_close.png") -30px 0px;
+  background-size: 78px 45px;
+}
+.accordion-group:nth-child(n+2) {
+  border-top: 2px solid #c7d1e4;
+  border-radius: 0 0 0 0;
+}
+/* ----- End Sidebar ----- */
 /* Coach View */
 .topWrapper .btn-group {
   font-size: 18px;
@@ -5885,6 +5950,10 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
   background-color: #f9eec7;
   text-shadow: none;
   box-shadow: 2px 2px 0 #eee3be inset;
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
 }
 .alert p,
 .alert ul,
@@ -5892,7 +5961,7 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
   background-color: #fcf8e3;
   clear: both;
   font-family: "ff-meta-serif-web-pro", serif;
-  font-size: 1.2em;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   color: #c09853;
@@ -5953,7 +6022,16 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 .related-block {
   display: inline-block;
   margin: 10px 0 20px;
-  width: 49%;
+  /* 	width: 49%; */
+
+  vertical-align: top;
+  /*
+	float: left;
+	&:nth-child(even) {
+		float: right;
+	}
+*/
+
 }
 .related-block ul {
   list-style-type: none !important;
@@ -5961,6 +6039,13 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 }
 .related-block ul li a {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+}
+.action-list .Roadblock span {
+  float: left;
+  width: 49%;
+}
+.action-list .Roadblock span:nth-child(even) {
+  float: right;
 }
 .milestone-block a.worksheets,
 .milestone-block a.tipsheets {

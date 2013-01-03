@@ -5211,6 +5211,7 @@ input[type="radio"] {
 }
 .supportInfo {
   margin-top: 20px;
+  display: none;
 }
 .supportInfo a {
   color: #73a534;

@@ -127,6 +127,13 @@ h5 {
 	color: @blue;
 }
 
+h6 {
+	.metaBold();
+	color: @lightgray;
+	font-size: 16px;
+	padding-left: 15px;
+}
+
 h1, h2, h3, h4, h5, h6, p, a {
 	line-height: 1.2em;
 }
@@ -447,6 +454,7 @@ body .wrapper {
 	padding: 0 0 15px;
 	border-bottom: 5px solid black;
 	ul.action-list {
+		overflow: hidden;
 /* 		list-style-type: none; */
 		li, li a {
 			.proximaR();
@@ -490,6 +498,9 @@ body .wrapper {
 		padding-left: 25px;
 	}
 }
+.page-header + .milestone-block {
+	border-bottom: none;
+}
 
 .milestone-block .Roadblock {
 	color: @red;
@@ -514,6 +525,8 @@ body .wrapper {
 		display: inline-block;
 	}
 }
+
+/* ----- Sidebar ----- */
 
 .sidebar-block {
 	background-color: @lightergreen;
@@ -604,6 +617,62 @@ body .wrapper {
 		margin-bottom: 40px;
 	}
 }
+
+.milestone-sidebar {
+	#questions, #paths {
+	    overflow: hidden;
+	    padding: 5px 0 0 2px;
+	    margin-bottom: 20px;
+	    .accordion-inner {
+		    padding: 20px 30px;
+		    line-height: 1.5em;
+	    }
+	    .accordion-inner p {
+		    line-height: 1.5em;
+	    }
+	}
+}
+
+#questions, #paths {
+	.accordion-heading a.accordion-toggle {
+		.metaBold();
+		font-size: 16px;
+		color: @blue;
+		width: 100%;
+		display: inline-block;
+		padding: 0;
+	}
+}
+
+#questions, #paths {
+	.accordion-heading {
+			padding: 10px 15px 0;
+		h3 {
+			float: right;
+			position: relative;
+			width: 18px;
+			height: 18px;
+			margin: 3px 0 5px;
+			top: -5px;
+		}
+	}
+}
+
+.accordion-hide {
+	background: url("https://www.visualaids.org/changemachine/images/open_close.png") -30px 18px;
+	background-size: 78px 45px;
+}
+.accordion-show {
+	background: url("https://www.visualaids.org/changemachine/images/open_close.png") -30px 0px;
+	background-size: 78px 45px;
+}
+
+.accordion-group:nth-child(n+2) {
+	border-top: 2px solid @lightblue;
+	border-radius: 0 0 0 0;
+}
+
+/* ----- End Sidebar ----- */
 
 /* Coach View */
 
@@ -809,11 +878,13 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 	background-color: @lightyellow;
 	text-shadow: none;
 	box-shadow: 2px 2px 0 #eee3be inset;
+	.metaBook();
+	font-size: 20px;
 	p, ul, ol {
 		background-color: @lighteryellow;
 		clear: both;
 	    font-family: "ff-meta-serif-web-pro",serif;
-	    font-size: 1.2em;
+	    font-size: 16px;
 	    font-style: normal;
 	    font-weight: 500;
 	    color: @darkyellow;
@@ -868,13 +939,28 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 .related-block {
 	display: inline-block;
 	margin: 10px 0 20px;
-	width: 49%;
+/* 	width: 49%; */
+	vertical-align: top;
 	ul {
 		list-style-type: none !important;
 		margin-left: 25px;
 		li a {
 			border-bottom: 1px dotted @lightgray;
 		}
+	}
+/*
+	float: left;
+	&:nth-child(even) {
+		float: right;
+	}
+*/
+}
+
+.action-list .Roadblock span {
+	float: left;
+	width: 49%;
+	&:nth-child(even) {
+		float: right;
 	}
 }
 
@@ -942,6 +1028,7 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 		}
 	}
 }
+
 
 
 a.showDetails {
