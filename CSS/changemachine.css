@@ -5536,6 +5536,16 @@ body .wrapper {
   color: #000000;
   overflow: inherit;
 }
+.milestone-block ul.action-list h6 {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5em;
+  font-size: 16px;
+  margin: 5px 0;
+  padding-left: 0px;
+  color: #000000;
+}
 .milestone-block ul.action-list li a:hover {
   color: #8ea2ca;
   cursor: pointer;
@@ -6020,7 +6030,6 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
   font-style: normal;
   font-weight: 700;
   margin-top: 20px;
-  display: block;
   font-size: 16px;
   border: none;
   padding: 0;
