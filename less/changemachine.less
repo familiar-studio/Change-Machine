@@ -453,6 +453,9 @@ body .wrapper {
 	margin: 20px 0;
 	padding: 0 0 15px;
 	border-bottom: 5px solid black;
+	.mainColumn {
+		padding-right: 20px;
+	}
 	ul.action-list {
 		overflow: hidden;
 /* 		list-style-type: none; */
@@ -464,13 +467,14 @@ body .wrapper {
 			overflow: inherit;
 		}
 		
-		h6 {
+		h3 {
 			.proximaB();
-			line-height: 1.5em;
-			font-size: 16px;
-			margin: 5px 0;
+			line-height: 1.1em;
+			font-size: 18px;
+			margin: 0;
 			padding-left: 0px;
 			color: @black;
+			display: inline-block;
 			
 		}
 		li a:hover {
@@ -508,6 +512,7 @@ body .wrapper {
 		padding-left: 25px;
 	}
 }
+
 .page-header + .milestone-block {
 	border-bottom: none;
 }
@@ -518,6 +523,10 @@ body .wrapper {
 	background-repeat: no-repeat;
     background-size: 16px auto;
     background-position: 2px 2px;
+    a h3 {
+	    color: @red;
+	    .proximaR();
+    }
 }
 
 .milestone-block .Roadblock img {
@@ -627,6 +636,12 @@ body .wrapper {
 		margin-bottom: 40px;
 	}
 }
+.otherMilestones li {
+	background-image: url("https://www.visualaids.org/changemachine/images/back_next-arrows.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 60px auto;
+}
 
 .milestone-sidebar {
 	#questions, #paths {
@@ -687,6 +702,45 @@ body .wrapper {
 	border-top: 2px solid @lightblue;
 	border-radius: 0 0 0 0;
 	padding-top: 5px;
+}
+
+.alert {
+	background-color: @lightyellow;
+	text-shadow: none;
+	box-shadow: 2px 2px 0 #eee3be inset;
+	.metaBook();
+	font-size: 20px;
+	p, ul, ol {
+		background-color: @lighteryellow;
+		clear: both;
+	    font-family: "ff-meta-serif-web-pro",serif;
+	    font-size: 16px;
+	    font-style: normal;
+	    font-weight: 500;
+	    color: @darkyellow;
+	    line-height: 1.4em;
+	}
+	p {
+		margin: -9px -36px -9px -12px;
+		padding: 10px 15px 12px;
+	}
+	ul, ol { 
+	    margin: -9px -36px -22px -12px;
+	    padding: 10px 25px 15px;
+	    list-style-type: disc;
+	    li {
+		    padding-left: 0;
+		    overflow: visible;
+		    margin-top: 10px;
+		    border-bottom: none;
+		    line-height: 1.4em;
+	    }
+	}
+	strong, b {
+		color: @yellow !important;
+		display: block;
+		margin-bottom: 15px;
+	}
 }
 
 /* ----- End Sidebar ----- */
@@ -891,45 +945,6 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 	color: @lightgray;
 }
 
-.alert {
-	background-color: @lightyellow;
-	text-shadow: none;
-	box-shadow: 2px 2px 0 #eee3be inset;
-	.metaBook();
-	font-size: 20px;
-	p, ul, ol {
-		background-color: @lighteryellow;
-		clear: both;
-	    font-family: "ff-meta-serif-web-pro",serif;
-	    font-size: 16px;
-	    font-style: normal;
-	    font-weight: 500;
-	    color: @darkyellow;
-	    line-height: 1.4em;
-	}
-	p {
-		margin: -9px -36px -9px -12px;
-		padding: 10px 15px 12px;
-	}
-	ul, ol { 
-	    margin: -9px -36px -22px -12px;
-	    padding: 10px 25px 15px;
-	    list-style-type: disc;
-	    li {
-		    padding-left: 0;
-		    overflow: visible;
-		    margin-top: 10px;
-		    border-bottom: none;
-		    line-height: 1.4em;
-	    }
-	}
-	strong, b {
-		color: @darkyellow !important;
-		display: block;
-		margin-bottom: 15px;
-	}
-}
-
 .actionDetails {
 	.metaBook();
 	padding: 10px 0 0;
@@ -987,6 +1002,26 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 	}
 }
 
+.milestone-block .action-list {
+	h3:nth-child(2) {
+		float: right;
+		position: relative;
+		width: 18px;
+		height: 18px;
+		margin: 3px 0 5px;
+		background-size: 78px 45px;
+	}
+}
+.action-hide {
+	background: url("https://www.visualaids.org/changemachine/images/open_close.png") 0px 18px;
+	background-size: 78px 45px;
+}
+.action-show {
+	background: url("https://www.visualaids.org/changemachine/images/open_close.png") 0px 0px;
+	background-size: 78px 45px;
+}
+
+
 .milestone-block a.worksheets,
 .milestone-block a.tipsheets {
 	background-repeat: no-repeat;
@@ -1028,30 +1063,7 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 			background-image: url("https://www.visualaids.org/changemachine/images/related-videos.png");
 		}
 	}
-}
-
-.customer-tabs {
-	li {
-		color: @blue;
-		border: 1px solid transparent;
-		border-radius: 8px 8px 0 0;
-		&.active {
-			border: 1px solid #DDDDDD;
-			box-shadow: 0px -3px 5px @lightestblue;
-		}
-		&:hover {
-			border: 1px solid #DDDDDD;
-		}
-		a {
-			color: @blue;
-			border: 1px solid transparent;
-			&:hover {
-				border: 1px solid transparent;
-			}
-		}
-	}
-}
-
+} 
 
 
 a.showDetails {
@@ -1063,13 +1075,255 @@ a.showDetails {
 
 .progress {
 	margin-bottom: 5px;
+	background-color: @lightblue;
+	background-image: none;
+	height: 13px;
+	border-radius: 6px;
+	overflow: visible;
+	box-shadow: none;
 }
 
 .progress-striped .bar {
-    background-color: @lightgray;
+    background-color: @green;
+    background-image: none;
+    height: 17px;
+    border-radius: 6px;
+    margin-top: -2px;
+    box-shadow: none;
 }
 
 /* ----- End Main Content ----- */
+
+/* ----- Customer Page ----- */
+
+.customer {
+	.btn {
+		border-radius: 8px;
+	}
+	.page-header {
+		.customer-heading-top {
+			margin: 0 0 10px;
+			border-bottom: 1px solid @lightergray;
+		}
+		.customer-heading-left {
+			display: inline-block;
+			h1 {
+				color: @black;
+				.metaBold();
+				font-size: 40px;
+				margin: 0;
+			}
+		}
+		.customer-heading-right {
+			float: right;
+			display: inline-block;
+			.customer-totals {
+				list-style-type: none;
+				margin: 0;
+				li {
+					float: right;
+					padding-right: 10px;
+					margin-right: 10px;
+					border-right: 1px solid @lightergray;
+					&:first-child {
+						padding-right: 0;
+						margin-right: 0;
+						border: none;
+					}
+				}
+				h6 {
+					.proximaR();
+					font-size: 10px;
+					text-align: left;
+					padding-left: 0;
+					margin-top: 0;
+					margin-bottom: 5px;
+				}
+				span {
+					font-size: 23px;
+					.metaBold();
+					color: @gray;
+				}
+			}
+		}
+		.customer-heading-bottom {
+			margin-bottom: 10px;
+			h6 {
+				margin: 0 0 10px;
+				padding: 0;
+				.proximaR();
+				font-size: 16px;
+			}
+			.btn {
+				padding: 7px 18px;
+				margin-top: 11px;
+				&:hover {
+					padding: 9px 18px 5px;
+				}
+			}
+		}
+	}
+	.nav-tabs {
+		border: none;
+	}
+	.customer-tabs {
+		padding: 0 -10px;
+		margin: 0 -10px 15px;
+		background-color: @lightestgray;
+		li {
+			color: @blue;
+			border: 1px solid transparent;
+			border-radius: 8px 8px 0 0;
+			margin: 0 10px;
+			font-size: 18px;
+			&.active {
+				border-top: 2px solid @lightestgray;
+				border-left: 2px solid @lightestgray;
+				border-right: 2px solid @lightestgray;
+				background-color: @white;
+			    height: 40px;
+			    margin-top: -3px;
+			    a {
+				    color: @green;
+				    padding-top: 10px;
+			    }
+			}
+			a {
+				color: @black;
+				border: 1px solid transparent;
+				&:hover {
+					border: 1px solid transparent;
+					color: @green;
+				}
+			}
+		}
+	}
+	.thumbnails {
+		li {
+			margin-bottom: 10px;
+		}
+		.thumbnail {
+			border: none;
+			border-top: 2px solid @lightblue;
+			border-left: 2px solid @lightblue;
+			background-color: @lighterblue;
+			padding: 10px;
+		}
+		h3 {
+			color: @black;
+			.proximaB();
+			font-size: 25px;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+		}
+		h6 {
+			text-align: right;
+			.proximaR();
+			font-size: 10px;
+			margin: 0;
+		}
+		.progress {
+			height: 8px;
+			border-radius: 2px;
+		}
+		.progress-striped .bar {
+			height: 10px;
+			border-radius: 3px;
+			margin-top: -1px;
+		}
+		.btn {
+			padding: 3px 12px;
+			&:hover {
+				padding: 5px 12px 1px;
+			}
+		}
+	}
+	h2 {
+		color: @lightgray;
+		text-transform: capitalize;
+		font-size: 18px;
+	}
+	.goals-block {
+		margin-bottom: 40px;
+		.btn {
+			padding: 3px 12px;
+			&:hover {
+				padding: 5px 12px 1px;
+			}
+		}
+	}
+	.goals-block,
+	.customer-history {
+		margin-left: 10px;
+	}
+	table {
+		.proximaL();
+		thead th {
+			.proximaR();
+			font-size: 10px;
+			text-transform: uppercase;
+			padding-left: 0;
+		}
+		tbody th, tbody td {
+			border-top: none;
+		    border-bottom: 2px solid @lightestgray;
+		    padding-left: 0;
+		}
+		tbody a {
+			color: @black;
+			&:hover {
+				color: @blue;
+			}
+		}
+	}
+	.meetings-block {
+		background-color: @lightestgreen;
+		border-radius: 5px;
+	    overflow: hidden;
+	    padding: 2px 0px 0px;
+	    margin-bottom: 20px;
+	    box-shadow: inset 2px 2px 0px @lightergreen;
+	    h2 {
+	    	color: @green;
+	    	margin: 0 0 0 2px;
+	    	background-color: #d4e1c2;
+	    	padding: 5px 15px 2px 13px;
+	    }
+	    table {
+			list-style-type: none;
+			background-color: @lightestgreen;
+			margin: 0 10px;
+			td {
+				.proximaL();
+			}
+			tbody th, tbody td {
+			    border-bottom: 2px solid #d4e1c2;
+			}
+			a:hover {
+				color: @green;
+			}
+		}
+		h3 {
+			float: right;
+			position: relative;
+			width: 18px;
+			height: 18px;
+			margin: 3px 0 5px;
+		}
+		.btn {
+			padding: 3px 12px;
+			margin: 10px;
+			background-color: @green;
+			background-image: none;
+			&:hover {
+				padding: 5px 12px 1px;
+			}
+		}
+	}
+}
+
+
+/* ----- End Customer Page ----- */
 
 /* ----- Pagination ----- */
 

@@ -1,0 +1,420 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<script src="/jslibrary/1351189248000/sfdc/JiffyStubs.js"></script><script src="/resource/1354817911000/LESSCSSJS" type="text/javascript"></script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+    
+  <link href="CSS/changemachine.css" REL="stylesheet" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="/resource/1350669682000/BootstrapJS/bootstrap.min.js"></script>
+  
+   
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'auk4xrm',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+  </script>
+    
+
+  <script>
+    $j = jQuery.noConflict();
+    
+    $j(document).ready(function() {
+
+    $j('.showDetails').click(function() {
+        var actionId = $j(this).attr('actionId');
+        console.log('this is the actionID'+actionId);
+        $j('#details'+actionId).toggle();
+        return false;
+      });
+      
+      $j('.overviewTab h3').click(function() {
+       $j('.overviewText').toggle();
+       if ($j('.overviewText').is(":visible")) {
+       	$j('.overviewTab h3:last').removeClass('milestone-show').addClass('milestone-hide'); 
+       } else {
+	    $j('.overviewTab h3:last').removeClass('milestone-hide').addClass('milestone-show');   
+       }
+       return false;
+      });
+
+      
+      $j('.sidebar-block h3').click(function() {
+       $j(this).parent().children('ul').toggle();
+       if ($j(this).parent().children('ul').is(":visible")) {
+       	$j(this).removeClass('sidebar-show').addClass('sidebar-hide');
+       } else {
+	    $j(this).removeClass('sidebar-hide').addClass('sidebar-show'); 
+       }
+       return false;
+      });
+      
+    });
+  </script>
+
+  
+
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div class="topWrapper">
+      <div class="row">
+        <div class="span3">
+          <a class="brand" href="/">
+          	<img src="https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png" />
+          </a>
+        </div>
+          
+          <div class="span1">
+               <ul class="unstyled cls-menu">
+            	<li class="active"><A href="/learn">Learn</A></li>
+            	<li class=""><A href="/coach"> Coach</A></li>
+                <li class=""><A href="/share"> Share</A></li>
+              </ul>
+          </div>
+          
+        <div class="span8 pull-right">
+                &nbsp;
+        </div>
+       
+        </div>
+      </div> 
+	<div class="midWrapper">
+  <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          
+          
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Goals">
+                  
+                  Goals
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Assets">
+                  
+                  Assets
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Banking">
+                  
+                  Banking
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="active">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Credit">
+                  
+                  Credit
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Debt">
+                  
+                  Debt
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Taxes">
+                  
+                  Taxes
+                </a>
+                </li>
+            </ul>
+            
+              <form action="/changemachine_search" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
+
+             
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="q" placeholder="Search" size="27" title="Enter search keywords" type="text" />
+        	<button class="btn" type="submit">Search</button>
+              
+               </form>
+              
+      
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </header>
+<div class="wrapper">
+        
+            
+          <div class="page-header">
+            <a href="/section/Credit"><h1>Credit</h1></a>
+            <h2>Outcome <small> Improve credit score</small></h2>
+          </div>
+
+                  <div class="milestone-block">
+                     <div class="row">
+                      <div class="span8">
+                      	<div class="mainColumn">
+		                      <span id="j_id0:j_id1:j_id20:0:j_id22">
+		                          <h4>
+		                            Customer Pulls Credit Report Alone
+		                          </h4>
+			                  </span>
+	
+	                        <ul class="unstyled action-list">
+	                          <li class="Roadblock " id="Can't-Download-Credit-Report">
+	                    	     <a actionId="a07G000000TJY0yIAH" class="">
+	                     		     <h3 class="roadblock">Roadblock: Can't Download Credit Report </h3>
+	                            </a>
+	                          <input id="hidden" name="hidden" type="hidden" />
+	                          
+	                          <div class="actionDetails" id="detailsa07G000000TJY0yIAH" style=""><p class="p1">Occasionally customers will not be able to access their free credit report online. Customers should refer to the ACTION PLAN and make a note under the Credit section to request their credit reports by mail and include proper identification.</p>
+	<p class="p1"><b>DON’T BE DISCOURAGED</b></p>
+	<p class="p1">Customers may be prevented from receiving their free credit report for various reasons. If your costumers have a “thin” credit file (i.e., only one line of credit, or no credit file), or answered the security questions incorrectly, or have recently had several addresses, the best way to obtain a credit report is through the mail.</p>
+	<p class="p1"><b>REQUEST A MAIL-IN FORM</b></p>
+	<p class="p1">Customers can still get their credit report in two to three weeks by completing the mail-in form. Complete the Annual Credit Report Request Form located in this ToolKit or find it here <a href="http://www.ftc.gov/bcp/edu/" target="_blank"><span class="s1">www.ftc.gov/bcp/edu/</span></a> resources/forms/requestformfinal.pdf. Customers must include copies of one document from the identity column and one document from the address column.</p>
+	<p class="p1"><b>Identity:</b></p>
+	<p class="p1">Social Security Number must appear on the document</p>
+	<ul class="ul1"><li class="li2">Social Security card</li><li class="li2">Pay stub with Social Security Number</li><li class="li2">W-2 Form</li></ul>
+	<p class="p1"><b>Address:</b></p>
+	<p class="p1"><i>Address must appear on the document</i></p>
+	<ul class="ul1"><li class="li2">Driver&#39;s license</li><li class="li2">Rental or lease agreement/house deed</li><li class="li2">Pay stub with address</li><li class="li2">Utility bill (gas, electric, water, cable, residential telephone bills)</li></ul>
+	<p class="p1">Copies should be legible and free of highlighting or other marks.</p>
+	                          </div>
+	                          
+	                         <div class="related-stuff">
+	                         </div>
+	
+	
+	                          </li>
+	                </ul>
+	
+	
+	                      	</div> <!-- mainColumn -->
+                          </div> <!-- span8 -->
+
+                          <div class="span4"><span id="j_id0:j_id1:j_id20:0:j_id73">
+                            <div class="otherMilestones">
+                            <h5>Other Credit Milestones </h5>
+                            <ul class="unstyled milestones">
+                               <li><a href="/milestone/CRAs-makes-requested-changes">CRAs makes requested changes</a></li>
+                               <li><a href="/milestone/Execute-a-strategy-to-improve-credit">Execute a strategy to improve credit</a></li>
+                            </ul>
+                            </div></span>
+                          
+
+                          <div class="milestone-sidebar" id="sidebara07G000000TJY0yIAH" style=""><span id="j_id0:j_id1:j_id20:0:caution-block">
+                              <div class="alert">
+
+                                <strong>Caution</strong>
+                                  <p><p class="p1">If customers are unable to obtain a credit report because they have a “thin” or non- existent credit file, there are several tools they can explore to build their credit. Check out the ACTION: CUSTOMER OBTAINS A SECURED CREDIT CARD OR SECURED LOAN and screen your customer with the SHOULD MY CUSTOMER APPLY FOR A SECURED CREDIT PRODUCT? Worksheet.</p>
+                                  </p>
+                              </div></span>
+                
+
+                      </div>
+                    </div> 
+                </div>
+                     <div class="row">
+                      <div class="span8">
+	                      <div class="mainColumn">
+
+
+
+	                        <ul class="unstyled action-list">
+	                          <li class="Action " id="Pull-Credit-Report">
+	                    	     <a actionId="a07G000000TJY0GIAX" class="">
+	                     		     <h3> Pull Credit Report </h3>
+	                            </a>
+	                          <input id="hidden" name="hidden" type="hidden" />
+	                          
+	                          <div class="actionDetails" id="detailsa07G000000TJY0GIAX" style=""><p class="p1">Customers reviewing their reports for the first time should be encouraged to obtain all three. Customers are entitled to review all three reports one time each year for free. Each credit report contains different information and it is important to review all of the content on all three of the reports. Customers who have seen their reports before can choose to download all three reports at the same time or stagger them throughout the year. </p>
+	<p class="p1"><b>PULL THE CREDIT REPORT ONLINE</b></p>
+	<p class="p1">Try and get your customers to do as much of the inputting as possible as you request the reports, so that they will be able pull the reports without you next time.</p>
+	<ol class="ol1"><li class="li2">Go to <a href="http://annualcreditreport.com/" target="_blank"><span class="s1">annualcreditreport.com</span></a>. Be careful to go to this site only and not any of the other sites with similar names that offer “free” credit reports. These sites will ask for a credit card number and are not truly free.</li></ol>
+	<p class="p1"><b>HELP CUSTOMERS STAY ORGANIZED</b></p>
+	<p class="p1">For record-keeping and document-preservation purposes, it may be helpful to create a PDF of the credit report by printing it with a program, such as doPDF, which you can access at <a href="http://dopdf.com/" target="_blank"><span class="s1">dopdf.com</span></a> and download for free. If your customer opts not to create a PDF file, be sure to print out at least two copies of the report, as you’ll want one to review and take notes on and another to use for the dispute process. Customers should use the MAKE YOUR CREDIT REPORT WORK FOR YOU WorkSheet to keep track of when they pulled each report, their credit scores, and what to look for on the report.</p>
+	                          </div>
+	                          
+	                         <div class="related-stuff">
+	                         </div>
+	
+	
+	                          </li>
+	                          </ul>
+
+	                      </div> <!-- mainColumn -->
+
+                          </div> 
+
+                          <div class="span4">
+                          
+
+                          <div class="milestone-sidebar" id="sidebara07G000000TJY0GIAX" style=""><span id="j_id0:j_id1:j_id20:1:caution-block">
+                              <div class="alert">
+
+                                <strong>Caution</strong>
+                                  <p><p class="p1">Identity theft is a serious problem affecting more than 8 million Americans and resulting in losses of $37 billion. Most commonly, identities are stolen by people in one’s circle such as family members, neighbors, or intimate partners, especially in relationships where there is domestic violence. Identity theft can also be perpetrated by complete strangers like a clerk at a store that skims credit card numbers or an Internet hacker.<br><br>Customers should review the 5 WAYS TO PROTECT YOURSELF AGAINST IDENTITY THEFT TipSheet to take appropriate precautions to reduce the risk of identity theft, which can be extremely damaging to customers’ credit.</p>
+                                  </p>
+                              </div></span>
+                
+
+                      </div>
+                    </div> 
+                </div>
+                     <div class="row">
+                      <div class="span8">
+
+	                      <div class="mainColumn">
+
+
+                        <ul class="unstyled action-list">
+                          <li class="Action " id="Choose-1-of-3-Ways-to-Pull-a-Credit-Report">
+                    	     <a actionId="a07G000000TJY13IAH" class="">
+                     		     <h3> Choose 1 of 3 Ways to Pull a Credit Report </h3>
+                            </a>
+                          <input id="hidden" name="hidden" type="hidden" />
+                          
+                          <div class="actionDetails" id="detailsa07G000000TJY13IAH" style="">There are three ways to contact the Credit Reporting Agencies (CRAs) to pull the “Big Three” (Experian, TransUnion, and Equifax) credit reports.<br><p class="p2"><b><br>ONLINE </b>is often the best choice because it allows customers to obtain their report instantly at <a href="http://www.annualcreditreport.com/" target="_blank"><span class="s1">annualcreditreport.com.</span></a> </p>
+<br><b>MAIL </b>is a good option too. Custumers receive their report in a matter of weeks.<br> <br>For instructions on how to obtain a credit report by mail see ROADBLOCK: CUSTOMER CAN’T DOWNLOAD CREDIT REPORT.<br><br><b>PHONE </b>is a poor option because it forces customers to use an inadequate voice-recognition system that is only available in English<br>
+                          </div>
+                          
+                         <div class="related-stuff">
+                         </div>
+
+
+                          </li>
+                </ul>
+
+
+	                      </div> <!-- mainColumn -->
+                          </div> 
+
+                          <div class="span4">
+                          
+
+                          <div class="milestone-sidebar" id="sidebara07G000000TJY13IAH" style=""><span id="j_id0:j_id1:j_id20:2:caution-block">
+                              <div class="alert">
+
+                                <strong>Caution</strong>
+                                  <p><p class="p1">One of the most common credit myths is that checking one’s score affects the score. Reassure costumers that checking their own credit report has no impact on their score whatsoever. Checking one’s own score counts as a “soft inquiry” that is only visible to the customer.</p>
+                                  </p>
+                              </div></span>
+                
+
+                      </div>
+                    </div> 
+                </div>
+                     <div class="row">
+                      <div class="span8">
+
+	                      <div class="mainColumn">
+
+
+                        <ul class="unstyled action-list">
+                          <li class="Action " id="Connect-Importance-of-Improving-Credit-to-the-Action-Dr">
+                    	     <a actionId="a07G000000TJY18IAH" class="">
+                     		     <h3> Connect Importance of Improving Credit to the Action Driven Goal </h3>
+                            </a>
+                          <input id="hidden" name="hidden" type="hidden" />
+                          
+                          <div class="actionDetails" id="detailsa07G000000TJY18IAH" style=""><p class="p1">When customers are clear about their purpose in improving or establishing their credit score, it is much easier for them to make the tough lifestyle changes required to improve their credit.</p>
+<p class="p1"><b>Explain why credit is important</b></p>
+<p class="p1">Help your customers connect how improving credit is integral to their goals. Many customers want to improve their credit score just for the sake of improving it, and get overly focused on the number without thinking about why improving their score is important. Obsessing over the score is not conducive to long-term credit health or financial security. </p>
+                          </div>
+                          
+                         <div class="related-stuff">
+                         </div>
+
+
+                          </li>
+                </ul>
+
+	                      </div> <!-- mainColumn -->
+
+                          </div> 
+
+                          <div class="span4">
+                          
+
+                          <div class="milestone-sidebar" id="sidebara07G000000TJY18IAH" style="">
+                
+
+                      </div>
+                    </div> 
+                </div>
+              
+                </div>
+               
+           <script>
+
+$j('.action-buttons a').click(function() {
+  var type = $j(this).attr('title');
+  $j(this).closest('li').removeClass('In-Progress Completed Stalled Applicable').addClass(type);
+});
+
+</script>
+     </div>
+  </div>
+  <footer>
+    <div class="container">
+         
+    <img class="footerRays" src="https://www.visualaids.org/changemachine/images/raysCropped.png" /> 
+        <img class="footerLogo" src="https://www.visualaids.org/changemachine/images/change-machine-footer-logo.png" />
+
+          <ul class="nav nav-pills">
+              <li><a href="/_ui/core/portal/PortalUserMyProfilePage/d">My Account</a></li>
+              <li><a href="/secur/logout.jsp">Logout</a></li>
+              <li><a href="/changemachine_PrivacyPolicy">Privacy Policy</a></li>
+             
+       	 </ul>
+     
+
+   
+
+
+       </div>
+
+         
+   </footer><span id="j_id0:j_id1:j_id98">
+
+   
+
+    <div class="feedback">
+      <ul class="nav nav-pills">
+        <li><a href="/500/e?retURL=%2F500%2Fo">Issues/Problems?</a></li>
+        <li><a href="/ideas/ideaList.apexp">Ideas?</a></li>
+      </ul>
+      </div></span>
+</body></html>

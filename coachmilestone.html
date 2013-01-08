@@ -1,0 +1,476 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<script src="/jslibrary/1351189248000/sfdc/JiffyStubs.js"></script><script src="/resource/1354817911000/LESSCSSJS" type="text/javascript"></script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+    
+  <link href="CSS/changemachine.css" REL="stylesheet" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="/resource/1350669682000/BootstrapJS/bootstrap.min.js"></script>
+  
+   
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'auk4xrm',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+  </script>
+    
+
+  <script>
+    $j = jQuery.noConflict();
+    
+    $j(document).ready(function() {
+
+    $j('.showDetails').click(function() {
+        var actionId = $j(this).attr('actionId');
+        console.log('this is the actionID'+actionId);
+        $j('#details'+actionId).toggle();
+       
+       if ($j(this).siblings('.actionDetails').is(":visible")) {
+       	$j(this).children('h3:last-child').removeClass('action-show').addClass('action-hide');
+       } else {
+	    $j(this).children('h3:last-child').removeClass('action-hide').addClass('action-show'); 
+       }
+       
+        return false;
+      });
+      
+      $j('.overviewTab h3').click(function() {
+       $j('.overviewText').toggle();
+       if ($j('.overviewText').is(":visible")) {
+       	$j('.overviewTab h3:last').removeClass('milestone-show').addClass('milestone-hide'); 
+       } else {
+	    $j('.overviewTab h3:last').removeClass('milestone-hide').addClass('milestone-show');   
+       }
+       return false;
+      });
+
+      
+      $j('.sidebar-block h3').click(function() {
+       $j(this).parent().children('ul').toggle();
+       if ($j(this).parent().children('ul').is(":visible")) {
+       	$j(this).removeClass('sidebar-show').addClass('sidebar-hide');
+       } else {
+	    $j(this).removeClass('sidebar-hide').addClass('sidebar-show'); 
+       }
+       return false;
+      });
+ 
+      
+    });
+  </script>
+
+  
+
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div class="topWrapper">
+      <div class="row">
+        <div class="span3">
+          <a class="brand" href="/">
+          	<img src="https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png" />
+          </a>
+        </div>
+          
+          <div class="span1">
+               <ul class="unstyled cls-menu">
+            	<li class=""><A href="/learn">Learn</A></li>
+            	<li class="active"><A href="/coach"> Coach</A></li>
+                <li class=""><A href="/share"> Share</A></li>
+              </ul>
+          </div>
+          
+        <div class="span8 pull-right"><span id="j_id0:j_id1:j_id5">
+
+          <div class="btn-group">
+            <a class="btn" href="/changemachine_customer?id=a0HG000000BqGSwMAN">
+              <span>current customer</span>
+              Portal Test
+            </a>
+            <a class="dropdown-toggle btn customer-menu" data-toggle="dropdown" href="#">
+              <b class="caret"></b>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li class="active">
+
+                  <a href="/changemachine_customer?id=a0HG000000BqGSwMAN">
+                  
+
+                  Portal Test</a>
+                </li>
+              
+              <li class="divider"></li>
+              <li><a href="/changemachine_customer_new">Add a new customer</a></li>
+              <li class="divider"></li>
+              <li><a href="/customers">View all my customers</a></li>
+            </ul>
+          </div></span>
+        </div>
+       
+        </div>
+      </div> 
+	<div class="midWrapper">
+  <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          
+          
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Goals">
+                  
+                  Goals
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Assets">
+                  
+                  Assets
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Banking">
+                  
+                  Banking
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="active">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Credit">
+                  
+                  Credit
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Debt">
+                  
+                  Debt
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Taxes">
+                  
+                  Taxes
+                </a>
+                </li>
+            </ul>
+            
+              <form action="/changemachine_search" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
+
+             
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="q" placeholder="Search" size="27" title="Enter search keywords" type="text" />
+        	<button class="btn" type="submit">Search</button>
+              
+               </form>
+              
+      
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </header>
+<div class="wrapper">
+        
+            
+          <div class="page-header">
+            <a href="/section/Credit"><h1>Credit</h1></a>
+            <h2>Outcome <small> Improve credit score</small></h2>
+          </div>
+
+                  <div class="milestone-block">
+                     <div class="row">
+                      <div class="span8"><span id="j_id0:j_id1:j_id20:0:j_id22">
+                          <h4>
+                            Customer Pulls Credit Report Alone
+                          </h4></span>
+
+
+
+
+                        <ul class="unstyled action-list">
+                          <li class="Roadblock " id="Can't-Download-Credit-Report">
+                    	     <a actionId="a07G000000TJY0yIAH" class="showDetails">
+                     		     <h3>Roadblock: Can't Download Credit Report </h3><h3 class="action-show"></h3>
+                            </a><span id="j_id0:j_id1:j_id20:0:buttons-block"><span id="j_id0:j_id1:j_id20:0:j_id41">
+<form id="j_id0:j_id1:j_id20:0:j_id42" name="j_id0:j_id1:j_id20:0:j_id42" method="post" action="/changemachine_milestone?id=a0XG0000003pYWEMA2" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id0:j_id1:j_id20:0:j_id42" value="j_id0:j_id1:j_id20:0:j_id42" />
+
+                              <div class="btn-group action-buttons" data-toggle="buttons-radio"><a class="btn btn-small btn-info" href="#" id="j_id0:j_id1:j_id20:0:j_id42:j_id44" name="j_id0:j_id1:j_id20:0:j_id42:j_id44" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:0:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:0:j_id42:j_id44','parameters':{'status':'In\x2DProgress','actionId':'a07G000000TJY0yIAH','j_id0:j_id1:j_id20:0:j_id42:j_id44':'j_id0:j_id1:j_id20:0:j_id42:j_id44'} } );return false;" title="In-Progress">In-Progress</a><a class="btn btn-small btn-success" href="#" id="j_id0:j_id1:j_id20:0:j_id42:j_id47" name="j_id0:j_id1:j_id20:0:j_id42:j_id47" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:0:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:0:j_id42:j_id47','parameters':{'status':'Completed','j_id0:j_id1:j_id20:0:j_id42:j_id47':'j_id0:j_id1:j_id20:0:j_id42:j_id47','actionId':'a07G000000TJY0yIAH'} } );return false;" title="Completed">Completed</a><a class="btn btn-small btn-danger" href="#" id="j_id0:j_id1:j_id20:0:j_id42:j_id50" name="j_id0:j_id1:j_id20:0:j_id42:j_id50" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:0:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:0:j_id42:j_id50','parameters':{'j_id0:j_id1:j_id20:0:j_id42:j_id50':'j_id0:j_id1:j_id20:0:j_id42:j_id50','status':'Stalled','actionId':'a07G000000TJY0yIAH'} } );return false;" title="Stalled">Stalled</a><a class="btn btn-small" href="#" id="j_id0:j_id1:j_id20:0:j_id42:j_id53" name="j_id0:j_id1:j_id20:0:j_id42:j_id53" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:0:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:0:j_id42:j_id53','parameters':{'j_id0:j_id1:j_id20:0:j_id42:j_id53':'j_id0:j_id1:j_id20:0:j_id42:j_id53','status':'Not Applicable','actionId':'a07G000000TJY0yIAH'} } );return false;" title="Not Applicable">Applicable</a>
+                               </div><div id="j_id0:j_id1:j_id20:0:j_id42:j_id101"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="APIrACIc1mibk6YEgSGgLVRoMpY4" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateCSRF" name="com.salesforce.visualforce.ViewStateCSRF" value="1LuGos8880LOCrnJWiP.w95wG2HI0O7tKgt_cWjKwJIMZMvt.NtJ9uwX1_H50VQ06pNVGODQmb9Zu6SP8RP8xy7F5XiScQQ5NQZNnV2aM87i8uzEh5uyXdvPMstOlfTWOpcIfCheqoicJkbm2R94fZyfGm6ic8_LoyM3eWUNdtF71Hnf" /></span></span></span></span>
+                          <input id="hidden" name="hidden" type="hidden" />
+                          
+                          <div class="actionDetails" id="detailsa07G000000TJY0yIAH" style="display:none"><p class="p1">Occasionally customers will not be able to access their free credit report online. Customers should refer to the ACTION PLAN and make a note under the Credit section to request their credit reports by mail and include proper identification.</p>
+<p class="p1"><b>DON’T BE DISCOURAGED</b></p>
+<p class="p1">Customers may be prevented from receiving their free credit report for various reasons. If your costumers have a “thin” credit file (i.e., only one line of credit, or no credit file), or answered the security questions incorrectly, or have recently had several addresses, the best way to obtain a credit report is through the mail.</p>
+<p class="p1"><b>REQUEST A MAIL-IN FORM</b></p>
+<p class="p1">Customers can still get their credit report in two to three weeks by completing the mail-in form. Complete the Annual Credit Report Request Form located in this ToolKit or find it here <a href="http://www.ftc.gov/bcp/edu/" target="_blank"><span class="s1">www.ftc.gov/bcp/edu/</span></a> resources/forms/requestformfinal.pdf. Customers must include copies of one document from the identity column and one document from the address column.</p>
+<p class="p1"><b>Identity:</b></p>
+<p class="p1">Social Security Number must appear on the document</p>
+<ul class="ul1"><li class="li2">Social Security card</li><li class="li2">Pay stub with Social Security Number</li><li class="li2">W-2 Form</li></ul>
+<p class="p1"><b>Address:</b></p>
+<p class="p1"><i>Address must appear on the document</i></p>
+<ul class="ul1"><li class="li2">Driver&#39;s license</li><li class="li2">Rental or lease agreement/house deed</li><li class="li2">Pay stub with address</li><li class="li2">Utility bill (gas, electric, water, cable, residential telephone bills)</li></ul>
+<p class="p1">Copies should be legible and free of highlighting or other marks.</p>
+                          </div>
+                          
+                         <div class="related-stuff">
+                         </div>
+
+
+                          </li>
+                </ul>
+
+
+
+                          </div> 
+
+                          <div class="span4"><span id="j_id0:j_id1:j_id20:0:j_id73">
+                            <div class="otherMilestones">
+                            <h5>Other Credit Milestones </h5>
+                            <ul class="unstyled milestones">
+                               <li><a href="/milestone/CRAs-makes-requested-changes">CRAs makes requested changes</a></li>
+                               <li><a href="/milestone/Execute-a-strategy-to-improve-credit">Execute a strategy to improve credit</a></li>
+                            </ul>
+                            </div></span>
+                          
+
+                          <div class="milestone-sidebar" id="sidebara07G000000TJY0yIAH" style="display:none"><span id="j_id0:j_id1:j_id20:0:caution-block">
+                              <div class="alert">
+
+                                <strong>Caution</strong>
+                                  <p><p class="p1">If customers are unable to obtain a credit report because they have a “thin” or non- existent credit file, there are several tools they can explore to build their credit. Check out the ACTION: CUSTOMER OBTAINS A SECURED CREDIT CARD OR SECURED LOAN and screen your customer with the SHOULD MY CUSTOMER APPLY FOR A SECURED CREDIT PRODUCT? Worksheet.</p>
+                                  </p>
+                              </div></span>
+                
+
+                      </div>
+                    </div> 
+                </div>
+                     <div class="row">
+                      <div class="span8">
+
+
+
+
+                        <ul class="unstyled action-list">
+                          <li class="Action " id="Pull-Credit-Report">
+                    	     <a actionId="a07G000000TJY0GIAX" class="showDetails">
+                     		     <h3> Pull Credit Report </h3><h3 class="action-show"></h3>
+                            </a><span id="j_id0:j_id1:j_id20:1:buttons-block"><span id="j_id0:j_id1:j_id20:1:j_id41">
+<form id="j_id0:j_id1:j_id20:1:j_id42" name="j_id0:j_id1:j_id20:1:j_id42" method="post" action="/changemachine_milestone?id=a0XG0000003pYWEMA2" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id0:j_id1:j_id20:1:j_id42" value="j_id0:j_id1:j_id20:1:j_id42" />
+
+                              <div class="btn-group action-buttons" data-toggle="buttons-radio"><a class="btn btn-small btn-info" href="#" id="j_id0:j_id1:j_id20:1:j_id42:j_id44" name="j_id0:j_id1:j_id20:1:j_id42:j_id44" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:1:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:1:j_id42:j_id44','parameters':{'status':'In\x2DProgress','j_id0:j_id1:j_id20:1:j_id42:j_id44':'j_id0:j_id1:j_id20:1:j_id42:j_id44','actionId':'a07G000000TJY0GIAX'} } );return false;" title="In-Progress">In-Progress</a><a class="btn btn-small btn-success" href="#" id="j_id0:j_id1:j_id20:1:j_id42:j_id47" name="j_id0:j_id1:j_id20:1:j_id42:j_id47" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:1:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:1:j_id42:j_id47','parameters':{'status':'Completed','actionId':'a07G000000TJY0GIAX','j_id0:j_id1:j_id20:1:j_id42:j_id47':'j_id0:j_id1:j_id20:1:j_id42:j_id47'} } );return false;" title="Completed">Completed</a><a class="btn btn-small btn-danger" href="#" id="j_id0:j_id1:j_id20:1:j_id42:j_id50" name="j_id0:j_id1:j_id20:1:j_id42:j_id50" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:1:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:1:j_id42:j_id50','parameters':{'status':'Stalled','j_id0:j_id1:j_id20:1:j_id42:j_id50':'j_id0:j_id1:j_id20:1:j_id42:j_id50','actionId':'a07G000000TJY0GIAX'} } );return false;" title="Stalled">Stalled</a><a class="btn btn-small" href="#" id="j_id0:j_id1:j_id20:1:j_id42:j_id53" name="j_id0:j_id1:j_id20:1:j_id42:j_id53" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:1:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:1:j_id42:j_id53','parameters':{'status':'Not Applicable','j_id0:j_id1:j_id20:1:j_id42:j_id53':'j_id0:j_id1:j_id20:1:j_id42:j_id53','actionId':'a07G000000TJY0GIAX'} } );return false;" title="Not Applicable">Applicable</a>
+                               </div><div id="j_id0:j_id1:j_id20:1:j_id42:j_id101"></div>
+</form></span></span>
+                          <input id="hidden" name="hidden" type="hidden" />
+                          
+                          <div class="actionDetails" id="detailsa07G000000TJY0GIAX" style="display:none"><p class="p1">Customers reviewing their reports for the first time should be encouraged to obtain all three. Customers are entitled to review all three reports one time each year for free. Each credit report contains different information and it is important to review all of the content on all three of the reports. Customers who have seen their reports before can choose to download all three reports at the same time or stagger them throughout the year. </p>
+<p class="p1"><b>PULL THE CREDIT REPORT ONLINE</b></p>
+<p class="p1">Try and get your customers to do as much of the inputting as possible as you request the reports, so that they will be able pull the reports without you next time.</p>
+<ol class="ol1"><li class="li2">Go to <a href="http://annualcreditreport.com/" target="_blank"><span class="s1">annualcreditreport.com</span></a>. Be careful to go to this site only and not any of the other sites with similar names that offer “free” credit reports. These sites will ask for a credit card number and are not truly free.</li></ol>
+<p class="p1"><b>HELP CUSTOMERS STAY ORGANIZED</b></p>
+<p class="p1">For record-keeping and document-preservation purposes, it may be helpful to create a PDF of the credit report by printing it with a program, such as doPDF, which you can access at <a href="http://dopdf.com/" target="_blank"><span class="s1">dopdf.com</span></a> and download for free. If your customer opts not to create a PDF file, be sure to print out at least two copies of the report, as you’ll want one to review and take notes on and another to use for the dispute process. Customers should use the MAKE YOUR CREDIT REPORT WORK FOR YOU WorkSheet to keep track of when they pulled each report, their credit scores, and what to look for on the report.</p>
+                          </div>
+                          
+                         <div class="related-stuff">
+                         </div>
+
+
+                          </li>
+                </ul>
+
+
+
+                          </div> 
+
+                          <div class="span4">
+                          
+
+                          <div class="milestone-sidebar" id="sidebara07G000000TJY0GIAX" style="display:none"><span id="j_id0:j_id1:j_id20:1:caution-block">
+                              <div class="alert">
+
+                                <strong>Caution</strong>
+                                  <p><p class="p1">Identity theft is a serious problem affecting more than 8 million Americans and resulting in losses of $37 billion. Most commonly, identities are stolen by people in one’s circle such as family members, neighbors, or intimate partners, especially in relationships where there is domestic violence. Identity theft can also be perpetrated by complete strangers like a clerk at a store that skims credit card numbers or an Internet hacker.<br><br>Customers should review the 5 WAYS TO PROTECT YOURSELF AGAINST IDENTITY THEFT TipSheet to take appropriate precautions to reduce the risk of identity theft, which can be extremely damaging to customers’ credit.</p>
+                                  </p>
+                              </div></span>
+                
+
+                      </div>
+                    </div> 
+                </div>
+                     <div class="row">
+                      <div class="span8">
+
+
+
+
+                        <ul class="unstyled action-list">
+                          <li class="Action " id="Choose-1-of-3-Ways-to-Pull-a-Credit-Report">
+                    	     <a actionId="a07G000000TJY13IAH" class="showDetails">
+                     		     <h3> Choose 1 of 3 Ways to Pull a Credit Report </h3><h3 class="action-show"></h3>
+                            </a><span id="j_id0:j_id1:j_id20:2:buttons-block"><span id="j_id0:j_id1:j_id20:2:j_id41">
+<form id="j_id0:j_id1:j_id20:2:j_id42" name="j_id0:j_id1:j_id20:2:j_id42" method="post" action="/changemachine_milestone?id=a0XG0000003pYWEMA2" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id0:j_id1:j_id20:2:j_id42" value="j_id0:j_id1:j_id20:2:j_id42" />
+
+                              <div class="btn-group action-buttons" data-toggle="buttons-radio"><a class="btn btn-small btn-info" href="#" id="j_id0:j_id1:j_id20:2:j_id42:j_id44" name="j_id0:j_id1:j_id20:2:j_id42:j_id44" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:2:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:2:j_id42:j_id44','parameters':{'j_id0:j_id1:j_id20:2:j_id42:j_id44':'j_id0:j_id1:j_id20:2:j_id42:j_id44','status':'In\x2DProgress','actionId':'a07G000000TJY13IAH'} } );return false;" title="In-Progress">In-Progress</a><a class="btn btn-small btn-success" href="#" id="j_id0:j_id1:j_id20:2:j_id42:j_id47" name="j_id0:j_id1:j_id20:2:j_id42:j_id47" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:2:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:2:j_id42:j_id47','parameters':{'status':'Completed','j_id0:j_id1:j_id20:2:j_id42:j_id47':'j_id0:j_id1:j_id20:2:j_id42:j_id47','actionId':'a07G000000TJY13IAH'} } );return false;" title="Completed">Completed</a><a class="btn btn-small btn-danger" href="#" id="j_id0:j_id1:j_id20:2:j_id42:j_id50" name="j_id0:j_id1:j_id20:2:j_id42:j_id50" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:2:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:2:j_id42:j_id50','parameters':{'status':'Stalled','actionId':'a07G000000TJY13IAH','j_id0:j_id1:j_id20:2:j_id42:j_id50':'j_id0:j_id1:j_id20:2:j_id42:j_id50'} } );return false;" title="Stalled">Stalled</a><a class="btn btn-small" href="#" id="j_id0:j_id1:j_id20:2:j_id42:j_id53" name="j_id0:j_id1:j_id20:2:j_id42:j_id53" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:2:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:2:j_id42:j_id53','parameters':{'j_id0:j_id1:j_id20:2:j_id42:j_id53':'j_id0:j_id1:j_id20:2:j_id42:j_id53','status':'Not Applicable','actionId':'a07G000000TJY13IAH'} } );return false;" title="Not Applicable">Applicable</a>
+                               </div><div id="j_id0:j_id1:j_id20:2:j_id42:j_id101"></div>
+</form></span></span>
+                          <input id="hidden" name="hidden" type="hidden" />
+                          
+                          <div class="actionDetails" id="detailsa07G000000TJY13IAH" style="display:none">There are three ways to contact the Credit Reporting Agencies (CRAs) to pull the “Big Three” (Experian, TransUnion, and Equifax) credit reports.<br><p class="p2"><b><br>ONLINE </b>is often the best choice because it allows customers to obtain their report instantly at <a href="http://www.annualcreditreport.com/" target="_blank"><span class="s1">annualcreditreport.com.</span></a> </p>
+<br><b>MAIL </b>is a good option too. Custumers receive their report in a matter of weeks.<br> <br>For instructions on how to obtain a credit report by mail see ROADBLOCK: CUSTOMER CAN’T DOWNLOAD CREDIT REPORT.<br><br><b>PHONE </b>is a poor option because it forces customers to use an inadequate voice-recognition system that is only available in English<br>
+                          </div>
+                          
+                         <div class="related-stuff">
+                         </div>
+
+
+                          </li>
+                </ul>
+
+
+
+                          </div> 
+
+                          <div class="span4">
+                          
+
+                          <div class="milestone-sidebar" id="sidebara07G000000TJY13IAH" style="display:none"><span id="j_id0:j_id1:j_id20:2:caution-block">
+                              <div class="alert">
+
+                                <strong>Caution</strong>
+                                  <p><p class="p1">One of the most common credit myths is that checking one’s score affects the score. Reassure costumers that checking their own credit report has no impact on their score whatsoever. Checking one’s own score counts as a “soft inquiry” that is only visible to the customer.</p>
+                                  </p>
+                              </div></span>
+                
+
+                      </div>
+                    </div> 
+                </div>
+                     <div class="row">
+                      <div class="span8">
+
+
+
+
+                        <ul class="unstyled action-list">
+                          <li class="Action " id="Connect-Importance-of-Improving-Credit-to-the-Action-Dr">
+                    	     <a actionId="a07G000000TJY18IAH" class="showDetails">
+                     		     <h3> Connect Importance of Improving Credit to the Action Driven Goal </h3><h3 class="action-show"></h3>
+                            </a><span id="j_id0:j_id1:j_id20:3:buttons-block"><span id="j_id0:j_id1:j_id20:3:j_id41">
+<form id="j_id0:j_id1:j_id20:3:j_id42" name="j_id0:j_id1:j_id20:3:j_id42" method="post" action="/changemachine_milestone?id=a0XG0000003pYWEMA2" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id0:j_id1:j_id20:3:j_id42" value="j_id0:j_id1:j_id20:3:j_id42" />
+
+                              <div class="btn-group action-buttons" data-toggle="buttons-radio"><a class="btn btn-small btn-info" href="#" id="j_id0:j_id1:j_id20:3:j_id42:j_id44" name="j_id0:j_id1:j_id20:3:j_id42:j_id44" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:3:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:3:j_id42:j_id44','parameters':{'status':'In\x2DProgress','actionId':'a07G000000TJY18IAH','j_id0:j_id1:j_id20:3:j_id42:j_id44':'j_id0:j_id1:j_id20:3:j_id42:j_id44'} } );return false;" title="In-Progress">In-Progress</a><a class="btn btn-small btn-success" href="#" id="j_id0:j_id1:j_id20:3:j_id42:j_id47" name="j_id0:j_id1:j_id20:3:j_id42:j_id47" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:3:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:3:j_id42:j_id47','parameters':{'status':'Completed','actionId':'a07G000000TJY18IAH','j_id0:j_id1:j_id20:3:j_id42:j_id47':'j_id0:j_id1:j_id20:3:j_id42:j_id47'} } );return false;" title="Completed">Completed</a><a class="btn btn-small btn-danger" href="#" id="j_id0:j_id1:j_id20:3:j_id42:j_id50" name="j_id0:j_id1:j_id20:3:j_id42:j_id50" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:3:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:3:j_id42:j_id50','parameters':{'j_id0:j_id1:j_id20:3:j_id42:j_id50':'j_id0:j_id1:j_id20:3:j_id42:j_id50','status':'Stalled','actionId':'a07G000000TJY18IAH'} } );return false;" title="Stalled">Stalled</a><a class="btn btn-small" href="#" id="j_id0:j_id1:j_id20:3:j_id42:j_id53" name="j_id0:j_id1:j_id20:3:j_id42:j_id53" onclick="A4J.AJAX.Submit('j_id0:j_id1:j_id20:3:j_id42',event,{'similarityGroupingId':'j_id0:j_id1:j_id20:3:j_id42:j_id53','parameters':{'status':'Not Applicable','j_id0:j_id1:j_id20:3:j_id42:j_id53':'j_id0:j_id1:j_id20:3:j_id42:j_id53','actionId':'a07G000000TJY18IAH'} } );return false;" title="Not Applicable">Applicable</a>
+                               </div><div id="j_id0:j_id1:j_id20:3:j_id42:j_id101"></div>
+</form></span></span>
+                          <input id="hidden" name="hidden" type="hidden" />
+                          
+                          <div class="actionDetails" id="detailsa07G000000TJY18IAH" style="display:none"><p class="p1">When customers are clear about their purpose in improving or establishing their credit score, it is much easier for them to make the tough lifestyle changes required to improve their credit.</p>
+<p class="p1"><b>Explain why credit is important</b></p>
+<p class="p1">Help your customers connect how improving credit is integral to their goals. Many customers want to improve their credit score just for the sake of improving it, and get overly focused on the number without thinking about why improving their score is important. Obsessing over the score is not conducive to long-term credit health or financial security. </p>
+                          </div>
+                          
+                         <div class="related-stuff">
+                         </div>
+
+
+                          </li>
+                </ul>
+
+
+
+                          </div> 
+
+                          <div class="span4">
+                          
+
+                          <div class="milestone-sidebar" id="sidebara07G000000TJY18IAH" style="display:none">
+                
+
+                      </div>
+                    </div> 
+                </div>
+              
+                </div>
+               
+           <script>
+
+$j('.action-buttons a').click(function() {
+  var type = $j(this).attr('title');
+  $j(this).closest('li').removeClass('In-Progress Completed Stalled Applicable').addClass(type);
+});
+
+</script>
+     </div>
+  </div>
+  <footer>
+    <div class="container">
+         
+    <img class="footerRays" src="https://www.visualaids.org/changemachine/images/raysCropped.png" /> 
+        <img class="footerLogo" src="https://www.visualaids.org/changemachine/images/change-machine-footer-logo.png" />
+
+          <ul class="nav nav-pills">
+              <li><a href="/_ui/core/portal/PortalUserMyProfilePage/d">My Account</a></li>
+              <li><a href="/secur/logout.jsp">Logout</a></li>
+              <li><a href="/changemachine_PrivacyPolicy">Privacy Policy</a></li>
+             
+       	 </ul>
+     
+
+   
+
+
+       </div>
+
+         
+   </footer><span id="j_id0:j_id1:j_id98">
+
+   
+
+    <div class="feedback">
+      <ul class="nav nav-pills">
+        <li><a href="/500/e?retURL=%2F500%2Fo">Issues/Problems?</a></li>
+        <li><a href="/ideas/ideaList.apexp">Ideas?</a></li>
+      </ul>
+      </div></span>
+</body></html>

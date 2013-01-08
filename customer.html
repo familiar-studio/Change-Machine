@@ -1,0 +1,495 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<script src="/jslibrary/1351189248000/sfdc/JiffyStubs.js"></script><script src="/resource/1354817911000/LESSCSSJS" type="text/javascript"></script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+    
+  <link href="CSS/changemachine.css" REL="stylesheet" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="/resource/1350669682000/BootstrapJS/bootstrap.min.js"></script>
+  
+   
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'auk4xrm',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+  </script>
+    
+
+  <script>
+    $j = jQuery.noConflict();
+    
+    $j(document).ready(function() {
+
+    $j('.showDetails').click(function() {
+        var actionId = $j(this).attr('actionId');
+        console.log('this is the actionID'+actionId);
+        $j('#details'+actionId).toggle();
+        return false;
+      });
+      
+      $j('.overviewTab h3').click(function() {
+       $j('.overviewText').toggle();
+       if ($j('.overviewText').is(":visible")) {
+       	$j('.overviewTab h3:last').removeClass('milestone-show').addClass('milestone-hide'); 
+       } else {
+	    $j('.overviewTab h3:last').removeClass('milestone-hide').addClass('milestone-show');   
+       }
+       return false;
+      });
+
+      
+      $j('.sidebar-block h3').click(function() {
+       $j(this).parent().children('ul').toggle();
+       if ($j(this).parent().children('ul').is(":visible")) {
+       	$j(this).removeClass('sidebar-show').addClass('sidebar-hide');
+       } else {
+	    $j(this).removeClass('sidebar-hide').addClass('sidebar-show'); 
+       }
+       return false;
+      });
+      
+    });
+  </script>
+
+  
+
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div class="topWrapper">
+      <div class="row">
+        <div class="span3">
+          <a class="brand" href="/">
+          	<img src="https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png" />
+          </a>
+        </div>
+          
+          <div class="span1">
+               <ul class="unstyled cls-menu">
+            	<li class=""><A href="/learn">Learn</A></li>
+            	<li class="active"><A href="/coach"> Coach</A></li>
+                <li class=""><A href="/share"> Share</A></li>
+              </ul>
+          </div>
+          
+        <div class="span8 pull-right"><span id="j_id0:j_id1:j_id5">
+
+          <div class="btn-group">
+            <a class="btn" href="/changemachine_customer?id=a09J0000003XlbJIAS">
+              <span>current customer</span>
+              Amy Roa
+            </a>
+            <a class="dropdown-toggle btn customer-menu" data-toggle="dropdown" href="#">
+              <b class="caret"></b>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li class="">
+
+                  <a href="/changemachine_customer?id=a09J0000003XlbJIAS">
+                  
+
+                  Amy Roa</a>
+                </li>
+                <li class="">
+
+                  <a href="/changemachine_customer?id=a09J00000026hz5IAA">
+                  
+
+                  Billy Bob</a>
+                </li>
+                <li class="">
+
+                  <a href="/changemachine_customer?id=a09J00000026TjmIAE">
+                  
+
+                  John Smith</a>
+                </li>
+                <li class="">
+
+                  <a href="/changemachine_customer?id=a09J00000026hzFIAQ">
+                  
+
+                  Ian Customer</a>
+                </li>
+              
+              <li class="divider"></li>
+              <li><a href="/changemachine_customer_new">Add a new customer</a></li>
+              <li class="divider"></li>
+              <li><a href="/customers">View all my customers</a></li>
+            </ul>
+          </div></span>
+        </div>
+       
+        </div>
+      </div> 
+	<div class="midWrapper">
+  <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          
+          
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Goals">
+                  
+                  Goals
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Assets">
+                  
+                  Assets
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Banking">
+                  
+                  Banking
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Credit">
+                  
+                  Credit
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Debt">
+                  
+                  Debt
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Taxes">
+                  
+                  Taxes
+                </a>
+                </li>
+            </ul>
+            
+              <form action="/changemachine_search" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
+
+             
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="q" placeholder="Search" size="27" title="Enter search keywords" type="text" />
+        	<button class="btn" type="submit">Search</button>
+              
+               </form>
+              
+      
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </header>
+<div class="wrapper">
+        
+
+        
+        <div class="customer"><span id="j_id0:j_id1:j_id18"> 
+
+<div class="page-header customer-heading">
+
+           <div class="row customer-heading-top">
+
+            <div class="customer-heading-left">
+              <a href="/changemachine_customer?id=a09J0000003XlbJIAS">
+                <h1>Amy Roa</h1>
+              </a>
+            </div>
+
+            <div class="customer-heading-right">
+              <ul class="customer-totals">
+                <li><h6>Monthly Income:</h6><script  type="text/javascript"> if(!window.sfdcPage){window.sfdcPage = new ApexDetailPage();}
+UserContext.initialize({"networkId":"","locale":"en_US","labelLastModified":"1356556072000","isDefaultNetwork":true,"today":"1/8/2013 11:59 AM","timeFormat":"h:mm a","userPreferences":[{"index":112,"name":"HideInlineEditSplash","value":false},{"index":114,"name":"OverrideTaskSendNotification","value":false},{"index":115,"name":"DefaultTaskSendNotification","value":false},{"index":119,"name":"HideUserLayoutStdFieldInfo","value":false},{"index":116,"name":"HideRPPWarning","value":false},{"index":87,"name":"HideInlineSchedulingSplash","value":false},{"index":88,"name":"HideCRUCNotification","value":false},{"index":89,"name":"HideNewPLESplash","value":false},{"index":90,"name":"HideNewPLEWarnIE6","value":false},{"index":122,"name":"HideOverrideSharingMessage","value":false},{"index":91,"name":"HideProfileILEWarn","value":false},{"index":93,"name":"HideProfileElvVideo","value":false},{"index":97,"name":"ShowPicklistEditSplash","value":false},{"index":92,"name":"HideDataCategorySplash","value":false},{"index":128,"name":"ShowDealView","value":false},{"index":129,"name":"HideDealViewGuidedTour","value":false},{"index":132,"name":"HideKnowledgeFirstTimeSetupMsg","value":false},{"index":104,"name":"DefaultOffEntityPermsMsg","value":false},{"index":135,"name":"HideNewCsnSplash","value":false},{"index":101,"name":"HideBrowserWarning","value":false},{"index":139,"name":"HideDashboardBuilderGuidedTour","value":false},{"index":140,"name":"HideSchedulingGuidedTour","value":false},{"index":180,"name":"HideReportBuilderGuidedTour","value":false},{"index":183,"name":"HideAssociationQueueCallout","value":false},{"index":194,"name":"HideQTEBanner","value":false},{"index":193,"name":"HideChatterOnboardingSplash","value":false},{"index":195,"name":"HideSecondChatterOnboardingSplash","value":false},{"index":270,"name":"HideIDEGuidedTour","value":false},{"index":282,"name":"HideQueryToolGuidedTour","value":false},{"index":196,"name":"HideCSIGuidedTour","value":false},{"index":271,"name":"HideFewmetGuidedTour","value":false},{"index":272,"name":"HideEditorGuidedTour","value":false},{"index":205,"name":"HideApexTestGuidedTour","value":false},{"index":206,"name":"HideSetupProfileHeaderTour","value":false},{"index":207,"name":"HideSetupProfileObjectsAndTabsTour","value":false},{"index":213,"name":"DefaultOffArticleTypeEntityPermMsg","value":false},{"index":214,"name":"HideSelfInfluenceGetStarted","value":false},{"index":215,"name":"HideOtherInfluenceGetStarted","value":false},{"index":216,"name":"HideFeedToggleGuidedTour","value":false},{"index":268,"name":"ShowChatterTab178GuidedTour","value":false},{"index":275,"name":"HidePeopleTabDeprecationMsg","value":false},{"index":276,"name":"HideGroupTabDeprecationMsg","value":false},{"index":222,"name":"TouchExternalLinkReminderSuppression","value":false},{"index":224,"name":"HideUnifiedSearchGuidedTour","value":false},{"index":226,"name":"ShowDevContextMenu","value":true},{"index":227,"name":"HideWhatRecommenderForActivityQueues","value":false},{"index":228,"name":"HideLiveAgentFirstTimeSetupMsg","value":false},{"index":232,"name":"HideGroupAllowsGuestsMsgOnMemberWidget","value":false},{"index":233,"name":"HideGroupAllowsGuestsMsg","value":false},{"index":234,"name":"HideWhatAreGuestsMsg","value":false},{"index":235,"name":"HideNowAllowGuestsMsg","value":false},{"index":236,"name":"HideSocialAccountsAndContactsGuidedTour","value":false},{"index":237,"name":"HideAnalyticsHomeGuidedTour","value":false},{"index":238,"name":"ShowQuickCreateGuidedTour","value":false},{"index":245,"name":"HideFilePageGuidedTour","value":false},{"index":250,"name":"HideForecastingGuidedTour","value":false},{"index":242,"name":"TouchHideOptoutHover","value":false},{"index":251,"name":"HideBucketFieldGuide","value":false},{"index":263,"name":"HideSmartSearchCallOut","value":false},{"index":265,"name":"HideSocialProfilesKloutSplashScreen","value":false},{"index":273,"name":"ShowForecastingQuotaAttainment","value":false},{"index":280,"name":"HideForecastingQuotaColumn","value":false},{"index":283,"name":"HideManyWhoGuidedTour","value":false},{"index":284,"name":"HideExternalSharingModelGuidedTour","value":false},{"index":298,"name":"HideFileSyncBannerMsg","value":false},{"index":299,"name":"HideTestConsoleGuidedTour","value":false}],"orgPreferences":[{"index":257,"name":"TabOrganizer","value":true}],"startOfWeek":"1","isAccessibleMode":false,"ampm":["AM","PM"],"renderMode":"RETRO","userId":"005J0000000GK7G","dateTimeFormat":"M/d/yyyy h:mm a","dateFormat":"M/d/yyyy","uiSkin":"PortalDefault","language":"en_US","siteUrlPrefix":""});
+</script><span id="j_id0:j_id1:j_id18:j_id19:j_id21">$20,000.00</span>  
+                </li> 
+                <li>
+                <h6>Monthly Expenses:</h6><span id="j_id0:j_id1:j_id18:j_id19:j_id23">$20.00</span>
+                </li>
+                <li><h6>Weekly Savings:</h6><span id="j_id0:j_id1:j_id18:j_id19:j_id25">$125.00</span>
+                </li>
+                <li><h6>Monthly Debt Payments:</h6><span id="j_id0:j_id1:j_id18:j_id19:j_id27">$37.00</span>
+                </li>
+              </ul>
+            </div>
+         </div>
+         <div class="row customer-heading-bottom">
+
+
+
+                <div class="span8">
+                  <h6>29% complete</h6>
+                  <div class="progress progress-striped">
+                      <div class="bar" style="width: 29%;"></div>
+                  </div>
+                </div>
+                <div class="span4">
+                    
+                     
+                      <a class="btn" href="/changemachine_sendEmail?id=a09J0000003XlbJIAS">Send Email</a>
+                      <a class="btn" href="/changemachine_sendSMS?id=a09J0000003XlbJIAS">Send a Text</a>
+                  
+                  </div>
+                 
+        </div>
+
+    
+</div></span>
+
+            <ul class="nav nav-tabs customer-tabs">
+            
+     
+              <li class="active">
+                <a href="/changemachine_customer?id=a09J0000003XlbJIAS">Dashboard</a>
+              </li>
+              <li>
+                <a href="/changemachine_customer_details?id=a09J0000003XlbJIAS">Personal Info</a>
+              </li>
+
+              <li><a href="/changemachine_customer_income?id=a09J0000003XlbJIAS">Income and Expenses</a></li>
+            </ul>
+
+
+     
+
+            <ul class="thumbnails">
+              <li class="span4 ">
+                <div class="thumbnail">
+                <a class="btn btn-small pull-right" href="/section/Taxes">Start</a>
+
+                <a href="/section/Taxes"><h3>Taxes </h3></a>
+
+              
+                 <div class="progress progress-striped active">
+                    <div class="bar" style="width: 50.0%;"></div>
+                  </div> 
+
+                  <h6>50.0% complete</h6>
+                  
+                  </div>
+
+               </li>
+              <li class="span4 ">
+                <div class="thumbnail">
+                <a class="btn btn-small pull-right" href="/section/Goals">Start</a>
+
+                <a href="/section/Goals"><h3>Goals </h3></a>
+
+              
+                 <div class="progress progress-striped active">
+                    <div class="bar" style="width: 100.0%;"></div>
+                  </div> 
+
+                  <h6>100.0% complete</h6>
+                  
+                  </div>
+
+               </li>
+              <li class="span4 ">
+                <div class="thumbnail">
+                <a class="btn btn-small pull-right" href="/section/Credit">Start</a>
+
+                <a href="/section/Credit"><h3>Credit </h3></a>
+
+              
+                 <div class="progress progress-striped active">
+                    <div class="bar" style="width: 41.1764705882353%;"></div>
+                  </div> 
+
+                  <h6>41.1764705882353% complete</h6>
+                  
+                  </div>
+
+               </li>
+              <li class="span4 ">
+                <div class="thumbnail">
+                <a class="btn btn-small pull-right" href="/section/Debt">Start</a>
+
+                <a href="/section/Debt"><h3>Debt </h3></a>
+
+              
+                 <div class="progress progress-striped active">
+                    <div class="bar" style="width: 27.272727272727273%;"></div>
+                  </div> 
+
+                  <h6>27.272727272727273% complete</h6>
+                  
+                  </div>
+
+               </li>
+              <li class="span4 ">
+                <div class="thumbnail">
+                <a class="btn btn-small pull-right" href="/section/Banking">Start</a>
+
+                <a href="/section/Banking"><h3>Banking </h3></a>
+
+              
+                 <div class="progress progress-striped active">
+                    <div class="bar" style="width: 42.857142857142854%;"></div>
+                  </div> 
+
+                  <h6>42.857142857142854% complete</h6>
+                  
+                  </div>
+
+               </li>
+              <li class="span4 ">
+                <div class="thumbnail">
+                <a class="btn btn-small pull-right" href="/section/Assets">Start</a>
+
+                <a href="/section/Assets"><h3>Assets </h3></a>
+
+              
+                 <div class="progress progress-striped active">
+                    <div class="bar" style="width: 66.66666666666667%;"></div>
+                  </div> 
+
+                  <h6>66.66666666666667% complete</h6>
+                  
+                  </div>
+
+               </li>
+            </ul>
+                  
+
+
+                  <div class="row">
+                    <div class="span8">
+                      <div class="goals-block">
+
+                        <h2>Customer Goals</h2><span id="j_id0:j_id1:j_id33"><table class="table" id="j_id0:j_id1:j_id34" border="0" cellpadding="4" cellspacing="0"><colgroup span="4"></colgroup><thead class="rich-table-thead"><tr class=""><th class=" " scope="col" colspan="1" id="j_id0:j_id1:j_id34:j_id35header"><div id="j_id0:j_id1:j_id34:j_id35header:sortDiv"></div></th><th class=" " scope="col" colspan="1" id="j_id0:j_id1:j_id34:j_id37header"><div id="j_id0:j_id1:j_id34:j_id37header:sortDiv">Savings Per Week</div></th><th class=" " scope="col" colspan="1" id="j_id0:j_id1:j_id34:j_id39header"><div id="j_id0:j_id1:j_id34:j_id39header:sortDiv">Type</div></th><th class=" " scope="col" colspan="1" id="j_id0:j_id1:j_id34:j_id41header"><div id="j_id0:j_id1:j_id34:j_id41header:sortDiv">Status</div></th></tr></thead><tbody id="j_id0:j_id1:j_id34:tb"><tr class=""><td class="" id="j_id0:j_id1:j_id34:0:j_id35" colspan="1">
+                              <A href="/a0IJ0000000Ztl8MAC">asJKah</A></td><td class="" id="j_id0:j_id1:j_id34:0:j_id37" colspan="1"><span id="j_id0:j_id1:j_id34:0:j_id38">($500.00)</span></td><td class="" id="j_id0:j_id1:j_id34:0:j_id39" colspan="1"> 
+                              Health</td><td class="" id="j_id0:j_id1:j_id34:0:j_id41" colspan="1">
+                              </td></tr><tr class=""><td class="" id="j_id0:j_id1:j_id34:1:j_id35" colspan="1">
+                              <A href="/a0IJ0000000ZvJGMA0">Christmas</A></td><td class="" id="j_id0:j_id1:j_id34:1:j_id37" colspan="1"><span id="j_id0:j_id1:j_id34:1:j_id38">$145.83</span></td><td class="" id="j_id0:j_id1:j_id34:1:j_id39" colspan="1"> 
+                              </td><td class="" id="j_id0:j_id1:j_id34:1:j_id41" colspan="1">
+                              Completed</td></tr></tbody></table></span>
+
+                        <a class="btn btn-small " href="/changemachine_goal_type">Add Goal</a>
+
+                      </div><span id="j_id0:j_id1:j_id46">
+    
+    
+	                      <div class="customer-history">
+    <h2>Customer History</h2><table class="table" id="j_id0:j_id1:j_id46:j_id47:j_id49" border="0" cellpadding="0" cellspacing="0"><colgroup span="3"></colgroup><thead class="rich-table-thead"><tr class=""><th class=" " scope="col" colspan="1" id="j_id0:j_id1:j_id46:j_id47:j_id49:j_id50header"><div id="j_id0:j_id1:j_id46:j_id47:j_id49:j_id50header:sortDiv">Date</div></th><th class=" " scope="col" colspan="1" id="j_id0:j_id1:j_id46:j_id47:j_id49:j_id51header"><div id="j_id0:j_id1:j_id46:j_id47:j_id49:j_id51header:sortDiv">User</div></th><th class=" " scope="col" colspan="1" id="j_id0:j_id1:j_id46:j_id47:j_id49:j_id53header"><div id="j_id0:j_id1:j_id46:j_id47:j_id49:j_id53header:sortDiv">Action</div></th></tr></thead><tbody id="j_id0:j_id1:j_id46:j_id47:j_id49:tb"><tr class=""><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:0:j_id50" colspan="1">2012-12-31 17:33:06</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:0:j_id51" colspan="1">
+                
+
+                Keith Mancuso</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:0:j_id53" colspan="1">Changed <b>Financial Tune-up Score</b> from 11 to <b>16</b>.</td></tr><tr class=""><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:1:j_id50" colspan="1">2012-12-31 17:30:41</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:1:j_id51" colspan="1">
+                
+
+                Keith Mancuso</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:1:j_id53" colspan="1">Changed <b>Financial Tune-up Score</td></tr><tr class=""><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:2:j_id50" colspan="1">2012-12-31 16:28:50</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:2:j_id51" colspan="1">
+                
+
+                Keith Mancuso</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:2:j_id53" colspan="1">Changed <b>Mobile Phone</b> from (646) 123-4567 to <b>(646) 123-1234</b>.</td></tr><tr class=""><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:3:j_id50" colspan="1">2012-12-31 16:25:16</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:3:j_id51" colspan="1">
+                
+
+                Keith Mancuso</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:3:j_id53" colspan="1">Changed <b>Mobile Phone</b> from (646) 123-2312 to <b>(646) 123-4567</b>.</td></tr><tr class=""><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:4:j_id50" colspan="1">2012-12-31 16:22:04</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:4:j_id51" colspan="1">
+                
+
+                Keith Mancuso - COACH</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:4:j_id53" colspan="1">Changed <b>City</b> from New York to <b>Bronx</b>.</td></tr><tr class=""><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:5:j_id50" colspan="1">2012-12-11 23:31:34</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:5:j_id51" colspan="1">
+                
+
+                Keith Mancuso - COACH</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:5:j_id53" colspan="1">Changed <b>City</b> from Brooklyn to <b>New York</b>.</td></tr><tr class=""><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:6:j_id50" colspan="1">2012-12-11 23:29:58</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:6:j_id51" colspan="1">
+                
+
+                Keith Mancuso - COACH</td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:6:j_id53" colspan="1">Changed <b>City</td></tr><tr class=""><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:7:j_id50" colspan="1"></td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:7:j_id51" colspan="1">
+                
+
+                </td><td class="" id="j_id0:j_id1:j_id46:j_id47:j_id49:7:j_id53" colspan="1">Changed <b>State</td></tr></tbody></table>
+                </div><!-- customer-history -->
+                </span>
+
+
+                    </div>
+                    <div class="span4">
+
+                      <div class="meetings-block">
+
+                        <h2>Meetings</h2><span id="j_id0:j_id1:j_id56"><table class="table" id="j_id0:j_id1:j_id57" border="0" cellpadding="4" cellspacing="0"><colgroup span="2"></colgroup><tbody id="j_id0:j_id1:j_id57:tb"><tr class=""><td class="" id="j_id0:j_id1:j_id57:0:j_id58" colspan="1">
+                              <A href="/a0XJ00000017Y9oMAE">Wed Jan 16 15:56:00 GMT 2013</A></td><td class="" id="j_id0:j_id1:j_id57:0:j_id60" colspan="1">
+                              this is my note</td></tr></tbody></table></span>
+
+                        <a class="btn btn-small" href="/a0X/e?CF00NJ0000000eEwN=Roa&amp;CF00NJ0000000eEwNid=a09J0000003XlbJIAS&amp;retURL=%2Fapex%2Fchangemachine_customer%3Fid%3Da09J0000003XlbJIAS     ">Add Meeting</a>
+
+
+                      </div>
+                    </div>
+                    </div> 
+
+                  
+
+
+          
+        
+                    </div>
+     </div>
+  </div>
+  <footer>
+    <div class="container">
+         
+    <img class="footerRays" src="https://www.visualaids.org/changemachine/images/raysCropped.png" /> 
+        <img class="footerLogo" src="https://www.visualaids.org/changemachine/images/change-machine-footer-logo.png" />
+
+          <ul class="nav nav-pills">
+              <li><a href="/_ui/core/portal/PortalUserMyProfilePage/d">My Account</a></li>
+              <li><a href="/secur/logout.jsp">Logout</a></li>
+              <li><a href="/changemachine_PrivacyPolicy">Privacy Policy</a></li>
+             
+       	 </ul>
+     
+
+   
+
+
+       </div>
+
+         
+   </footer><span id="j_id0:j_id1:j_id66">
+
+   
+
+    <div class="feedback">
+      <ul class="nav nav-pills">
+        <li><a href="/500/e?retURL=%2F500%2Fo">Issues/Problems?</a></li>
+        <li><a href="/ideas/ideaList.apexp">Ideas?</a></li>
+      </ul>
+      </div></span>
+</body></html>
