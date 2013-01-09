@@ -2,6 +2,25 @@
 
 /* ----- START UNIVERSAL CSS ----- */
 
+/* ----- Spans ----- */
+
+.row {
+	margin-left: 0;
+}
+
+.span4 {
+/* 	width: 306px; */
+/* 	margin-left: 10px; */
+	margin-right: 10px;
+}
+.span8 {
+	width: 632px;
+/* 	margin-left: 10px; */
+	margin-right: 10px;
+}
+
+/* ----- End Spans ----- */
+
 
 /* ----- Fonts ----- */
 
@@ -187,32 +206,42 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 /* ----- Header ----- */
 
+body > .container {
+	width: @gridRowWidth + 10px;	
+}
+
 header {
 	background-color: @lightblue;
-	width: @gridRowWidth;
+ 	width: @gridRowWidth + 10px;
 	margin: 0 auto;
 }
 
 .topWrapper {
 	background-color: @lightblue;
+/*
 	border-left: 10px solid @lightblue;
 	border-right: 10px solid @lightblue;
+*/
 	width: @gridRowWidth;
 	margin: 0 auto;
-	padding: 10px 10px 0;
+	padding: 10px 0 0;
 }
 
 .midWrapper {
 	background-color: @lighterblue;
-	border-left: 10px solid @lighterblue;
-	border-right: 10px solid @lighterblue;
-	width: @gridRowWidth;
+	border-left: 5px solid @lighterblue;
+	border-right: 5px solid @lighterblue;
+ 	width: @gridRowWidth;
 	margin: -30px auto 0;
-	padding: 0 10px;
+	padding: 0;
 }
 
 .midWrapper .container {
 	margin-left: 10px;
+}
+
+.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: @gridRowWidth - 10px;
 }
 
 .brand img {
@@ -248,7 +277,7 @@ header {
 	display: block;
     float: left;
     left: 0;
-    margin: 0 10px 0 94px;
+    margin: 0 10px 0 100px;
     position: absolute;
     z-index: 20;
 	> li {
@@ -355,12 +384,12 @@ form#sbsearch {
 
 body .wrapper {
 	background-color: @white;
-	border-left: 10px solid @lighterblue;
-	border-right: 10px solid @lighterblue;
-	border-bottom: 10px solid @lighterblue;
-	width: @gridRowWidth;
+	border-bottom: 5px solid @lighterblue;
+	border-right: 5px solid @lighterblue;
+	border-left: 5px solid @lighterblue;
+ 	width: @gridRowWidth;
 	margin: 0 auto;
-	padding: 0 10px 20px;
+	padding: 0 0 20px;
 }
 
 .page-header {
@@ -398,6 +427,7 @@ body .wrapper {
 .page-header h1 {
 	display: inline-block;
 	margin-bottom: 10px;
+	margin-left: 10px;
 }
 
 .page-header h2 {
@@ -636,11 +666,10 @@ body .wrapper {
 		margin-bottom: 40px;
 	}
 }
-.otherMilestones li {
-	background-image: url("https://www.visualaids.org/changemachine/images/back_next-arrows.png");
-	background-repeat: no-repeat;
-	background-position: right center;
-	background-size: 60px auto;
+.otherMilestones li a:after {
+	content: url("https://www.visualaids.org/changemachine/images/arrow-next.png");
+	margin-left: 5px;
+	border-bottom-color: @white;
 }
 
 .milestone-sidebar {
@@ -1102,7 +1131,7 @@ a.showDetails {
 	}
 	.page-header {
 		.customer-heading-top {
-			margin: 0 0 10px;
+			margin: 5px 10px 10px;
 			border-bottom: 1px solid @lightergray;
 		}
 		.customer-heading-left {
@@ -1140,7 +1169,7 @@ a.showDetails {
 					margin-bottom: 5px;
 				}
 				span {
-					font-size: 23px;
+					font-size: 20px;
 					.metaBold();
 					color: @gray;
 				}
@@ -1156,7 +1185,7 @@ a.showDetails {
 			}
 			.btn {
 				padding: 7px 18px;
-				margin-top: 11px;
+				margin: 11px 10px 0;
 				&:hover {
 					padding: 9px 18px 5px;
 				}
@@ -1168,7 +1197,7 @@ a.showDetails {
 	}
 	.customer-tabs {
 		padding: 0 -10px;
-		margin: 0 -10px 15px;
+		margin: 0 0 15px;
 		background-color: @lightestgray;
 		li {
 			color: @blue;
@@ -1199,8 +1228,9 @@ a.showDetails {
 		}
 	}
 	.thumbnails {
+		margin-left: 0;
 		li {
-			margin-bottom: 10px;
+			margin-bottom: 20px;
 		}
 		.thumbnail {
 			border: none;
@@ -1440,7 +1470,7 @@ footer .container {
 }
 
 .footerLogo {
-	margin: -188px 20px 0;
+	margin: -185px 0 0;
 	height: 110px;
 	width: auto;
 	vertical-align: top;

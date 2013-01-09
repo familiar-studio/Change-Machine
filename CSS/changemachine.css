@@ -355,158 +355,158 @@ a:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
-  margin-left: 1.0660980810234542%;
-  *margin-left: 1.0127931769722816%;
+  margin-left: 1.0224948875255624%;
+  *margin-left: 0.9713701431492843%;
 }
 .row-fluid [class*="span"]:first-child {
   margin-left: 0;
 }
 .row-fluid .controls-row [class*="span"] + [class*="span"] {
-  margin-left: 1.0660980810234542%;
+  margin-left: 1.0224948875255624%;
 }
 .row-fluid .span12 {
-  width: 100%;
-  *width: 99.94669509594883%;
+  width: 95.91002044989774%;
+  *width: 95.85889570552146%;
 }
 .row-fluid .span11 {
-  width: 91.57782515991471%;
-  *width: 91.52452025586354%;
+  width: 87.83231083844579%;
+  *width: 87.78118609406951%;
 }
 .row-fluid .span10 {
-  width: 83.15565031982942%;
-  *width: 83.10234541577825%;
+  width: 79.75460122699387%;
+  *width: 79.70347648261759%;
 }
 .row-fluid .span9 {
-  width: 74.73347547974413%;
-  *width: 74.68017057569296%;
+  width: 71.67689161554192%;
+  *width: 71.62576687116564%;
 }
 .row-fluid .span8 {
-  width: 66.31130063965884%;
-  *width: 66.25799573560766%;
+  width: 63.599182004089975%;
+  *width: 63.548057259713694%;
 }
 .row-fluid .span7 {
-  width: 57.88912579957355%;
-  *width: 57.835820895522374%;
+  width: 55.52147239263803%;
+  *width: 55.47034764826175%;
 }
 .row-fluid .span6 {
-  width: 49.46695095948827%;
-  *width: 49.4136460554371%;
+  width: 47.44376278118609%;
+  *width: 47.39263803680981%;
 }
 .row-fluid .span5 {
-  width: 41.04477611940298%;
-  *width: 40.99147121535181%;
+  width: 39.36605316973415%;
+  *width: 39.31492842535787%;
 }
 .row-fluid .span4 {
-  width: 32.62260127931769%;
-  *width: 32.56929637526652%;
+  width: 31.288343558282207%;
+  *width: 31.23721881390593%;
 }
 .row-fluid .span3 {
-  width: 24.20042643923241%;
-  *width: 24.147121535181235%;
+  width: 23.210633946830264%;
+  *width: 23.159509202453986%;
 }
 .row-fluid .span2 {
-  width: 15.77825159914712%;
-  *width: 15.724946695095948%;
+  width: 15.132924335378322%;
+  *width: 15.081799591002044%;
 }
 .row-fluid .span1 {
-  width: 7.356076759061833%;
-  *width: 7.30277185501066%;
+  width: 7.05521472392638%;
+  *width: 7.004089979550101%;
 }
 .row-fluid .offset12 {
-  margin-left: 102.13219616204691%;
-  *margin-left: 102.02558635394456%;
+  margin-left: 97.95501022494886%;
+  *margin-left: 97.8527607361963%;
 }
 .row-fluid .offset12:first-child {
-  margin-left: 101.06609808102345%;
-  *margin-left: 100.9594882729211%;
+  margin-left: 96.93251533742331%;
+  *margin-left: 96.83026584867075%;
 }
 .row-fluid .offset11 {
-  margin-left: 93.71002132196162%;
-  *margin-left: 93.60341151385927%;
+  margin-left: 89.87730061349691%;
+  *margin-left: 89.77505112474435%;
 }
 .row-fluid .offset11:first-child {
-  margin-left: 92.64392324093816%;
-  *margin-left: 92.53731343283582%;
+  margin-left: 88.85480572597136%;
+  *margin-left: 88.7525562372188%;
 }
 .row-fluid .offset10 {
-  margin-left: 85.28784648187633%;
-  *margin-left: 85.18123667377398%;
+  margin-left: 81.79959100204499%;
+  *margin-left: 81.69734151329243%;
 }
 .row-fluid .offset10:first-child {
-  margin-left: 84.22174840085287%;
-  *margin-left: 84.11513859275053%;
+  margin-left: 80.77709611451944%;
+  *margin-left: 80.67484662576688%;
 }
 .row-fluid .offset9 {
-  margin-left: 76.86567164179104%;
-  *margin-left: 76.75906183368869%;
+  margin-left: 73.72188139059304%;
+  *margin-left: 73.61963190184048%;
 }
 .row-fluid .offset9:first-child {
-  margin-left: 75.79957356076758%;
-  *margin-left: 75.69296375266524%;
+  margin-left: 72.69938650306749%;
+  *margin-left: 72.59713701431492%;
 }
 .row-fluid .offset8 {
-  margin-left: 68.44349680170575%;
-  *margin-left: 68.3368869936034%;
+  margin-left: 65.6441717791411%;
+  *margin-left: 65.54192229038854%;
 }
 .row-fluid .offset8:first-child {
-  margin-left: 67.3773987206823%;
-  *margin-left: 67.27078891257995%;
+  margin-left: 64.62167689161554%;
+  *margin-left: 64.51942740286297%;
 }
 .row-fluid .offset7 {
-  margin-left: 60.02132196162046%;
-  *margin-left: 59.91471215351811%;
+  margin-left: 57.56646216768915%;
+  *margin-left: 57.46421267893659%;
 }
 .row-fluid .offset7:first-child {
-  margin-left: 58.955223880597%;
-  *margin-left: 58.848614072494655%;
+  margin-left: 56.54396728016359%;
+  *margin-left: 56.44171779141103%;
 }
 .row-fluid .offset6 {
-  margin-left: 51.59914712153518%;
-  *margin-left: 51.492537313432834%;
+  margin-left: 49.488752556237216%;
+  *margin-left: 49.386503067484654%;
 }
 .row-fluid .offset6:first-child {
-  margin-left: 50.53304904051173%;
-  *margin-left: 50.42643923240938%;
+  margin-left: 48.46625766871165%;
+  *margin-left: 48.364008179959086%;
 }
 .row-fluid .offset5 {
-  margin-left: 43.17697228144989%;
-  *margin-left: 43.070362473347544%;
+  margin-left: 41.41104294478528%;
+  *margin-left: 41.30879345603272%;
 }
 .row-fluid .offset5:first-child {
-  margin-left: 42.11087420042644%;
-  *margin-left: 42.00426439232409%;
+  margin-left: 40.38854805725971%;
+  *margin-left: 40.28629856850715%;
 }
 .row-fluid .offset4 {
-  margin-left: 34.7547974413646%;
-  *margin-left: 34.64818763326225%;
+  margin-left: 33.33333333333333%;
+  *margin-left: 33.23108384458077%;
 }
 .row-fluid .offset4:first-child {
-  margin-left: 33.68869936034115%;
-  *margin-left: 33.5820895522388%;
+  margin-left: 32.31083844580777%;
+  *margin-left: 32.20858895705521%;
 }
 .row-fluid .offset3 {
-  margin-left: 26.33262260127932%;
-  *margin-left: 26.22601279317697%;
+  margin-left: 25.25562372188139%;
+  *margin-left: 25.153374233128833%;
 }
 .row-fluid .offset3:first-child {
-  margin-left: 25.266524520255864%;
-  *margin-left: 25.159914712153515%;
+  margin-left: 24.233128834355824%;
+  *margin-left: 24.130879345603272%;
 }
 .row-fluid .offset2 {
-  margin-left: 17.91044776119403%;
-  *margin-left: 17.803837953091683%;
+  margin-left: 17.177914110429448%;
+  *margin-left: 17.07566462167689%;
 }
 .row-fluid .offset2:first-child {
-  margin-left: 16.844349680170573%;
-  *margin-left: 16.73773987206823%;
+  margin-left: 16.155419222903884%;
+  *margin-left: 16.05316973415133%;
 }
 .row-fluid .offset1 {
-  margin-left: 9.488272921108742%;
-  *margin-left: 9.381663113006397%;
+  margin-left: 9.100204498977504%;
+  *margin-left: 8.997955010224949%;
 }
 .row-fluid .offset1:first-child {
-  margin-left: 8.422174840085287%;
-  *margin-left: 8.315565031982942%;
+  margin-left: 8.077709611451942%;
+  *margin-left: 7.975460122699384%;
 }
 [class*="span"].hide,
 .row-fluid [class*="span"].hide {
@@ -5056,6 +5056,24 @@ a.badge:hover {
   position: fixed;
 }
 /* ----- START UNIVERSAL CSS ----- */
+/* ----- Spans ----- */
+.row {
+  margin-left: 0;
+}
+.span4 {
+  /* 	width: 306px; */
+
+  /* 	margin-left: 10px; */
+
+  margin-right: 10px;
+}
+.span8 {
+  width: 632px;
+  /* 	margin-left: 10px; */
+
+  margin-right: 10px;
+}
+/* ----- End Spans ----- */
 /* ----- Fonts ----- */
 .proximaL {
   font-family: "proxima-nova", sans-serif;
@@ -5251,29 +5269,40 @@ a {
   color: #a72c32;
 }
 /* ----- Header ----- */
+body > .container {
+  width: 988px;
+}
 header {
   background-color: #c7d1e4;
-  width: 938px;
+  width: 988px;
   margin: 0 auto;
 }
 .topWrapper {
   background-color: #c7d1e4;
-  border-left: 10px solid #c7d1e4;
-  border-right: 10px solid #c7d1e4;
-  width: 938px;
+  /*
+	border-left: 10px solid @lightblue;
+	border-right: 10px solid @lightblue;
+*/
+
+  width: 978px;
   margin: 0 auto;
-  padding: 10px 10px 0;
+  padding: 10px 0 0;
 }
 .midWrapper {
   background-color: #e3e8f2;
-  border-left: 10px solid #e3e8f2;
-  border-right: 10px solid #e3e8f2;
-  width: 938px;
+  border-left: 5px solid #e3e8f2;
+  border-right: 5px solid #e3e8f2;
+  width: 978px;
   margin: -30px auto 0;
-  padding: 0 10px;
+  padding: 0;
 }
 .midWrapper .container {
   margin-left: 10px;
+}
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 968px;
 }
 .brand img {
   float: left;
@@ -5305,7 +5334,7 @@ header {
   display: block;
   float: left;
   left: 0;
-  margin: 0 10px 0 94px;
+  margin: 0 10px 0 100px;
   position: absolute;
   z-index: 20;
 }
@@ -5411,12 +5440,12 @@ form#sbsearch .btn:hover {
 /* ----- Main Content ----- */
 body .wrapper {
   background-color: #ffffff;
-  border-left: 10px solid #e3e8f2;
-  border-right: 10px solid #e3e8f2;
-  border-bottom: 10px solid #e3e8f2;
-  width: 938px;
+  border-bottom: 5px solid #e3e8f2;
+  border-right: 5px solid #e3e8f2;
+  border-left: 5px solid #e3e8f2;
+  width: 978px;
   margin: 0 auto;
-  padding: 0 10px 20px;
+  padding: 0 0 20px;
 }
 .page-header {
   background-color: #ffffff;
@@ -5454,6 +5483,7 @@ body .wrapper {
 .page-header h1 {
   display: inline-block;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 .page-header h2 {
   margin-left: 10px;
@@ -5710,11 +5740,10 @@ body .wrapper {
 .otherMilestones ul.unstyled.milestones {
   margin-bottom: 40px;
 }
-.otherMilestones li {
-  background-image: url("https://www.visualaids.org/changemachine/images/back_next-arrows.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 60px auto;
+.otherMilestones li a:after {
+  content: url("https://www.visualaids.org/changemachine/images/arrow-next.png");
+  margin-left: 5px;
+  border-bottom-color: #ffffff;
 }
 .milestone-sidebar #questions,
 .milestone-sidebar #paths {
@@ -6160,7 +6189,7 @@ a.showDetails {
   border-radius: 8px;
 }
 .customer .page-header .customer-heading-top {
-  margin: 0 0 10px;
+  margin: 5px 10px 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 .customer .page-header .customer-heading-left {
@@ -6204,7 +6233,7 @@ a.showDetails {
   margin-bottom: 5px;
 }
 .customer .page-header .customer-heading-right .customer-totals span {
-  font-size: 23px;
+  font-size: 20px;
   font-family: "ff-meta-serif-web-pro", serif;
   font-style: normal;
   font-weight: 700;
@@ -6223,7 +6252,7 @@ a.showDetails {
 }
 .customer .page-header .customer-heading-bottom .btn {
   padding: 7px 18px;
-  margin-top: 11px;
+  margin: 11px 10px 0;
 }
 .customer .page-header .customer-heading-bottom .btn:hover {
   padding: 9px 18px 5px;
@@ -6233,7 +6262,7 @@ a.showDetails {
 }
 .customer .customer-tabs {
   padding: 0 -10px;
-  margin: 0 -10px 15px;
+  margin: 0 0 15px;
   background-color: #e6e7e8;
 }
 .customer .customer-tabs li {
@@ -6263,8 +6292,11 @@ a.showDetails {
   border: 1px solid transparent;
   color: #73a534;
 }
+.customer .thumbnails {
+  margin-left: 0;
+}
 .customer .thumbnails li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .customer .thumbnails .thumbnail {
   border: none;
@@ -6504,7 +6536,7 @@ footer .container {
   height: 140px;
 }
 .footerLogo {
-  margin: -188px 20px 0;
+  margin: -185px 0 0;
   height: 110px;
   width: auto;
   vertical-align: top;
