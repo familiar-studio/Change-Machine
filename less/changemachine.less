@@ -8,20 +8,29 @@
 	margin-left: 0;
 }
 
-.span4 {
-/* 	width: 306px; */
-/* 	margin-left: 10px; */
-	margin-right: 10px;
+
+
+.row8-4 {
+	.span4 {
+		width: 299px;
+		margin-right: 10px;
+	}
+	.span8 {
+		width: 619px;
+		margin-right: 10px;
+	}
 }
-.span8 {
-	width: 632px;
-/* 	margin-left: 10px; */
-	margin-right: 10px;
+
+.row4-4-4 {
+	.span4 {
+		width: 299px;
+		margin-right: 10px;
+	}
 }
 
 /* ----- End Spans ----- */
 
-
+ 
 /* ----- Fonts ----- */
 
 .proximaL {
@@ -212,7 +221,7 @@ body > .container {
 
 header {
 	background-color: @lightblue;
- 	width: @gridRowWidth + 10px;
+ 	width: @gridRowWidth + 30px;
 	margin: 0 auto;
 }
 
@@ -222,7 +231,7 @@ header {
 	border-left: 10px solid @lightblue;
 	border-right: 10px solid @lightblue;
 */
-	width: @gridRowWidth;
+	width: @gridRowWidth + 10px;
 	margin: 0 auto;
 	padding: 10px 0 0;
 }
@@ -231,7 +240,7 @@ header {
 	background-color: @lighterblue;
 	border-left: 5px solid @lighterblue;
 	border-right: 5px solid @lighterblue;
- 	width: @gridRowWidth;
+ 	width: @gridRowWidth + 20px;
 	margin: -30px auto 0;
 	padding: 0;
 }
@@ -241,7 +250,7 @@ header {
 }
 
 .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-    width: @gridRowWidth - 10px;
+    width: @gridRowWidth + 10px;
 }
 
 .brand img {
@@ -277,7 +286,7 @@ header {
 	display: block;
     float: left;
     left: 0;
-    margin: 0 10px 0 100px;
+    margin: 0 10px 0 110px;
     position: absolute;
     z-index: 20;
 	> li {
@@ -387,7 +396,7 @@ body .wrapper {
 	border-bottom: 5px solid @lighterblue;
 	border-right: 5px solid @lighterblue;
 	border-left: 5px solid @lighterblue;
- 	width: @gridRowWidth;
+ 	width: @gridRowWidth + 20px;
 	margin: 0 auto;
 	padding: 0 0 20px;
 }
@@ -782,7 +791,7 @@ body .wrapper {
 	background-color: @lightestgreen;
 	margin-top: 0px;
 	float: right;
-	margin-right: -10px;
+	margin-right: -5px;
 	height: 60px;
 	a.btn {
 		text-transform: capitalize;
@@ -1184,10 +1193,10 @@ a.showDetails {
 				font-size: 16px;
 			}
 			.btn {
-				padding: 7px 18px;
+				padding: 7px 16px;
 				margin: 11px 10px 0;
 				&:hover {
-					padding: 9px 18px 5px;
+					padding: 9px 16px 5px;
 				}
 			}
 		}
