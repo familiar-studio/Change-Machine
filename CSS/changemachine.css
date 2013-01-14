@@ -2798,17 +2798,17 @@ input[type="button"].btn-block {
 .btn-danger {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #a72c32;
-  background-image: -moz-linear-gradient(top, #a72c32, #a72c32);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a72c32), to(#a72c32));
-  background-image: -webkit-linear-gradient(top, #a72c32, #a72c32);
-  background-image: -o-linear-gradient(top, #a72c32, #a72c32);
-  background-image: linear-gradient(to bottom, #a72c32, #a72c32);
+  background-color: #a72c31;
+  background-image: -moz-linear-gradient(top, #a72c31, #a72c31);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a72c31), to(#a72c31));
+  background-image: -webkit-linear-gradient(top, #a72c31, #a72c31);
+  background-image: -o-linear-gradient(top, #a72c31, #a72c31);
+  background-image: linear-gradient(to bottom, #a72c31, #a72c31);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa72c32', endColorstr='#ffa72c32', GradientType=0);
-  border-color: #a72c32 #a72c32 #6a1c20;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa72c31', endColorstr='#ffa72c31', GradientType=0);
+  border-color: #a72c31 #a72c31 #6a1c1f;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #a72c32;
+  *background-color: #a72c31;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2819,12 +2819,12 @@ input[type="button"].btn-block {
 .btn-danger.disabled,
 .btn-danger[disabled] {
   color: #ffffff;
-  background-color: #a72c32;
-  *background-color: #93272c;
+  background-color: #a72c31;
+  *background-color: #93272b;
 }
 .btn-danger:active,
 .btn-danger.active {
-  background-color: #7f2126 \9;
+  background-color: #7f2125 \9;
 }
 .btn-success {
   color: #ffffff;
@@ -3108,7 +3108,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #f89406;
 }
 .btn-group.open .btn-danger.dropdown-toggle {
-  background-color: #a72c32;
+  background-color: #a72c31;
 }
 .btn-group.open .btn-success.dropdown-toggle {
   background-color: #73a534;
@@ -5156,7 +5156,7 @@ h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 47px;
-  color: #f49ac1;
+  color: #f49ac2;
   text-transform: capitalize;
   margin: 0;
 }
@@ -5164,7 +5164,7 @@ h2 {
   font-family: "ff-meta-serif-web-pro", serif;
   font-style: normal;
   font-weight: 700;
-  color: rgba(115, 165, 51, 0.5);
+  color: #dce9cc;
   display: block;
   font-size: 14px;
   text-transform: uppercase;
@@ -5271,7 +5271,7 @@ a {
 }
 */
 .roadblock {
-  color: #a72c32;
+  color: #a72c31;
 }
 /* ----- Header ----- */
 body > .container {
@@ -5469,7 +5469,7 @@ body .wrapper {
   font-family: "ff-meta-serif-web-pro", serif;
   font-style: normal;
   font-weight: 700;
-  color: rgba(115, 165, 51, 0.5);
+  color: #dce9cc;
   display: block;
   font-size: 14px;
   text-transform: uppercase;
@@ -5635,14 +5635,14 @@ body .wrapper {
   border-bottom: none;
 }
 .milestone-block .Roadblock {
-  color: #a72c32;
+  color: #a72c31;
   background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
   background-repeat: no-repeat;
   background-size: 16px auto;
   background-position: 2px 2px;
 }
 .milestone-block .Roadblock a h3 {
-  color: #a72c32;
+  color: #a72c31;
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -5663,12 +5663,12 @@ body .wrapper {
 }
 /* ----- Sidebar ----- */
 .sidebar-block {
-  background-color: rgba(115, 165, 51, 0.25);
+  background-color: #eaf1e0;
   border-radius: 5px;
   overflow: hidden;
   padding: 5px 15px 0px;
   margin-bottom: 20px;
-  box-shadow: inset 2px 2px 0px rgba(115, 165, 51, 0.25);
+  box-shadow: inset 2px 2px 0px #eaf1e0;
 }
 .sidebar-block h5 {
   padding-left: 25px;
@@ -6024,7 +6024,7 @@ body div.container div.wrapper div.row div.span8 ul.unstyled li span span form d
   background-color: #73a534;
 }
 body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:nth-child(3) {
-  background-color: #a72c32;
+  background-color: #a72c31;
 }
 body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:nth-child(4) {
   background-color: rgba(0, 0, 0, 0.5);
@@ -6404,7 +6404,7 @@ a.showDetails {
   overflow: hidden;
   padding: 2px 0px 0px;
   margin-bottom: 20px;
-  box-shadow: inset 2px 2px 0px rgba(115, 165, 51, 0.25);
+  box-shadow: inset 2px 2px 0px #eaf1e0;
 }
 .customer .meetings-block h2 {
   color: #73a534;
@@ -6457,7 +6457,7 @@ a.showDetails {
   padding: 5px 12px 1px;
 }
 .customer .span12 .btn.delete {
-  background-color: #a72c32;
+  background-color: #a72c31;
   background-image: none;
 }
 .customer .bPageBlock {
@@ -6825,14 +6825,14 @@ footer ul li a:hover {
   color: #ffffff;
 }
 .currentCustomer {
-  color: rgba(115, 165, 51, 0.5);
+  color: #dce9cc;
 }
 .currentCustomer span {
   color: #73a534;
 }
 .currentCustomer ul li {
-  background-color: rgba(115, 165, 51, 0.25);
-  color: rgba(115, 165, 51, 0.5);
+  background-color: #eaf1e0;
+  color: #dce9cc;
 }
 .currentCustomer ul li.active:before {
   margin: 0 -5px 0 5px;
@@ -6878,7 +6878,7 @@ img.skiplink {
   background-color: #ffffff;
 }
 .bPageBlock .pbHeader h2 {
-  color: #f49ac1;
+  color: #f49ac2;
   font-size: 47px;
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -6937,7 +6937,7 @@ img.skiplink {
 .requiredExample:before {
   content: "*";
   font-size: 16px;
-  color: #a72c32;
+  color: #a72c31;
 }
 .bPageBlock .requiredInput .requiredBlock {
   background-color: #ffffff;
@@ -6948,7 +6948,7 @@ img.skiplink {
   width: 1px;
 }
 .bPageBlock .requiredMark {
-  color: #a72c32;
+  color: #a72c31;
   margin-right: 3px;
 }
 select,
@@ -7021,7 +7021,7 @@ html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #a72c32;
+  color: #a72c31;
 }
 /* removed for Customer Personal Info page */
 /*
@@ -7041,7 +7041,7 @@ html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.
 .ideaFloatBlock label {
   text-align: left;
   font-size: 30px;
-  color: #f49ac1;
+  color: #f49ac2;
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 700;
