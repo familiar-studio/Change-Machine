@@ -783,6 +783,10 @@ body .wrapper {
 
 /* ----- End Sidebar ----- */
 
+.thumbnails {
+	margin-left: 0; 
+}
+
 /* Coach View */
 
 .topWrapper .btn-group {
@@ -1135,6 +1139,7 @@ a.showDetails {
 /* ----- Customer Page ----- */
 
 .customer {
+	padding-bottom: 40px;
 	.btn {
 		border-radius: 8px;
 	}
@@ -1310,6 +1315,7 @@ a.showDetails {
 		}
 		tbody a {
 			color: @black;
+			border-bottom: 1px dotted @lightergray;
 			&:hover {
 				color: @blue;
 			}
@@ -1356,6 +1362,147 @@ a.showDetails {
 			background-image: none;
 			&:hover {
 				padding: 5px 12px 1px;
+			}
+		}
+	}
+}
+
+.customer {			/*   Personal Info   */
+	.span12 .btn {
+		padding: 3px 12px;
+		margin: 10px 0px 10px 10px;
+		&:hover {
+			padding: 5px 12px 1px;
+		}
+		&.delete {
+			background-color: @red;
+			background-image: none;
+		}
+	}
+	.bPageBlock {
+		padding: 10px;
+		.pbHeader {
+			.pbTitle {
+				width: 100%;
+				border-top: 2px dotted @lightestgray;
+			}
+			h2 {
+				.metaBold();
+				color: @lightgray;
+				font-size: 18px;
+				margin-bottom: 0;
+			}
+			.pbButton {
+				float: none;
+			}
+		}
+		.btn {
+			font-size: 12px;
+		}
+		.pbBody {
+			padding-top: 0;
+			.pbSubheader {
+				border-bottom: none;
+				border-top: 2px dotted @lightestgray;
+				padding-top: 10px;
+				h3 {
+					.metaBold();
+					color: @lightgray;
+					font-size: 18px;
+				}
+			}
+			.pbSubsection {
+				margin-top: 5px;
+			}
+		}
+		.detailList {
+			.labelCol {
+				text-align: right;
+				.proximaB();
+				color: @lightergray;
+				font-size: 11px;
+				text-transform: uppercase;
+				width: 250px;
+				vertical-align: bottom;
+				line-height: 16px;
+			}
+			.dataCol {
+				font-size: 18px;
+				color: @black;
+				.proximaL();
+				padding-left: 10px;
+				width: 410px;
+				vertical-align: bottom;
+			}
+			tbody {
+				tr {
+					height: 30px;
+				}
+			}
+		}
+	}
+	table tbody th,
+	table tbody td {
+		border-bottom: none;
+	}
+	.bRelatedList {
+		h3 {
+			.metaBold();
+			color: @lightgray;
+			font-size: 18px;
+			margin-bottom: 0;
+		}
+	}
+	.noStandardTab {
+		overflow: hidden;
+	}
+	.bRelatedList {
+		.pbHeader {
+			border-top: 2px dotted #E6E7E8;
+			margin-bottom: 10px;
+			.pbTitle {
+				border-top: none;
+				width: auto;
+				h3 {
+					margin-top: 10px;
+				}
+			}
+		}
+		table {
+			width: 100%;
+			.headerRow {
+				th {
+					text-align: left;
+					.proximaB();
+					color: @lightergray;
+					font-size: 11px;
+					text-transform: uppercase;
+				}
+				td, th {
+					text-align: left;
+				}
+			}
+			.dataRow {
+				height: 30px;
+				td, th {
+					text-align: left;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	img.relatedListIcon {
+		display: none;
+	}
+	#j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedNoteList {
+		.noStandardTab .bPageBlock .pbHeader {
+			table tbody tr td.pbTitle {
+				width: 364px;
+				float: left;
+			}
+			table tbody tr td.pbButton {
+				width: 441px;
+				float: left;
 			}
 		}
 	}
@@ -1479,7 +1626,7 @@ footer .container {
 }
 
 .footerLogo {
-	margin: -185px 0 0;
+	margin: -185px 10px 0;
 	height: 110px;
 	width: auto;
 	vertical-align: top;
@@ -1790,10 +1937,13 @@ html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.
 	}
 }
 
-.bEditBlock .detailList .dataCol, .bEditBlock .detailList .data2Col.last,
+/* removed for Customer Personal Info page */
+/*
+.bEditBlock .detailList .dataCol, .bEditBlock .detailList .data2Col.last, 
 .detailList tbody tr td:nth-child(2) {
     padding: 2px 2px 0 10px !important;
 }
+*/
 
 .pbSubsection input[type="checkbox"] {
 	float: left;

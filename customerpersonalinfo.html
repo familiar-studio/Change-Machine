@@ -1,0 +1,556 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<script src="/jslibrary/1351189248000/sfdc/JiffyStubs.js"></script><script src="/resource/1354817911000/LESSCSSJS" type="text/javascript"></script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+    
+  <link href="CSS/changemachine.css" REL="stylesheet" type="text/css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="/resource/1350669682000/BootstrapJS/bootstrap.min.js"></script>
+  
+   
+  <script type="text/javascript">
+  (function() {
+    var config = {
+      kitId: 'auk4xrm',
+      scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+  </script>
+    
+
+  <script>
+    $j = jQuery.noConflict();
+    
+    $j(document).ready(function() {
+
+    $j('.showDetails').click(function() {
+        var actionId = $j(this).attr('actionId');
+        console.log('this is the actionID'+actionId);
+        $j('#details'+actionId).toggle();
+        return false;
+      });
+      
+      $j('.overviewTab h3').click(function() {
+       $j('.overviewText').toggle();
+       if ($j('.overviewText').is(":visible")) {
+       	$j('.overviewTab h3:last').removeClass('milestone-show').addClass('milestone-hide'); 
+       } else {
+	    $j('.overviewTab h3:last').removeClass('milestone-hide').addClass('milestone-show');   
+       }
+       return false;
+      });
+
+      
+      $j('.sidebar-block h3').click(function() {
+       $j(this).parent().children('ul').toggle();
+       if ($j(this).parent().children('ul').is(":visible")) {
+       	$j(this).removeClass('sidebar-show').addClass('sidebar-hide');
+       } else {
+	    $j(this).removeClass('sidebar-hide').addClass('sidebar-show'); 
+       }
+       return false;
+      });
+      
+    });
+  </script>
+
+  
+
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div class="topWrapper">
+      <div class="row">
+        <div class="span3">
+          <a class="brand" href="/">
+          	<img src="https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png" />
+          </a>
+        </div>
+          
+          <div class="span1">
+               <ul class="unstyled cls-menu">
+            	<li class=""><A href="/learn">Learn</A></li>
+            	<li class="active"><A href="/coach"> Coach</A></li>
+                <li class=""><A href="/share"> Share</A></li>
+              </ul>
+          </div>
+          
+        <div class="span8 pull-right"><span id="j_id0:j_id1:j_id5">
+
+          <div class="btn-group">
+            <a class="btn" href="/changemachine_customer?id=a09J0000003XlbJIAS">
+              <span>current customer</span>
+              Amy Roa
+            </a>
+            <a class="dropdown-toggle btn customer-menu" data-toggle="dropdown" href="#">
+              <b class="caret"></b>
+            </a>
+
+            <ul class="dropdown-menu">
+                <li class="">
+
+                  <a href="/changemachine_customer?id=a09J0000003XlbJIAS">
+                  
+
+                  Amy Roa</a>
+                </li>
+                <li class="">
+
+                  <a href="/changemachine_customer?id=a09J00000026hz5IAA">
+                  
+
+                  Billy Bob</a>
+                </li>
+                <li class="">
+
+                  <a href="/changemachine_customer?id=a09J00000026TjmIAE">
+                  
+
+                  John Smith</a>
+                </li>
+                <li class="">
+
+                  <a href="/changemachine_customer?id=a09J00000026hzFIAQ">
+                  
+
+                  Ian Customer</a>
+                </li>
+              
+              <li class="divider"></li>
+              <li><a href="/changemachine_customer_new">Add a new customer</a></li>
+              <li class="divider"></li>
+              <li><a href="/customers">View all my customers</a></li>
+            </ul>
+          </div></span>
+        </div>
+       
+        </div>
+      </div> 
+	<div class="midWrapper">
+  <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          
+          
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Goals">
+                  
+                  Goals
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Assets">
+                  
+                  Assets
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Banking">
+                  
+                  Banking
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Credit">
+                  
+                  Credit
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Debt">
+                  
+                  Debt
+                </a>
+                </li>
+                  
+                  
+                  
+               <li class="">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Taxes">
+                  
+                  Taxes
+                </a>
+                </li>
+            </ul>
+            
+              <form action="/changemachine_search" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
+
+             
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="q" placeholder="Search" size="27" title="Enter search keywords" type="text" />
+        	<button class="btn" type="submit">Search</button>
+              
+               </form>
+              
+      
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </header>
+<div class="wrapper">
+
+        <style>
+      ul li, ol li {
+        margin-left:0px !important;
+      }
+
+      h6 {
+
+      display:block;
+      }
+    </style>
+
+     <div class="customer"><span id="j_id0:j_id1:j_id18"> 
+
+<div class="page-header customer-heading">
+
+           <div class="row customer-heading-top">
+
+            <div class="customer-heading-left">
+              <a href="/changemachine_customer?id=a09J0000003XlbJIAS">
+                <h1>Amy Roa</h1>
+              </a>
+            </div>
+
+            <div class="customer-heading-right">
+              <ul class="customer-totals">
+                <li><h6>Monthly Income:</h6><script  type="text/javascript"> if(!window.sfdcPage){window.sfdcPage = new ApexDetailPage();}
+UserContext.initialize({"networkId":"","locale":"en_US","labelLastModified":"1357775912000","isDefaultNetwork":true,"today":"1/14/2013 10:50 AM","timeFormat":"h:mm a","userPreferences":[{"index":112,"name":"HideInlineEditSplash","value":false},{"index":114,"name":"OverrideTaskSendNotification","value":false},{"index":115,"name":"DefaultTaskSendNotification","value":false},{"index":119,"name":"HideUserLayoutStdFieldInfo","value":false},{"index":116,"name":"HideRPPWarning","value":false},{"index":87,"name":"HideInlineSchedulingSplash","value":false},{"index":88,"name":"HideCRUCNotification","value":false},{"index":89,"name":"HideNewPLESplash","value":false},{"index":90,"name":"HideNewPLEWarnIE6","value":false},{"index":122,"name":"HideOverrideSharingMessage","value":false},{"index":91,"name":"HideProfileILEWarn","value":false},{"index":93,"name":"HideProfileElvVideo","value":false},{"index":97,"name":"ShowPicklistEditSplash","value":false},{"index":92,"name":"HideDataCategorySplash","value":false},{"index":128,"name":"ShowDealView","value":false},{"index":129,"name":"HideDealViewGuidedTour","value":false},{"index":132,"name":"HideKnowledgeFirstTimeSetupMsg","value":false},{"index":104,"name":"DefaultOffEntityPermsMsg","value":false},{"index":135,"name":"HideNewCsnSplash","value":false},{"index":101,"name":"HideBrowserWarning","value":false},{"index":139,"name":"HideDashboardBuilderGuidedTour","value":false},{"index":140,"name":"HideSchedulingGuidedTour","value":false},{"index":180,"name":"HideReportBuilderGuidedTour","value":false},{"index":183,"name":"HideAssociationQueueCallout","value":false},{"index":194,"name":"HideQTEBanner","value":false},{"index":193,"name":"HideChatterOnboardingSplash","value":false},{"index":195,"name":"HideSecondChatterOnboardingSplash","value":false},{"index":270,"name":"HideIDEGuidedTour","value":false},{"index":282,"name":"HideQueryToolGuidedTour","value":false},{"index":196,"name":"HideCSIGuidedTour","value":false},{"index":271,"name":"HideFewmetGuidedTour","value":false},{"index":272,"name":"HideEditorGuidedTour","value":false},{"index":205,"name":"HideApexTestGuidedTour","value":false},{"index":206,"name":"HideSetupProfileHeaderTour","value":false},{"index":207,"name":"HideSetupProfileObjectsAndTabsTour","value":false},{"index":213,"name":"DefaultOffArticleTypeEntityPermMsg","value":false},{"index":214,"name":"HideSelfInfluenceGetStarted","value":false},{"index":215,"name":"HideOtherInfluenceGetStarted","value":false},{"index":216,"name":"HideFeedToggleGuidedTour","value":false},{"index":268,"name":"ShowChatterTab178GuidedTour","value":false},{"index":275,"name":"HidePeopleTabDeprecationMsg","value":false},{"index":276,"name":"HideGroupTabDeprecationMsg","value":false},{"index":222,"name":"TouchExternalLinkReminderSuppression","value":false},{"index":224,"name":"HideUnifiedSearchGuidedTour","value":false},{"index":226,"name":"ShowDevContextMenu","value":true},{"index":227,"name":"HideWhatRecommenderForActivityQueues","value":false},{"index":228,"name":"HideLiveAgentFirstTimeSetupMsg","value":false},{"index":232,"name":"HideGroupAllowsGuestsMsgOnMemberWidget","value":false},{"index":233,"name":"HideGroupAllowsGuestsMsg","value":false},{"index":234,"name":"HideWhatAreGuestsMsg","value":false},{"index":235,"name":"HideNowAllowGuestsMsg","value":false},{"index":236,"name":"HideSocialAccountsAndContactsGuidedTour","value":false},{"index":237,"name":"HideAnalyticsHomeGuidedTour","value":false},{"index":238,"name":"ShowQuickCreateGuidedTour","value":false},{"index":245,"name":"HideFilePageGuidedTour","value":false},{"index":250,"name":"HideForecastingGuidedTour","value":false},{"index":242,"name":"TouchHideOptoutHover","value":false},{"index":251,"name":"HideBucketFieldGuide","value":false},{"index":263,"name":"HideSmartSearchCallOut","value":false},{"index":265,"name":"HideSocialProfilesKloutSplashScreen","value":false},{"index":273,"name":"ShowForecastingQuotaAttainment","value":false},{"index":280,"name":"HideForecastingQuotaColumn","value":false},{"index":283,"name":"HideManyWhoGuidedTour","value":false},{"index":284,"name":"HideExternalSharingModelGuidedTour","value":false},{"index":298,"name":"HideFileSyncBannerMsg","value":false},{"index":299,"name":"HideTestConsoleGuidedTour","value":false}],"orgPreferences":[{"index":257,"name":"TabOrganizer","value":true}],"startOfWeek":"1","isAccessibleMode":false,"ampm":["AM","PM"],"renderMode":"RETRO","userId":"005J0000000GK7G","dateTimeFormat":"M/d/yyyy h:mm a","dateFormat":"M/d/yyyy","uiSkin":"PortalDefault","language":"en_US","siteUrlPrefix":""});
+</script><span id="j_id0:j_id1:j_id18:j_id19:j_id21">$20,000.00</span>  
+                </li> 
+                <li>
+                <h6>Monthly Expenses:</h6><span id="j_id0:j_id1:j_id18:j_id19:j_id23">$20.00</span>
+                </li>
+                <li><h6>Weekly Savings:</h6><span id="j_id0:j_id1:j_id18:j_id19:j_id25">$0.00</span>
+                </li>
+                <li><h6>Monthly Debt Payments:</h6><span id="j_id0:j_id1:j_id18:j_id19:j_id27">$0.00</span>
+                </li>
+              </ul>
+            </div>
+         </div>
+         <div class="row customer-heading-bottom">
+
+
+
+                <div class="span8">
+                  <h6>29% complete</h6>
+                  <div class="progress progress-striped">
+                      <div class="bar" style="width: 29%;"></div>
+                  </div>
+                </div>
+                <div class="span4">
+                    
+                     
+                      <a class="btn" href="/changemachine_sendEmail?id=a09J0000003XlbJIAS">Send Email</a>
+                      <a class="btn" href="/changemachine_sendSMS?id=a09J0000003XlbJIAS">Send a Text</a>
+                  
+                  </div>
+                 
+        </div>
+
+    
+</div>
+<form id="VF_INTERAL_FORM" name="VF_INTERAL_FORM" method="post" action="/changemachine_customer_details?id=a09J0000003XlbJIAS" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="VF_INTERAL_FORM" value="VF_INTERAL_FORM" />
+<div id="VF_INTERAL_FORM:j_id36"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="ADUonX2rINNwgRC3tHh502ekVogd" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateCSRF" name="com.salesforce.visualforce.ViewStateCSRF" value="0b4oWEyR33N98jrMRQ_YJ66SiuqA6C.8vyQvL4pcoj9GQCK_loWQ9Xr6fcnYma6MDeXjzG5GuJiDKfht00oRHdJ.MbWhqoiCsdy4Oa3EGkuhTUq4KK3kl6Pz3OT5FjxrwShH0VsEZWS7jlzeUI_g4o3bE7xuLj0x3bt1wXZDSWq60peG" /></span></span></span>
+          
+
+          <ul class="nav nav-tabs customer-tabs">
+           <li><a href="/changemachine_customer?id=a09J0000003XlbJIAS">Dashboard</a></li>
+           <li class="active"><a href="/changemachine_customer_details?id=a09J0000003XlbJIAS">Personal Info</a></li>
+           <li><a href="/changemachine_customer_income?id=a09J0000003XlbJIAS">Income and Expenses</a></li>
+          </ul>
+            
+          
+            <div class="row">
+              <div class="span12">
+                   <a class="btn btn-small" href="/changemachine_customer_new?id=a09J0000003XlbJIAS">Edit Customer</a>
+                   <a class="btn btn-small delete" href="/changemachine_customer_new?id=a09J0000003XlbJIAS">Delete Customer</a><br /><div id="j_id0_j_id1_j_id30RD"><script  type="text/javascript">if (typeof j_id0_j_id1_j_id30_actionFn != 'function') {j_id0_j_id1_j_id30_actionFn=function(){A4J.AJAX.Submit('VF_INTERAL_FORM',null,{'similarityGroupingId':'VF_INTERAL_FORM:j_id37','parameters':{'VF_INTERAL_FORM:j_id37':'VF_INTERAL_FORM:j_id37'} } )};}sfdcPage.registerInlineDetail('a09J0000003XlbJIAS',j_id0_j_id1_j_id30_actionFn,'j_id0_j_id1_j_id30');</script><script type="text/javascript" id="j_id0_j_id1_j_id30JS">
+</script>
+<div class="bPageBlock brandSecondaryBrd bDetailBlock secondaryPalette" id="ep_j_id0_j_id1_j_id30"><div class="pbHeader"><table  border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle"><img src="/s.gif" alt="" width="1" height="1" class="minWidth" title="" /><h2 class="mainTitle">Customer Detail</h2></td><td class="pbButton" id="topButtonRow">&nbsp;</td></tr>
+</table></div><div class="pbBody"><div class="pbError" id="errorDiv_ep_j_id0_j_id1_j_id30" style="display: none">Error: Invalid Data. <br/>Review all error messages below to correct your data.</div><div class="pbSubsection"><table  class="detailList" border="0" cellpadding="0" cellspacing="0"><tr><td class="labelCol">First Name</td><td class="dataCol col02">Amy</td><td class="labelCol">Martial Status</td><td class="dataCol">Single</td></tr>
+<tr><td class="labelCol">Last Name</td><td class="dataCol col02">Roa</td><td class="labelCol">Date of Birth</td><td class="dataCol">&nbsp;</td></tr>
+<tr><td class="labelCol">Email</td><td class="dataCol col02"><a href="mailto:amyroa@gmail.com">amyroa@gmail.com</a></td><td class="labelCol">Street Address</td><td class="dataCol">&nbsp;</td></tr>
+<tr><td class="labelCol">Phone</td><td class="dataCol col02">&nbsp;</td><td class="labelCol">Apt</td><td class="dataCol">&nbsp;</td></tr>
+<tr><td class="labelCol">Mobile Phone</td><td class="dataCol col02">(646) 123-1234</td><td class="labelCol">City</td><td class="dataCol">Bronx</td></tr>
+<tr><td class="labelCol">Employer</td><td class="dataCol col02">&nbsp;</td><td class="labelCol">State</td><td class="dataCol">NY</td></tr>
+<tr><td class="labelCol">Employment Type</td><td class="dataCol col02">&nbsp;</td><td class="labelCol">Zip Code</td><td class="dataCol">&nbsp;</td></tr>
+<tr><td class="labelCol">Benefits</td><td class="dataCol col02">Health/Medical; Food Programs; Utilities</td><td class="labelCol empty">&nbsp;</td><td class="dataCol empty">&nbsp;</td></tr>
+<tr><td class="labelCol last">Income Supports</td><td class="dataCol col02 last">PA; SSDI</td><td class="labelCol empty last">&nbsp;</td><td class="dataCol empty last">&nbsp;</td></tr>
+</table></div><div class="pbSubheader brandTertiaryBrd tertiaryPalette" id="head_1_ep_j_id0_j_id1_j_id30"><h3>Worksheet Scores<span  class="titleSeparatingColon">:</span></h3></div><div class="pbSubsection"><table  class="detailList" border="0" cellpadding="0" cellspacing="0"><tr><td class="labelCol last">Financial Tune-up Score</td><td class="dataCol col02 last">16</td><td class="labelCol empty last">&nbsp;</td><td class="dataCol empty last">&nbsp;</td></tr>
+</table></div><div class="pbSubheader brandTertiaryBrd tertiaryPalette" id="head_2_ep_j_id0_j_id1_j_id30"><h3>Baseline Information<span  class="titleSeparatingColon">:</span></h3></div><div class="pbSubsection"><table  class="detailList" border="0" cellpadding="0" cellspacing="0"><tr><td class="labelCol">Presenting Issue</td><td class="dataCol col02">Bankruptcy</td><td class="labelCol empty">&nbsp;</td><td class="dataCol empty">&nbsp;</td></tr>
+<tr><td class="labelCol">How much money is at stake</td><td class="dataCol col02">$400.00</td><td class="labelCol empty">&nbsp;</td><td class="dataCol empty">&nbsp;</td></tr>
+<tr><td class="labelCol">Credit Score</td><td class="dataCol col02">500</td><td class="labelCol">Estimated Total Debt</td><td class="dataCol">&nbsp;</td></tr>
+<tr><td class="labelCol">Savings</td><td class="dataCol col02">&nbsp;</td><td class="labelCol">Estimated Monthly Fees</td><td class="dataCol">&nbsp;</td></tr>
+<tr><td class="labelCol">Recurring Savings</td><td class="dataCol col02">&nbsp;</td><td class="labelCol">Tax Amount Saved</td><td class="dataCol">&nbsp;</td></tr>
+<tr><td class="labelCol last">Recurring Savings Frequency</td><td class="dataCol col02 last">&nbsp;</td><td class="labelCol empty last">&nbsp;</td><td class="dataCol empty last">&nbsp;</td></tr>
+</table></div><div class="pbSubheader brandTertiaryBrd tertiaryPalette" id="head_3_ep_j_id0_j_id1_j_id30"><h3>Totals<span  class="titleSeparatingColon">:</span></h3></div><div class="pbSubsection"><table  class="detailList" border="0" cellpadding="0" cellspacing="0"><tr><td class="labelCol">Total Monthly Income</td><td class="dataCol col02">$20,000.00</td><td class="labelCol">Total Active Weekly Savings Commitment</td><td class="dataCol">$0.00</td></tr>
+<tr><td class="labelCol">Total Expenses</td><td class="dataCol col02">$20.00</td><td class="labelCol">Total Monthly Minimum Debt Payments</td><td class="dataCol">$0.00</td></tr>
+<tr><td class="labelCol last">Surplus</td><td class="dataCol col02 last">$19,980.00</td><td class="labelCol empty last">&nbsp;</td><td class="dataCol empty last">&nbsp;</td></tr>
+</table></div></div><div class="pbFooter secondaryPalette"><div class="bg"></div></div></div>
+<!-- Begin RelatedListElement -->
+<div class="bRelatedList" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedNoteList"><a name="j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedNoteList_target"></a>
+<!-- Begin ListElement -->
+
+<!-- motif: Custom1 -->
+
+<!-- WrappingClass -->
+<div class="noStandardTab"><div class="bPageBlock brandSecondaryBrd secondaryPalette"><div class="pbHeader"><table  border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle"><img src="/s.gif" alt="" width="1" height="1" class="minWidth" title="" /><img src="/s.gif" alt="Customer"  class="relatedListIcon" title="Customer"/><h3 id="j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedNoteList_title">Google Docs, Notes, &amp; Attachments</h3></td><td class="pbButton"><input value="Add Google Doc"  class="btn" name="addGoogleDoc" onclick="navigateToUrl('/098/e?parent_id=a09J0000003XlbJ&retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS',null,'addGoogleDoc');" title="Add Google Doc" type="button" />&nbsp;<input value="New Note"  class="btn" name="newNote" onclick="navigateToUrl('/002/e?parent_id=a09J0000003XlbJ&retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS',null,'newNote');" title="New Note" type="button" />&nbsp;<input value="Attach File"  class="btn" name="attachFile" onclick="navigateToUrl('/p/attach/NoteAttach?pid=a09J0000003XlbJ&parentname=Roa&retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS',null,'attachFile');" title="Attach File" type="button" />&nbsp;<input value="View All"  class="btn" name="viewAll" onclick="navigateToUrl('/ui/content/ViewAllNotesPage?id=a09J0000003XlbJ&retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS',null,'viewAll');" title="View All Notes &amp; Attachments" type="button" /></td><td class="pbHelp">&nbsp;</td></tr>
+</table></div><div class="pbBody" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedNoteList_body"><table class="list" border="0" cellspacing="0" cellpadding="0"><tr class="headerRow"><th class="actionColumn" scope="col">Action</th><th scope="col" class=" zen-deemphasize">Type</th><th scope="col" class=" zen-deemphasize">Title</th><th scope="col" class=" zen-deemphasize">Last Modified</th><th scope="col" class=" zen-deemphasize">Created By</th></tr>
+
+<!-- ListRow -->
+<tr class=" dataRow even last first" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><td class='actionColumn'><a href="/00PJ0000000PZcz/e?retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS" class="actionLink" title="Edit - Record 1 - Attachment">Edit</a>&nbsp;|&nbsp;<a href="/servlet/servlet.FileDownload?file=00PJ0000000PZcz" class="actionLink" target="_blank" title="View - Record 1 - Attachment">View</a>&nbsp;|&nbsp;<a href="/setup/own/deleteredirect.jsp?id=a09J0000003XlbJIAS&amp;delID=00PJ0000000PZcz&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS&amp;_CONFIRMATIONTOKEN=sWP_1thiEfXpGWnmcIPMbroHINy66SZYlMApvRo3tpfeegpvGG_foDkeBhBPLdmEviKpSB1S5PDQXrkQ5qrzHLI3FORzNnoF2elFT_GAOgT45EAGcNoM9uw1QUuJVEGfwM6CtJpPst3HQHERGoR8vNHgJr0%3D" class="actionLink" onclick="return confirmDelete();" title="Delete - Record 1 - Attachment">Del</a></td><th scope="row" class=" dataCell  ">Attachment</th><td class=" dataCell  "><a href="/00PJ0000000PZcz?btdid=a09J0000003XlbJ">Redactor.zip</a></td><td class=" dataCell  ">1/8/2013 11:15 AM</td><td class=" dataCell  ">Keith Mancuso - COACH</td></tr></table>
+</div><div class="pbFooter secondaryPalette"><div class="bg"></div></div></div></div><div class="listElementBottomNav"></div><script  type="text/javascript">try { sfdcPage.registerRelatedList('j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedNoteList', '1', 'Google Docs, Notes, &amp; Attachments', false, '/apex/changemachine_customer_details?id=a09J0000003XlbJIAS', 'id=a09J0000003XlbJIAS&relatedListId=RelatedNoteList&hideDL=1&noh=1&keepPref=1',false,false, true, 'RelatedNoteList');} catch(e) {}</script>
+<!-- End ListElement -->
+</div>
+<!-- End RelatedListElement -->
+
+<!-- Begin RelatedListElement -->
+<div class="bRelatedList" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000e0kN"><a name="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000e0kN_target"></a>
+<!-- Begin ListElement -->
+
+<!-- motif: Custom1 -->
+
+<!-- WrappingClass -->
+<div class="listRelatedObject customnotabBlock"><div class="bPageBlock brandSecondaryBrd secondaryPalette"><div class="pbHeader"><table  border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle"><img src="/s.gif" alt="" width="1" height="1" class="minWidth" title="" /><img src="/s.gif" alt="Customer"  class="relatedListIcon" title="Customer"/><h3 id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000e0kN_title">Goals</h3></td><td class="pbButton"><input value="New Goal"  class="btn" name="new00NJ0000000e0kN" onclick="navigateToUrl('/setup/ui/recordtypeselect.jsp?ent=01IJ00000000NU1&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS&amp;save_new_url=%2Fa0I%2Fe%3FCF00NJ0000000e0kN%3DRoa%26CF00NJ0000000e0kN_lkid%3Da09J0000003XlbJ%26retURL%3D%252Fapex%252Fchangemachine_customer_details%253Fid%253Da09J0000003XlbJIAS','RELATED_LIST','new00NJ0000000e0kN');" title="New Goal" type="button" /></td><td class="pbHelp">&nbsp;</td></tr>
+</table></div><div class="pbBody" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000e0kN_body"><table class="list" border="0" cellspacing="0" cellpadding="0"><tr class="headerRow"><th class="actionColumn" scope="col">Action</th><th scope="col" class=" zen-deemphasize">Goal Name</th><th scope="col" class="DateElement zen-deemphasize">Due Date</th><th scope="col" class=" zen-deemphasize">Record Type</th><th scope="col" class="CurrencyElement zen-deemphasize">Saving per week</th></tr>
+
+<!-- ListRow -->
+<tr class=" dataRow even first" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><td class='actionColumn'><a href="/a0IJ0000000Ztl8/e?retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS" class="actionLink" title="Edit - Record 1 - asJKah">Edit</a>&nbsp;|&nbsp;<a href="/setup/own/deleteredirect.jsp?id=a09J0000003XlbJIAS&amp;delID=a0IJ0000000Ztl8&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS&amp;_CONFIRMATIONTOKEN=3YKRiBa8rTrvjIxz4lQTDuJrAid6NlXw.R5aIx.c1Qt08lsZ8A7uGubXfddrU8pMevb.gQLVd3ik6z1nh3Gf.LdArr8whYkI3AJw3fcd4l6rH1nb1CQJs3Biio_z9Llcw5E9VtDxLy0jRuRrp7vbH4yPugE%3D" class="actionLink" onclick="return confirmDelete();" title="Delete - Record 1 - asJKah">Del</a></td><th scope="row" class=" dataCell  "><a href="/a0IJ0000000Ztl8?btdid=a09J0000003XlbJ">asJKah</a></th><td class=" dataCell  DateElement">12/7/2012</td><td class=" dataCell  ">Specific Due Date</td><td class=" dataCell  CurrencyElement">($500.00)</td></tr>
+<!-- ListRow -->
+<tr class=" dataRow odd last" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><td class='actionColumn'><a href="/a0IJ0000000ZvJG/e?retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS" class="actionLink" title="Edit - Record 2 - Christmas">Edit</a>&nbsp;|&nbsp;<a href="/setup/own/deleteredirect.jsp?id=a09J0000003XlbJIAS&amp;delID=a0IJ0000000ZvJG&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS&amp;_CONFIRMATIONTOKEN=mJzE_IkXKwe8Hfm.NjGYYNcRoZk0s9bxiCamdmg8vf_mNN7Tg4Y2B9xo7BCrFKl.R9bR15z8yxbX1tAtd6vM.G.UAWBseduxIh71sz1O.28FygMqBrmcFAgCxkpBeubGDNyh.IPh64m3sMZMhQJ6hoKYF9U%3D" class="actionLink" onclick="return confirmDelete();" title="Delete - Record 2 - Christmas">Del</a></td><th scope="row" class=" dataCell  "><a href="/a0IJ0000000ZvJG?btdid=a09J0000003XlbJ">Christmas</a></th><td class=" dataCell  DateElement">12/25/2012</td><td class=" dataCell  ">Specific Due Date</td><td class=" dataCell  CurrencyElement">$145.83</td></tr></table>
+</div><div class="pbFooter secondaryPalette"><div class="bg"></div></div></div></div><div class="listElementBottomNav"></div><script  type="text/javascript">try { sfdcPage.registerRelatedList('j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000e0kN', '2', 'Goals', false, '/apex/changemachine_customer_details?id=a09J0000003XlbJIAS', 'id=a09J0000003XlbJIAS&relatedListId=00NJ0000000e0kN&hideDL=1&noh=1&keepPref=1',false,false, true, '00NJ0000000e0kN');} catch(e) {}</script>
+<!-- End ListElement -->
+</div>
+<!-- End RelatedListElement -->
+
+<!-- Begin RelatedListElement -->
+<div class="bRelatedList" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eEwN"><a name="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eEwN_target"></a>
+<!-- Begin ListElement -->
+
+<!-- motif: Custom1 -->
+
+<!-- WrappingClass -->
+<div class="listRelatedObject customnotabBlock"><div class="bPageBlock brandSecondaryBrd secondaryPalette"><div class="pbHeader"><table  border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle"><img src="/s.gif" alt="" width="1" height="1" class="minWidth" title="" /><img src="/s.gif" alt="Customer"  class="relatedListIcon" title="Customer"/><h3 id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eEwN_title">Meetings</h3></td><td class="pbButton"><input value="New Meeting"  class="btn" name="new00NJ0000000eEwN" onclick="navigateToUrl('/a0X/e?CF00NJ0000000eEwN=Roa&amp;CF00NJ0000000eEwN_lkid=a09J0000003XlbJ&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS','RELATED_LIST','new00NJ0000000eEwN');" title="New Meeting" type="button" /></td><td class="pbHelp">&nbsp;</td></tr>
+</table></div><div class="pbBody" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eEwN_body"><table class="list" border="0" cellspacing="0" cellpadding="0"><tr class="headerRow"><th class="actionColumn" scope="col">Action</th><th scope="col" class=" zen-deemphasize">Meeting ID</th><th scope="col" class=" zen-deemphasize">Date\Time</th></tr>
+
+<!-- ListRow -->
+<tr class=" dataRow even last first" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><td class='actionColumn'><a href="/a0XJ00000017Y9o/e?retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS" class="actionLink" title="Edit - Record 1 - M-000000004">Edit</a>&nbsp;|&nbsp;<a href="/setup/own/deleteredirect.jsp?id=a09J0000003XlbJIAS&amp;delID=a0XJ00000017Y9o&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS&amp;_CONFIRMATIONTOKEN=_QJDPqqAwRO6wp7IzXiQjowvUJUYyAkyJ9bMzvGlSnO7nERbgxHINS3AxJtNTV1ZYyAvYtaMGjpT8cQTwz_8.YduE887.r9.SE2UPriGFnW7sh6ctl7SjeZjLCb4GESWsF.BQ33u5Gnhco_B3JZhag6GcgU%3D" class="actionLink" onclick="return confirmDelete();" title="Delete - Record 1 - M-000000004">Del</a></td><th scope="row" class=" dataCell  "><a href="/a0XJ00000017Y9o?btdid=a09J0000003XlbJ">M-000000004</a></th><td class=" dataCell  ">1/16/2013 10:56 AM</td></tr></table>
+</div><div class="pbFooter secondaryPalette"><div class="bg"></div></div></div></div><div class="listElementBottomNav"></div><script  type="text/javascript">try { sfdcPage.registerRelatedList('j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eEwN', '1', 'Meetings', false, '/apex/changemachine_customer_details?id=a09J0000003XlbJIAS', 'id=a09J0000003XlbJIAS&relatedListId=00NJ0000000eEwN&hideDL=1&noh=1&keepPref=1',false,false, true, '00NJ0000000eEwN');} catch(e) {}</script>
+<!-- End ListElement -->
+</div>
+<!-- End RelatedListElement -->
+
+<!-- Begin RelatedListElement -->
+<div class="bRelatedList" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFJR"><a name="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFJR_target"></a>
+<!-- Begin ListElement -->
+
+<!-- motif: Custom1 -->
+
+<!-- WrappingClass -->
+<div class="listRelatedObject customnotabBlock"><div class="bPageBlock brandSecondaryBrd secondaryPalette"><div class="pbHeader"><table  border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle"><img src="/s.gif" alt="" width="1" height="1" class="minWidth" title="" /><img src="/s.gif" alt="Customer"  class="relatedListIcon" title="Customer"/><h3 id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFJR_title">Income</h3></td><td class="pbButton"><input value="New Income"  class="btn" name="new00NJ0000000eFJR" onclick="navigateToUrl('/a0Z/e?CF00NJ0000000eFJR=Roa&amp;CF00NJ0000000eFJR_lkid=a09J0000003XlbJ&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS','RELATED_LIST','new00NJ0000000eFJR');" title="New Income" type="button" /></td><td class="pbHelp">&nbsp;</td></tr>
+</table></div><div class="pbBody" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFJR_body"><table class="list" border="0" cellspacing="0" cellpadding="0"><tr class="headerRow"><th class="actionColumn" scope="col">Action</th><th scope="col" class=" zen-deemphasize">Income Name</th><th scope="col" class=" zen-deemphasize">Category</th><th scope="col" class="CurrencyElement zen-deemphasize">Amount</th></tr>
+
+<!-- ListRow -->
+<tr class=" dataRow even first" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><td class='actionColumn'><a href="/a0ZJ0000000GdMY/e?retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS" class="actionLink" title="Edit - Record 1 - Dog Trainer">Edit</a>&nbsp;|&nbsp;<a href="/setup/own/deleteredirect.jsp?id=a09J0000003XlbJIAS&amp;delID=a0ZJ0000000GdMY&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS&amp;_CONFIRMATIONTOKEN=wbkjq_7dQxUT_uBthsDn2tHXpPV5FCofQx5txpQN.k2zpmjLtXnS2Q.LneqonuFJ4CcgODadGrZ47H5oS4rYlsZFAieHzFz1xbn1iKgVhqCJLsbyOQQjebODKCJxB.RRW73rRcNtl26WoIyNFKO0Ilr2dBg%3D" class="actionLink" onclick="return confirmDelete();" title="Delete - Record 1 - Dog Trainer">Del</a></td><th scope="row" class=" dataCell  "><a href="/a0ZJ0000000GdMY?btdid=a09J0000003XlbJ">Dog Trainer</a></th><td class=" dataCell  ">Take-home pay (net) 1</td><td class=" dataCell  CurrencyElement">$10,000.00</td></tr>
+<!-- ListRow -->
+<tr class=" dataRow odd last" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><td class='actionColumn'><a href="/a0ZJ0000000GgFW/e?retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS" class="actionLink" title="Edit - Record 2 - Designer">Edit</a>&nbsp;|&nbsp;<a href="/setup/own/deleteredirect.jsp?id=a09J0000003XlbJIAS&amp;delID=a0ZJ0000000GgFW&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS&amp;_CONFIRMATIONTOKEN=Qje6rvu5Li5_eCe59p1bUq5SJt0jwG1EcT4rUzsGvA1RhTqQqcVokbxgWrf1VDQK2GF2zWEt4dl_pXdqNdaq_q09Yyem11qz_q88fH.Z1FF2HCyD63xyVv8cBBwfLpzE4awge2M43XLR4Qa9iEeIwfc6hOc%3D" class="actionLink" onclick="return confirmDelete();" title="Delete - Record 2 - Designer">Del</a></td><th scope="row" class=" dataCell  "><a href="/a0ZJ0000000GgFW?btdid=a09J0000003XlbJ">Designer</a></th><td class=" dataCell  ">Government Benefits</td><td class=" dataCell  CurrencyElement">$10,000.00</td></tr></table>
+</div><div class="pbFooter secondaryPalette"><div class="bg"></div></div></div></div><div class="listElementBottomNav"></div><script  type="text/javascript">try { sfdcPage.registerRelatedList('j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFJR', '2', 'Income', false, '/apex/changemachine_customer_details?id=a09J0000003XlbJIAS', 'id=a09J0000003XlbJIAS&relatedListId=00NJ0000000eFJR&hideDL=1&noh=1&keepPref=1',false,false, true, '00NJ0000000eFJR');} catch(e) {}</script>
+<!-- End ListElement -->
+</div>
+<!-- End RelatedListElement -->
+
+<!-- Begin RelatedListElement -->
+<div class="bRelatedList" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFKU"><a name="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFKU_target"></a>
+<!-- Begin ListElement -->
+
+<!-- motif: Custom1 -->
+
+<!-- WrappingClass -->
+<div class="listRelatedObject customnotabBlock"><div class="bPageBlock brandSecondaryBrd secondaryPalette"><div class="pbHeader"><table  border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle"><img src="/s.gif" alt="" width="1" height="1" class="minWidth" title="" /><img src="/s.gif" alt="Customer"  class="relatedListIcon" title="Customer"/><h3 id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFKU_title">Expenses</h3></td><td class="pbButton"><input value="New Expense"  class="btn" name="new00NJ0000000eFKU" onclick="navigateToUrl('/a0c/e?CF00NJ0000000eFKU=Roa&amp;CF00NJ0000000eFKU_lkid=a09J0000003XlbJ&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS','RELATED_LIST','new00NJ0000000eFKU');" title="New Expense" type="button" /></td><td class="pbHelp">&nbsp;</td></tr>
+</table></div><div class="pbBody" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFKU_body"><table class="list" border="0" cellspacing="0" cellpadding="0"><tr class="headerRow"><th class="actionColumn" scope="col">Action</th><th scope="col" class=" zen-deemphasize">Expense Name</th><th scope="col" class=" zen-deemphasize">Category</th><th scope="col" class=" zen-deemphasize">Specific Type</th><th scope="col" class="CurrencyElement zen-deemphasize">Amount</th></tr>
+
+<!-- ListRow -->
+<tr class=" dataRow even last first" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><td class='actionColumn'><a href="/a0cJ0000000qspi/e?retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS" class="actionLink" title="Edit - Record 1 - 123 Fake St">Edit</a>&nbsp;|&nbsp;<a href="/setup/own/deleteredirect.jsp?id=a09J0000003XlbJIAS&amp;delID=a0cJ0000000qspi&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS&amp;_CONFIRMATIONTOKEN=kJx.1j0BSmOsZzNGrrbQFiuv5aXe53BqyGFkG5aqrQ2sm4ojRBxPGNLlhHvbXleQRmdktb8V2QNUStCKfdbxHMNzPGjJKDM_nDOZ.mH9QrCVioHCnyRFS.zBpi_HUXJ0TBqdmo0rXOUBR5uQfwJHBOSsGiM%3D" class="actionLink" onclick="return confirmDelete();" title="Delete - Record 1 - 123 Fake St">Del</a></td><th scope="row" class=" dataCell  "><a href="/a0cJ0000000qspi?btdid=a09J0000003XlbJ">123 Fake St</a></th><td class=" dataCell  ">Housing</td><td class=" dataCell  ">Rent/mortgage</td><td class=" dataCell  CurrencyElement">$20.00</td></tr></table>
+</div><div class="pbFooter secondaryPalette"><div class="bg"></div></div></div></div><div class="listElementBottomNav"></div><script  type="text/javascript">try { sfdcPage.registerRelatedList('j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFKU', '1', 'Expenses', false, '/apex/changemachine_customer_details?id=a09J0000003XlbJIAS', 'id=a09J0000003XlbJIAS&relatedListId=00NJ0000000eFKU&hideDL=1&noh=1&keepPref=1',false,false, true, '00NJ0000000eFKU');} catch(e) {}</script>
+<!-- End ListElement -->
+</div>
+<!-- End RelatedListElement -->
+
+<!-- Begin RelatedListElement -->
+<div class="bRelatedList" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFMQ"><a name="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFMQ_target"></a>
+<!-- Begin ListElement -->
+
+<!-- motif: Custom1 -->
+
+<!-- WrappingClass -->
+<div class="listRelatedObject customnotabBlock"><div class="bPageBlock brandSecondaryBrd secondaryPalette"><div class="pbHeader"><table  border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle"><img src="/s.gif" alt="" width="1" height="1" class="minWidth" title="" /><img src="/s.gif" alt="Customer"  class="relatedListIcon" title="Customer"/><h3 id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFMQ_title">Debt</h3></td><td class="pbButton"><input value="New Debt"  class="btn" name="new00NJ0000000eFMQ" onclick="navigateToUrl('/a0d/e?CF00NJ0000000eFMQ=Roa&amp;CF00NJ0000000eFMQ_lkid=a09J0000003XlbJ&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS','RELATED_LIST','new00NJ0000000eFMQ');" title="New Debt" type="button" /></td><td class="pbHelp">&nbsp;</td></tr>
+</table></div><div class="pbBody" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFMQ_body"><table class="list" border="0" cellspacing="0" cellpadding="0"><tr class="headerRow"><th class="actionColumn" scope="col">Action</th><th scope="col" class=" zen-deemphasize">Debt Name</th><th scope="col" class=" zen-deemphasize">Category</th><th scope="col" class=" zen-deemphasize">Specific Type</th><th scope="col" class="CurrencyElement zen-deemphasize">Balance</th><th scope="col" class="numericalColumn zen-deemphasize">Interest Rate</th><th scope="col" class="numericalColumn zen-deemphasize">Monthly Minimum Payment</th></tr>
+
+<!-- ListRow -->
+<tr class=" dataRow even last first" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><td class='actionColumn'><a href="/a0dJ0000000DOTJ/e?retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS" class="actionLink" title="Edit - Record 1 - Student Loan">Edit</a>&nbsp;|&nbsp;<a href="/setup/own/deleteredirect.jsp?id=a09J0000003XlbJIAS&amp;delID=a0dJ0000000DOTJ&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS&amp;_CONFIRMATIONTOKEN=erav3hc8SzRH1QG8ZbMtBuTPbSjj2UUkcAY3GuClq0ciOpqSvK5SQxKvQp_bLK53_SmuKZDxl3NY2.THV1SloYGf6bOO_zHIlYIy2Z6WE00SEnCVFwKg02TxeseS5N6.tgaeLePu7sVIGuWnx84lc9Qr08I%3D" class="actionLink" onclick="return confirmDelete();" title="Delete - Record 1 - Student Loan">Del</a></td><th scope="row" class=" dataCell  "><a href="/a0dJ0000000DOTJ?btdid=a09J0000003XlbJ">Student Loan</a></th><td class=" dataCell  ">Student Loans</td><td class=" dataCell  ">&nbsp;</td><td class=" dataCell  CurrencyElement">$50,000.00</td><td class=" dataCell  numericalColumn">&nbsp;</td><td class=" dataCell  numericalColumn">&nbsp;</td></tr></table>
+</div><div class="pbFooter secondaryPalette"><div class="bg"></div></div></div></div><div class="listElementBottomNav"></div><script  type="text/javascript">try { sfdcPage.registerRelatedList('j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eFMQ', '1', 'Debt', false, '/apex/changemachine_customer_details?id=a09J0000003XlbJIAS', 'id=a09J0000003XlbJIAS&relatedListId=00NJ0000000eFMQ&hideDL=1&noh=1&keepPref=1',false,false, true, '00NJ0000000eFMQ');} catch(e) {}</script>
+<!-- End ListElement -->
+</div>
+<!-- End RelatedListElement -->
+
+<!-- Begin RelatedListElement -->
+<div class="bRelatedList" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eG5q"><a name="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eG5q_target"></a>
+<!-- Begin ListElement -->
+
+<!-- motif: Custom1 -->
+
+<!-- WrappingClass -->
+<div class="listRelatedObject customnotabBlock"><div class="bPageBlock brandSecondaryBrd secondaryPalette"><div class="pbHeader"><table  border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle"><img src="/s.gif" alt="" width="1" height="1" class="minWidth" title="" /><img src="/s.gif" alt="Customer"  class="relatedListIcon" title="Customer"/><h3 id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eG5q_title">Dependents</h3></td><td class="pbButton"><input value="New Dependent"  class="btn" name="new00NJ0000000eG5q" onclick="navigateToUrl('/a0q/e?CF00NJ0000000eG5q=Roa&amp;CF00NJ0000000eG5q_lkid=a09J0000003XlbJ&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS','RELATED_LIST','new00NJ0000000eG5q');" title="New Dependent" type="button" /></td><td class="pbHelp">&nbsp;</td></tr>
+</table></div><div class="pbBody" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eG5q_body"><table class="list" border="0" cellspacing="0" cellpadding="0"><tr class="headerRow"><th class="actionColumn" scope="col">Action</th><th scope="col" class=" zen-deemphasize">Dependent Name</th><th scope="col" class=" zen-deemphasize">Relationship</th><th scope="col" class="DateElement zen-deemphasize">Date of Birth</th></tr>
+
+<!-- ListRow -->
+<tr class=" dataRow even last first" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><td class='actionColumn'><a href="/a0qJ0000000OsEh/e?retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS" class="actionLink" title="Edit - Record 1 - Keith">Edit</a>&nbsp;|&nbsp;<a href="/setup/own/deleteredirect.jsp?id=a09J0000003XlbJIAS&amp;delID=a0qJ0000000OsEh&amp;retURL=%2Fapex%2Fchangemachine_customer_details%3Fid%3Da09J0000003XlbJIAS&amp;_CONFIRMATIONTOKEN=ZVeruOEpCXUPHWFnXIEz8X8mgZ7BHz5BAv_1iklN1qDPSeaGkegxI9vyRo.oMzd.PNd16bu4T1gm3CWYTw5Xri3.CtubJ_RDjQfK92e53YjCNdsCwqNepsVRXv8gwJI0vijH473Sujs4igjJmRIzwwdffFI%3D" class="actionLink" onclick="return confirmDelete();" title="Delete - Record 1 - Keith">Del</a></td><th scope="row" class=" dataCell  "><a href="/a0qJ0000000OsEh?btdid=a09J0000003XlbJ">Keith</a></th><td class=" dataCell  ">Father</td><td class=" dataCell  DateElement">11/7/1980</td></tr></table>
+</div><div class="pbFooter secondaryPalette"><div class="bg"></div></div></div></div><div class="listElementBottomNav"></div><script  type="text/javascript">try { sfdcPage.registerRelatedList('j_id0_j_id1_j_id30_a09J0000003XlbJ_00NJ0000000eG5q', '1', 'Dependents', false, '/apex/changemachine_customer_details?id=a09J0000003XlbJIAS', 'id=a09J0000003XlbJIAS&relatedListId=00NJ0000000eG5q&hideDL=1&noh=1&keepPref=1',false,false, true, '00NJ0000000eG5q');} catch(e) {}</script>
+<!-- End ListElement -->
+</div>
+<!-- End RelatedListElement -->
+
+<!-- Begin RelatedListElement -->
+<div class="bRelatedList" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedEntityHistoryList"><a name="j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedEntityHistoryList_target"></a>
+<!-- Begin ListElement -->
+
+<!-- motif: Custom1 -->
+
+<!-- WrappingClass -->
+<div class="noStandardTab"><div class="bPageBlock brandSecondaryBrd secondaryPalette"><div class="pbHeader"><table  border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle"><img src="/s.gif" alt="" width="1" height="1" class="minWidth" title="" /><img src="/s.gif" alt="Customer"  class="relatedListIcon" title="Customer"/><h3 id="j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedEntityHistoryList_title">Customer History</h3></td><td class="pbButton">&nbsp;</td><td class="pbHelp">&nbsp;</td></tr>
+</table></div><div class="pbBody" id="j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedEntityHistoryList_body"><table class="list" border="0" cellspacing="0" cellpadding="0"><tr class="headerRow"><th scope="col" class=" zen-deemphasize">Date</th><th scope="col" class=" zen-deemphasize">User</th><th scope="col" class=" zen-deemphasize">Action</th></tr>
+
+<!-- ListRow -->
+<tr class=" dataRow even first" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><th scope="row" class=" dataCell  ">12/31/2012 12:33 PM</th><td class=" dataCell  ">Keith Mancuso</td><td class=" dataCell  ">Changed <strong>Financial Tune-up Score</strong> from 11 to <strong>16</strong>.</td></tr>
+<!-- ListRow -->
+<tr class=" dataRow odd" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><th scope="row" class=" dataCell  ">12/31/2012 12:30 PM</th><td class=" dataCell  ">Keith Mancuso</td><td class=" dataCell  ">Changed <strong>Financial Tune-up Score</strong> to <strong>11</strong>.</td></tr>
+<!-- ListRow -->
+<tr class=" dataRow even" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><th scope="row" class=" dataCell  ">12/31/2012 11:28 AM</th><td class=" dataCell  ">Keith Mancuso</td><td class=" dataCell  ">Changed <strong>Mobile Phone</strong> from (646) 123-4567 to <strong>(646) 123-1234</strong>.</td></tr>
+<!-- ListRow -->
+<tr class=" dataRow odd" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><th scope="row" class=" dataCell  ">12/31/2012 11:25 AM</th><td class=" dataCell  ">Keith Mancuso</td><td class=" dataCell  ">Changed <strong>Mobile Phone</strong> from (646) 123-2312 to <strong>(646) 123-4567</strong>.</td></tr>
+<!-- ListRow -->
+<tr class=" dataRow even last" onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}" onmouseout="if (window.hiOff){hiOff(this);}" onmouseover="if (window.hiOn){hiOn(this);}"><th scope="row" class=" dataCell  ">12/31/2012 11:22 AM</th><td class=" dataCell  ">Keith Mancuso - COACH</td><td class=" dataCell  ">Changed <strong>City</strong> from New York to <strong>Bronx</strong>.</td></tr></table>
+<div class="pShowMore"><a href="javascript:showMoreList%28%27%3Fid%3Da09J0000003XlbJIAS%26rls%3Da09J0000003XlbJIAS%27%2C%20%27id%3Da09J0000003XlbJIAS%26relatedListId%3DRelatedEntityHistoryList%26hideDL%3D1%26noh%3D1%26keepPref%3D1%26j_id0%253Aj_id1%253Aj_id30%253Arowsperlist%3D10%27%2C%20%27j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedEntityHistoryList%27%29%3B">Show more »</a>&nbsp;|&nbsp;<a href="/_ui/common/history/ui/EntityHistoryFilterPage?id=a09J0000003XlbJ">Go to list&nbsp;&#187;</a></div></div><div class="pbFooter secondaryPalette"><div class="bg"></div></div></div></div><div class="listElementBottomNav"></div><script  type="text/javascript">try { sfdcPage.registerRelatedList('j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedEntityHistoryList', '5', 'Customer History', true, '/apex/changemachine_customer_details?id=a09J0000003XlbJIAS', 'id=a09J0000003XlbJIAS&relatedListId=RelatedEntityHistoryList&hideDL=1&noh=1&keepPref=1',false,false, true, 'RelatedEntityHistoryList');} catch(e) {}</script>
+<!-- End ListElement -->
+</div>
+<!-- End RelatedListElement -->
+<div class="fewerMore"><div class="backToTop"><a href="#skiplink" title="Back To Top"><img src="/img/upToTop_caret.gif" alt="Back to Top" width="8" height="8" title="Back to Top" />Back To Top</a></div>Always show me  <a href="/apex/changemachine_customer_details?id=a09J0000003XlbJIAS&amp;j_id0%3Aj_id1%3Aj_id30%3Arowsperlist=10"><img src="/img/show_more_arrow.gif" alt="Show More" width="17" height="15" align="texttop" title="Show More" />more</a>  records per related list</div></div>
+
+                 
+                   
+
+                </div>
+           
+
+            </div>
+            </div>
+     </div>
+  </div>
+  <footer>
+    <div class="container">
+         
+    <img class="footerRays" src="https://www.visualaids.org/changemachine/images/raysCropped.png" /> 
+        <img class="footerLogo" src="https://www.visualaids.org/changemachine/images/change-machine-footer-logo.png" />
+
+          <ul class="nav nav-pills">
+              <li><a href="/_ui/core/portal/PortalUserMyProfilePage/d">My Account</a></li>
+              <li><a href="/secur/logout.jsp">Logout</a></li>
+              <li><a href="/changemachine_PrivacyPolicy">Privacy Policy</a></li>
+             
+       	 </ul>
+     
+
+   
+
+
+       </div>
+
+         
+   </footer><span id="j_id0:j_id1:j_id33">
+
+   
+
+    <div class="feedback">
+      <ul class="nav nav-pills">
+        <li><a href="/500/e?retURL=%2F500%2Fo">Issues/Problems?</a></li>
+        <li><a href="/ideas/ideaList.apexp">Ideas?</a></li>
+      </ul>
+      </div></span>
+</body>
+</html>
+<form id="VF_INTERAL_FORM" name="VF_INTERAL_FORM" method="post" action="/changemachine_customer_details?id=a09J0000003XlbJIAS" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="VF_INTERAL_FORM" value="VF_INTERAL_FORM" />
+<script id="VF_INTERAL_FORM:j_id37" type="text/javascript">j_id0_j_id1_j_id30_actionFn=function(){A4J.AJAX.Submit('VF_INTERAL_FORM',null,{'similarityGroupingId':'VF_INTERAL_FORM:j_id37','parameters':{'VF_INTERAL_FORM:j_id37':'VF_INTERAL_FORM:j_id37'} } )};
+</script><input type="hidden"  id="j_id0_j_id1_j_id30UV" name="j_id0_j_id1_j_id30UV" value="false" /><div id="VF_INTERAL_FORM:j_id36"></div>
+</form><script type="text/javascript">Sfdc.onReady(function(){
+	SfdcApp.Visualforce.VSManager.vfPrepareForms(["VF_INTERAL_FORM"]);
+});</script><div class="datePicker" id="datePicker"><div class="dateBar"><img src="/s.gif" alt="Previous Month"  class="calLeft" onblur="this.className = 'calLeft';" onclick="DatePicker.datePicker.prevMonth();" onfocus="this.className = 'calLeftOn';" onmouseout="this.className = 'calLeft';" onmouseover="this.className = 'calLeftOn';" title="Previous Month"/><select  id="calMonthPicker" name="calMonthPicker" title="Month"><option value="0">January</option>
+<option value="1">February</option>
+<option value="2">March</option>
+<option value="3">April</option>
+<option value="4">May</option>
+<option value="5">June</option>
+<option value="6">July</option>
+<option value="7">August</option>
+<option value="8">September</option>
+<option value="9">October</option>
+<option value="10">November</option>
+<option value="11">December</option>
+</select><img src="/s.gif" alt="Next Month"  class="calRight" onblur="this.className = 'calRight';" onclick="DatePicker.datePicker.nextMonth();" onfocus="this.className = 'calRightOn';" onmouseout="this.className = 'calRight';" onmouseover="this.className = 'calRightOn';" title="Next Month"/><select  id="calYearPicker" name="calYearPicker" title="Year"><option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+</select></div><div class="calBody"><table  class="calDays" border="0" cellpadding="0" cellspacing="0" id="datePickerCalendar"><tr><TH class="dayOfWeek" scope="col">Sun</TH><TH class="dayOfWeek" scope="col">Mon</TH><TH class="dayOfWeek" scope="col">Tue</TH><TH class="dayOfWeek" scope="col">Wed</TH><TH class="dayOfWeek" scope="col">Thu</TH><TH class="dayOfWeek" scope="col">Fri</TH><TH class="dayOfWeek" scope="col">Sat</TH></tr>
+<tr class="calRow" id="calRow1"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow2"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow3"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow4"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow5"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow6"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+</table><div class="buttonBar"><a href="javascript:%20void%280%29%3B" class="calToday" onclick="DatePicker.datePicker.selectDate('today');return false;">Today</a></div></div></div><span id="bFn"><script  type="text/javascript">var tmp_bodyOnLoad = window.bodyOnLoad;var tmp_bodyOnBeforeUnload = window.bodyOnBeforeUnload;</script>
+
+
+<!-- Body events -->
+<script type="text/javascript">function bodyOnLoad(){if (window.sfdcPage && window.sfdcPage.hasRun) {return;} if (tmp_bodyOnLoad) { tmp_bodyOnLoad();};if ((window.sfdcPage) && (sfdcPage.executeOnloadQueue)){sfdcPage.executeOnloadQueue();};if(window.PreferenceBits){window.PreferenceBits.prototype.csrfToken="9QpeDy6txWRgp6KfeP1d3J0qI5BGRk2CsvLBqMHK2pYxGmDhyNamTWRSSh_0YbpOXuh7u7_uFj5y25oeWbf.KG7yiZCI6aF8RzY88plZbCCXDxaRzSfo3SLX2T.dM5SH2Y3HW5RkX_GcdCDrlgIzayviSTOaX18jVsAnayRzcOuFyN3imMR9_ylHOJDhiStarJ7_kw==";};if(window.Jiffy){if(Jiffy.onLoad)Jiffy.onLoad();if(Jiffy.ui&&Jiffy.ui.onLoad)Jiffy.ui.onLoad()}}function bodyOnBeforeUnload(){if (window.sfdcPage && window.sfdcPage.hasRun) {return;} if (tmp_bodyOnBeforeUnload) { tmp_bodyOnBeforeUnload();};if ((window.sfdcPage) && (sfdcPage.executeOnBeforeUnloadQueue)){sfdcPage.executeOnBeforeUnloadQueue();};}function bodyOnFocus(){}function bodyOnUnload(){}</script><script  type="text/javascript">if (!this.bodyOnLoad ) { this.bodyOnLoad = bodyOnLoad;}var attributes =  document.getElementsByTagName('body')[0].attributes;if (attributes.getNamedItem('onload')) {var v = attributes.getNamedItem('onload').value; if (v && v.match('bodyOnLoad\\(\\)') == null){ if(this.bodyOnLoad)bodyOnLoad();}} else {if(this.bodyOnLoad)bodyOnLoad();}</script></span>
+<form id="VF_INTERAL_FORM" name="VF_INTERAL_FORM" method="post" action="/changemachine_customer_details?id=a09J0000003XlbJIAS" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="VF_INTERAL_FORM" value="VF_INTERAL_FORM" />
+<script id="VF_INTERAL_FORM:j_id37" type="text/javascript">j_id0_j_id1_j_id30_actionFn=function(){A4J.AJAX.Submit('VF_INTERAL_FORM',null,{'similarityGroupingId':'VF_INTERAL_FORM:j_id37','parameters':{'VF_INTERAL_FORM:j_id37':'VF_INTERAL_FORM:j_id37'} } )};
+</script><input type="hidden"  id="j_id0_j_id1_j_id30UV" name="j_id0_j_id1_j_id30UV" value="false" /><div id="VF_INTERAL_FORM:j_id36"></div>
+</form>

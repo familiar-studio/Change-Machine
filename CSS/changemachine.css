@@ -5849,6 +5849,9 @@ body .wrapper {
   margin-bottom: 15px;
 }
 /* ----- End Sidebar ----- */
+.thumbnails {
+  margin-left: 0;
+}
 /* Coach View */
 .topWrapper .btn-group {
   font-size: 18px;
@@ -6184,6 +6187,9 @@ a.showDetails {
 }
 /* ----- End Main Content ----- */
 /* ----- Customer Page ----- */
+.customer {
+  padding-bottom: 40px;
+}
 .customer .btn {
   border-radius: 8px;
 }
@@ -6375,6 +6381,7 @@ a.showDetails {
 }
 .customer table tbody a {
   color: #000000;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.25);
 }
 .customer table tbody a:hover {
   color: #8ea2ca;
@@ -6425,6 +6432,146 @@ a.showDetails {
 }
 .customer .meetings-block .btn:hover {
   padding: 5px 12px 1px;
+}
+.customer {
+  /*   Personal Info   */
+
+}
+.customer .span12 .btn {
+  padding: 3px 12px;
+  margin: 10px 0px 10px 10px;
+}
+.customer .span12 .btn:hover {
+  padding: 5px 12px 1px;
+}
+.customer .span12 .btn.delete {
+  background-color: #a72c32;
+  background-image: none;
+}
+.customer .bPageBlock {
+  padding: 10px;
+}
+.customer .bPageBlock .pbHeader .pbTitle {
+  width: 100%;
+  border-top: 2px dotted #e6e7e8;
+}
+.customer .bPageBlock .pbHeader h2 {
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.customer .bPageBlock .pbHeader .pbButton {
+  float: none;
+}
+.customer .bPageBlock .btn {
+  font-size: 12px;
+}
+.customer .bPageBlock .pbBody {
+  padding-top: 0;
+}
+.customer .bPageBlock .pbBody .pbSubheader {
+  border-bottom: none;
+  border-top: 2px dotted #e6e7e8;
+  padding-top: 10px;
+}
+.customer .bPageBlock .pbBody .pbSubheader h3 {
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+.customer .bPageBlock .pbBody .pbSubsection {
+  margin-top: 5px;
+}
+.customer .bPageBlock .detailList .labelCol {
+  text-align: right;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 11px;
+  text-transform: uppercase;
+  width: 250px;
+  vertical-align: bottom;
+  line-height: 16px;
+}
+.customer .bPageBlock .detailList .dataCol {
+  font-size: 18px;
+  color: #000000;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  padding-left: 10px;
+  width: 410px;
+  vertical-align: bottom;
+}
+.customer .bPageBlock .detailList tbody tr {
+  height: 30px;
+}
+.customer table tbody th,
+.customer table tbody td {
+  border-bottom: none;
+}
+.customer .bRelatedList h3 {
+  font-family: "ff-meta-serif-web-pro", serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.customer .noStandardTab {
+  overflow: hidden;
+}
+.customer .bRelatedList .pbHeader {
+  border-top: 2px dotted #E6E7E8;
+  margin-bottom: 10px;
+}
+.customer .bRelatedList .pbHeader .pbTitle {
+  border-top: none;
+  width: auto;
+}
+.customer .bRelatedList .pbHeader .pbTitle h3 {
+  margin-top: 10px;
+}
+.customer .bRelatedList table {
+  width: 100%;
+}
+.customer .bRelatedList table .headerRow th {
+  text-align: left;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.customer .bRelatedList table .headerRow td,
+.customer .bRelatedList table .headerRow th {
+  text-align: left;
+}
+.customer .bRelatedList table .dataRow {
+  height: 30px;
+}
+.customer .bRelatedList table .dataRow td,
+.customer .bRelatedList table .dataRow th {
+  text-align: left;
+  font-size: 16px;
+}
+.customer img.relatedListIcon {
+  display: none;
+}
+.customer #j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedNoteList .noStandardTab .bPageBlock .pbHeader table tbody tr td.pbTitle {
+  width: 364px;
+  float: left;
+}
+.customer #j_id0_j_id1_j_id30_a09J0000003XlbJ_RelatedNoteList .noStandardTab .bPageBlock .pbHeader table tbody tr td.pbButton {
+  width: 441px;
+  float: left;
 }
 /* ----- End Customer Page ----- */
 /* ----- Pagination ----- */
@@ -6535,7 +6682,7 @@ footer .container {
   height: 140px;
 }
 .footerLogo {
-  margin: -185px 0 0;
+  margin: -185px 10px 0;
   height: 110px;
   width: auto;
   vertical-align: top;
@@ -6864,11 +7011,13 @@ html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.
   font-weight: 400;
   color: #a72c32;
 }
-.bEditBlock .detailList .dataCol,
-.bEditBlock .detailList .data2Col.last,
+/* removed for Customer Personal Info page */
+/*
+.bEditBlock .detailList .dataCol, .bEditBlock .detailList .data2Col.last, 
 .detailList tbody tr td:nth-child(2) {
-  padding: 2px 2px 0 10px !important;
+    padding: 2px 2px 0 10px !important;
 }
+*/
 .pbSubsection input[type="checkbox"] {
   float: left;
   margin: 6px 10px 0 20px;
