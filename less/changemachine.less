@@ -96,6 +96,11 @@ a {
 	}
 }
 
+p a {
+	.metaBold();
+	border-bottom: 1px dotted @lightergray;
+}
+
 [href^=http] {
 	color: @blue;
 	&:hover {
@@ -505,7 +510,9 @@ body .wrapper {
 			color: @black;
 			overflow: inherit;
 		}
-		
+		li p a {
+			.metaBold();
+		}
 		h3 {
 			.proximaB();
 			line-height: 1.1em;
