@@ -5512,7 +5512,7 @@ body .wrapper {
 .overviewTab h3:first-child,
 #questions h3:first-child,
 #paths h3:first-child {
-  float: left;
+  display: inline-block;
 }
 .overviewTab h3:nth-child(2),
 #questions h3:nth-child(2),
