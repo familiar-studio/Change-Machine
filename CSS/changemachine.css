@@ -5164,7 +5164,7 @@ h2 {
   font-family: "ff-meta-serif-web-pro", serif;
   font-style: normal;
   font-weight: 700;
-  color: #dce9cc;
+  color: #d3e1c1;
   display: block;
   font-size: 14px;
   text-transform: uppercase;
@@ -5469,7 +5469,7 @@ body .wrapper {
   font-family: "ff-meta-serif-web-pro", serif;
   font-style: normal;
   font-weight: 700;
-  color: #dce9cc;
+  color: #d3e1c1;
   display: block;
   font-size: 14px;
   text-transform: uppercase;
@@ -5663,12 +5663,12 @@ body .wrapper {
 }
 /* ----- Sidebar ----- */
 .sidebar-block {
-  background-color: #eaf1e0;
+  background-color: #d3e1c1;
   border-radius: 5px;
   overflow: hidden;
   padding: 5px 15px 0px;
   margin-bottom: 20px;
-  box-shadow: inset 2px 2px 0px #eaf1e0;
+  box-shadow: inset 2px 2px 0px #c8d6b7;
 }
 .sidebar-block h5 {
   padding-left: 25px;
@@ -6825,14 +6825,14 @@ footer ul li a:hover {
   color: #ffffff;
 }
 .currentCustomer {
-  color: #dce9cc;
+  color: #d3e1c1;
 }
 .currentCustomer span {
   color: #73a534;
 }
 .currentCustomer ul li {
   background-color: #eaf1e0;
-  color: #dce9cc;
+  color: #d3e1c1;
 }
 .currentCustomer ul li.active:before {
   margin: 0 -5px 0 5px;
