@@ -2642,7 +2642,7 @@ button.close {
   color: #ffffff;
   text-decoration: none;
   background-position: 0 -15px;
-  box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 3px 3px 0px #c6c8ca;
   padding: 13px 10px 7px;
   -webkit-transition: background-position 0.1s linear;
   -moz-transition: background-position 0.1s linear;
@@ -2658,7 +2658,7 @@ button.close {
 .btn:active {
   background-image: none;
   outline: 0;
-  box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 3px 3px 0px #c6c8ca;
   color: #ffffff;
 }
 .btn.disabled,
@@ -5247,7 +5247,7 @@ h5 {
   box-shadow: 2px 2px 2px rgba(142, 162, 202, 0.25);
 }
 .milestoneButton:hover {
-  box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 3px 3px 0px #c6c8ca;
   padding: 13px 10px 7px;
 }
 .progressBar {
@@ -5287,6 +5287,6 @@ h5 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .progressBar ul li:hover {
-  box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 3px 3px 0px #c6c8ca;
   padding: 17px 14px 11px;
 }

@@ -1394,6 +1394,7 @@ a.showDetails {
 			.pbTitle {
 				width: 100%;
 				border-top: 2px dotted @lightestgray;
+				padding-top: 10px;
 			}
 			h2 {
 				.metaBold();
@@ -1447,6 +1448,12 @@ a.showDetails {
 				tr {
 					height: 30px;
 				}
+			}
+			.list .iconColumn, .list .actionColumn {
+			    width: 13%;
+			}
+			.list .headerRow th {
+			    border-bottom: none;
 			}
 		}
 	}
@@ -2076,6 +2083,10 @@ html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.
 
 .feedIcon {
 	display: none !important;
+}
+
+select#c {
+	display: none;
 }
 
 /* ----- IdeaList ----- */
