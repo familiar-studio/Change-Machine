@@ -5222,6 +5222,7 @@ a {
   font-weight: 700;
   color: #ffffff;
   text-shadow: none;
+  background-image: linear-gradient(to bottom, #8ea2ca, #8ea2ca);
 }
 .thumbnail .btn,
 .sidebar-block .btn {
