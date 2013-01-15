@@ -1,0 +1,9 @@
+.milestone-block ul li.In-Progress {
+	background-image: url("https://www.visualaids.org/changemachine/images/status-cw-in_progress.gif");
+}
+.milestone-block ul li.Completed {
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-status-completed.png");
+}
+.milestone-block ul li.Stalled {
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-status-stalled.png");
+}
