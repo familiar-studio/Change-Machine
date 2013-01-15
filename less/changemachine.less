@@ -990,8 +990,6 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 	background-image: url("https://www.visualaids.org/changemachine/images/status-completed.png");
 	background-repeat: no-repeat;
     background-size: 18px auto;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://www.visualaids.org/changemachine/images/ie-status-completed.png', sizingMethod='crop')";
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://www.visualaids.org/changemachine/images/ie-status-completed.png', sizingMethod='crop');
 }
 .milestone-block ul li.Stalled {
 	background-image: url("https://www.visualaids.org/changemachine/images/status-stalled.png");
@@ -2146,7 +2144,21 @@ form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageB
 
 
 
-
+<!--[if lt IE 9]>
+	
+.milestone-block ul li.In-Progress {
+	background-image: url("https://www.visualaids.org/changemachine/images/status-cw-in_progress.gif");
+}
+.milestone-block ul li.Completed {
+	background-image: none;
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://www.visualaids.org/changemachine/images/ie-status-completed.png', sizingMethod='crop')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://www.visualaids.org/changemachine/images/ie-status-completed.png', sizingMethod='crop');
+}
+.milestone-block ul li.Stalled {
+	background-image: url("https://www.visualaids.org/changemachine/images/status-stalled.png");
+}
+	
+<![endif]-->
 
 
 
