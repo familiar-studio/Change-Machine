@@ -1,9 +1,36 @@
+.milestone-block .Roadblock {
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-roadblockRED.png");
+}
+
 .milestone-block ul li.In-Progress {
-	background-image: url("https://www.visualaids.org/changemachine/images/status-cw-in_progress.gif");
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-status-cw-in_progress.gif");
 }
 .milestone-block ul li.Completed {
 	background-image: url("https://www.visualaids.org/changemachine/images/ie-status-completed.png");
 }
 .milestone-block ul li.Stalled {
 	background-image: url("https://www.visualaids.org/changemachine/images/ie-status-stalled.png");
+}
+
+
+.milestone-block .worksheets {
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-worksheets.png");
+}
+.milestone-block .tipsheets {
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-tipsheets.png");
+}
+
+
+
+.milestone-block related-worksheets h5 {
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-worksheets.png");
+}
+.milestone-block related-tipsheets h5 {
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-tipsheets.png");
+}
+.milestone-block related-worksheets h5 {
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-worksheets.png");
+}
+.milestone-block related-videos h5 {
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-videos.png");
 }
