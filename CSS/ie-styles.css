@@ -34,3 +34,13 @@
 .milestone-block related-videos h5 {
 	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-videos.png");
 }
+
+.worksheets h5 {
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-worksheets.png");
+}
+.tipsheets h5 {
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-tipsheets.png");
+}
+.videos h5 {
+	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-videos.png");
+}
