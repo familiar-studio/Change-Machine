@@ -6121,7 +6121,7 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
   color: #4f5152;
   min-height: 0;
 }
-.related-block {
+.milestone-block .related-block {
   display: inline-block;
   margin: 10px 0;
   /* 	width: 49%; */
@@ -6135,11 +6135,11 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 */
 
 }
-.related-block ul {
+.milestone-block .related-block ul {
   list-style-type: none !important;
   margin-left: 25px;
 }
-.related-block ul li a {
+.milestone-block .related-block ul li a {
   border-bottom: 1px dotted #939598;
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
