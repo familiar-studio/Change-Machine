@@ -26,21 +26,23 @@
 @purple:                #7a43b6;
 
 
-@blue:			rgba(142,162,202,1);
-@lightblue:		rgba(199,209,228,1);
-@lighterblue:	rgba(227,232,242,1);
+@blue:			#8ea2ca;
+@lightblue:		#c7d1e4;
+@lighterblue:	#e3e8f2;
 @lightestblue:	#eaecf4;
 @green:			#73a534;
-@lightgreen:	rgba(115,165,51,.5);
-@lightergreen:	rgba(115,165,51,.25);
+@lightgreen:	#d3e1c1;
+@lightergreen:	#eaf1e0;
 @lightestgreen: #e2ebd7;
-@black:			rgba(0,0,0,1);
-@gray:			rgba(0,0,0,.75);
-@lightgray:		rgba(0,0,0,.5);
+@greenshadow:	#c8d6b7;
+@black:			#000000;
+@gray:			#4f5152;
+@lightgray:		#939598;
 @lightergray:	rgba(0,0,0,.25);
-@white:			rgba(255,255,255,1);
-@red:			rgba(167,44,50,1);
-@pink:			rgba(244,154,193,1);
+@lightestgray:	#e6e7e8;
+@white:			#ffffff;
+@red:			#a72c31;
+@pink:			#f49ac2;
 @yellow:		#e8c31b;
 @lightyellow:	#f9eec7;
 @lighteryellow: #FCF8E3;
@@ -248,15 +250,15 @@
 // Form states and alerts
 // -------------------------
 @warningText:             #c09853;
-@warningBackground:       #fcf8e3;
+@warningBackground:       @yellow;
 @warningBorder:           darken(spin(@warningBackground, -10), 3%);
 
 @errorText:               #b94a48;
-@errorBackground:         #f2dede;
+@errorBackground:         @red;
 @errorBorder:             darken(spin(@errorBackground, -10), 3%);
 
 @successText:             #468847;
-@successBackground:       #dff0d8;
+@successBackground:       @green;
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
 @infoText:                #3a87ad;
