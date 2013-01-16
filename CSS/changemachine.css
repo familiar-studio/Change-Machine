@@ -5244,15 +5244,16 @@ h6 {
   background-image: none !important;
 }
 .thumbnail .btn,
-.sidebar-block .btn,
-.hero-unit .btn {
+.sidebar-block .btn {
   margin-bottom: 5px;
   color: #ffffff;
 }
 .thumbnail .btn:hover,
-.sidebar-block .btn:hover,
-.hero-unit .btn:hover {
+.sidebar-block .btn:hover {
   padding: 4px 10px 0px;
+}
+.btn-large:hover {
+  padding: 13px 19px 9px 19px;
 }
 .hero-unit {
   margin-top: 10px;
@@ -5586,7 +5587,7 @@ body .wrapper {
   font-weight: 700;
   font-size: 16px;
   margin: 5px 0;
-  color: #000000;
+  color: inherit;
   overflow: inherit;
 }
 .milestone-block ul.action-list li li {
@@ -6770,7 +6771,7 @@ footer ul li a {
 .footer ul li a:hover,
 footer ul li a:hover {
   background-color: none;
-  color: #939598;
+  color: #c7d1e4;
 }
 /* ----- End Footer ----- */
 /* ----- Feedback ----- */
