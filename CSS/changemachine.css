@@ -5223,8 +5223,8 @@ a {
 .sidebar-block .btn:hover {
   padding: 4px 10px 0px;
 }
-.hero-unit {
-  margin-top: 10px;
+.home-page {
+  padding-top: 10px;
 }
 /*
 .btn-group {
@@ -5536,7 +5536,7 @@ body .wrapper {
   color: #000000;
   overflow: inherit;
 }
-.milestone-block ul.action-list h6 {
+.milestone-block ul.action-list h3 {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 700;
