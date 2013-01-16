@@ -7,6 +7,8 @@
   @top-left {
     margin-left: 1cm;
     content: element(header);
+    padding-left: 10px;
+    margin-bottom: 10px;
   }
 
   @bottom-left-corner {
@@ -20,9 +22,17 @@
     font-family: helvetica, sans-serif;
     font-size: 12px;
     line-height: 20px;
-    content: 'These tips are provided by';
+   
+   
+   background-image: url("/resource/1358349269000/ChangeMachineLogoPrint");
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: 10px 15px;
+       content: "test";
+       color: white;
+       
     
-    width: 2.5cm;
+    width: 3.5cm;
     text-align: top;
     
     
@@ -30,13 +40,9 @@
   
     @bottom-center {
   	 border-top: 1px solid #8ea2ca;
-  	 background-image: url("https://cs10.salesforce.com/resource/1355504427000/CMlogoprint");
-       background-size: contain;
-       background-repeat: no-repeat;
-       background-position: 10px 15px;
-       content: "test";
-       color: white;
-       
+  	 content: "test";
+  	 
+  	  color: white;
        
     }
 
@@ -57,14 +63,18 @@
   */
   @bottom-right-corner {
 
-    font-family: helvetica, arial, sans-serif;
-    font-size: 16px;
-    content: counter(page);
+   
   }
+}
+
+header {
+	
+	
 }
 body {
   font-family: georgia, serif;
   color: rgba(0, 0, 0, 0.5);
+  line-height: 24px;
 }
 h5 {
   color: #939598;
@@ -84,6 +94,7 @@ h1 {
   color: #8ea2ca;
   font-family: helvetica, sans-serif;
   margin-bottom: 10px;
+  line-height: 36px;
 }
 ol,
 ul {
