@@ -656,7 +656,7 @@ h4 small {
 .page-header {
   padding-bottom: 9px;
   margin: 20px 0 30px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #bbbbbb;
 }
 ul,
 ol {
@@ -728,7 +728,7 @@ dd {
 hr {
   margin: 20px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #bbbbbb;
   border-bottom: 1px solid #ffffff;
 }
 abbr[title],
@@ -743,7 +743,7 @@ abbr.initialism {
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #bbbbbb;
 }
 blockquote p {
   margin-bottom: 0;
@@ -763,7 +763,7 @@ blockquote.pull-right {
   float: right;
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #bbbbbb;
   border-left: 0;
 }
 blockquote.pull-right p,
@@ -1181,7 +1181,7 @@ input[readonly],
 select[readonly],
 textarea[readonly] {
   cursor: not-allowed;
-  background-color: #eeeeee;
+  background-color: #bbbbbb;
 }
 input[type="radio"][disabled],
 input[type="checkbox"][disabled],
@@ -1423,7 +1423,7 @@ select:focus:invalid:focus {
   line-height: 20px;
   text-align: center;
   text-shadow: 0 1px 0 #ffffff;
-  background-color: #eeeeee;
+  background-color: #bbbbbb;
   border: 1px solid #ccc;
 }
 .input-append .add-on,
@@ -3189,7 +3189,8 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 20px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #e8c31b;
-  border: 1px solid #dd9816;
+  /*   border: 1px solid @warningBorder; */
+
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3345,7 +3346,7 @@ input[type="submit"].btn.btn-mini {
   border-radius: 4px 4px 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #dddddd;
+  border-color: #bbbbbb #bbbbbb #dddddd;
 }
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
@@ -3523,7 +3524,7 @@ input[type="submit"].btn.btn-mini {
   border-radius: 4px 0 0 4px;
 }
 .tabs-left > .nav-tabs > li > a:hover {
-  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+  border-color: #bbbbbb #dddddd #bbbbbb #bbbbbb;
 }
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover {
@@ -3542,7 +3543,7 @@ input[type="submit"].btn.btn-mini {
   border-radius: 0 4px 4px 0;
 }
 .tabs-right > .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+  border-color: #bbbbbb #bbbbbb #bbbbbb #dddddd;
 }
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover {
@@ -5008,7 +5009,7 @@ a.badge:hover {
   font-weight: 200;
   line-height: 30px;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #bbbbbb;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;

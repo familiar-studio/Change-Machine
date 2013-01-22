@@ -22,16 +22,16 @@
 
 
 
-.milestone-block related-worksheets h5 {
+.milestone-block #related-worksheets h5 {
 	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-worksheets.png");
 }
-.milestone-block related-tipsheets h5 {
+.milestone-block #related-tipsheets h5 {
 	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-tipsheets.png");
 }
-.milestone-block related-worksheets h5 {
+.milestone-block #related-worksheets h5 {
 	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-worksheets.png");
 }
-.milestone-block related-videos h5 {
+.milestone-block #related-videos h5 {
 	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-videos.png");
 }
 
@@ -44,3 +44,45 @@
 .videos h5 {
 	background-image: url("https://www.visualaids.org/changemachine/images/ie-related-videos.png");
 }
+
+
+
+.milestone-hide {
+	background: url("https://www.visualaids.org/changemachine/images/open_close.png") -30px 18px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src='https://www.visualaids.org/changemachine/images/open_close.png',
+		sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src='https://www.visualaids.org/changemachine/images/open_close.png',
+		sizingMethod='scale')";
+}
+.milestone-show {
+	background: url("https://www.visualaids.org/changemachine/images/open_close.png") -30px 0px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src='images/logo.gif',
+		sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src='https://www.visualaids.org/changemachine/images/open_close.png',
+		sizingMethod='scale')";
+}
+/*
+
+.sidebar-hide {
+	background: url("https://www.visualaids.org/changemachine/images/open_close.png") -60px 18px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src='https://www.visualaids.org/changemachine/images/open_close.png',
+		sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src='https://www.visualaids.org/changemachine/images/open_close.png',
+		sizingMethod='scale')";
+}
+.sidebar-show {
+	background: url("https://www.visualaids.org/changemachine/images/open_close.png") -60px 0px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src='https://www.visualaids.org/changemachine/images/open_close.png',
+		sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src='https://www.visualaids.org/changemachine/images/open_close.png',
+		sizingMethod='scale')";
+}
+*/

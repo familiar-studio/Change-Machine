@@ -33,7 +33,11 @@
 
 
 /* ----- Fonts ----- */
-
+.proximaT {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;
+}
 .proximaL {
 	font-family: "proxima-nova",sans-serif;
 	font-style: normal;
@@ -87,6 +91,16 @@ a, li, .btn, h1, h2, h3, h4, h5, h6 {
 	transition: 		all 0.15s ease;
 }
 
+h1, h2, h3, h4, h5, h6, p, a {
+	line-height: 1.2em;
+}
+
+p {
+	.metaBook();
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
 a {
 	text-decoration: none;
 	&:hover {
@@ -97,12 +111,26 @@ a {
 	}
 }
 
-p a {
-	.metaBold();
-	border-bottom: 1px dotted @lightergray;
+p a, 
+.alert li a,
+.milestone-block li a {
+	.proximaB();
+	border-bottom: 2px dotted @lightergray;
+	color: @black;
+	&:hover {
+		color: @blue;
+	}
 }
 
-[href^=http] {
+
+.milestone-block ul.action-list li.Action > a,
+.milestone-block ul.action-list li.Roadblock > a {
+	.proximaR();
+	border-bottom: none;
+}
+
+
+a {
 	color: @blue;
 	&:hover {
 		color: @lightblue;
@@ -168,10 +196,6 @@ h6 {
 	padding-left: 15px;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
-	line-height: 1.2em;
-}
-
 .btn {
   .proximaB();
   color: @white;
@@ -191,7 +215,15 @@ h1, h2, h3, h4, h5, h6, p, a {
 	}
 }
 
+<<<<<<< HEAD
 .home-page {
+=======
+.btn-large:hover {
+	padding: 13px 19px 9px 19px;
+}
+
+.hero-unit {
+>>>>>>> 40cc920fa6e962a9f150b86eaf103b453040b1dc
 	
 	padding-top: 10px;
 }
@@ -509,15 +541,29 @@ body .wrapper {
 		overflow: hidden;
 /* 		list-style-type: none; */
 		li, li a {
-			.proximaR();
+			.proximaB();
 			font-size: 16px;
 			margin: 5px 0;
 			color: @black;
 			overflow: inherit;
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
+=======
+		li li {
+			.metaBook();
+			color: inherit;
+			line-height: 1.5em;
+		}
+/*
+		li.Action a,
+		li.Roadblock a {
+			border-bottom: none;
+		}
+*/
+>>>>>>> 40cc920fa6e962a9f150b86eaf103b453040b1dc
 /*
 		li p a {
 			.metaBold();
@@ -525,7 +571,7 @@ body .wrapper {
 */
 >>>>>>> 5560f53c4237b76c502833006702d99c68a708bf
 		h3 {
-			.proximaB();
+			.proximaR();
 			line-height: 1.1em;
 			font-size: 18px;
 			margin: 0;
@@ -551,6 +597,8 @@ body .wrapper {
 		padding-bottom: 5px; 
 		padding-left: 25px;
 		overflow: hidden;
+		font-size: 16px;
+		margin-top: 5px;
 	}
 	h4 {
 		min-height: 45px;
@@ -797,6 +845,13 @@ body .wrapper {
 		display: block;
 		margin-bottom: 15px;
 	}
+	a, li a {
+		color: @darkyellow;
+		.proximaB();
+		&:hover {
+			color: @blue;
+		}
+	}
 }
 
 /* ----- End Sidebar ----- */
@@ -1016,9 +1071,6 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 		line-height: 1.5em;
 		font-size: 16px;
 	}
-	
-	
-	
 	p b, h4 {
 		.metaBold();
 		margin-top: 20px;
@@ -1029,12 +1081,9 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 		color: @gray;
 		min-height: 0;
 	}
-	
-	
-	
 }
 
-.related-block {
+.milestone-block .related-block {
 	display: inline-block;
 	margin: 10px 0;
 /* 	width: 49%; */
@@ -1043,7 +1092,8 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 		list-style-type: none !important;
 		margin-left: 25px;
 		li a {
-			border-bottom: 1px dotted @lightgray;
+			border-bottom: 2px dotted @lightgray;
+			.proximaR();
 		}
 	}
 /*
@@ -1543,7 +1593,7 @@ ul.pager {
 	a {
 		.proximaB();
 		background-color: none;
-		color: @lightergray;
+		color: @grayLighter;
 		border: none;
 		padding: 0;
 		text-transform: uppercase;
@@ -1552,6 +1602,14 @@ ul.pager {
 			background-color: none;
 			color: @black;
 		}
+	}
+	.next a:after {
+		content: url("https://www.visualaids.org/changemachine/images/arrow-next.png");
+		margin-left: 5px;
+	}
+	.previous a:before {
+		content: url("https://www.visualaids.org/changemachine/images/arrow-back.png");
+		margin-right: 5px;
 	}
 }
 
@@ -1666,6 +1724,7 @@ footer .container {
 
 }
 
+.footer ul,
 footer ul {
 	float: right;
 	position: relative;
@@ -1679,7 +1738,7 @@ footer ul {
 		color: @black;
 		&:hover {
 			background-color: none;
-			color: @lightgray;
+			color: @lightblue;
 		}
 	}
 }

@@ -1,5 +1,5 @@
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 
 <html>
 <head>
@@ -13,6 +13,8 @@
   
     <!--[if lt IE 9]>
 		<link rel="stylesheet" type="text/css" href="CSS/ie-styles.css" />
+
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
    
   <script type="text/javascript">
@@ -72,19 +74,19 @@
       <div class="row">
         <div class="span3">
           <a class="brand" href="/">
-          	<img src="images/cm_logo_web-rev.png" width="300px" height="137px" />
+          	<img height="104px" src="https://www.visualaids.org/changemachine/images/cm_logo_web-rev.png" width="227px" />
           </a>
         </div>
           
           <div class="span1">
-               <ul class="cls-menu">
+               <ul class="unstyled cls-menu">
             	<li class="active"><A href="/learn">Learn</A></li>
-            	<li class=""><A href="/customers"> Coach</A></li>
-                <li class=""><A href="/customers"> Share</A></li>
+            	<li class=""><A href="/coach"> Coach</A></li>
+                <li class=""><A href="/share"> Share</A></li>
               </ul>
           </div>
           
-        <div class="span2 offset5">
+        <div class="span8 pull-right">
                 &nbsp;
         </div>
        
@@ -110,7 +112,7 @@
                   
                   
                <li class="">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Goals">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Goals">
                   
                   Goals
                 </a>
@@ -119,7 +121,7 @@
                   
                   
                <li class="">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Assets">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Assets">
                   
                   Assets
                 </a>
@@ -128,7 +130,7 @@
                   
                   
                <li class="">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Banking">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Banking">
                   
                   Banking
                 </a>
@@ -137,7 +139,7 @@
                   
                   
                <li class="active">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Credit">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Credit">
                   
                   Credit
                 </a>
@@ -146,7 +148,7 @@
                   
                   
                <li class="">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Debt">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Debt">
                   
                   Debt
                 </a>
@@ -155,20 +157,20 @@
                   
                   
                <li class="">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="/roadmap/Taxes">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="/section/Taxes">
                   
                   Taxes
                 </a>
                 </li>
             </ul>
             
-              <form action="/search/SearchResults" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
-                  <input id="searchType" name="searchType" type="hidden" value="2" />
-                  
-                  <input id="sen" name="sen" type="hidden" value="0" />
-                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="sbstr" placeholder="" size="27" title="Enter search keywords" type="text" />
+              <form action="/changemachine_search" class="navbar-search pull-right" id="sbsearch" method="GET" name="sbsearch">
+
+             
+                  <input autocomplete="off" class="search-query" id="str" maxlength="80" name="q" placeholder="Search" size="27" title="Enter search keywords" type="text" />
         	<button class="btn" type="submit">Search</button>
-              </form>
+              
+               </form>
               
       
           </div>
@@ -180,158 +182,252 @@
 <div class="wrapper">
             
         
+        
         <div class="page-header">
-           <h1>Banking</h1>
-           <h2>Outcome <small>Improve Credit Score</small></h2>
+            
+         <h1>Credit</h1>
+                
+          <h2>Outcome <small> Improve credit score</small></h2>
+               
         </div>
         
-        <div class="row">
+        <div class="row row8-4">
             
            
            <div class="span8">
-               
-                    <div class="overviewTab">
-                                        
-                        <h3>Overview</h3><h3 class="milestone-hide"></h3>
-                    <div class="overviewText" style="">
-                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                 <div class="overviewTab">
+                    <div class="overview-header">
+                      <h3>Overview</h3><h3 class="milestone-hide"></h3>
+                    </div>
                     
+                    <div class="overviewText" style="">Credit has become an integral part of everyday life. Without good credit, consumers can have a hard time obtaining credit cards, which makes certain routine transactions like renting a car or buying airline tickets quite difficult. Increasingly and disturbingly, employers are using credit reports as part of the hiring process.  For all these reasons, it is essential that customers know how to obtain their credit report, interpret it, dispute negative information, and know what they can do to improve their scores. When it comes to credit, there is a lot of misinformation and confusion about what affects one’s score, how to improve one’s score, and how long it will take for a score to improve. The truth is that damaged credit cannot be fixed overnight. It takes time, effort, and patience, but with a well-designed credit action plan, customers can see significant score increases.
                     </div>
                </div>
                   <div class="milestone-block">
-                  <A class="btn pull-right" href="/milestone/Customer-Pulls-Credit-Report-Alone">Start this milestone</A>
+                  <A class="btn pull-right" href="/milestone/Customer-Pulls-Credit-Report-Alone">
+                    Learn about this milestone
+                  </A>
                   <h4> <a href="/milestone/Customer-Pulls-Credit-Report-Alone"> Customer Pulls Credit Report Alone</a></h4>
                   
                   
-                      <ul class="unstyled">
-                           <li class="Action">Customer connects importance of improving credit to the action driven goal
+                      <ul class="unstyled action-list">
+                           <li class="Roadblock  ">
+
+                           <a href="/milestone/Customer-Pulls-Credit-Report-Alone#Customer-can't-download-credit-report">Customer can't download credit report</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Action">Customer chooses 1 of 3 ways to pull a credit report
+                           <li class="Action  ">
+
+                           <a href="/milestone/Customer-Pulls-Credit-Report-Alone#Customer-chooses-1-of-3-ways-to-pull-a-credit-report">Customer chooses 1 of 3 ways to pull a credit report</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Roadblock">Customer can't download credit report
+                           <li class="Action  ">
+
+                           <a href="/milestone/Customer-Pulls-Credit-Report-Alone#Coach-or-customer-pulls-credit-report-alone">Coach or customer pulls credit report alone</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Action">Coach or customer pulls credit report alone
+                           <li class="Action  ">
+
+                           <a href="/milestone/Customer-Pulls-Credit-Report-Alone#Customer-connects-importance-of-improving-credit-to-the">Customer connects importance of improving credit to the action driven goal</a>
+                               
                           
+                               
+                               
                            </li>
                        </ul>
+                      
+                      
                   </div>
                   <div class="milestone-block">
-                  <A class="btn pull-right" href="/milestone/CRAs-makes-requested">Start this milestone</A>
+                  <A class="btn pull-right" href="/milestone/CRAs-makes-requested">
+                    Learn about this milestone
+                  </A>
                   <h4> <a href="/milestone/CRAs-makes-requested"> CRAs makes requested changes</a></h4>
                   
                   
-                      <ul class="unstyled">
-                           <li class="Roadblock">Customer Is a Victim of Identity Theft
+                      <ul class="unstyled action-list">
+                           <li class="Roadblock  ">
+
+                           <a href="/milestone/CRAs-makes-requested#Customer-Has-a-Judgment">Customer Has a Judgment</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Roadblock">Customer Has a Judgment
+                           <li class="Roadblock  ">
+
+                           <a href="/milestone/CRAs-makes-requested#Customer-Is-a-Victim-of-Identity-Theft">Customer Is a Victim of Identity Theft</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Action">Customer and Coach Interpret Credit Report and Check for Errors
+                           <li class="Roadblock  ">
+
+                           <a href="/milestone/CRAs-makes-requested#CRAs-Do-Not-Make-Requested-Changes-on-Credit-Report">CRAs Do Not Make Requested Changes on Credit Report</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Roadblock">CRAs Do Not Make Requested Changes on Credit Report
+                           <li class="Action  ">
+
+                           <a href="/milestone/CRAs-makes-requested#Customer-and-Coach-Interpret-Credit-Report-and-Check-fo">Customer and Coach Interpret Credit Report and Check for Errors</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Action">Customer Sends Letters Requesting Cras to Correct Errors on Credit Report
+                           <li class="Action  ">
+
+                           <a href="/milestone/CRAs-makes-requested#Customer-Sends-Letters-Requesting-Cras-to-Correct-Error">Customer Sends Letters Requesting Cras to Correct Errors on Credit Report</a>
+                               
                           
+                               
+                               
                            </li>
                        </ul>
+                      
+                      
                   </div>
                   <div class="milestone-block">
-                  <A class="btn pull-right" href="/milestone/Customer-Executes-a-strategy-to-improve-credit">Start this milestone</A>
+                  <A class="btn pull-right" href="/milestone/Customer-Executes-a-strategy-to-improve-credit">
+                    Learn about this milestone
+                  </A>
                   <h4> <a href="/milestone/Customer-Executes-a-strategy-to-improve-credit"> Customer Executes a strategy to improve credit</a></h4>
                   
                   
-                      <ul class="unstyled">
-                           <li class="Action">Customer Adds a Personal Statement to Credit Report
+                      <ul class="unstyled action-list">
+                           <li class="Action  ">
+
+                           <a href="/milestone/Customer-Executes-a-strategy-to-improve-credit#Customer-Pulls-Credit-Score">Customer Pulls Credit Score</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Action">Customer Builds an Alternative Credit File
+                           <li class="Action  ">
+
+                           <a href="/milestone/Customer-Executes-a-strategy-to-improve-credit#Customer-Develops-a-Strategy-to-Improve-or-Maintain-Cre">Customer Develops a Strategy to Improve or Maintain Credit</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Action">Customer Calls Credit Card Companies to Line up Due Dates
+                           <li class="Action  ">
+
+                           <a href="/milestone/Customer-Executes-a-strategy-to-improve-credit#Customer-Adds-a-Personal-Statement-to-Credit-Report">Customer Adds a Personal Statement to Credit Report</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Action">Customer Obtains a Secured Credit Card or Secured Loan
+                           <li class="Action  ">
+
+                           <a href="/milestone/Customer-Executes-a-strategy-to-improve-credit#Customer-Calls-Credit-Card-Companies-to-Line-up-Due-Dat">Customer Calls Credit Card Companies to Line up Due Dates</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Action">Customer Opens New Line of Credit to Optimize Utilization
+                           <li class="Action  ">
+
+                           <a href="/milestone/Customer-Executes-a-strategy-to-improve-credit#Customer-Opts-out-of-Unsolicited-Credit-Offers">Customer Opts out of Unsolicited Credit Offers</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Action">Customer Opts out of Unsolicited Credit Offers
+                           <li class="Action  ">
+
+                           <a href="/milestone/Customer-Executes-a-strategy-to-improve-credit#Customer-Builds-an-Alternative-Credit-File">Customer Builds an Alternative Credit File</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Action">Customer Pulls Credit Score
+                           <li class="Action  ">
+
+                           <a href="/milestone/Customer-Executes-a-strategy-to-improve-credit#Customer-Opens-New-Line-of-Credit-to-Optimize-Utilizati">Customer Opens New Line of Credit to Optimize Utilization</a>
+                               
                           
+                               
+                               
                            </li>
-                           <li class="Action">Customer Develops a Strategy to Improve or Maintain Credit
+                           <li class="Action  ">
+
+                           <a href="/milestone/Customer-Executes-a-strategy-to-improve-credit#Customer-Obtains-a-Secured-Credit-Card-or-Secured-Loan">Customer Obtains a Secured Credit Card or Secured Loan</a>
+                               
                           
+                               
+                               
                            </li>
                        </ul>
+                      
+                      
                   </div>
-            
-			<ul class="pager">
-				<li class="previous">
-					<a href="#">&larr; Banking</a>
-				</li>
-				<li class="next">
-					<a href="#">Debt &rarr;</a>
-				</li>
-			</ul>
-            
             
           </div>
           <div class="span4">
-        
-             <div class="sidebar-block worksheets">
-                    <h5>Worksheets</h5><h3 class="sidebar-hide"></h3>
-          <ul>
-               <li><a href="/worksheet/How-to-Shop-for-a-Secure-Loan">How to Shop for a Secure Loan</a>
-               
-               </li>
-               <li><a href="/worksheet/Should-My-Customer-Apply-for-a-Secured-Credit-Product?">Should My Customer Apply for a Secured Credit Product?</a>
-               
-               </li>
-               <li><a href="/worksheet/Credit-Report-Inspection">Credit Report Inspection</a>
-               
-               </li>
-          </ul>
+
+            <div class="sidebar-block worksheets">
+              <div class="sidebar-header">
+               <h5>Worksheets</h5> <h3 class="sidebar-hide"></h3>
               </div>
-              <div class="sidebar-block tipsheets">
-                 <h5>Tipsheets</h5><h3 class="sidebar-hide"></h3>
+                <ul>
+                    <li><a href="/worksheet/Credit-Report-Inspection">Credit Report Inspection</a>
+               
+                    </li>
+                    <li><a href="/worksheet/How-to-Shop-for-a-Secure-Loan">How to Shop for a Secure Loan</a>
+               
+                    </li>
+                    <li><a href="/worksheet/Should-My-Customer-Apply-for-a-Secured-Credit-Product?">Should My Customer Apply for a Secured Credit Product?</a>
+               
+                    </li>
+               </ul>
+           </div>
+          <div class="sidebar-block tipsheets">
+           <div class="sidebar-header">
+            <h5>Tipsheets</h5> <h3 class="sidebar-hide"></h3>
+            </div>
           <ul>
-               <li><a href="/tipsheet/5-Ways-To-Protect-Yourself-Against-Identity-Theft" target="_blank">5 Ways To Protect Yourself Against Identity Theft</a>
+               <li><a href="/tipsheet/5-Ways-To-Protect-Yourself-Against-Identity-Theft">5 Ways To Protect Yourself Against Identity Theft</a>
                
                </li>
-               <li><a href="/tipsheet/Dealing-With-Judgments-On-Your-Credit-Report" target="_blank">Dealing With Judgments On Your Credit Report</a>
+               <li><a href="/tipsheet/7-Steps-To-Deal-With-Identity-Theft">7 Steps To Deal With Identity Theft</a>
                
                </li>
-               <li><a href="/tipsheet/The-Secured-Loan:-A-Simple-Solution-To-Building-Better-Credit" target="_blank">The Secured Loan: A Simple Solution To Building Better Credit</a>
+               <li><a href="/tipsheet/7-Steps-to-Take-When-Identity-Theft-Has-Occurred">7 Steps to Take When Identity Theft Has Occurred</a>
                
                </li>
-               <li><a href="/tipsheet/7-Steps-To-Deal-With-Identity-Theft" target="_blank">7 Steps To Deal With Identity Theft</a>
+               <li><a href="/tipsheet/Dealing-With-Judgments-On-Your-Credit-Report">Dealing With Judgments On Your Credit Report</a>
                
                </li>
-               <li><a href="/tipsheet/How-Does-My-Secured-Credit-Card-Work?" target="_blank">How Does My Secured Credit Card Work?</a>
+               <li><a href="/tipsheet/How-Does-My-Secured-Credit-Card-Work">How Does My Secured Credit Card Work?</a>
                
                </li>
-               <li><a href="/tipsheet/Make-Your-Credit-Report-Work-For-You" target="_blank">Make Your Credit Report Work For You</a>
+               <li><a href="/tipsheet/How-to-Write-a-Credit-Report-Dispute-Letter">How to Write a Credit Report Dispute Letter</a>
                
                </li>
-               <li><a href="/tipsheet/What-Should-I-Look-For-In-A-Secured-Credit-Card?" target="_blank">What Should I Look For In A Secured Credit Card?</a>
+               <li><a href="/tipsheet/Make-Your-Credit-Report-Work-For-You">Make Your Credit Report Work For You</a>
                
                </li>
-               <li><a href="/tipsheet/When-it-comes-to-credit-score,-look-to-the-future" target="_blank">When it comes to credit score, look to the future</a>
+               <li><a href="/tipsheet/The-Secured-Loan:-A-Simple-Solution-To-Building-Better-Credit">The Secured Loan: A Simple Solution To Building Better Credit</a>
                
                </li>
-               <li><a href="/tipsheet/How-to-Write-a-Credit-Report-Dispute-Letter" target="_blank">How to Write a Credit Report Dispute Letter</a>
+               <li><a href="/tipsheet/What-Should-I-Look-For-In-A-Secured-Credit-Card">What Should I Look For In A Secured Credit Card?</a>
                
                </li>
-               <li><a href="/tipsheet/7-Steps-to-Take-When-Identity-Theft-Has-Occurred" target="_blank">7 Steps to Take When Identity Theft Has Occurred</a>
+               <li><a href="/tipsheet/When-it-comes-to-credit-score,-look-to-the-future">When it comes to credit score, look to the future</a>
                
                </li>
           </ul>
@@ -342,14 +438,33 @@
   </div>
   <footer>
     <div class="container">
-    	<img src="https://www.visualaids.org/changemachine/images/raysCropped.png" class="footerRays" />
-        <img src="https://www.visualaids.org/changemachine/images/change-machine-footer-logo.png" class="footerLogo" />
-        
-          <ul class="">
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Use</a></li>
+         
+    <img class="footerRays" src="https://www.visualaids.org/changemachine/images/raysCropped.png" /> 
+        <img class="footerLogo" src="https://www.visualaids.org/changemachine/images/change-machine-footer-logo.png" />
+
+          <ul class="nav nav-pills">
+              <li><a href="/_ui/core/portal/PortalUserMyProfilePage/d">My Account</a></li>
+              <li><a href="/secur/logout.jsp">Logout</a></li>
+              <li><a href="/changemachine_PrivacyPolicy">Privacy Policy</a></li>
+             
        	 </ul>
-      </div>
-   </footer>
+     
+
+   
+
+
+       </div>
+
+         
+   </footer><span id="j_id0:j_id1:j_id43">
+
+   
+
+    <div class="feedback">
+      <ul class="nav nav-pills">
+        <li><a href="/500/e?retURL=%2F500%2Fo">Issues/Problems?</a></li>
+        <li><a href="/ideas/ideaList.apexp">Ideas?</a></li>
+      </ul>
+      </div></span>
 </body>
 </html>
