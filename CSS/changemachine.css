@@ -5266,16 +5266,11 @@ h6 {
 .sidebar-block .btn:hover {
   padding: 4px 10px 0px;
 }
-<<<<<<< HEAD
-.home-page {
-  padding-top: 10px;
-=======
-.btn-large:hover {
+.home-page .btn-large:hover {
   padding: 13px 19px 9px 19px;
 }
-.hero-unit {
-  margin-top: 10px;
->>>>>>> 40cc920fa6e962a9f150b86eaf103b453040b1dc
+.home-page .hero-unit {
+  padding-top: 10px;
 }
 /*
 .btn-group {
@@ -5591,19 +5586,6 @@ body .wrapper {
 .milestone-block ul.action-list {
   overflow: hidden;
   /* 		list-style-type: none; */
-
-  /*
-		li.Action a,
-		li.Roadblock a {
-			border-bottom: none;
-		}
-*/
-
-  /*
-		li p a {
-			.metaBold();
-		}
-*/
 
 }
 .milestone-block ul.action-list li,
