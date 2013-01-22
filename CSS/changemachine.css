@@ -5162,6 +5162,9 @@ p a:hover,
 .milestone-block li a:hover {
   color: #8ea2ca;
 }
+.milestone-block ul.action-list a {
+  border-bottom: none;
+}
 a {
   color: #8ea2ca;
 }
