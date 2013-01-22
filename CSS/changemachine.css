@@ -5162,7 +5162,8 @@ p a:hover,
 .milestone-block li a:hover {
   color: #8ea2ca;
 }
-.milestone-block ul.action-list li.Action a {
+.milestone-block ul.action-list li.Action a,
+.milestone-block ul.action-list li.Roadblock a {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
