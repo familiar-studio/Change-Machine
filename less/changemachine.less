@@ -112,7 +112,8 @@ a {
 }
 
 p a, 
-.alert li a {
+.alert li a,
+.milestone-block li a {
 	.proximaB();
 	border-bottom: 2px dotted @lightergray;
 	color: @black;
@@ -528,7 +529,7 @@ body .wrapper {
 		overflow: hidden;
 /* 		list-style-type: none; */
 		li, li a {
-			.proximaR();
+			.proximaB();
 			font-size: 16px;
 			margin: 5px 0;
 			color: @black;
@@ -537,6 +538,11 @@ body .wrapper {
 		li li {
 			.metaBook();
 			color: inherit;
+			line-height: 1.5em;
+		}
+		li.Action a,
+		li.Roadblock a {
+			border-bottom: none;
 		}
 /*
 		li p a {

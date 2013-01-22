@@ -5149,7 +5149,8 @@ a:focus {
   outline: none;
 }
 p a,
-.alert li a {
+.alert li a,
+.milestone-block li a {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -5157,7 +5158,8 @@ p a,
   color: #000000;
 }
 p a:hover,
-.alert li a:hover {
+.alert li a:hover,
+.milestone-block li a:hover {
   color: #8ea2ca;
 }
 a {
@@ -5589,7 +5591,7 @@ body .wrapper {
 .milestone-block ul.action-list li a {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   margin: 5px 0;
   color: #000000;
@@ -5600,6 +5602,11 @@ body .wrapper {
   font-style: normal;
   font-weight: 500;
   color: inherit;
+  line-height: 1.5em;
+}
+.milestone-block ul.action-list li.Action a,
+.milestone-block ul.action-list li.Roadblock a {
+  border-bottom: none;
 }
 .milestone-block ul.action-list h3 {
   font-family: "proxima-nova", sans-serif;
