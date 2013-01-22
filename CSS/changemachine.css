@@ -5163,7 +5163,9 @@ p a:hover,
   color: #8ea2ca;
 }
 .milestone-block ul.action-list a {
-  border-bottom: none;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 a {
   color: #8ea2ca;
