@@ -5162,11 +5162,12 @@ p a:hover,
 .milestone-block li a:hover {
   color: #8ea2ca;
 }
-.milestone-block ul.action-list li.Action a,
-.milestone-block ul.action-list li.Roadblock a {
+.milestone-block ul.action-list li.Action > a,
+.milestone-block ul.action-list li.Roadblock > a {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
+  border-bottom: none;
 }
 a {
   color: #8ea2ca;
@@ -5587,6 +5588,13 @@ body .wrapper {
   /* 		list-style-type: none; */
 
   /*
+		li.Action a,
+		li.Roadblock a {
+			border-bottom: none;
+		}
+*/
+
+  /*
 		li p a {
 			.metaBold();
 		}
@@ -5609,10 +5617,6 @@ body .wrapper {
   font-weight: 500;
   color: inherit;
   line-height: 1.5em;
-}
-.milestone-block ul.action-list li.Action a,
-.milestone-block ul.action-list li.Roadblock a {
-  border-bottom: none;
 }
 .milestone-block ul.action-list h3 {
   font-family: "proxima-nova", sans-serif;
@@ -6161,7 +6165,7 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
   margin-left: 25px;
 }
 .milestone-block .related-block ul li a {
-  border-bottom: 1px dotted #939598;
+  border-bottom: 2px dotted #939598;
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
