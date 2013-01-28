@@ -78,8 +78,10 @@ body { line-height:1; }
 
 
 body {
-	.proximaR();
+	.metaBook();
 	background-color: @blue;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
 a, li, .btn, h1, h2, h3, h4, h5, h6 {
@@ -96,7 +98,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 p {
 	.metaBook();
-	font-size: 1.1em;
+	font-size: 1em;
 	line-height: 1.5em;
 }
 
@@ -138,28 +140,20 @@ a {
 
 h1 {
 	.proximaB();
-	font-size: 47px;
+	font-size: 3em;
 	color: @pink;
 	text-transform: capitalize;
 	margin: 0;
 }
 
 h2 {
+	
+	font-size: 1.4em;
+	color: black;
 	.metaBold();
-	color: @lightgreen;
-	display: block;
-	font-size: 14px;
-	text-transform: uppercase;
-	padding-top: 2px;
-	small {
-		.metaBold();
-		font-size: 17px;
-		display: block;
-		clear: both;
-		color: @green;
-		margin-top: 1px;
-	}
+	text-transform: none;
 }
+
 
 h3 {
 	.proximaB();
@@ -184,9 +178,27 @@ h5 {
 	font-size: 20px;
 	margin: 3px 0;
 }
-.milestone-block h5 {
-	color: @blue;
+
+h6 {
+	.metaBold();
+	color: @lightgreen;
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding-top: 2px;
+	small {
+		.metaBold();
+		font-size: 17px;
+		display: block;
+		clear: both;
+		color: @green;
+		margin-top: 1px;
+	}
 }
+
+
+
+
 
 h6 {
 	.metaBold();
@@ -222,7 +234,12 @@ h6 {
 	}
 	
 	.hero-unit {	
-		padding-top: 10px;
+		margin-top: 10px;
+		padding: 30px;
+		h1 {
+			
+			font-size: 45px;
+		}
 	}
 }
 
@@ -341,10 +358,10 @@ header {
 		    float: none;
 		    text-decoration: none;
 		    text-shadow: none;
-		    padding: 11px 12px 9px;
+		    padding: 11px 12px 11px;
 		    &:hover {
 				color: @green;
-				background-color: @lighterblue;
+				// background-color: @lighterblue;
 			}
 			&:focus {
 				background-color: @green;
@@ -473,16 +490,20 @@ body .wrapper {
 	}
 }
 
-.page-header h1 {
-	display: inline-block;
-	margin-bottom: 10px;
+.page-header {
+	
+	h1 {
+		display: inline-block;
+		margin-bottom: 10px;
+		margin-left: 10px;
+	}
+	
+	h6 {
 	margin-left: 10px;
-}
-
-.page-header h2 {
-	margin-left: 10px;
 	display: inline-block;
-}
+	}
+		
+} 
 
 .overviewTab, #questions, #paths {
 	background-color: @lighterblue;
@@ -509,8 +530,7 @@ body .wrapper {
 	}
 	.overviewText, .accordion-inner {
 		clear:both;
-		.metaBook();
-		font-size: 1.2em;
+		
 		background-color: @lightestblue;
 		margin: -10px -15px 0 -13px;
 		padding: 13px 15px 12px;
@@ -529,15 +549,37 @@ body .wrapper {
 
 
 .milestone-block {
-	margin: 20px 0;
+	
 	padding: 0 0 15px;
 	border-bottom: 5px solid black;
 	.mainColumn {
 		padding-right: 20px;
 	}
+	
+	h2 { 
+		
+		margin: 20px 0px;
+		padding: 0px 25px 10px 25px;
+		color: black;
+	
+		
+		a {
+			color: black;
+			
+		
+		}
+		border-bottom: 2px dotted @lightergray;
+	}
+	
+	h5 {
+		color: @blue;
+	}
+	
+	
 	ul.action-list {
 		overflow: hidden;
 /* 		list-style-type: none; */
+		clear: both;
 		li, li a {
 			.proximaB();
 			font-size: 16px;
@@ -559,6 +601,7 @@ body .wrapper {
 			margin: 0;
 			padding-left: 0px;
 			color: @black;
+			width: 96%;
 			display: inline-block;
 			
 		}
@@ -583,7 +626,8 @@ body .wrapper {
 		margin-top: 5px;
 	}
 	h4 {
-		min-height: 45px;
+		 
+		font-size: 1em;
 		width: 95.9%; /* 587px */
 		overflow: inherit;
 	}
@@ -795,20 +839,16 @@ body .wrapper {
 	text-shadow: none;
 	box-shadow: 2px 2px 0 #eee3be inset;
 	.metaBook();
-	font-size: 20px;
+	
 	p, ul, ol {
 		background-color: @lighteryellow;
 		clear: both;
-	    font-family: "ff-meta-serif-web-pro",serif;
-	    font-size: 16px;
-	    font-style: normal;
-	    font-weight: 500;
 	    color: @darkyellow;
-	    line-height: 1.4em;
+	   
 	}
 	p {
 		margin: -9px -36px -9px -12px;
-		padding: 10px 15px 12px;
+		padding: 3px 14px 12px;
 	}
 	ul, ol { 
 	    margin: -9px -36px -22px -12px;
@@ -1050,14 +1090,13 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 		margin-bottom: 20px;
 	}
 	p {
-		line-height: 1.5em;
-		font-size: 16px;
+	
 	}
 	p b, h4 {
 		.metaBold();
 		margin-top: 20px;
 	
-		font-size: 16px;
+		
 		border: none;
 		padding: 0;
 		color: @gray;
@@ -1218,6 +1257,7 @@ a.showDetails {
 					padding-right: 10px;
 					margin-right: 10px;
 					border-right: 1px solid @lightergray;
+					text-align: right;
 					&:first-child {
 						padding-right: 0;
 						margin-right: 0;
@@ -1231,6 +1271,7 @@ a.showDetails {
 					padding-left: 0;
 					margin-top: 0;
 					margin-bottom: 5px;
+					display: block;
 				}
 				span {
 					font-size: 20px;
