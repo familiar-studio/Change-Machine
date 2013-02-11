@@ -5177,6 +5177,9 @@ a {
 a:hover {
   color: #c7d1e4;
 }
+ul li {
+  margin-bottom: 10px;
+}
 h1 {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -5463,6 +5466,7 @@ form#sbsearch .btn:hover {
 }
 .cls-menu li {
   line-height: 14px;
+  margin: 0px;
 }
 .cls-menu li.active {
   background-color: #c7d1e4;
