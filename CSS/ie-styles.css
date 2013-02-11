@@ -86,3 +86,15 @@
 		sizingMethod='scale')";
 }
 */
+
+.topWrapper {
+	width: 968px;
+}
+
+.topWrapper .btn-group {
+	margin-right: 5px;
+}
+
+.customer-heading-bottom .btn {
+	margin: 11px 9px 0;
+}

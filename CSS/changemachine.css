@@ -2642,7 +2642,7 @@ button.close {
   color: #ffffff;
   text-decoration: none;
   background-position: 0 -15px;
-  box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 3px 3px 0px #c7c8ca;
   padding: 13px 10px 7px;
   -webkit-transition: background-position 0.1s linear;
   -moz-transition: background-position 0.1s linear;
@@ -2658,7 +2658,7 @@ button.close {
 .btn:active {
   background-image: none;
   outline: 0;
-  box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 3px 3px 0px #c7c8ca;
   color: #ffffff;
 }
 .btn.disabled,
@@ -5156,7 +5156,7 @@ p a,
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 700;
-  border-bottom: 2px dotted rgba(0, 0, 0, 0.25);
+  border-bottom: 2px dotted #c7c8ca;
   color: #000000;
 }
 p a:hover,
@@ -5438,7 +5438,7 @@ form#sbsearch button {
   font-size: 12px;
 }
 form#sbsearch button:hover {
-  box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 3px 3px 0px #c7c8ca;
 }
 form#sbsearch .btn {
   padding: 5px 10px;
@@ -5456,7 +5456,7 @@ form#sbsearch .btn:hover {
   border-radius: 3px;
   margin: 10px 10px 10px 0;
   list-style-type: none;
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 1px 1px 1px #c7c8ca;
 }
 .cls-menu a {
   color: #ffffff;
@@ -5473,7 +5473,7 @@ form#sbsearch .btn:hover {
   padding: 0;
   margin: 1px 0;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 1px #c7c8ca;
 }
 .cls-menu li.active a {
   color: #73a534;
@@ -5596,7 +5596,7 @@ body .wrapper {
   margin: 20px 0px;
   padding: 0px 25px 10px 25px;
   color: black;
-  border-bottom: 2px dotted rgba(0, 0, 0, 0.25);
+  border-bottom: 2px dotted #c7c8ca;
 }
 .milestone-block h2 a {
   color: black;
@@ -5654,7 +5654,7 @@ body .wrapper {
 }
 .milestone-block h4,
 .milestone-block li {
-  border-bottom: 2px dotted rgba(0, 0, 0, 0.25);
+  border-bottom: 2px dotted #c7c8ca;
   padding-bottom: 5px;
   padding-left: 25px;
   overflow: hidden;
@@ -5708,7 +5708,7 @@ body .wrapper {
   list-style-type: none;
 }
 .milestone-block .worksheets ul li a {
-  border-bottom: 2px dotted rgba(0, 0, 0, 0.25);
+  border-bottom: 2px dotted #c7c8ca;
   display: inline-block;
 }
 /* ----- Sidebar ----- */
@@ -5792,7 +5792,7 @@ body .wrapper {
   font-weight: 700;
   color: #000000;
   font-size: 16px;
-  border-bottom: 2px dotted rgba(0, 0, 0, 0.25);
+  border-bottom: 2px dotted #c7c8ca;
   line-height: 30px;
 }
 .otherMilestones li a:hover {
@@ -6086,7 +6086,7 @@ body div.container div.wrapper div.row div.span8 ul.unstyled li span span form d
 }
 body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:hover,
 body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a.active {
-  box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 3px 3px 0px #c7c8ca;
   padding: 7px 10px 3px;
 }
 body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a.active {
@@ -6129,6 +6129,7 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
   font-weight: 500;
   padding: 10px 0 0;
   color: #4f5152;
+  line-height: 1.5em;
 }
 .actionDetails ol,
 .actionDetails ul {
@@ -6199,7 +6200,7 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
   padding-left: 17px;
   margin-left: 5px;
   text-transform: capitalize;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.25);
+  border-bottom: 1px dotted #c7c8ca;
 }
 .milestone-block a.worksheets.worksheets,
 .milestone-block a.tipsheets.worksheets {
@@ -6260,7 +6261,7 @@ a.showDetails {
 }
 .customer .page-header .customer-heading-top {
   margin: 5px 10px 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #c7c8ca;
 }
 .customer .page-header .customer-heading-left {
   display: inline-block;
@@ -6285,7 +6286,7 @@ a.showDetails {
   float: right;
   padding-right: 10px;
   margin-right: 10px;
-  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  border-right: 1px solid #c7c8ca;
   text-align: right;
 }
 .customer .page-header .customer-heading-right .customer-totals li:first-child {
@@ -6448,7 +6449,7 @@ a.showDetails {
 }
 .customer table tbody a {
   color: #000000;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.25);
+  border-bottom: 1px dotted #c7c8ca;
 }
 .customer table tbody a:hover {
   color: #8ea2ca;
@@ -6560,7 +6561,7 @@ a.showDetails {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.25);
+  color: #c7c8ca;
   font-size: 11px;
   text-transform: uppercase;
   width: 250px;
@@ -6621,7 +6622,7 @@ a.showDetails {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.25);
+  color: #c7c8ca;
   font-size: 11px;
   text-transform: uppercase;
 }
@@ -6690,7 +6691,7 @@ ul.pager .previous a:before {
   font-size: 12px;
   margin: 30px 0 20px;
   padding-top: 15px;
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-top: 1px solid #c7c8ca;
 }
 .searchPage .search-actions h4 {
   margin: 10px 0 15px;
@@ -6975,7 +6976,7 @@ img.skiplink {
 }
 .bPageBlock .pbBody .pbSubheader {
   background-color: #ffffff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #c7c8ca;
 }
 .bPageBlock .pbBody .pbSubheader h3,
 .bPageBlock .pbBody .pbSubheader h3 a {
