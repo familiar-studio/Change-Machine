@@ -4,12 +4,15 @@
 
 /* ----- Spans ----- */
 
+/*
 .row {
 	margin-left: 0;
 }
  
+*/
 
 
+/*
 .row8-4 {
 	.span4 {
 		width: 299px;
@@ -27,6 +30,7 @@
 		margin-right: 10px;
 	}
 }
+*/
 
 /* ----- End Spans ----- */
 
@@ -83,6 +87,8 @@ body {
 	font-size: 1em;
 	line-height: 1.5em;
 }
+
+
 
 a, li, .btn, h1, h2, h3, h4, h5, h6 {
 	-webkit-transition: all 0.15s ease;
@@ -160,15 +166,15 @@ h2 {
 
 
 h3 {
-	.proximaB();
-	font-size: 20px;
-	color: @blue;
-	margin: 0 0 5px;
+	.proximaL();
+	font-size: 1.5em;
+	color: black;
+	margin: 0 0 10px;
 }
 
 h4, h4 a {
 	.metaBold();
-	font-size: 22px;
+	font-size: 1em;
 	color: @black;
 	margin: 5px 0;
 	&:hover {
@@ -177,38 +183,20 @@ h4, h4 a {
 }
 
 h5 {
-	color: @green;
+
 	.metaBold();
-	font-size: 20px;
+	font-size: 0.8em;
 	margin: 3px 0;
 }
 
-h6 {
-	.metaBold();
-	color: @lightgreen;
-	display: block;
-	font-size: 14px;
-	text-transform: uppercase;
-	padding-top: 2px;
-	small {
-		.metaBold();
-		font-size: 17px;
-		display: block;
-		clear: both;
-		color: @green;
-		margin-top: 1px;
-	}
-}
 
 
 
 
 
 h6 {
-	.metaBold();
-	color: @lightgray;
-	font-size: 16px;
-	padding-left: 15px;
+
+	font-size: 0.7em;
 }
 
 .btn {
@@ -225,11 +213,120 @@ h6 {
 .sidebar-block .btn {
 	margin-bottom: 5px;
 	color: @white;
-	&:hover {
-		padding: 4px 10px 0px;
+	
+}
+
+#action-header {
+	
+	border-bottom: 5px solid black;
+	
+	padding-bottom: 0px;
+	
+	h2 {
+		
+		margin: 20px 0px 0px 0px;
 	}
 }
 
+#action-title{
+	
+	
+	
+	padding-top: 10px;
+	margin-bottom: 10px;
+	
+	
+
+		
+		border-bottom: 1px dotted @grayLighter;
+	
+}
+
+
+
+#action-nav  {
+	
+	ul {
+		
+		margin-bottom: 0px;
+		
+		background-color: @lighterblue;
+	
+		.border-radius(4px 0px 0px 4px);
+		
+		margin: 0px 0px 0px 10px;
+			
+		padding: 6px 0px;
+		border-right: 1px solid @blue;
+	}
+	
+	
+	
+	
+	
+
+	
+	li > a {
+		.proximaL();
+		
+		.border-radius(0px);
+		color: @black;
+		
+		border:0px;
+		border-bottom: 1px solid @white;
+		
+	
+		
+		&:hover {
+			background-color: darken(@blue, 15%);
+			color: @white;
+		}
+		
+		
+		
+	
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	li.active {
+		
+		
+		 a {
+			background-color: @white;
+			padding: 10px;
+			border:1px solid @blue;
+			border-right: none;
+			border-right: 1px solid white;
+			.border-radius(6px 0px 0px 6px);
+			
+			margin-left: -10px;
+			margin-right: -1px;
+			color: @black;
+		
+		}
+	}
+	
+	li.Roadblock a {
+		color: @red;
+			background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
+			background-repeat: no-repeat;
+		    background-size: 16px auto;
+		    background-position: 6px 10px;
+		    
+		     padding-left: 26px;
+	}
+	
+	
+	
+}
 
 .home-page {
 
@@ -269,16 +366,16 @@ h6 {
 }
 */
 
-.roadblock {
-	color: @red;
-}
+
 
 
 /* ----- Header ----- */
 
+/*
 body > .container {
 	width: @gridRowWidth + 10px;	
 }
+*/
 
 header {
 	background-color: @lightblue;
@@ -304,6 +401,8 @@ header {
  	width: @gridRowWidth + 20px;
 	margin: -30px auto 0;
 	padding: 0;
+	margin-left: -15px;
+
 }
 
 .midWrapper .container {
@@ -347,7 +446,7 @@ header {
 	display: block;
     float: left;
     left: 0;
-    margin: 0 10px 0 110px;
+    margin: 0 10px 0 100px;
     position: absolute;
     z-index: 20;
 	> li {
@@ -394,7 +493,7 @@ form#sbsearch {
 		height: 22px;
 		border-radius: 5px 0 0 5px;
 		margin-right: -5px;
-		box-shadow: inset 3px 3px 2px @lightblue;
+		box-shadow: inset 2px 2px 0px @grayLightest;
 		border: none;
 	}
 	button {
@@ -406,52 +505,82 @@ form#sbsearch {
 		box-shadow: 2px 2px 2px @lightblue;
 		font-size: 12px;
 		&:hover {
-			box-shadow: inset 3px 3px 0px @lightergray;
+			background-color: darken(@blue, 15%);
 		}
 	}
 	.btn {
 		padding: 5px 10px;
 		&:hover {
-			padding: 8px 10px 2px;
 		}
 	}
 }
 
-.cls-menu {
+#cls-menu {
 	background-color: @blue;
 	.proximaB();
 	padding: 3px;
 	text-align: center;
-	border-radius: 3px;
-	margin: 10px 10px 10px 0;
+	border-radius: 5px;
+	margin:10px;
+	float: left;
 	list-style-type: none;
-	box-shadow: inset 1px 1px 1px @lightergray;
+	.box-shadow(inset 1px 1px 1px @lightergray);
+	width: 50px;
+	height: 42px;
 	a {
 		color: @white;
-		font-size: 11px;
+		font-size: 12px;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 	}
 	li {
-		line-height: 14px;
+		line-height: 0.8em;
 		margin: 0px;
+		border-radius: 5px;
 	}
 	li.active {
 		background-color: @lightblue;
 		padding: 0;
 		margin: 1px 0;
-		border-radius: 3px;
-		box-shadow: 1px 1px 1px @lightergray;
+		
+		.box-shadow (1px 1px 1px @lightergray);
 		a {
 			color: @green;
-			line-height: 1.4em;
+			line-height: 1em;
 		}
+	}
+	
+	li:hover {
+		background-color: darken(@lightblue, 2%);
 	}
 }
 
 /* ----- End Header ----- */
 
 /* ----- Main Content ----- */
+
+body {
+	
+	margin-top: 10px;
+}
+
+header {
+	
+	z-index: 10;
+}
+
+#full-page {
+	
+	.box-shadow(0 0 6px rgba(0,0,0,0.3));
+	width: @gridRowWidth + 30px;
+	margin: 0 auto;
+}
+
+iframe.video {
+	border:5px solid @lighterblue;
+	.box-shadow(0 0 6px rgba(0,0,0,0.3));
+	margin-bottom: 20px;
+}
 
 body .wrapper {
 	background-color: @white;
@@ -460,65 +589,95 @@ body .wrapper {
 	border-left: 5px solid @lighterblue;
  	width: @gridRowWidth + 20px;
 	margin: 0 auto;
-	padding: 0 0 20px;
+	padding: 0 0 30px;
+	
+	z-index: 1;
 }
 
-.page-header {
-	background-color: @white;
-	border: none;
-	margin: 0;
-	padding: 10px 0 0;
-	.btn {
-		float: right;
-		margin-left: 10px;
-	}
-}
+
 
 .container .page-header div.row div.span8 {
 	padding-top: 0 !important;
 }
 
-.container .page-header div.row div.span8 h2 {
-	.metaBold();
-	color: @lightgreen;
-	display: block;
-	font-size: 14px;
-	text-transform: uppercase;
-	padding-top: 2px;
-	small {
-		.metaBold();
-		font-size: 17px;
-		display: block;
-		clear: both;
-		color: @green;
-		margin-top: 1px;
-	}
-}
+
 
 .page-header {
+
+
+	background-color: @white;
+	border: none;
+	margin: 10px 0px 0px 0px;
+	
+/*
+	.btn {
+		
+		margin-left: 5px;
+		background-color: white;
+		border: 1px solid @grayLighter;
+		padding: 6px;
+		.caret {
+			margin-top: 2px;
+			
+		}
+	}
+*/
 	
 	h1 {
 		display: inline-block;
-		margin-bottom: 10px;
-		margin-left: 10px;
+		a {
+			
+			color: inherit;
+		}
+		
+		
 	}
 	
-	h6 {
-	margin-left: 10px;
-	display: inline-block;
+	
+	#outcome {
+		color: @lightgreen;
+		display: inline-block;
+		.metaBook();
+		font-size: 0.8em;
+		margin-left: 15px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
+		h6 {
+			color: @green;
+			.metaBold();
+		font-size: 1.3em;
+		margin-top: -5px;
+	
+		display: block;
+		clear: both;
+		color: @green;
+		
+
+		}
 	}
 		
 } 
 
+
 .overviewTab, #questions, #paths {
 	background-color: @lighterblue;
 	border-radius: 5px 5px 0 0;
+	box-shadow: inset 2px 2px 0px @lightblue;
+	
+}
+
+.overviewTab {
+	
     overflow: hidden;
     padding: 5px 15px 0;
-    box-shadow: inset 2px 2px 0px @lightblue;
+   
     border-bottom: 5px solid @black;
 	h3 {
 		padding: 0;
+		color: @blue;
+		.proximaB();
+		font-size: 1.3em;
 	}
 	h3:first-child {
 		display: inline-block;
@@ -552,10 +711,15 @@ body .wrapper {
 	background: url("https://www.visualaids.org/changemachine/images/open_close.png") -30px 0px;
 }
 
+#section-page {
+	
+	
+}
+
 
 .milestone-block {
 	
-	padding: 0 0 15px;
+	padding: 0 0 10px;
 	border-bottom: 5px solid black;
 	.mainColumn {
 		padding-right: 20px;
@@ -563,8 +727,8 @@ body .wrapper {
 	
 	h2 { 
 		
-		margin: 20px 0px;
-		padding: 0px 25px 10px 25px;
+		margin: 17px 0px 0px;
+		padding: 0px 25px 5px 25px;
 		color: black;
 	
 		
@@ -573,7 +737,7 @@ body .wrapper {
 			
 		
 		}
-		border-bottom: 2px dotted @lightergray;
+		border-bottom: 1px dotted @lightergray;
 	}
 	
 	h5 {
@@ -584,13 +748,26 @@ body .wrapper {
 		overflow: hidden;
 /* 		list-style-type: none; */
 		clear: both;
+		margin-bottom: 0px;
 		li, li a {
-			.proximaB();
+			.proximaL();
 			font-size: 16px;
 			margin: 5px 0;
 			color: @black;
 			overflow: inherit;
 		}
+		
+		li.Roadblock {
+			color: @red;
+			background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
+			background-repeat: no-repeat;
+		    background-size: 16px auto;
+		    background-position: 2px 2px;
+		    a {
+			    color: @red;
+			
+		    }
+	    }
 
 		li li {
 			.metaBook();
@@ -613,6 +790,12 @@ body .wrapper {
 			color: @blue;
 			cursor: pointer;
 		}
+		
+		li:last-child {
+			border-bottom: none;
+			margin-bottom: 0px;
+			padding-bottom: 0px;
+		}
 		ol, ul {
 			list-style-type: disc;
 			li {
@@ -622,7 +805,7 @@ body .wrapper {
 		}
 	}
 	h4, li {
-		border-bottom: 2px dotted @lightergray;
+		border-bottom: 1px dotted @lightergray;
 		padding-bottom: 5px; 
 		padding-left: 25px;
 		overflow: hidden;
@@ -640,9 +823,7 @@ body .wrapper {
 		overflow: hidden;
 		margin-left: 20px;
 	}
-	&:last-child {				/* temporary? for adding space below for styling footer */
-		margin-bottom: 50px;
-	}
+	
 	h5 {
 		padding-left: 25px;
 	}
@@ -652,17 +833,7 @@ body .wrapper {
 	border-bottom: none;
 }
 
-.milestone-block .Roadblock {
-	color: @red;
-	background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
-	background-repeat: no-repeat;
-    background-size: 16px auto;
-    background-position: 2px 2px;
-    a h3 {
-	    color: @red;
-	    .proximaR();
-    }
-}
+
 
 .milestone-block .Roadblock img {
 	width: 10px;
@@ -690,6 +861,12 @@ body .wrapper {
     margin-bottom: 20px;
     box-shadow: inset 2px 2px 0px @greenshadow;
     h5 {
+    
+		color: @green;
+		.metaBold();
+		font-size:1.2em;
+
+
 	    padding-left: 25px;
 	    display: inline-block;
     }
@@ -699,9 +876,9 @@ body .wrapper {
 		margin: 0 -15px -10px -13px;
 		padding: 1px 15px 12px;
 		li {
-			.proximaR();
+			.proximaL();
 			font-size: 16px;
-			margin: 15px 0;
+			margin: 10px 0;
 			a {
 				color: @black;
 				&:hover {
@@ -777,50 +954,37 @@ body .wrapper {
 	border-bottom-color: @white;
 }
 
-.milestone-sidebar {
-	#questions, #paths {
-	    overflow: hidden;
-	    padding: 5px 0 0 2px;
-	    margin-bottom: 20px;
-	    .accordion-inner {
-		    padding: 20px 30px;
-		    line-height: 1.5em;
-	    }
-	    .accordion-inner p {
-		    line-height: 1.5em;
-	    }
-	}
-}
 
-#questions, #paths {
+.accordion {
+    overflow: hidden;
+    padding: 5px 0 0 2px;
+    margin-bottom: 20px;
+    .accordion-inner {
+	    //padding: 20px 30px;
+	    line-height: 1.5em;
+	    	background-color: @lightestblue;
+    }
+    
 	.accordion-heading a.accordion-toggle {
 		.metaBold();
-		font-size: 16px;
+		font-size: 1em;
 		color: @blue;
-		width: 100%;
-		display: inline-block;
-		padding: 0;
+	
 	}
-}
+	
+	.accordion-group {
+		.border-radius(0px);
+		border:none;
+		border-bottom: 1px solid @lightblue;
+		margin: 0px;
+	}
 
-#questions, #paths {
+
+
 	.accordion-heading {
-		padding: 0 15px;
-		h5 {
-			width: 90%;
-			padding-left: 0;
-			font-size: 16px;
-			display: inline-block;
-		}
-		h3 {
-			float: right;
-			position: relative;
-			width: 18px;
-			height: 18px;
-			margin: 3px 0 5px;
-			display: inline-block;
-		}
-	}
+		//padding: 0 15px;
+		
+	}	
 }
 
 .accordion-hide {
@@ -832,28 +996,42 @@ body .wrapper {
 	background-size: 78px 45px;
 }
 
+/*
 .accordion-group:nth-child(n+2) {
 	border-top: 2px solid @lightblue;
 	border-radius: 0 0 0 0;
 	padding-top: 5px;
 }
+*/
 
 .alert {
-	background-color: @lightyellow;
+
 	text-shadow: none;
-	box-shadow: 2px 2px 0 #eee3be inset;
-	.metaBook();
 	
-	p, ul, ol {
-		background-color: @lighteryellow;
-		clear: both;
-	    color: @darkyellow;
-	   
+	.metaBook();
+	margin-bottom: 5px;
+	
+	
+	.header {
+		
+		
 	}
-	p {
-		margin: -9px -36px -9px -12px;
-		padding: 3px 14px 12px;
+	
+	.body {
+		
+		margin: -10px -15px 0 -13px;
+		padding: 13px 15px 12px;
+		
+		
 	}
+	
+	h5 {
+		
+		.proximaR();
+	}
+
+	
+	
 	ul, ol { 
 	    margin: -9px -36px -22px -12px;
 	    padding: 10px 25px 15px;
@@ -866,25 +1044,61 @@ body .wrapper {
 		    line-height: 1.4em;
 	    }
 	}
-	strong, b {
-		color: @yellow !important;
-		display: block;
-		margin-bottom: 15px;
-	}
-	a, li a {
-		color: @darkyellow;
-		.proximaB();
-		&:hover {
-			color: @blue;
+	
+	
+}
+
+
+
+.thumbnails {
+		
+		li {
+			margin-bottom: 20px;
+		}
+		.thumbnail {
+			border: none;
+			border-top: 2px solid @lightblue;
+			border-left: 2px solid @lightblue;
+			background-color: @lighterblue;
+			padding: 10px;
+		}
+		h3 {
+			color: @black;
+			.proximaB();
+			font-size: 1.3em;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+		}
+		
+		h5 {
+			
+			font-size: 1em;
+		}
+		
+		h6 {
+			text-align: right;
+			.proximaR();
+		
+			margin: 0;
+		}
+		.progress {
+			height: 8px;
+			border-radius: 2px;
+			.bar {
+				height: 10px;
+				border-radius: 3px;
+				margin-top: -1px;
+			}
+		}
+		.btn {
+			padding: 3px 12px;
+			
 		}
 	}
-}
 
 /* ----- End Sidebar ----- */
 
-.thumbnails {
-	margin-left: 0; 
-}
+
 
 /* Coach View */
 
@@ -1089,7 +1303,7 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 .actionDetails {
 	.metaBook();
 	padding: 10px 0 0;
-	color: @gray;
+	
 	line-height: 1.5em;
 	ol, ul {
 		margin-bottom: 20px;
@@ -1107,6 +1321,17 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 		color: @gray;
 		min-height: 0;
 	}
+	
+	img {
+		
+		clear: both;
+		
+		border: 1px solid @blue;
+		.box-shadow(0 0 6px rgba(0,0,0,0.3));
+		
+		
+	}
+	
 }
 
 .milestone-block .related-block {
@@ -1157,20 +1382,18 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 	background-size: 78px 45px;
 }
 
-
-.milestone-block a.worksheets,
-.milestone-block a.tipsheets {
-	background-repeat: no-repeat;
-    background-size: 13px auto;
-    padding-left: 17px;
-    margin-left: 5px;
-    text-transform: capitalize;
-    border-bottom: 1px dotted @lightergray;
-    &.worksheets {
+a {
+    &.worksheet {
 		background-image: url("https://www.visualaids.org/changemachine/images/related-worksheets.png");
+		background-repeat: no-repeat;
+		background-size: 18px 20px;
+		padding-left: 22px;
 	}
-	&.tipsheets {
+	&.tipsheet {
 		background-image: url("https://www.visualaids.org/changemachine/images/related-tipsheets.png");
+		background-repeat: no-repeat;
+		background-size: 18px 20px;
+		padding-left: 22px;
 	}
 }
 
@@ -1227,6 +1450,8 @@ a.showDetails {
     margin-top: -2px;
     box-shadow: none;
 }
+
+
 
 /* ----- End Main Content ----- */
 
@@ -1296,88 +1521,14 @@ a.showDetails {
 			.btn {
 				padding: 7px 16px;
 				margin: 11px 10px 0;
-				&:hover {
-					padding: 9px 16px 5px;
-				}
+				
 			}
 		}
 	}
 	.nav-tabs {
 		border: none;
 	}
-	.customer-tabs {
-		padding: 0 -10px;
-		margin: 0 0 15px;
-		background-color: @lightestgray;
-		li {
-			color: @blue;
-			border: 1px solid transparent;
-			border-radius: 8px 8px 0 0;
-			margin: 0 10px;
-			font-size: 18px;
-			&.active {
-				border-top: 2px solid @lightestgray;
-				border-left: 2px solid @lightestgray;
-				border-right: 2px solid @lightestgray;
-				background-color: @white;
-			    height: 40px;
-			    margin-top: -3px;
-			    a {
-				    color: @green;
-				    padding-top: 10px;
-			    }
-			}
-			a {
-				color: @black;
-				border: 1px solid transparent;
-				&:hover {
-					border: 1px solid transparent;
-					color: @green;
-				}
-			}
-		}
-	}
-	.thumbnails {
-		margin-left: 0;
-		li {
-			margin-bottom: 20px;
-		}
-		.thumbnail {
-			border: none;
-			border-top: 2px solid @lightblue;
-			border-left: 2px solid @lightblue;
-			background-color: @lighterblue;
-			padding: 10px;
-		}
-		h3 {
-			color: @black;
-			.proximaB();
-			font-size: 25px;
-			margin-bottom: 5px;
-			text-transform: uppercase;
-		}
-		h6 {
-			text-align: right;
-			.proximaR();
-			font-size: 10px;
-			margin: 0;
-		}
-		.progress {
-			height: 8px;
-			border-radius: 2px;
-			.bar {
-				height: 10px;
-				border-radius: 3px;
-				margin-top: -1px;
-			}
-		}
-		.btn {
-			padding: 3px 12px;
-			&:hover {
-				padding: 5px 12px 1px;
-			}
-		}
-	}
+	
 	h2 {
 		color: @lightgray;
 		text-transform: capitalize;
@@ -1387,9 +1538,7 @@ a.showDetails {
 		margin-bottom: 40px;
 		.btn {
 			padding: 3px 12px;
-			&:hover {
-				padding: 5px 12px 1px;
-			}
+			
 		}
 	}
 	.goals-block,
@@ -1456,12 +1605,44 @@ a.showDetails {
 			margin: 10px;
 			background-color: @green;
 			background-image: none;
-			&:hover {
-				padding: 5px 12px 1px;
-			}
+			
 		}
 	}
 }
+
+	.customer-tabs {
+		padding: 0 -10px;
+		margin: 0 0 15px;
+		background-color: @lightestgray;
+		li {
+			color: @blue;
+			border: 1px solid transparent;
+			border-radius: 8px 8px 0 0;
+			margin: 0 10px;
+			font-size: 18px;
+			&.active {
+				border-top: 2px solid @lightestgray;
+				border-left: 2px solid @lightestgray;
+				border-right: 2px solid @lightestgray;
+				background-color: @white;
+			    height: 40px;
+			    margin-top: -3px;
+			    a {
+				    color: @green;
+				    padding-top: 10px;
+			    }
+			}
+			a {
+				color: @black;
+				border: 1px solid transparent;
+				&:hover {
+					border: 1px solid transparent;
+					color: @green;
+				}
+			}
+		}
+	}
+
 
 .customer {			/*   Personal Info   */
 	.span12 .btn {
@@ -1626,10 +1807,12 @@ ul.pager {
 		padding: 0;
 		text-transform: uppercase;
 		font-size: 20px;
-		&:hover {
-			background-color: none;
-			color: @black;
-		}
+		
+	}
+	
+	.next {
+		
+		text-align: right;
 	}
 	.next a:after {
 		content: url("https://www.visualaids.org/changemachine/images/arrow-next.png");
@@ -1645,8 +1828,58 @@ ul.pager {
 
 /* ----- Search ----- */
 
+
+ul.search-results li {
+		
+		margin-bottom: 25px;
+		
+		h6 {
+			
+			margin-bottom: 3px;
+		}
+		
+		h4 a {
+			
+			.proximaB();
+			color: black;
+			border-bottom: 1px dotted @gray;
+			
+			font-size: 1.15em;
+			
+			&:hover {
+			color: @blue;
+			
+			}
+		}
+		
+		&.Roadblock h4 {
+		
+			background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
+			background-repeat: no-repeat;
+		    background-size: 16px auto;
+		    background-position: 2px 2px;
+		    
+		    padding-left: 25px;
+			
+			a {
+			
+			
+
+			    color: @red;
+			
+		    }
+		    
+		    
+
+		}
+	}
+
 .searchPage {
 	padding: 20px 0 50px;
+	
+	
+	
+	
 	h3 {
 		.metaBold();
 		color: @black;
@@ -1661,7 +1894,7 @@ ul.pager {
 			margin: 10px 0 15px;
 			a {
 				.proximaR();
-				font-size: 16px;
+				font-size: 1.15em;
 				margin: 5px 0;
 			}
 		}
@@ -1718,9 +1951,7 @@ body .worksheet-page .page-header {
 		font-size: 12px;
 		padding: 2px 10px;
 		margin-top: 13px;
-		&:hover {
-			padding: 4px 10px 0px;
-		}
+		
 	}
 }
 
@@ -1737,7 +1968,7 @@ footer .container {
 }
 
 .footerLogo {
-	margin: -185px 10px 0;
+	margin: -165px 10px 0;
 	height: 110px;
 	width: auto;
 	vertical-align: top;
@@ -1779,24 +2010,22 @@ footer ul {
 
 
 .feedback {
-	
+	.box-shadow(0 0 6px rgba(0,0,0,0.3));
 	position: fixed;
 	bottom: 0px;
 	right: 100px;
-	background-color: white;
+	background-color: @lightblue;
 	
 	border-left: 5px solid @lightblue;
 	border-right: 5px solid @lightblue;
 	border-top: 5px solid @lightblue;
-	
-	ul {
+	padding: 3px 10px 8px;
+
 		
-		margin-bottom: 0px;
+		color: @white;
 		
-		li {
-			font-size: 16px;
-		}
-	}
+		.proximaB();
+
 }
 
 
@@ -1923,6 +2152,41 @@ footer ul {
 
 .feedback .nav-pills > li > a {
 	color: @blue;
+}
+
+h2.roadblock, .roadblock {
+	color: @red;
+}
+
+
+#loginPopover {
+
+
+position: fixed;
+top: 100px;
+left: 50%;
+background-color: white;
+z-index: 200;
+border: 5px solid @blue;
+padding: 10px 20px 20px 20px;
+width: 426px;
+margin-left: -213px;
+text-align: center;
+}
+
+#overlay {
+	
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: @lighterblue;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 100;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -2200,7 +2464,7 @@ form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageB
 #thePage\:mainLayout\:formIdea\:pb\:pbs {
 	.pbSubsection .topPadding tbody tr:nth-child(2) .requiredInput,
 	.pbSubsection .topPadding tbody tr:nth-child(2) .commentDataCol {
-		display: none;
+		//display: none;
 	}
 }
 
@@ -2228,6 +2492,152 @@ form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageB
 
 /* ----- Post Idea ----- */
 
+/* ----- Chatter Answers ----- */
+
+#cs\3A theFeed {
+	
+	border-top:1px dotted @gray;
+}
+
+#cs\3A theFeed .feeditemfirstentity {
+	
+	.proximaL();
+}
+
+.usericon, #cs\3A profile .usericon{
+	.box-shadow(none);
+	
+	.border-radius(5px);
+}
+
+#cs\3A searchAskButton {
+	
+	background-image: none;
+	border: 0px;
+	.box-shadow(none);
+}
+
+.cxsingleitemdetailfeed {
+	
+	font-size: 1em;
+	
+	color: @gray;
+	margin-bottom: 0px;
+}
+
+.feeditemfooter, .feedcommentuser {
+		.proximaL();
+		padding: 0px;
+}
+
+.csMini .threecolumn {
+
+	background-color: #fff;
+}
+
+#cs\3A searchAskInputContainer {
+	font-size: 1em;
+	
+	
+	.box-shadow( inset 2px 2px 0px @grayLightest);
+	
+	border: 1px solid @gray;
+	
+	input {
+		.box-shadow(none);
+		
+	}
+}
+	
+ul.feeditemfooter li {
+	margin-bottom: 0px;
+}
+
+.breadCrumbs a {
+	
+	.transition(none);
+}
+
+.csfeedcontainer .cxquestionheader .feeditemtext {
+	line-height: 1.2em;
+	
+}
+
+
+
+.csMini .threecolumn .mainContent {
+	
+	border: 0px;
+	
+	.border-radius (0px 0px 5px 5px);
+	
+	
+}
+
+.feedcriterialinks ul {
+background-color: @lighterblue;
+.border-radius(4px 0px 0px 4px);
+padding: 6px 0px;
+	border-right: 1px solid @blue;
+}
+
+.csoptimizequestion .leftContent .feedcriterialinks li.selected a  {
+	
+		background-color: @white;
+			
+			border:1px solid @blue;
+			border-right: none;
+			border-right: 1px solid white;
+			.border-radius(6px 0px 0px 6px);
+			
+			margin-left: -10px;
+			margin-right: -1px;
+	
+}
+
+.csoptimizequestion .leftContent .datacategorylinks li.selected a  {
+	background-color: @lighterblue;
+}
+
+
+.csMini .threecolumn .mainContent, .csMini .mainContent .lowerMainContent  {
+	
+	//width: 710px;
+}
+
+.csMini #cs\:footer, .csMini .threecolumn {
+	
+	background-image: none;
+}
+
+.cxSearchOrPost .button, .cxPostButtons a.button, .cxSearchOrPost a.button:hover, .cxPostButtons a.button:hover {
+	
+	background-color: #009fc3;
+}
+
+.csMini #cs\:footer {
+	
+	display: none;
+}
+
+
+.csselecttopicmsg {
+	
+	font-size: 0.8em;
+}
+.csMini .threecolumn {
+	
+
+	
+	float: left;
+}
+
+
+
+
+/* ----- Chatter Answers ----- */
+
+
 /* -------------------------------------------------------------------------- */
 
 /*                          End Sales Force Styling                           */
@@ -2236,9 +2646,28 @@ form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageB
 
 
 
+@media print {
+
+#cls-menu, .navbar, .video, footer, .pager, .feedback, .btn {
+	
+	display: none;
+}
+
+.page-header {
+	margin-top: 50px;
+}
+
+body .wrapper {
+	
+	border: none;
+}
+
+a.worksheet, a.tipsheet {
+padding-left: 0px;
+}
 
 
-
+}
 
 
 

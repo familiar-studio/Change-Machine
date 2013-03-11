@@ -37,7 +37,7 @@
   }
   
     @bottom-center {
-  
+	    content: element(footer);
 
     }
 
@@ -299,6 +299,11 @@ table td:first-child, table th:first-child  {
 border-right: 1px solid #d4d7da;
 }
 
+.partner-logo {
+	position: running(footer);
+
+}
+
 
 /*
 .tips {
@@ -317,13 +322,7 @@ border-right: 1px solid #d4d7da;
 }
 
 
-.partner-logo {
-	position: running(thebottom);
-	background-image: url("https://cs10.salesforce.com/resource/1355504427000/CMlogoprint");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 90px 0px;
-}
+
 
 .clinic-logo {
 	position: running(clinic);

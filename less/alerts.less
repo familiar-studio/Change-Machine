@@ -12,6 +12,8 @@
   text-shadow: 0 1px 0 rgba(255,255,255,.5);
   background-color: @warningBackground;
 /*   border: 1px solid @warningBorder; */
+
+	box-shadow: 2px 2px 0 @warningBorder inset;
   .border-radius(@baseBorderRadius);
 }
 .alert,
@@ -38,6 +40,7 @@
 .alert-success {
   background-color: @successBackground;
   border-color: @successBorder;
+  box-shadow: 2px 2px 0 @successBorder inset;
   color: @successText;
 }
 .alert-success h4 {
@@ -47,6 +50,8 @@
 .alert-error {
   background-color: @errorBackground;
   border-color: @errorBorder;
+    box-shadow: 2px 2px 0 @errorBorder inset;
+
   color: @errorText;
 }
 .alert-danger h4,
@@ -56,6 +61,7 @@
 .alert-info {
   background-color: @infoBackground;
   border-color: @infoBorder;
+  box-shadow: 2px 2px 0 @infoBorder inset;
   color: @infoText;
 }
 .alert-info h4 {

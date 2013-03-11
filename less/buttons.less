@@ -11,7 +11,7 @@
   display: inline-block;
   .ie7-inline-block();
   text-transform: uppercase;
-  padding: 10px;
+  padding: 8px;
   margin-bottom: 0; // For input.btn
   font-size: 16px;
   color: @white;
@@ -29,12 +29,10 @@
  
   // Hover state
   &:hover {
-    color: @white;
-    text-decoration: none;
-    background-position: 0 -15px;
-    box-shadow: inset 3px 3px 0px @lightergray;
-	padding: 13px 10px 7px;
-
+   	
+   	background-color: darken(@btnBackground, 15%);
+   	 color: @white;
+   	
     // transition is only when going to hover, otherwise the background
     // behind the gradient (there for IE<=9 fallback) gets mismatched
     .transition(background-position .1s linear);
@@ -50,7 +48,8 @@
   &:active {
     background-image: none;
     outline: 0;
-    box-shadow: inset 3px 3px 0px @lightergray;
+    //box-shadow: inset 3px 3px 0px @lightergray;
+    background-color: lighten(@btnBackground, 5%);
     color: @white;
   }
 
