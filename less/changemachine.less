@@ -35,7 +35,6 @@
 /* ----- End Spans ----- */
 
 
-
 /* ----- Fonts ----- */
 .proximaT {
 	font-family: "proxima-nova",sans-serif;
@@ -90,12 +89,20 @@ body {
 
 
 
-a, li, .btn, h1, h2, h3, h4, h5, h6 {
+a, li, .btn, h1, h2, h3, h4, h5, h6, .affix {
 	-webkit-transition: all 0.15s ease;
   	-moz-transition:    all 0.15s ease;
   	-ms-transition:     all 0.15s ease;
   	-o-transition:      all 0.15s ease; 
 	transition: 		all 0.15s ease;
+}
+.csMinx a ,
+.feeditemfooter li {
+	-webkit-transition: none;
+  	-moz-transition:    none;
+  	-ms-transition:     none;
+  	-o-transition:      none; 
+	transition: 		none;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -106,6 +113,7 @@ p {
 	.metaBook();
 	font-size: 1em;
 	line-height: 1.5em;
+	color: darken(@lightgray, 15%);
 }
 
 a {
@@ -120,8 +128,13 @@ a {
 
 p a, 
 .alert li a,
-.milestone-block li a {
-	.proximaB();
+.milestone-block li a,
+.actionDetails ol a,
+.actionDetails ul a,
+.actionDetails a,
+.alert a {
+	.proximaR();
+
 	border-bottom: 2px dotted @lightergray;
 	color: @black;
 	&:hover {
@@ -245,7 +258,7 @@ h6 {
 
 
 #action-nav  {
-	
+	max-width: 214px;
 	ul {
 		
 		margin-bottom: 0px;
@@ -328,6 +341,10 @@ h6 {
 	
 }
 
+.affix {
+	top: 10px;
+}
+
 .home-page {
 
 	.btn-large:hover {
@@ -367,6 +384,26 @@ h6 {
 */
 
 
+.actionDetails ul,
+ul.default {
+	list-style-type: none;
+	margin-left: 14px;
+	li {
+		margin-left: 7px;
+		text-indent: -14px;
+		margin-bottom: 0;
+		line-height: 1.5em;
+	}
+	li:before {
+		content: "■";
+		font-size: 1.4em;
+		color: @lightblue;
+		position: relative;
+		left: -8px;
+		top: 3px;
+	}
+}
+
 
 
 /* ----- Header ----- */
@@ -389,9 +426,12 @@ header {
 	border-left: 10px solid @lightblue;
 	border-right: 10px solid @lightblue;
 */
-	width: @gridRowWidth + 10px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 10px 0 0;
+	img {
+		max-width: 227px;
+	}
 }
 
 .midWrapper {
@@ -414,7 +454,7 @@ header {
 }
 
 .brand img {
-    float: left;
+    float: none;
     left: 0;
     position: relative;
     top: 0;
@@ -470,7 +510,7 @@ header {
 				background-color: @green;
 				color: @white;
 				border-radius: 5px 5px 0 0;
-				box-shadow: 0 -7px 12px 1px @lightblue;
+				box-shadow: 0 -12px 12px 1px @lightblue;
 				position: relative;
 				top: -2px;
 			}
@@ -484,11 +524,13 @@ header {
 	border-radius: 5px 5px 0 0;
 	position: relative;
 	top: -2px;
-	box-shadow: 0 -7px 12px 1px @lightblue;
+	box-shadow: 0 -12px 12px 1px @lightblue;
 }
 
 form#sbsearch {
 	margin-top: 4px;
+	position: absolute;
+	right: 0;
 	input {
 		height: 22px;
 		border-radius: 5px 0 0 5px;
@@ -648,11 +690,11 @@ body .wrapper {
 			.metaBold();
 		font-size: 1.3em;
 		margin-top: -5px;
-	
+	    letter-spacing: 0px;
 		display: block;
 		clear: both;
 		color: @green;
-		
+		min-width: 140px; /* fix for weird line-break on /section/debt */
 
 		}
 	}
@@ -979,12 +1021,24 @@ body .wrapper {
 		margin: 0px;
 	}
 
-
-
 	.accordion-heading {
 		//padding: 0 15px;
 		
-	}	
+	}
+	
+	h5 {
+		.proximaR();
+		font-size: 14px;
+		margin-bottom: 7px;
+		color: @black;
+	}
+	p {
+		font-size: 14px;
+		a {
+			font-size: 16px !important;
+		}
+	}
+		
 }
 
 .accordion-hide {
@@ -1005,6 +1059,7 @@ body .wrapper {
 */
 
 .alert {
+	background-color: @lighteryellow;
 
 	text-shadow: none;
 	
@@ -1272,6 +1327,68 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 	}
 }
 
+.action-list {
+	margin-top: 10px;
+	.action-buttons {
+		margin-top: 10px;
+		a {
+			padding: 5px 10px;
+			background-image: none;
+			.proximaR();
+			font-size: 16px;
+			text-transform: uppercase;
+			border-radius: none;
+			float: left;
+			margin-right: 2px;
+			box-shadow: none;
+			color: @white;
+			background-color: @lightgray;
+			border-bottom: none;
+			box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+			&:hover {
+				background-color: darken(@lightgray, 10%);
+			}
+			&:active,
+			&.active {
+				padding: 7px 10px 3px;
+				box-shadow: inset 5px 5px 5px rgba(0,0,0,.2);
+				color: rgba(255,255,255, .5);
+			}
+		}
+		.btn {
+			color: @white;
+			&:hover {
+				color: @white;
+			}
+		}
+		.btn-info {
+			background-color: @blue;
+			&:hover {
+				background-color: darken(@blue, 10%);
+			}
+		}
+		.btn-success {
+			background-color: @green;
+			&:hover {
+				background-color: darken(@green, 10%);
+			}
+		}
+		.btn-danger {
+			background-color: @red;
+			&:hover {
+				background-color: darken(@red, 10%);
+			}
+		}
+	}
+}
+.milestone-block ul.action-list li.Roadblock a.btn {
+	color: @white;
+	&:active,
+	&.active {
+		color: rgba(255,255,255, .5);
+	}
+}
+
 /*
 .btn-success.active:before {
 	content: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
@@ -1300,16 +1417,18 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 	color: @lightgray;
 }
 
+
 .actionDetails {
 	.metaBook();
 	padding: 10px 0 0;
 	
 	line-height: 1.5em;
 	ol, ul {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 	p {
-	
+		font-size: 16px;
+		line-height: 25px;
 	}
 	p b, h4 {
 		.metaBold();
@@ -1331,8 +1450,13 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
 		
 		
 	}
-	
+	h4 {
+		margin-top: 33px;
+		text-transform: capitalize;
+	}
 }
+
+
 
 .milestone-block .related-block {
 	display: inline-block;
@@ -1394,6 +1518,17 @@ a {
 		background-repeat: no-repeat;
 		background-size: 18px 20px;
 		padding-left: 22px;
+	}
+	&.worksheet,
+	&.tipsheet {
+		color: @black;
+		.proximaR();
+		border-bottom: 2px dotted @lightergray;
+		text-transform: lowercase;
+		font-size: 18px;
+		&:hover {
+			color: @blue;
+		}
 	}
 }
 
@@ -1605,7 +1740,12 @@ a.showDetails {
 			margin: 10px;
 			background-color: @green;
 			background-image: none;
-			
+			&:hover {
+				background-color: darken(@green, 10%);
+			}
+		}
+		p {
+			padding: 15px;
 		}
 	}
 }
@@ -1830,50 +1970,44 @@ ul.pager {
 
 
 ul.search-results li {
-		
-		margin-bottom: 25px;
-		
-		h6 {
-			
-			margin-bottom: 3px;
-		}
-		
-		h4 a {
-			
-			.proximaB();
-			color: black;
-			border-bottom: 1px dotted @gray;
-			
-			font-size: 1.15em;
-			
-			&:hover {
+	margin-bottom: 25px;
+	h6 {	
+		margin-bottom: 3px;
+	}
+	h4 a {
+		.proximaB();
+		color: black;
+		border-bottom: 1px dotted @gray;
+		font-size: 1.15em;
+		&:hover {
 			color: @blue;
-			
-			}
-		}
-		
-		&.Roadblock h4 {
-		
-			background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
-			background-repeat: no-repeat;
-		    background-size: 16px auto;
-		    background-position: 2px 2px;
-		    
-		    padding-left: 25px;
-			
-			a {
-			
-			
-
-			    color: @red;
-			
-		    }
-		    
-		    
-
 		}
 	}
+	&.Roadblock h4 {
+		background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
+		background-repeat: no-repeat;
+	    background-size: 16px auto;
+	    background-position: 2px 2px;
+	    padding-left: 25px;
+		a {
+		    color: @red;
+	    }
+	}
+}
 
+/*
+.search-results-block {
+	h3 {
+		.metaBold();
+		text-transform: uppercase;
+		font-size: .8em;
+		letter-spacing: 1px;
+		margin-bottom: 30px;
+	}
+}
+*/
+
+/*
 .searchPage {
 	padding: 20px 0 50px;
 	
@@ -1927,6 +2061,7 @@ ul.search-results li {
 		}
 	}
 }
+*/
 
 /* ----- End Search ----- */
 
@@ -1968,16 +2103,31 @@ footer .container {
 }
 
 .footerLogo {
-	margin: -165px 10px 0;
-	height: 110px;
+	margin: -29px 10px 0;
+	height: auto;
 	width: auto;
 	vertical-align: top;
 	
 }
+
+.productOf {
+	font-size: 10px;
+	.proximaR();
+	color: @white;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 30px;
+}
+.clinicLogo {
+	width: 110px;
+	display: inline;
+	margin: 3px 0 0 10px;
+}
+
 .footerRays {
 	position: relative;
-	margin-top: -490px;
-	left: -400px;
+	margin-top: -565px;
+	left: -403px;
 	z-index: -5;
 	margin-bottom: 0;
 
@@ -1985,16 +2135,18 @@ footer .container {
 
 .footer ul,
 footer ul {
-	float: right;
+	float: left;
 	position: relative;
-	margin-top: -130px;
+	margin-top: 20px;
 	list-style-type: none;
 	li {
 		float: left;
-		margin-right: 20px;
+		margin-right: 0;
 	}
 	li a {
 		color: @black;
+		.proximaR();
+		font-size: 12px;
 		&:hover {
 			background-color: none;
 			color: @lightblue;
@@ -2506,8 +2658,12 @@ form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageB
 
 .usericon, #cs\3A profile .usericon{
 	.box-shadow(none);
-	
+	border: none;
 	.border-radius(5px);
+}
+
+#cs\3A searchAskInput, #cs\3A searchAskInputShadow {
+	font-size: 1em;
 }
 
 #cs\3A searchAskButton {
@@ -2525,9 +2681,64 @@ form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageB
 	margin-bottom: 0px;
 }
 
-.feeditemfooter, .feedcommentuser {
-		.proximaL();
-		padding: 0px;
+.csfeedcontainer {
+	line-height: 20px;
+	.feeditemcommentbody {
+		margin-top: 5px;
+		.feeditemfooter {
+			margin-top: 5px;
+		}
+	}
+	.feeditemcommentnew {
+		padding-right: 15px;
+		padding-left: 45px;
+		.foobar {
+			margin-bottom: 10px
+		}
+		.newcommentbutton {
+			margin-bottom: 5px;
+		}
+	}
+}
+.csfeedcontainer .feeditemextras .feeditemcommentplaceholder {
+	padding-right: 15px;
+	padding-left: 50px;
+}
+
+.usericon img {
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	height: auto;
+}
+
+.feeditemfooter, 
+.feedcommentuser {
+	.proximaL();
+	padding: 0px;
+	color: @black;
+}
+.feedcommentuser {
+	margin-bottom: 5px;
+	font-size: 14px !important;
+	line-height: 14px;
+	display: inline-block;
+}
+
+.feedText {
+	.feedcommenttext {
+		line-height: 24px;
+	}
+}
+
+.feeditemfooter li {
+	display: inline;
+	.csDropdown li {
+		display: inline-block;
+	}
+}
+.csMinx {
+	display: inline-block;
 }
 
 .csMini .threecolumn {
@@ -2551,6 +2762,46 @@ form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageB
 	
 ul.feeditemfooter li {
 	margin-bottom: 0px;
+	color: @grayLighter;
+	display: inline;
+	.feeditemtimestamp {
+		color: @grayLighter;
+	}
+	&:after {
+		content: "|";
+		color: @grayLighter;
+		padding-left: 8px;
+		margin-right: 5px;
+	}
+	&.cxafterlike:after,
+	&.cxlike:after,
+	&.cxfollow:after,
+	&:last-child:after  {
+		content: "";
+		margin-right: 0;
+		padding-left: 5px;
+	}
+	.csDropdown li {
+		display: inline-block;
+		&:after {
+			content: "";
+		}
+	}
+}
+.csoptimizequestion .csfeedcontainer .feeditemseparatingdot {
+	display: none;
+}
+ul.feeditemfooter li ul.csDropdown li:after {
+	content: "";
+}
+.csDropdown a:hover {
+	background-color: transparent;
+	color: @linkColorHover;
+}
+
+.csMinx .csDropdown {
+	width: auto;
+	padding: 5px;
 }
 
 .breadCrumbs a {
@@ -2558,12 +2809,19 @@ ul.feeditemfooter li {
 	.transition(none);
 }
 
-.csfeedcontainer .cxquestionheader .feeditemtext {
+.csfeedcontainer .cxquestionheader .feeditemtext,
+.csfeedcontainer .cxquestionheader .feeditemtext a {
 	line-height: 1.2em;
-	
+	color: @gray;
+	margin-bottom: 0;
 }
 
-
+.csfeedcontainer a {
+	color: @blue;
+	&:hover {
+		color: @linkColorHover;
+	}
+}
 
 .csMini .threecolumn .mainContent {
 	
@@ -2632,10 +2890,289 @@ padding: 6px 0px;
 	float: left;
 }
 
+.csInfo {
+	border: 1px solid @yellow;
+	background-color: @lighteryellow;
+}
 
+#cs\3A searchAskForm.tbsearchAskForm #cs\3A searchAskButton, 
+#cs\3A searchAskForm.tbsearchAskForm #cs\3A searchAgainButton {
+	background: @blue;
+	box-shadow: 2px 2px 2px @lightblue;
+	-webkit-box-shadow: 2px 2px 2px @lightblue;
+	-moz-box-shadow: 2px 2px 2px @lightblue;
+	border: 2px solid @blue;
+}
+
+.breadCrumbs .current span, 
+.breadCrumbs .current a:hover span,
+.togglePill .selected a {
+	position: relative;
+	z-index: 99;
+	border-color: @blue @blue @blue;
+	background: @blue;
+	color: #fff;
+	&:hover {
+		background: @linkColorHover;
+		border-color: @linkColorHover;
+	}
+}
+.breadCrumbs span, 
+.breadCrumbs span,
+.togglePill a {
+	border: 1px solid @blue;
+	border-bottom-color: @blue;
+	background: @lightestblue;
+	color: @blue;
+	font-size: .917em;
+	font-weight: 700;
+	&:hover {
+		background: @linkColorHover;
+		color: @white;
+	}
+}
+.breadCrumbs a,
+.breadCrumbs a:hover {
+	background: none;
+	&:after {
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 10px 0 10px 15px;
+		border-color: transparent transparent transparent #eaecf4;
+	}
+}
+.breadCrumbs a:hover span {
+	color: @white;
+}
+.breadCrumbs .current span {
+	padding-left: 10px;
+}
+.breadCrumbs .cxquestionbreadcrumb:after {
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 10px 0 10px 15px;
+		border-color: transparent transparent transparent #eaecf4;
+}
+
+.csfeedcontainer .showmorecommentscontainer a {
+	background: @lighterblue;
+	font-size: 1em;
+	color: @blue;
+	&:hover {
+		color: @linkColorHover;
+	}
+}
+
+.csfeedcontainer .feeditemcomment, .csfeedcontainer .feedcommentsshowmore, .csfeedcontainer .feeditemcommentplaceholder, .csfeedcontainer .feeditemaddcomment, .csfeedcontainer .header {
+background: @lightestblue;
+border: none;
+}
+
+.csfeedcontainer .feedcommentarrow {
+	height: 5px;
+	background: none;
+	width: 0; 
+	height: 0;
+	margin-left: 20px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid @lighterblue;
+	display: block !important;
+}
+
+.csfeedcontainer .feeditem {
+	border-bottom: 1px dotted @lightblue;
+}
+
+/* icons */
+
+.cxfeedcomment .cxafterlike {
+	width: 25px;
+	height: 25px;
+	background: url("http://changemachine.familiar-studio.com/images/question-icons.png") 1px -5px no-repeat;
+	&:hover {
+		background-position: 1px -30px;
+	}
+}
+.cxfeedcomment .cxafterdislike {
+	width: 25px;
+	height: 25px;
+	background: url("http://changemachine.familiar-studio.com/images/question-icons.png") -23px -5px no-repeat;
+	&:hover {
+		background-position: -23px -30px;
+	}
+}
+/*
+.csMinx .csMinxLink a.cxflaglink {
+	color: transparent;
+	width: 25px;
+	height: 25px;
+	background: url("http://changemachine.familiar-studio.com/images/question-icons.png") -45px -5px no-repeat;
+	&:hover {
+		background-position: -45px -30px;
+	}
+}
+*/
+
+.feedItemBestReplyIcon {
+	background: url("http://changemachine.familiar-studio.com/images/best_answer_badge.png") 0 0 no-repeat;
+	background-size: 27px 27px;
+	background-size: 22px 30px;
+}
+
+.iconBestAnswers,
+.csSelectBestReplyIcon {
+	vertical-align: middle;
+	background: transparent url("http://changemachine.familiar-studio.com/images/best_answer_badge_small.png") 0 0 no-repeat !important;
+	margin-right: 3px;
+	&:hover {
+		background: transparent url("http://changemachine.familiar-studio.com/images/best_answer_badge_small.png") 0 0 no-repeat;
+	}
+}
+
+.cxselectbestreplyink:hover {
+	background: transparent url("http://changemachine.familiar-studio.com/images/best_answer_badge_small.png") 0 0 no-repeat;
+}
+
+.leftContent .feedcriterialinks li img,
+.feedItemBestReplyIcon, 
+.csSubicon {
+	top: 4px;
+	left: 10px;
+}
+
+.csreputationcontent {
+	width: 190px;
+	.csreputationlevelcontainer {
+		.metaBold();
+		padding: 3px 7px 0
+	}
+	.csreputationlabel {
+		color: @lightgray;
+		margin-top: 3px;
+	}
+	.cstotalpostum {
+		background-color: @lightestblue;
+		color: @blue;
+	}
+	.csbestanswernum {
+		background-color: @lightestgreen;
+		color: @green;
+	}
+}
+.feeditemactionlink {
+	overflow: hidden;
+}
+a.cxaddcommentaction {
+	color: transparent;
+	position: relative;
+	left: -43px;
+	&:before {
+		content: "Discuss";
+		visibility: visible;
+		color: darken(@blue, 20%);
+		position: absolute;
+		left: 43px;
+		top: 1px;
+	}
+	&:hover {
+	color: transparent;
+		&:before {
+			color: @linkColorHover;
+		}
+	}
+}
+
+.feeditem .csCustomerSupportTag {
+	color: transparent;
+	position: relative;
+	left: -50px;
+	display: inline-block;
+	min-width: 200px;
+	&:before {
+		content: "(Change Machine Staff)";
+		color: @pink;
+		position: absolute;
+		left: 50px;
+		top: 0px;
+	}
+}
+
+.usericon .csCustomerSupportSubIcon {
+	display: none;
+}
+.csCustomerSupportUserIcon img {
+	border: 2px solid @pink;
+}
+
+.feedprivatequestion {
+	.privatenotice,
+	.feeditemcontent {
+		background-color: lighten(@pink, 20%);
+		border: none;
+	}
+	.privatenotice {
+		border-bottom: none;
+		color: @pink;
+		background-image: none;
+	}
+	.feeditemcontent {
+		padding-bottom: 10px;
+	}
+}
+.feedprivatequestion .privatenotice {
+	color: transparent;
+	position: relative;
+	left: 0px;
+	display: inline-block;
+	width: 490px;
+	top: 2px;
+	border-bottom: 1px solid lighten(@pink, 15%);
+	&:before {
+		content: "Private question to Change Machine Staff";
+		color: @pink;
+		position: absolute;
+		left: 7px;
+		top: 4px;
+	}
+}
+
+/*
+.cxnewcomment {
+	display: block !important;
+}
+
+.newcommentbutton {
+	display: none;
+}
+.newcommentbutton-display {
+	display: block;
+}
+*/
 
 
 /* ----- Chatter Answers ----- */
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-moz-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (min-device-pixel-ratio: 1.5) {
+	.cxfeedcomment .cxafterlike {
+		width: 25px;
+		height: 25px;
+		background: url("http://changemachine.familiar-studio.com/images/question-icons@2x.png") 1px -5px no-repeat;
+		&:hover {
+			background-position: 1px -30px;
+		}
+	}
+	.cxfeedcomment .cxafterdislike {
+		width: 25px;
+		height: 25px;
+		background: url("http://changemachine.familiar-studio.com/images/question-icons@2x.png") -23px -5px no-repeat;
+		&:hover {
+			background-position: -23px -30px;
+		}
+	}
+}
 
 
 /* -------------------------------------------------------------------------- */
