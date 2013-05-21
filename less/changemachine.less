@@ -36,11 +36,7 @@
 
 
 /* ----- Fonts ----- */
-.proximaT {
-	font-family: "proxima-nova",sans-serif;
-	font-style: normal;
-	font-weight: 100;
-}
+
 .proximaL {
 	font-family: "proxima-nova",sans-serif;
 	font-style: normal;
@@ -56,6 +52,12 @@
 	font-style: normal;
 	font-weight: 700;
 }
+
+.proximaBL {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 900;
+}
 .metaBook {
 	font-family: "ff-meta-serif-web-pro",serif;
 	font-style: normal;
@@ -66,11 +68,7 @@
 	font-style: normal;
 	font-weight: 700;
 }
-.omnesB {
-	font-family: "omnes-pro",sans-serif;
-	font-style: normal;
-	font-weight: 600;
-}
+
 
 /* ----- End Fonts ----- */
 
@@ -88,8 +86,42 @@ body {
 }
 
 
+label {
+	
+	font-size: 16px;
+}
 
-a, li, .btn, h1, h2, h3, h4, h5, h6, .affix {
+.control-group {
+	
+	margin-bottom: 10px;
+}
+
+.wide-horizontal {
+	
+	.control-label {
+		
+		width: 300px;
+	}
+	
+	.controls {
+		
+		margin-left: 320px;
+	}
+}
+
+#assessment {
+	
+	textarea {
+		width: 100%;
+	}
+	
+	.multiSelectPicklistCell {
+		
+		width: 30px;
+	}
+}
+
+a, .btn, h1, h2, h3, h4, h5, h6, .affix {
 	-webkit-transition: all 0.15s ease;
   	-moz-transition:    all 0.15s ease;
   	-ms-transition:     all 0.15s ease;
@@ -157,9 +189,11 @@ a {
 	}
 }
 
+
 ul li {
 	margin-bottom: 10px;
 }
+
 
 h1 {
 	.proximaB();
@@ -190,9 +224,13 @@ h4, h4 a {
 	font-size: 1em;
 	color: @black;
 	margin: 5px 0;
-	&:hover {
+	
+}
+
+h4 a:hover {
+
 		color: @blue;
-	}
+
 }
 
 h5 {
@@ -210,6 +248,78 @@ h5 {
 h6 {
 
 	font-size: 0.7em;
+}
+
+
+
+.nav-pills ul.dropdown-menu {
+	
+	border-radius: 0px 0px 4px 4px;
+	.box-shadow(none);
+	border: 1px solid #dcdddf;
+	
+	min-width: 122px;
+	
+	padding-bottom: 0px;
+
+	
+	left: -1px;
+	
+	top:78%;
+	
+	&:before {
+		
+		position: absolute;
+		top: -5px;
+		left: 14px;
+		display: inline-block;
+		border-right: 5px solid transparent;
+		border-bottom: 5px solid #ccc;
+		border-left: 5px solid transparent;
+		border-bottom-color: rgba(0, 0, 0, 0.2);
+		content: '';
+	}
+	&:after {
+		position: absolute;
+		top: -4px;
+		left: 15px;
+		display: inline-block;
+		border-right: 4px solid transparent;
+		border-bottom: 4px solid #ffffff;
+		border-left: 4px solid transparent;
+		content: '';
+
+	}
+			
+	li {
+		margin-bottom: 2px;
+		
+		
+		&.divider {
+			margin: 0px;
+		}
+		a {
+		
+		
+		
+		white-space: nowrap;
+	overflow: hidden;
+		
+		padding: 3px 10px;
+		
+		.proximaR();
+		
+			&:hover {
+				
+				background-color: #90a3c8;
+				color: white;
+			}
+			strong {
+				
+				font-weight: 900;
+			}
+		}
+	}
 }
 
 .btn {
@@ -413,7 +523,6 @@ body > .container {
 	width: @gridRowWidth + 10px;	
 }
 */
-
 header {
 	background-color: @lightblue;
  	width: @gridRowWidth + 30px;
@@ -428,9 +537,125 @@ header {
 */
 	width: 100%;
 	margin: 0 auto;
+	height: 99px;
 	padding: 10px 0 0;
+	
+	
 	img {
 		max-width: 227px;
+	}
+	
+	
+	.nav {
+		
+		
+		margin-bottom: 0px;
+		
+		li.vertical-divider {
+			border-right: 1px dotted @blue;
+			height: 33px;
+			margin: 2px 5px;
+			
+		}
+		
+		&>li.dropdown > a{ 
+			.proximaB();
+			color: white;
+			font-size: 28px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			text-shadow: 1px 1px 1px rgba(142, 162, 202, 0.25);
+			padding-bottom: 15px;
+			padding-top:11px;
+			.border-radius(5px 5px 0px 0px);
+			
+			padding: 11px 8px 15px;
+			
+			
+			
+		}
+		
+		.open .dropdown-toggle {
+			
+			color: #72a53c;
+			background-color: white;
+			text-shadow:2px 2px 1px @lightestblue;
+		
+		}
+		
+		 &>li.dropdown.active > a, &>li.dropdown > a:hover  { 
+		 	color: #72a53c;
+			background-color: white;
+			text-shadow:2px 2px 1px @lightestblue;
+		 	.border-radius(5px);
+		 	padding-bottom: 10px;
+		 	margin-bottom: 5px;
+		 }
+	}
+	
+	.header-block  {
+		margin-top: 41px;
+		display: inline-block;
+		float: left;
+		margin-left: 15px;
+		
+		
+		
+	}
+	
+	form#main-search {
+		margin-top: 4px;
+		width: 194px;
+		height: 35px;
+		overflow: hidden;
+		input {
+			height: 20px;
+			.border-radius(8px 0 0 8px);
+			margin-right: -5px;
+			box-shadow: inset 2px 2px 0px @grayLightest;
+			border: none;
+			width: 100px;
+			
+		}
+		button {
+			background-color: @blue;
+			color: @white;
+			margin: 0;
+			border-radius: 0 5px 5px 0;
+			height: 30px;
+			box-shadow: 2px 2px 2px @lightblue;
+			font-size: 12px;
+		
+			&:hover {
+				background-color: darken(@blue, 15%);
+			}
+		}
+		.btn {
+			padding: 5px 10px;
+			&:hover {
+			}
+		}
+	}
+
+	
+	.profile-links {
+		margin-top: 4px;
+		border-right: 1px dotted @blue;
+		padding-right: 15px;
+		height: 33px;
+		margin-left: -5px;
+		li {
+			margin-bottom: 0px;
+			line-height: 13px;
+			a {
+			letter-spacing: 1px;
+			.proximaR();
+			color: @blue;
+			font-size: 9px;
+			text-transform: uppercase;
+			line-height: 1em;
+			}
+		}
 	}
 }
 
@@ -439,9 +664,10 @@ header {
 	border-left: 5px solid @lighterblue;
 	border-right: 5px solid @lighterblue;
  	width: @gridRowWidth + 20px;
-	margin: -30px auto 0;
+	margin: -15px auto 0;
 	padding: 0;
 	margin-left: -15px;
+	height: 20px;
 
 }
 
@@ -527,35 +753,6 @@ header {
 	box-shadow: 0 -12px 12px 1px @lightblue;
 }
 
-form#sbsearch {
-	margin-top: 4px;
-	position: absolute;
-	right: 0;
-	input {
-		height: 22px;
-		border-radius: 5px 0 0 5px;
-		margin-right: -5px;
-		box-shadow: inset 2px 2px 0px @grayLightest;
-		border: none;
-	}
-	button {
-		background-color: @blue;
-		color: @white;
-		margin: 0;
-		border-radius: 0 5px 5px 0;
-		height: 30px;
-		box-shadow: 2px 2px 2px @lightblue;
-		font-size: 12px;
-		&:hover {
-			background-color: darken(@blue, 15%);
-		}
-	}
-	.btn {
-		padding: 5px 10px;
-		&:hover {
-		}
-	}
-}
 
 #cls-menu {
 	background-color: @blue;
@@ -1217,27 +1414,8 @@ body .wrapper {
 				}
 			}
 		}
-		&:before {
-		    position: absolute;
-			display: inline-block;
-			border-left: 7px solid transparent;
-			border-right: 7px solid transparent;
-			border-bottom: 7px solid @white;
-			right: 31px;
-			top: -5px;
-			content: '';
-			z-index: 5;
-		}
-		&:after {
-		    border-bottom: 8px solid #E3E8F2;
-		    border-left: 8px solid transparent;
-		    border-right: 8px solid transparent;
-		    content: "";
-		    display: inline;
-		    right: 30px;
-		    position: absolute;
-		    top: -8px;
-		}
+		
+		
 		li:last-child a:hover {
 			border-radius: 0 0 3px 3px;
 		}
@@ -1655,7 +1833,7 @@ a.showDetails {
 			}
 			.btn {
 				padding: 7px 16px;
-				margin: 11px 10px 0;
+				margin: 11px 8px 0;
 				
 			}
 		}
@@ -2138,6 +2316,7 @@ footer ul {
 	float: left;
 	position: relative;
 	margin-top: 20px;
+
 	list-style-type: none;
 	li {
 		float: left;
@@ -2171,12 +2350,17 @@ footer ul {
 	border-left: 5px solid @lightblue;
 	border-right: 5px solid @lightblue;
 	border-top: 5px solid @lightblue;
+	
+	padding-bottom: 8px;
+	
+	a {
 	padding: 3px 10px 8px;
-
-		
-		color: @white;
-		
+	
+			
+				color: @white;
+			
 		.proximaB();
+	}
 
 }
 
@@ -3175,12 +3359,117 @@ a.cxaddcommentaction {
 }
 
 
+#action-plan {
+	
+	margin-left: -30px;
+	
+	.thumbnail  {
+	
+		h3 {
+		
+		font-size: 1em;
+		
+		text-transform: none;
+		}
+		
+		a.edit {
+			
+			font-size: 0.8em;
+		}
+		
+		i {
+			
+			border: 1px solid @grayLighter;
+			padding: 1px;
+		}
+	}
+	
+}
+
+
 /* -------------------------------------------------------------------------- */
 
 /*                          End Sales Force Styling                           */
 
 /* -------------------------------------------------------------------------- */
 
+
+/* -------------------------------------------------------------------------- */
+
+/* Form Assembly */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+.wFormContainer {
+	
+	border-width: 0px !important;
+	
+	.metaBook();
+	
+	.wForm {
+	
+		label {
+			
+			.metaBook();
+		}
+		
+		.errMsg {
+			.proximaB();
+			
+		}
+		
+		
+		#tfa_91-T {
+			
+			display: none;
+		}
+		.errFld {
+			
+			.border-radius(5px);
+		}
+		
+		label.postField {
+			
+			font-size: 14px;
+			max-width: 600px;
+		}
+	
+		h4 {
+			
+			font-size: 18px;
+		}
+	
+		.label {
+	
+		background-color: none;
+		}
+		
+		.wfPageNextButton, .wfPagingButtons input {
+			
+			background-image: none;
+			background-color: @blue;
+			color: white;
+			.proximaR();
+			.box-shadow(none);
+			border: none;
+			text-transform: uppercase;
+		}
+	}
+
+	.supportInfo {
+		
+		display: none;
+	}
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/* END Form Assembly */
+/* -------------------------------------------------------------------------- */
 
 
 @media print {

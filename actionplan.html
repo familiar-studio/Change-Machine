@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Action Plan</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<LINK REL="stylesheet" HREF="/CSS/bootstrap.css" TYPE="text/css"/>
+		
+				<LINK REL="stylesheet" HREF="/CSS/changemachine.css" TYPE="text/css"/>
+
+
+		<style>
+			.gridster {
+				margin-left: -10px;
+			
+			}
+		</style>
+
+		
+	</head>
+	<body>
+	
+	<div class="container">
+	
+	<h1 >Jon Smith</h1>
+	
+
+	
+	<ul class="nav nav-tabs customer-tabs">
+	<li><a href="#">Dashboard</a></li>
+		<li><a href="#">Personal Information</a></li>
+		<li class="active"><a href="#">Action Plan</a></li>
+	</ul>
+	
+			<a href="#addTask" role="button" class="btn pull-right" data-toggle="modal">Add a Task</a>
+
+	<h2>Action Plan</h2>
+	<div class="row" id="kanban" style="clear:both;">
+		<div class="span3">
+			
+			<h3>To Do</h3>
+		</div>
+		
+		<div class="span3">
+			<h3>Next Meeting</h3>
+		</div>
+		<div class="span3">
+			<h3>This Meeting</h3>
+		</div>
+		<div class="span3">
+			<h3>Done</h3>
+		</div>
+	</div>
+	
+	
+	   <div class="gridster">
+    <ul class="thumbnails">
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1"><div class="item thumbnail">Dummy Task</div></li>
+        <li data-row="2" data-col="1" data-sizex="1" data-sizey="1"><div class="item thumbnail">
+        <h3>do this thing</h3>
+        <h5>Debt</h5>
+       <a href='#'>Edit </a>
+        </div></li>
+        <li data-row="3" data-col="1" data-sizex="1" data-sizey="1"><div class="item thumbnail">Dummy Task</div></li>
+ 
+        <li data-row="1" data-col="2" data-sizex="1" data-sizey="1"><div class="item thumbnail">Dummy Task</div></li>
+        <li data-row="2" data-col="2" data-sizex="1" data-sizey="1"><div class="item thumbnail">Dummy Task</div></li>
+ 
+        <li data-row="1" data-col="3" data-sizex="1" data-sizey="1"><div class="item thumbnail">Dummy Task</div></li>
+        <li data-row="2" data-col="3" data-sizex="1" data-sizey="1"><div class="item thumbnail">Dummy Task</div></li>
+        <li data-row="3" data-col="3" data-sizex="1" data-sizey="1"><div class="item thumbnail">Dummy Task</div></li>
+ 
+        <li data-row="1" data-col="4" data-sizex="1" data-sizey="1"><div class="item thumbnail">Dummy Task</div></li>
+        <li data-row="3" data-col="4" data-sizex="1" data-sizey="1"><div class="item thumbnail">Dummy Task</div></li>
+ 
+    </ul>
+    
+	  </div>
+</div>
+
+<LINK REL="stylesheet" HREF="/CSS/jquery.gridster.css" TYPE="text/css"/>
+
+
+
+<div class="modal hide fade" id="addTask">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Add a task</h3>
+  </div>
+  <div class="modal-body">
+  <form>
+  	<select id="section" name="section">
+  		<option>Assets</option>
+	<option>Banking</option>
+	<option>Credit</option>
+	<option>Debt</option>
+	<option>Goals</option>
+	<option>Taxes</option>
+  	</select>
+  	<select id="action" name="action">
+  		<option value="">Custom Action</option>
+  		<optgroup label="Utilize All Available Resources">
+  		<option>Develop a Monthly Spending Plan</option>
+  		<option>Maximize Income Supports</option>
+  		<option>Maximize Employee Benefits</option>
+  		<option>Put Child Care Plan in Place</option>
+  		
+  		<option>Customer Has a Monthly Cash Flow Deficit</option>
+  		</optgroup>
+  		
+  		<optgroup label="Implement a Regular Savings Plan">
+  		<option>Develop a Savings Plan for an Action-Driven Goal</option>
+  		<option>Establish Auto-Deduct for a Regular Savings Amount</option>
+  		</optgroup>
+  		<optgroup label="Enroll in Long-Term Asset-Building Plan">
+  		<option>Establish Retirement Plan</option>
+  		<option>Establish an Education Savings Account</option>
+  		</optgroup>
+  		<optgroup label="Implement Asset Protection Strategies">
+  		<option>Establish Health Insurance</option>
+  		<option>Establish Life Insurance</option>
+  		<option>Establish Appropriate Property, Renters, and Auto Insurance</option>
+  		<option>Establish Disability Insurance</option>
+  		
+  		</optgroup>
+  	</select>
+  	
+  	<div class="contol-group" id="title-block">
+  	<label>Title</label>
+  	
+  	<input type="text" id="title" />
+  	</div>
+  	
+  	<label>Notes</label>
+    <textarea id="notes" name="notes" style="width:85%"></textarea>
+    
+  </form>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Close</a>
+    <a href="#" class="btn btn-primary add">Add Task</a>
+  </div>
+</div>
+
+            
+            
+            		 <script src="/js/jquery.gridster.js" ></script>
+            		 <script src="/js/bootstrap.js" ></script>
+
+            
+            <script>
+                $(function(){ //DOM Ready
+                
+	                console.log('loaded2');
+	                $(".gridster ul").gridster({
+                        widget_margins: [10, 10],
+                        widget_base_dimensions: [214, 100],
+                        min_cols: 4,
+                        max_cols: 4
+                    });
+                    
+                    
+                    
+                    $('#action').change (function () {
+	                    if ($(this).val() == "") {
+		                    $('#title-block').show();
+		                    
+	                    } else {
+		                    
+		                    $('#title-block').hide();
+	                    }
+	                    
+                    })
+                    
+                    
+                    $(document).on('click', '.item a', function() {
+                    	  console.log('this is clicked');
+	                    $('#addTask').modal('show');
+	                    
+                    });
+                    
+                    
+                    
+                   
+                    
+                    $('.add').click (function () {
+                                        var gridster = $(".gridster ul").gridster().data('gridster');
+                           var notes = $('#notes').val();
+                            var title = $('#title').val();
+
+                           var section = $('#section').val();
+                           var action = $('#action').val();
+                           
+                           
+                           $('#body, #section, #action, #notes').val('');
+                           
+                           $('#addTask').modal('hide');
+                           
+                          
+                           
+                           
+                           
+                           	var widgetText = "<li><div class='item thumbnail'><h3>"+section+"</h3><h4>";
+                           	
+                           	
+                           	if (action != "") {
+                           	
+             
+                           		widgetText += action;
+                           	
+                           	} else {
+	                           	
+	                           	widgetText+=section;
+                           	}
+                           	
+                           	widgetText += "</h4><a href='#'>Edit</a></div></li>";
+                           	                           
+	                          
+
+                         
+                           
+	                    var widget = gridster.add_widget(widgetText, 1, 1, 1, 1);
+	                    //widget.click(clickItem ());
+	                    
+                    })
+
+                                   
+                });
+                
+             </script>
+             
+
+	</body>
+</html>
