@@ -5675,50 +5675,138 @@ h4 {
   transition-delay: 2s;
 }
 .animate-in .info19 {
-  -webkit-transition-delay: 4s;
-  -moz-transition-delay: 4s;
-  -o-transition-delay: 4s;
-  transition-delay: 4s;
+  -webkit-transition-delay: 4.5s;
+  -moz-transition-delay: 4.5s;
+  -o-transition-delay: 4.5s;
+  transition-delay: 4.5s;
 }
 .animate-in .info20 {
-  -webkit-transition-delay: 4.9s;
-  -moz-transition-delay: 4.9s;
-  -o-transition-delay: 4.9s;
-  transition-delay: 4.9s;
+  -webkit-transition-delay: 5.5s;
+  -moz-transition-delay: 5.5s;
+  -o-transition-delay: 5.5s;
+  transition-delay: 5.5s;
 }
 .animate-in .info21 {
-  -webkit-transition-delay: 5.8s;
-  -moz-transition-delay: 5.8s;
-  -o-transition-delay: 5.8s;
-  transition-delay: 5.8s;
+  -webkit-transition-delay: 6.5s;
+  -moz-transition-delay: 6.5s;
+  -o-transition-delay: 6.5s;
+  transition-delay: 6.5s;
 }
 .animate-in .info22 {
-  -webkit-transition-delay: 6.7s;
-  -moz-transition-delay: 6.7s;
-  -o-transition-delay: 6.7s;
-  transition-delay: 6.7s;
+  -webkit-transition-delay: 7.5s;
+  -moz-transition-delay: 7.5s;
+  -o-transition-delay: 7.5s;
+  transition-delay: 7.5s;
 }
 .animate-in .info23 {
-  -webkit-transition-delay: 7.6s;
-  -moz-transition-delay: 7.6s;
-  -o-transition-delay: 7.6s;
-  transition-delay: 7.6s;
-}
-.animate-in .info24 {
   -webkit-transition-delay: 8.5s;
   -moz-transition-delay: 8.5s;
   -o-transition-delay: 8.5s;
   transition-delay: 8.5s;
 }
+.animate-in .info24 {
+  -webkit-transition-delay: 9.5s;
+  -moz-transition-delay: 9.5s;
+  -o-transition-delay: 9.5s;
+  transition-delay: 9.5s;
+}
 .animate-in .info25 {
-  -webkit-transition-delay: 9.4s;
-  -moz-transition-delay: 9.4s;
-  -o-transition-delay: 9.4s;
-  transition-delay: 9.4s;
+  -webkit-transition-delay: 10.5s;
+  -moz-transition-delay: 10.5s;
+  -o-transition-delay: 10.5s;
+  transition-delay: 10.5s;
 }
 .animate-in .info26 {
-  -webkit-transition-delay: 10.3s;
-  -moz-transition-delay: 10.3s;
-  -o-transition-delay: 10.3s;
-  transition-delay: 10.3s;
+  -webkit-transition-delay: 11.5s;
+  -moz-transition-delay: 11.5s;
+  -o-transition-delay: 11.5s;
+  transition-delay: 11.5s;
+}
+.animate-out .info17 {
+  top: 1087px;
+}
+.animate-out .info18 {
+  /* image */
+
+  opacity: 0;
+}
+.animate-out .info19 {
+  top: 1085px;
+}
+.animate-out .info20 {
+  top: 992px;
+}
+.animate-out .info21 {
+  top: 850px;
+}
+.animate-out .info22 {
+  top: 836px;
+}
+.animate-out .info23 {
+  top: 1050px;
+}
+.animate-out .info24 {
+  top: 835px;
+}
+.animate-out .info25 {
+  top: 862px;
+}
+.animate-out .info26 {
+  top: 990px;
+}
+/* -------------------------------------------------------------------------------- */
+.info27 {
+  top: 87px;
+  padding: 0 80px;
+}
+.info27 h1 {
+  text-align: left;
+}
+.info28 {
+  width: 182px;
+  height: 185px;
+  background-image: url('/images/slideshow/stamps.png');
+  background-position: 636px 375px;
+  top: 255px;
+  left: 40px;
+}
+.info29 {
+  width: 256px;
+  height: 121px;
+  background-image: url('/images/slideshow/stamps.png');
+  background-position: -33px -9px;
+  top: 255px;
+  left: 280px;
+}
+.info30 {
+  width: 182px;
+  height: 185px;
+  background-image: url('/images/slideshow/stamps.png');
+  background-position: 360px 529px;
+  top: 455px;
+  left: 40px;
+}
+.info31 {
+  width: 256px;
+  height: 121px;
+  background-image: url('/images/slideshow/stamps.png');
+  background-position: -33px -155px;
+  top: 455px;
+  left: 280px;
+}
+.info32 {
+  width: 182px;
+  height: 185px;
+  background-image: url('/images/slideshow/stamps.png');
+  background-position: 408px 318px;
+  top: 455px;
+  left: 540px;
+}
+.info33 {
+  width: 256px;
+  height: 121px;
+  background-image: url('/images/slideshow/stamps.png');
+  background-position: -33px -9px;
+  top: 255px;
+  left: 540px;
 }
