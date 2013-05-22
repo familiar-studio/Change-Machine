@@ -1,0 +1,379 @@
+@import "bootstrap.less";
+
+.proximaL {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+.proximaR {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+.proximaB {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.proximaBL {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 900;
+}
+.metaBook {
+	font-family: "ff-meta-serif-web-pro",serif;
+	font-style: normal;
+	font-weight: 500;
+}
+.metaBold {
+	font-family: "ff-meta-serif-web-pro",serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.transition-duration(@transition-duration) {
+  -webkit-transition-delay: @transition-duration;
+     -moz-transition-delay: @transition-duration;
+       -o-transition-delay: @transition-duration;
+          transition-delay: @transition-duration;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+// BASIC RESET
+
+body {
+	background-color: @blue;
+	color: @white;
+	font-size: 16px;
+	line-height: 1.5625em;
+}
+
+h1 {
+	.proximaBL();
+	text-align: center;
+	font-size: 2.55em;
+	line-height: 1.25em;
+}
+
+h2 {
+	.proximaB();
+	font-size: 2.55em;
+	line-height: 1.1em;
+}
+
+h3 {
+	.metaBook();
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+// SEQUENCE
+
+#sequence {
+	width: 58.25em;
+	height: 43.8125em;
+	margin: 6.5625em auto;
+	border: 1px solid darken(@blue, 10%);
+	position: relative;
+	overflow: hidden;
+	> .sequence-canvas {  /* required */
+	    height: 100%; 
+	    width: 100%;
+		> li {  /* required */ 
+		    position: absolute;
+		    width: 100%;
+		    height: 100%;
+		    z-index: 1;
+			> * {  /* required */
+			    position: absolute;
+			}
+		}
+	}
+}
+
+.sequence-canvas {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+// SLIDE 1
+
+#sequence {
+	.info1 {
+	    left: 115px;
+	    top: 87px;
+	    opacity: 0;
+	}
+	
+	.info2 {
+	    top: 442px;
+	    left: 112px;
+	    opacity: 0;
+	    h2 {
+	    	color: lighten(@blue, 22%);
+	    }
+	}
+	
+	.info3 {
+	    top: 440px;
+	    left: 395px;
+	    opacity: 0;
+	    width: 200px;
+	    text-align: center;
+	    h2 {
+	    	color: lighten(@blue, 15%);
+	    }
+	}
+	
+	.info4 {
+	    top: 225px;
+	    left: 353px;
+	    opacity: 0;
+	    text-align: center;
+	    h2 {
+	    	color: lighten(@blue, 22%);
+	    }	
+	}
+	
+	.info5 {
+	    top: 366px;
+	    left: 627px;
+	    opacity: 0;
+	    width: 200px;
+	    text-align: center;
+	    h2 {
+	    	color: lighten(@blue, 15%);
+	    }	
+	}
+	
+	.info6 {
+	    top: 225px;
+	    left: 102px;
+	    opacity: 0;
+	    width: 200px;
+	    text-align: center;
+	    h2 {
+	    	color: lighten(@blue, 15%);
+	    }	
+	}
+	
+	.info7 {
+	    top: 330px;
+	    left: 92px;
+	    opacity: 0;
+	    width: 200px;
+	    text-align: center;
+	    h2 {
+	    	color: lighten(@blue, 7%);
+	    }		
+	}
+	
+	.info8 {
+	    top: 262px;
+	    left: 617px;
+	    opacity: 0;
+	    width: 200px;
+	    text-align: center;
+	    h2 {
+	    	color: lighten(@blue, 7%);
+	    }
+	}
+	
+	.info9 {
+	    top: 295px;
+	    left: 320px;
+	    opacity: 0;
+	    width: 200px;
+	    text-align: center;
+	    h2 {
+	    	.proximaBL();
+	    	color: @white;
+	    	font-size: 4.1em;
+	    	line-height: .9em;
+	    }	
+	}
+	.animate-in {
+		.info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9 {
+		    opacity: 1;
+		    -webkit-transition-duration: 1s;
+		    -moz-transition-duration: 1s;
+		    -o-transition-duration: 1s;
+		    -ms-transition-duration: 1s;
+		    transition-duration: 1s;
+		}
+		.info1 {
+		    .transition-delay(0s);
+		}
+		.info2 {
+		    .transition-delay(1.5s);
+		}
+		.info3 {
+		    .transition-delay(2.5s);
+		}
+		.info4 {
+		    .transition-delay(3.5s);
+		}
+		.info5 {
+		    .transition-delay(4.5s);
+		}
+		.info6 {
+		    .transition-delay(5.5s);
+		}
+		.info7 {
+		    .transition-delay(6.5s);
+		}
+		.info8 {
+		    .transition-delay(7.5s);
+		}
+		.info9 {
+		    .transition-delay(8.5s);
+		}
+	}
+	.animate-out {
+		.info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9 {
+		    opacity: 0;
+		    -webkit-transition-duration: 1s;
+		    -moz-transition-duration: 1s;
+		    -o-transition-duration: 1s;
+		    -ms-transition-duration: 1s;
+		    transition-duration: 1s;
+		    .transition-delay(0s);	
+		}
+	}
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+// SLIDE 2
+
+.info10 {
+	top: -110px; 
+	left: 0px;
+	background-color: @blue;
+	height: 120px;
+	width: 100%;
+}
+.info11, .info12, .info13, .info14, .info15 {
+	top: -110px;
+	left: 290px;
+	width: 500px;
+	color: lighten(@blue, 22%);
+	.proximaR();
+	h3:before {
+		height: 14px;
+		width: 14px;
+		background-color: lighten(@blue, 22%);
+		position: absolute;
+		left: -30px;
+		top: 20px;
+		content: "";
+	}
+}
+.info16 {
+	bottom: -160px;
+	padding: 50px;
+	color: @white;
+}
+.animate-in {
+	.info10, .info11, .info12, .info13, .info14, .info15, .info16 {
+		-webkit-transition-duration: 1s;
+	    -moz-transition-duration: 1s;
+	    -o-transition-duration: 1s;
+	    -ms-transition-duration: 1s;
+	    transition-duration: 1s;
+	}
+	.info10 {
+		top: 0;
+		padding-top: 87px;
+		z-index: 12;
+	}
+	.info11 {
+		top: 230px;
+		.transition-delay(1.5s);
+	}
+	.info12 {
+		top: 270px;
+		.transition-delay(3s);
+	}
+	.info13 {
+		top: 310px;
+		.transition-delay(4.5s);
+	}
+	.info14 {
+		top: 350px;
+		.transition-delay(6s);
+	}
+	.info15 {
+		top: 390px;
+		.transition-delay(7.5s);
+	}
+	.info16 {
+		bottom: 61px;
+		.transition-delay(10s);
+	}
+}
+.animate-out {
+	.info10, .info11, .info12, .info13, .info14, .info15, .info16 {
+		-webkit-transition-duration: 1s;
+	    -moz-transition-duration: 1s;
+	    -o-transition-duration: 1s;
+	    -ms-transition-duration: 1s;
+	    transition-duration: 1s;
+	}
+	.info10 {
+		left: -1200px;
+		top: 0;
+	}
+	.info11, .info12, .info13, .info14, .info15 {
+		left: 980px;
+	}
+	.info11 {
+		top: 230px;
+	}
+	.info12 {
+		top: 270px;
+	}
+	.info13 {
+		top: 310px;
+	}
+	.info14 {
+		top: 350px;
+	}
+	.info15 {
+		top: 390px;
+	}
+	.info16 {
+		left: -1200px;
+		bottom: 61px;
+	}
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+// SLIDE 3
+
+.info17 {
+	top: 87px;
+}
+
+
+
+
+
+
+
+
+
+
+
