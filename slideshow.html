@@ -4,7 +4,7 @@
 
 <html>
 <head>
-<script src="/jslibrary/1360895802000/sfdc/JiffyStubs.js"></script><script src="/jslibrary/1360895802000/sfdc/SfdcCore.js" type="text/javascript"></script><script src="/static/101812/js/picklist.js" type="text/javascript"></script><script src="/jslibrary/1360895802000/sfdc/VFState.js" type="text/javascript"></script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<script src="http://www.change-machine.org/jslibrary/1360895802000/sfdc/JiffyStubs.js"></script><script src="http://www.change-machine.org/jslibrary/1360895802000/sfdc/SfdcCore.js" type="text/javascript"></script><script src="http://www.change-machine.org/static/101812/js/picklist.js" type="text/javascript"></script><script src="http://www.change-machine.org/jslibrary/1360895802000/sfdc/VFState.js" type="text/javascript"></script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
 <meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
 
     
@@ -23,21 +23,57 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
 
 
-    <link href="/resource/1367509290000/ChangeMachineCSS" REL="stylesheet" type="text/css" />
+
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 
 
-     <script src="/resource/1367509433000/ChangeMachineJS"></script>
+     <script src="http://www.change-machine.org/resource/1367509433000/ChangeMachineJS"></script>
 
-    <script src="/resource/1354913132000/BootstrapJS/bootstrap.min.js"></script>
-    <script src="/resource/1358177568000/HTML5shiv"></script>
+    <script src="http://www.change-machine.org/resource/1354913132000/BootstrapJS/bootstrap.min.js"></script>
+    <script src="http://www.change-machine.org/resource/1358177568000/HTML5shiv"></script>
 
    
    
 
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/presentation.css" />	
+	
+	<!-- JS -->
+	<script src="/js/jquery.sequence-min.js"></script>
+	
+	<script type="text/javascript"> 
+		$j = jQuery.noConflict();
+	
 
+	    	
+	</script>
+
+
+	<script>
+		$j(function(){
+			$j(".sequence-intro .info01 h2").click(function() {
+				$j(".sequence-intro").fadeOut("slow" ,function() {
+					$j(".sequence-wrapper").animate({ height: 700 }, 500, 
+						function() {
+							var options = {
+				            	cycle: false,
+								autoPlay: false
+							}
+							var sequence = $j("#sequence").sequence(options).data("sequence");
+						}
+					); 
+				});
+			});
+		});
+	</script>
+
+
+
+
+
+    <link href="http://www.change-machine.org/resource/1367509290000/ChangeMachineCSS" REL="stylesheet" type="text/css" />
 
 
     <script>
@@ -119,7 +155,7 @@
     
             <div id="brand">
               <a href="/">
-                <img src="/resource/1367507424000/ChangeMachineHeaderLogo" style="float:left" width="200px" />
+                <img src="http://www.change-machine.org/resource/1367507424000/ChangeMachineHeaderLogo" style="float:left" width="200px" />
               </a>
             </div>
           
@@ -244,6 +280,384 @@
   </header>
   
   <div class="wrapper">
+  
+  
+  <div class="sequence-wrapper">
+  
+	<div class="sequence-intro">
+		<div class="info0"></div>
+		<div class="info01">
+			<h1>Learn. Coach. Share.</h1>
+			<h1>Change.</h1>
+			<h2>See how Change Machine will help you.</h2>
+		</div>	 
+		<div class="info02"></div> 
+	</div>
+  
+  
+<div id="sequence">
+    <ul class="sequence-canvas">
+        
+	<!--- Slide 1 --->
+	
+        <li>
+        	<div class="info1">
+            	<h1>What is "Financial Development?"</h1>
+        	</div>
+
+        	<div class="info2">
+            	<h2>Legal Advice</h2>
+        	</div>
+
+        	<div class="info3">
+            	<h2>Financial Counseling</h2>
+        	</div>
+
+        	<div class="info4">
+            	<h2>Self Advocacy</h2>
+        	</div>
+
+        	<div class="info5">
+            	<h2>Financial Planning</h2>
+        	</div>
+
+        	<div class="info6">
+            	<h2>Financial Education</h2>
+        	</div>
+
+        	<div class="info7">
+            	<h2>Financial Literacy</h2>
+        	</div>
+
+        	<div class="info8">
+            	<h2>Asset Building</h2>
+        	</div>
+
+        	<div class="info9">
+            	<h2>Financial Coaching</h2>
+        	</div>
+        </li>
+        
+	<!--- Slide 2 --->
+	
+        <li>
+        	<div class="info10">
+        		<h1>Everyone experiences<br> financial challenges.</h1>
+        	</div>
+        	<div class="info11">
+        		<h3>Astronomical student loans...</h3>
+        	</div>
+        	<div class="info12">
+        		<h3>Predatory higher education institutions...</h3>
+        	</div>
+        	<div class="info13">
+        		<h3>Changing job market...</h3>
+        	</div>
+        	<div class="info14">
+        		<h3>Housing crisis...</h3>
+        	</div>
+        	<div class="info15">
+        		<h3>Natural Disasters...</h3>
+        	</div>
+        	<div class="info16">
+        		<h1>...All make it extremely difficult to be financially secure.</h1>
+        	</div>
+		</li>
+		
+	<!--- Slide 3 --->
+	
+		<li>
+			<div class="info17">
+        		<h1>Who’s in a position to help address the overwhelming need for Financial Coaching?</h1>
+        	</div>
+			<div class="info18">
+        		<img src="images/slideshow/classroom.jpg">
+        	</div>
+			<div class="info19">
+        		<h4>Re-Entry Case <br> Managers</h4>
+        	</div>
+        	<div class="info20">
+        		<h4>Bank and Credit <br> Union Staff</h4>
+        	</div>
+        	<div class="info21">
+        		<h4>Human Resources <br> Departments</h4>
+        	</div>
+        	<div class="info22">
+        		<h4>Domestic Violence <br> Advocates</h4>
+        	</div>
+        	<div class="info23">
+        		<h4>Legal Aid</h4>
+        	</div>
+        	<div class="info24">
+        		<h4>Tax <br> Preparers</h4>
+        	</div>
+        	<div class="info25">
+        		<h4>Social Workers</h4>
+        	</div>
+        	<div class="info26">
+        		<h4>College Counselors</h4>
+        	</div>
+		</li>
+		
+	<!--- Slide 4 --->
+	
+		<li>
+        	<div class="info27">
+        		<h1>We know it’s really, really, hard to talk about finances.</h1>
+        	</div>
+			<div class="info28"></div>
+			<div class="info29"></div>
+			<div class="info30"></div>
+			<div class="info31"></div>
+			<div class="info32"></div>
+			<div class="info33"></div>
+		</li>
+		
+	<!--- Slide 5 --->
+	
+		<li>
+			<div class="info34"></div>
+			<div class="info35"></div>
+			<div class="info36">
+        		<h1>Change Machine is the solution.</h1>
+        	</div>
+		</li>
+		
+	<!--- Slide 6 --->
+	
+		<li>
+			<div class="info37">
+        		<h1>Change Machine is the solution.</h1>
+        	</div>
+        	<div class="info38">
+        		<h1>It's comprehensive. It's adaptable. It's easily customizable.</h1>
+        	</div>
+        	<div class="info39">
+        		<h1>More importantly, it's based on a decade of field testing, and we know it works.</h1>
+        	</div>
+		</li>
+		
+	<!--- Slide 7 --->
+	
+		<li>
+			<div class="info40">
+        		<h1>Change Machine is the solution.</h1>
+        	</div>
+        	<div class="info41">
+        		<h3>Change Machine <b>innovates</b> and builds on what we know about <b>how to improve</b> financial security. The research shows that <b>financial education is not enough</b> to foster lasting change. <b>Our</b> financial development model has been tested in the field for more than 7 years.</h3>
+				<h3>Change Machine is not only a <b>training platform</b> and <b>case management</b> system, but most importantly an online <b>community</b> for practitioners.</h3>
+        	</div>
+		</li>
+		
+	<!--- Slide 8 --->
+	
+		<li>
+			<div class="info42"></div>
+			<div class="info43">
+				<h3>We break Change Machine into three main areas of focus:</h3>
+			</div>
+			<div class="info44">
+				<h1>LEARN<span>,</span></h1>
+			</div>
+			<div class="info45">
+				<h1>COACH<span>,</span></h1>
+			</div>
+			<div class="info46">
+				<h1><span>and</span> SHARE</h1>
+			</div>
+		</li>
+		
+	<!--- Slide 9 --->
+	
+		<li>
+			<div class="info47">
+				<h1>LEARN</h1>
+			</div>
+			<div class="info48">
+				<h5>Change Machine helps new and experienced practitioners <span>learn</span> how to do financial development work.</h5>
+			</div>
+		</li>
+		
+	<!--- Slide 10 --->
+	
+		<li>
+			<div class="info49">
+				<h1>LEARN</h1>
+			</div>
+			<div class="info50"></div>
+			<div class="info51">
+				<h5>Tested and up-to-date information.</h5>
+			</div>
+			<div class="info52">
+				<div class="circle"></div>	
+			</div>
+		</li>
+
+	<!--- Slide 11 --->
+	
+		<li>
+			<div class="info53">
+				<h1>LEARN</h1>
+			</div>
+			<div class="info54"></div>
+			<div class="info55">
+				<h5>Spector-specific information.</h5>
+			</div>
+			<div class="info56">
+				<div class="circle"></div>	
+			</div>
+		</li>
+
+	<!--- Slide 12 --->
+	
+<!--
+		<li>
+			<div class="info57">
+				<h1>LEARN</h1>
+			</div>
+			<div class="info58">
+				<h5>Self-Paced Training with interactive quizzes.</h5>
+			</div>
+			<div class="info59"></div>
+			<div class="info60">
+				<p>"I like how it shows step-by-step processes. The TipSheets and the explanations will help with my overall coaching."</p>
+				<small>- Center for Working Families Coach</small>
+			</div>
+		</li>
+-->
+
+	<!--- Slide 13 --->
+	
+		<li>
+			<div class="info61">
+				<img src="images/slideshow/map.png"> 
+			</div>
+			<div class="info62">
+				<h1>More than 1,000 coaches from 205 organizations are using Change Machine nationwide.</h1>
+			</div>
+		</li>
+		
+	<!--- Slide 14 --->
+	
+		<li>
+			<div class="info63">
+				<h1>COACH</h1>
+			</div>
+			<div class="info64">
+				<h5>Change Machine helps practitioners <span>coach</span> their customers and track their progress.</h5>
+			</div>
+		</li>
+		
+	<!--- Slide 15 --->
+	
+		<li>
+			<div class="info65">
+				<h1>COACH</h1>
+			</div>
+			<div class="info66"></div>
+			<div class="info67">
+				<h5>Interactive data collection tools.</h5>
+			</div>
+			<div class="info68">
+				<div class="circle"></div>	
+			</div>
+		</li>
+
+	<!--- Slide 16 --->
+	
+		<li>
+			<div class="info69">
+				<h1>COACH</h1>
+			</div>
+			<div class="info70"></div>
+			<div class="info71">
+				<h5>Tracks progress with Milestones to encourage customers along the way.</h5>
+			</div>
+			<div class="info72">
+				<div class="circle"></div>	
+			</div>
+		</li>
+
+	<!--- Slide 17 --->
+	
+<!--
+		<li>
+			<div class="info73">
+				<h1>COACH</h1>
+			</div>
+			<div class="info74">
+				<h5>Reports & data for the whole organization.</h5>
+			</div>
+			<div class="info75"></div>
+			<div class="info76">
+				<p>"I have been able to help our clients better identify their financial goals and work on making plans to achieve them."</p>
+				<small>- Domestic Violence Advocate</small>
+			</div>
+		</li>
+-->
+		
+	<!--- Slide 18 --->
+	
+		<li>
+			<div class="info77">
+				<h1>SHARE</h1>
+			</div>
+			<div class="info78">
+				<h5>Change Machine allows practitioners to <span>share</span> best practices with each other and help develop new content.</h5>
+			</div>
+		</li>
+		
+	<!--- Slide 19 --->
+	
+		<li>
+			<div class="info79">
+				<h1>SHARE</h1>
+			</div>
+			<div class="info80"></div>
+			<div class="info81">
+				<h5>Ask questions and discuss answers with fellow practitioners.</h5>
+			</div>
+			<div class="info82">
+				<div class="circle"></div>	
+			</div>
+		</li>
+		
+	<!--- Slide 20 --->
+	
+<!--
+		<li>
+			<div class="info83">
+				<h1>COACH</h1>
+			</div>
+			<div class="info84">
+				<p>"I particularly appreciated the strengths-based perspective in viewing our client’s financial situations. It has helped me be less judgmental about how they spend their money and more supportive of their lifestyles."</p>
+				<small>- Homeless shelter case worker</small>
+			</div>
+		</li>
+-->
+
+	<!--- Slide 21 --->
+	
+		<li>
+			<div class="info85"></div>
+			<div class="info86"></div>
+			<div class="info87">
+        		<h1>Join us at Change-Machine.org</h1>
+        	</div>
+		</li>
+		
+    </ul>
+</div>
+
+</div><!-- sequence-wrapper -->
+  
+  
+  
+  
+  
+  
+  
+  
     <div class="container"><span id="j_id0:j_id1:j_id16">
                 <div class="row home-page">
                  <div class="span7">
@@ -270,7 +684,6 @@
                     </div>
                   </div>
                   <div class="span5">
-                    <iframe allowFullScreen="true" frameborder="0" height="220" mozallowfullscreen="true" src="http://player.vimeo.com/video/58037463?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" style="margin:10px 0px" webkitAllowFullScreen="true" width="370"></iframe> 
 
                     <div class="well"><span id="j_id0:j_id1:j_id18">
 <form id="j_id0:j_id1:j_id18:loginComponent:loginForm" name="j_id0:j_id1:j_id18:loginComponent:loginForm" method="post" action="https://thefinancialclinic.secure.force.com/ChangeMachine_Home?refURL=http%3A%2F%2Fwww.change-machine.org%2F" enctype="application/x-www-form-urlencoded">
@@ -324,7 +737,7 @@ Password</label></td>
       <div class="row">
 
         <div class="span3">
-          <img class="footerLogo" src="/resource/1367507424000/ChangeMachineFooterLogo" />
+          <img class="footerLogo" src="http://www.change-machine.org/resource/1367507424000/ChangeMachineFooterLogo" />
 
         </div>
 
