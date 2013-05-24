@@ -73,7 +73,18 @@
 			});
 		});
 	</script>
-
+	
+	<script>
+		$j(function(){
+			$j("#sequence .close-sequence").click(function() {
+				$j(".sequence-buttons").fadeOut("slow");
+				$j("#sequence").fadeOut("fast");
+				$j(".sequence-intro").fadeIn("slow" ,function() {
+					$j(".sequence-wrapper").animate({ height: 400 }, 500); 
+				});
+			});
+		});
+	</script>
 
 
 
@@ -653,6 +664,7 @@
 			<div class="info86"></div>
 			<div class="info87">
         		<h1>Join us at Change-Machine.org</h1>
+        		<!-- <h4 class="close-sequence">Close Slideshow</h4> -->
         	</div>
 		</li>
 		

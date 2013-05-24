@@ -5031,6 +5031,7 @@ body {
   font-size: 2.55em;
   line-height: 1.25em;
   color: #ffffff;
+  text-transform: none;
 }
 #sequence h2 {
   font-family: "proxima-nova", sans-serif;
@@ -5065,15 +5066,17 @@ body {
   width: 956px;
   margin: 0 -10px;
   overflow: hidden;
+  background: #8ea2ca;
 }
 .sequence-intro {
   position: absolute;
   z-index: 20;
   height: 400px;
-  width: 956px;
-  margin: 0 0;
+  width: 946px;
+  margin: 0 5px;
   background-color: #8ea2ca;
   overflow: hidden;
+  box-shadow: inset -3px 6px 3px -5px rgba(0, 0, 0, 0.3);
 }
 .sequence-intro .info0 {
   background-image: url('/images/slideshow/rays.png');
@@ -5137,15 +5140,16 @@ body {
 }
 /* -------------------------------------------------------------------------------- */
 #sequence {
-  width: 956px;
+  width: 946px;
   height: 700px;
-  margin: 0 0;
+  margin: 0 5px;
   /* margin: 6.5625em auto; */
 
   /* border: 1px solid darken(@blue, 10%); */
 
   position: relative;
   overflow: hidden;
+  box-shadow: inset -3px 6px 3px -5px rgba(0, 0, 0, 0.3);
 }
 #sequence > .sequence-canvas {
   /* required */
@@ -5197,7 +5201,11 @@ body {
 .sequence-border {
   background-color: #e3e8f2;
   height: 20px;
-  width: 100%;
+  width: 946px;
+  margin-left: -5px;
+  box-shadow: 0px -5px 2px -5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 40;
 }
 #sequence {
   /* -------------------------------------------------------------------------------- */
@@ -5472,41 +5480,45 @@ body {
   top: 0;
   padding-top: 80px;
   z-index: 12;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
 }
 #sequence .animate-in .info11 {
   top: 230px;
-  -webkit-transition-delay: 0.5s;
-  -moz-transition-delay: 0.5s;
-  -o-transition-delay: 0.5s;
-  transition-delay: 0.5s;
+  -webkit-transition-delay: 1.5s;
+  -moz-transition-delay: 1.5s;
+  -o-transition-delay: 1.5s;
+  transition-delay: 1.5s;
 }
 #sequence .animate-in .info12 {
   top: 270px;
-  -webkit-transition-delay: 0.9s;
-  -moz-transition-delay: 0.9s;
-  -o-transition-delay: 0.9s;
-  transition-delay: 0.9s;
+  -webkit-transition-delay: 1.9s;
+  -moz-transition-delay: 1.9s;
+  -o-transition-delay: 1.9s;
+  transition-delay: 1.9s;
 }
 #sequence .animate-in .info13 {
   top: 310px;
-  -webkit-transition-delay: 1.3s;
-  -moz-transition-delay: 1.3s;
-  -o-transition-delay: 1.3s;
-  transition-delay: 1.3s;
+  -webkit-transition-delay: 2.3s;
+  -moz-transition-delay: 2.3s;
+  -o-transition-delay: 2.3s;
+  transition-delay: 2.3s;
 }
 #sequence .animate-in .info14 {
   top: 350px;
-  -webkit-transition-delay: 1.7s;
-  -moz-transition-delay: 1.7s;
-  -o-transition-delay: 1.7s;
-  transition-delay: 1.7s;
+  -webkit-transition-delay: 2.7s;
+  -moz-transition-delay: 2.7s;
+  -o-transition-delay: 2.7s;
+  transition-delay: 2.7s;
 }
 #sequence .animate-in .info15 {
   top: 390px;
-  -webkit-transition-delay: 2.1s;
-  -moz-transition-delay: 2.1s;
-  -o-transition-delay: 2.1s;
-  transition-delay: 2.1s;
+  -webkit-transition-delay: 3.1s;
+  -moz-transition-delay: 3.1s;
+  -o-transition-delay: 3.1s;
+  transition-delay: 3.1s;
 }
 #sequence .animate-in .info16 {
   bottom: 61px;
@@ -5627,7 +5639,8 @@ body {
 
   width: 946px;
   bottom: 0;
-  left: 5px;
+  /* left: 5px; */
+
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
   -o-transition-delay: 0s;
@@ -5637,8 +5650,8 @@ body {
   width: 100%;
 }
 #sequence .info19 {
-  top: 485px;
-  left: 110px;
+  top: 480px;
+  left: 115px;
   -webkit-transition-delay: 2;
   -moz-transition-delay: 2;
   -o-transition-delay: 2;
@@ -5663,8 +5676,8 @@ body {
   transform: rotate(-25deg);
 }
 #sequence .info20 {
-  top: 392px;
-  left: 210px;
+  top: 387px;
+  left: 215px;
   -webkit-transition-delay: 2;
   -moz-transition-delay: 2;
   -o-transition-delay: 2;
@@ -5689,8 +5702,8 @@ body {
   transform: rotate(-11deg);
 }
 #sequence .info21 {
-  top: 250px;
-  left: 240px;
+  top: 245px;
+  left: 245px;
   -webkit-transition-delay: 2;
   -moz-transition-delay: 2;
   -o-transition-delay: 2;
@@ -5715,8 +5728,8 @@ body {
   transform: rotate(11deg);
 }
 #sequence .info22 {
-  top: 236px;
-  left: 366px;
+  top: 231px;
+  left: 371px;
 }
 #sequence .info22:before {
   /* Dot */
@@ -5737,8 +5750,8 @@ body {
   transform: rotate(18deg);
 }
 #sequence .info23 {
-  top: 450px;
-  left: 372px;
+  top: 445px;
+  left: 377px;
 }
 #sequence .info23:before {
   /* Dot */
@@ -5759,8 +5772,8 @@ body {
   transform: rotate(16deg);
 }
 #sequence .info24 {
-  top: 235px;
-  left: 505px;
+  top: 230px;
+  left: 510px;
 }
 #sequence .info24:before {
   /* Dot */
@@ -5781,8 +5794,8 @@ body {
   transform: rotate(40deg);
 }
 #sequence .info25 {
-  top: 262px;
-  left: 685px;
+  top: 257px;
+  left: 690px;
 }
 #sequence .info25:before {
   /* Dot */
@@ -5803,8 +5816,8 @@ body {
   transform: rotate(-24deg);
 }
 #sequence .info26 {
-  top: 390px;
-  left: 675px;
+  top: 385px;
+  left: 680px;
 }
 #sequence .info26:before {
   /* Dot */
@@ -5980,6 +5993,7 @@ body {
   -moz-transition-delay: 1s;
   -o-transition-delay: 1s;
   transition-delay: 1s;
+  transition: all 1s ease-in-out;
 }
 #sequence .animate-in .info28 {
   width: 182px;
@@ -5987,7 +6001,7 @@ body {
   background-image: url('/images/slideshow/stamps.png');
   background-position: 636px 375px;
   top: 255px;
-  left: 60px;
+  left: 80px;
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
   -ms-transform: rotate(3deg);
@@ -6004,7 +6018,7 @@ body {
   background-image: url('/images/slideshow/stamps.png');
   background-position: -33px -9px;
   top: 280px;
-  left: 267px;
+  left: 287px;
   -webkit-transform: rotate(-4deg);
   -moz-transform: rotate(-4deg);
   -ms-transform: rotate(-4deg);
@@ -6021,7 +6035,7 @@ body {
   background-image: url('/images/slideshow/stamps.png');
   background-position: 360px 529px;
   top: 475px;
-  left: 77px;
+  left: 97px;
   -webkit-transform: rotate(12deg);
   -moz-transform: rotate(12deg);
   -ms-transform: rotate(12deg);
@@ -6038,7 +6052,7 @@ body {
   background-image: url('/images/slideshow/stamps.png');
   background-position: -33px -155px;
   top: 477px;
-  left: 307px;
+  left: 327px;
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
   -ms-transform: rotate(5deg);
@@ -6055,7 +6069,7 @@ body {
   background-image: url('/images/slideshow/stamps.png');
   background-position: 408px 318px;
   top: 426px;
-  left: 605px;
+  left: 625px;
   -webkit-transform: rotate(-4deg);
   -moz-transform: rotate(-4deg);
   -ms-transform: rotate(-4deg);
@@ -6072,7 +6086,7 @@ body {
   background-image: url('/images/slideshow/stamps.png');
   background-position: -387px -9px;
   top: 255px;
-  left: 560px;
+  left: 580px;
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
   -ms-transform: rotate(2deg);
@@ -6134,6 +6148,7 @@ body {
   font-style: normal;
   font-weight: 900;
   font-size: 3em;
+  text-transform: none;
 }
 #sequence .info34,
 #sequence .info35,
@@ -6194,10 +6209,10 @@ body {
   line-height: 1.4em;
 }
 #sequence .info38 {
-  width: 80%;
+  width: 78%;
   text-align: center;
   top: 177px;
-  margin: 0 10%;
+  margin: 0 11%;
 }
 #sequence .info38 h1 {
   font-family: "proxima-nova", sans-serif;
@@ -6224,6 +6239,11 @@ body {
 #sequence .info39 {
   opacity: 0;
   transition: all 1s ease-in-out;
+}
+#sequence .info37 h1,
+#sequence .info38 h1,
+#sequence .info39 h1 {
+  text-transform: none;
 }
 #sequence .animate-in .info37,
 #sequence .animate-in .info38,
@@ -6273,6 +6293,7 @@ body {
   font-weight: 900;
   font-size: 3em;
   line-height: 1.4em;
+  text-transform: none;
 }
 #sequence .info41 {
   width: 78%;
@@ -6549,6 +6570,8 @@ body {
 }
 #sequence .animate-out .info52 .circle {
   background-position: 725px 649px;
+  transition-property: background-position;
+  transition-duration: 10s;
 }
 #sequence .info53 {
   top: 60px;
@@ -6623,6 +6646,11 @@ body {
   opacity: 0;
   transition: all 1s ease-in-out;
 }
+#sequence .animate-out .info56 .circle {
+  background-position: 950px 784px;
+  transition-property: background-position;
+  transition-duration: 10s;
+}
 #sequence .info57 {
   top: 60px;
   left: 100px;
@@ -6692,14 +6720,15 @@ body {
   left: 50px;
 }
 #sequence .info62 {
-  bottom: 40px;
-  width: 92%;
-  margin: 0 4%;
+  bottom: -80px;
+  width: 90%;
+  margin: 0 5%;
 }
 #sequence .info62 h1 {
   text-align: center;
   font-size: 2.2em;
   line-height: 1.5em;
+  text-transform: none;
 }
 #sequence .info61,
 #sequence .info62 {
@@ -6713,6 +6742,9 @@ body {
   -moz-transition-delay: 1s;
   -o-transition-delay: 1s;
   transition-delay: 1s;
+}
+#sequence .animate-in .info62 {
+  bottom: 40px;
 }
 #sequence .animate-out .info61,
 #sequence .animate-out .info62 {
@@ -6840,7 +6872,11 @@ body {
   -moz-transition-delay: 2s;
   -o-transition-delay: 2s;
   transition-delay: 2s;
-  transition: all 1s ease-in-out;
+}
+#sequence .animate-out .info68 .circle {
+  background-position: 725px 649px;
+  transition-property: background-position;
+  transition-duration: 10s;
 }
 #sequence .info69 {
   top: 60px;
@@ -6914,6 +6950,11 @@ body {
 #sequence .animate-out .info72 {
   opacity: 0;
   transition: all 1s ease-in-out;
+}
+#sequence .animate-out .info72 .circle {
+  background-position: 950px 784px;
+  transition-property: background-position;
+  transition-duration: 10s;
 }
 #sequence .info73 {
   top: 60px;
@@ -7062,7 +7103,7 @@ body {
   background-color: #ffffff;
   box-shadow: 4px 4px 0 #b1bfda;
   background-image: url('/images/slideshow/Screen_Shot_2.png');
-  background-position: 950px 784px;
+  background-position: 950px 684px;
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
   -ms-transform: rotate(-15deg);
@@ -7086,12 +7127,22 @@ body {
   -o-transition-delay: 1s;
   transition-delay: 1s;
 }
+#sequence .animate-in .info82 .circle {
+  background-position: 950px 784px;
+  transition-property: background-position;
+  transition-duration: 10s;
+}
 #sequence .animate-out .info79,
 #sequence .animate-out .info80,
 #sequence .animate-out .info81,
 #sequence .animate-out .info82 {
   opacity: 0;
   transition: all 1s ease-in-out;
+}
+#sequence .animate-out .info82 .circle {
+  background-position: 950px 784px;
+  transition-property: background-position;
+  transition-duration: 10s;
 }
 #sequence .info83 {
   top: 60px;
@@ -7176,20 +7227,20 @@ body {
 }
 #sequence .animate-in .info85 {
   opacity: .34;
-  -webkit-transition-delay: 1s;
-  -moz-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  transition-delay: 1s;
+  -webkit-transition-delay: 1.5s;
+  -moz-transition-delay: 1.5s;
+  -o-transition-delay: 1.5s;
+  transition-delay: 1.5s;
 }
 #sequence .animate-in .info86,
 #sequence .animate-in .info87 {
   opacity: 1;
 }
 #sequence .animate-in .info86 {
-  -webkit-transition-delay: 1.5s;
-  -moz-transition-delay: 1.5s;
-  -o-transition-delay: 1.5s;
-  transition-delay: 1.5s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
 }
 #sequence .animate-in .info87 {
   -webkit-transition-delay: 2.5s;
