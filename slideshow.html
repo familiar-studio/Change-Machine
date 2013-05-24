@@ -54,12 +54,17 @@
 	<script>
 		$j(function(){
 			$j(".sequence-intro .info01 h2").click(function() {
+				$j(".sequence-buttons").fadeIn("slow");
 				$j(".sequence-intro").fadeOut("slow" ,function() {
 					$j(".sequence-wrapper").animate({ height: 700 }, 500, 
 						function() {
 							var options = {
-				            	cycle: false,
-								autoPlay: false
+				            	cycle: true,
+								autoPlay: false,
+								nextButton: true,
+								prevButton: true,
+								animateStartingFrameIn: true,
+								reverseAnimationsWhenNavigatingBackwards: false
 							}
 							var sequence = $j("#sequence").sequence(options).data("sequence");
 						}
@@ -285,15 +290,17 @@
   <div class="sequence-wrapper">
   
 	<div class="sequence-intro">
-		<div class="info0"></div>
+		<!-- <div class="info0"></div> -->
 		<div class="info01">
-			<h1>Learn. Coach. Share.</h1>
-			<h1>Change.</h1>
-			<h2>See how Change Machine will help you.</h2>
+			<h1>Learn. Coach. Share. <span>Change.</span></h1>
+			<h2>See how Change Machine can help you.</h2>
 		</div>	 
 		<div class="info02"></div> 
+		<div class="info03"><img src="/images/slideshow/cm_logo_wordmark.png"></div>
 	</div>
   
+  
+
   
 <div id="sequence">
     <ul class="sequence-canvas">
@@ -425,7 +432,7 @@
 		
 	<!--- Slide 6 --->
 	
-		<li>
+		<li class="slide6">
 			<div class="info37">
         		<h1>Change Machine is the solution.</h1>
         	</div>
@@ -463,7 +470,10 @@
 				<h1>COACH<span>,</span></h1>
 			</div>
 			<div class="info46">
-				<h1><span>and</span> SHARE</h1>
+				<h1><span>and</span> </h1>
+			</div>
+			<div class="info46-1">
+				<h1>SHARE</h1>
 			</div>
 		</li>
 		
@@ -649,8 +659,13 @@
     </ul>
 </div>
 
+	    <div class="sequence-buttons">
+    		<h4 class="sequence-prev"></h4>
+    		<h4 class="sequence-next"></h4>
+    	</div>
+
 </div><!-- sequence-wrapper -->
-  
+<div class="sequence-border"></div>  
   
   
   
