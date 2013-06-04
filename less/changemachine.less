@@ -2389,12 +2389,14 @@ body .worksheet-page .page-header {
 		padding: 16px 11px;
 	}
 	.pager {
-		margin-top: 0;
+		margin-top: 20px;
 		margin-bottom: 40px;
 		padding: 0;
+		position: relative;
 		li {
 			text-indent: 0;
 			overflow: hidden;
+			position: relative;
 			a {
 				.proximaB();
 				color: @grayLighter;
@@ -2411,9 +2413,8 @@ body .worksheet-page .page-header {
 			}
 		}
 		li.next a {
-			padding-right: 35px;
-			padding-top: 18px;
-			float: right;
+
+			width: 165px;
 			&:after {
 				content: "";
 				height: 25px;
@@ -2422,15 +2423,14 @@ body .worksheet-page .page-header {
 				background-size: 71px;
 				background-position: 28px 0;
 				float: right;
-				margin: -5px -35px 0 0px;
+				margin-top: -4px;
 			}
 			&:hover:after {
 				background-position: 28px 24px;
 			}
 		}
 		li.previous a {
-			padding-top: 18px;
-			float: left;
+
 			&:before {
 				content: "";
 				height: 25px;
@@ -2438,7 +2438,7 @@ body .worksheet-page .page-header {
 				background: url("http://thefinancialclinic.change.cs9.force.com/resource/MarketingAssets/mkt_Arrows.png");
 				background-size: 71px;
 				float: left;
-				margin: -5px 8px 0 0;
+				margin-top: -4px;
 			}
 			&:hover:before {
 				background-position: 0 24px;

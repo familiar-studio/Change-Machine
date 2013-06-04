@@ -8424,16 +8424,18 @@ body .worksheet-page .page-header {
 }
 /* line 2391, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager {
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 40px;
   padding: 0;
+  position: relative;
 }
-/* line 2395, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2396, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li {
   text-indent: 0;
   overflow: hidden;
+  position: relative;
 }
-/* line 2398, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2400, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li a {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -8443,23 +8445,21 @@ body .worksheet-page .page-header {
   line-height: 18px;
   transition: none;
 }
-/* line 2404, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2406, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li a:hover {
   color: #000000;
   transition: none;
 }
-/* line 2408, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2410, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li a:after,
 .marketing .pager li a:before {
   content: "";
 }
-/* line 2413, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2415, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li.next a {
-  padding-right: 35px;
-  padding-top: 18px;
-  float: right;
+  width: 165px;
 }
-/* line 2417, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2418, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li.next a:after {
   content: "";
   height: 25px;
@@ -8468,16 +8468,11 @@ body .worksheet-page .page-header {
   background-size: 71px;
   background-position: 28px 0;
   float: right;
-  margin: -5px -35px 0 0px;
+  margin-top: -4px;
 }
-/* line 2427, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2428, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li.next a:hover:after {
   background-position: 28px 24px;
-}
-/* line 2431, /Users/brian/Sites/Change-Machine/less/changemachine.less */
-.marketing .pager li.previous a {
-  padding-top: 18px;
-  float: left;
 }
 /* line 2434, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li.previous a:before {
@@ -8487,7 +8482,7 @@ body .worksheet-page .page-header {
   background: url("http://thefinancialclinic.change.cs9.force.com/resource/MarketingAssets/mkt_Arrows.png");
   background-size: 71px;
   float: left;
-  margin: -5px 8px 0 0;
+  margin-top: -4px;
 }
 /* line 2443, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li.previous a:hover:before {
