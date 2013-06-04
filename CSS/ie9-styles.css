@@ -1,0 +1,8 @@
+.marketing li:before {
+	content: "■";
+	font-size: 17px;
+	color: #c7d1e4;
+	position: relative;
+	left: -8px;
+	top: 3px;
+}
