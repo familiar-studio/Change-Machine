@@ -7051,7 +7051,7 @@ body .worksheet-page .page-header {
 }
 .marketing ul li:before {
   content: "■";
-  font-size: 1.4em;
+  font-size: 25px;
   color: #c7d1e4;
   position: relative;
   left: -8px;
@@ -7086,6 +7086,7 @@ body .worksheet-page .page-header {
   margin-bottom: 9px;
   margin-top: 6px;
   padding: 5px;
+  width: 400px;
 }
 .marketing .callout.pull-right {
   margin-left: 10px;
@@ -7153,11 +7154,13 @@ body .worksheet-page .page-header {
   color: #bbbbbb;
   font-size: 35px;
   line-height: 18px;
-  transition: none !important;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 .marketing .pager li a:hover {
   color: #000000;
-  transition: none;
 }
 .marketing .pager li a:after,
 .marketing .pager li a:before {

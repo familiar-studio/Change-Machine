@@ -2309,7 +2309,7 @@ body .worksheet-page .page-header {
 			text-indent: -17px;
 			&:before {
 				content: "■";
-				font-size: 1.4em;
+				font-size: 25px;
 				color: @lightblue;
 				position: relative;
 				left: -8px;
@@ -2345,6 +2345,7 @@ body .worksheet-page .page-header {
 		margin-bottom: 9px;
 		margin-top: 6px;
 		padding: 5px;
+		width: 400px;
 		&.pull-right {
 			margin-left: 10px;
 			margin-right: -30px;
@@ -2404,10 +2405,9 @@ body .worksheet-page .page-header {
 				color: @grayLighter;
 				font-size: 35px;
 				line-height: 18px;
-				transition: none !important;
+				.transition(none);
 				&:hover {
 					color: @black;
-					transition: none;
 				}
 				&:after, &:before {
 					content: "";
