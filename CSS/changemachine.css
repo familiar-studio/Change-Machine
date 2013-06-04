@@ -8365,20 +8365,21 @@ body .worksheet-page .page-header {
 /* line 2343, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .callout {
   border: 10px solid #e3e8f2;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
+  margin-top: 6px;
   padding: 5px;
 }
-/* line 2347, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2348, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .callout.pull-right {
   margin-left: 10px;
   margin-right: -30px;
 }
-/* line 2351, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2352, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .callout.pull-left {
   margin-right: 10px;
   margin-left: -30px;
 }
-/* line 2356, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2357, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing blockquote {
   border-left: none;
   border-top: 2px dotted #c7d1e4;
@@ -8393,49 +8394,50 @@ body .worksheet-page .page-header {
   line-height: 50px;
   letter-spacing: 2px;
 }
-/* line 2367, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2368, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing blockquote small {
   color: #8ea2ca;
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   text-align: right;
   margin-top: 10px;
   font-size: 18px;
+  letter-spacing: 0;
 }
-/* line 2375, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2377, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .signup-button {
   text-align: center;
   margin: 20px 0 10px;
   border-top: 2px dotted #c7d1e4;
   border-bottom: 5px solid #000000;
 }
-/* line 2380, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2382, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .signup-button.share-button {
   border-top: none;
   margin-top: -40px;
 }
-/* line 2385, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2387, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .btn-large {
   font-size: 24px;
   margin: 20px 0;
   width: 410px;
   padding: 16px 11px;
 }
-/* line 2391, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2393, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager {
   margin-top: 20px;
   margin-bottom: 40px;
   padding: 0;
   position: relative;
 }
-/* line 2396, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2398, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li {
   text-indent: 0;
   overflow: hidden;
   position: relative;
 }
-/* line 2400, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2402, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li a {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -8445,21 +8447,21 @@ body .worksheet-page .page-header {
   line-height: 18px;
   transition: none;
 }
-/* line 2406, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2408, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li a:hover {
   color: #000000;
   transition: none;
 }
-/* line 2410, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2412, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li a:after,
 .marketing .pager li a:before {
   content: "";
 }
-/* line 2415, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2417, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li.next a {
   width: 165px;
 }
-/* line 2418, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2420, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li.next a:after {
   content: "";
   height: 25px;
@@ -8470,11 +8472,11 @@ body .worksheet-page .page-header {
   float: right;
   margin-top: -4px;
 }
-/* line 2428, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2430, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li.next a:hover:after {
   background-position: 28px 24px;
 }
-/* line 2434, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2436, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li.previous a:before {
   content: "";
   height: 25px;
@@ -8484,27 +8486,27 @@ body .worksheet-page .page-header {
   float: left;
   margin-top: -4px;
 }
-/* line 2443, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2445, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .marketing .pager li.previous a:hover:before {
   background-position: 0 24px;
 }
 /* ----- Footer ----- */
-/* line 2454, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2456, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 footer * {
   margin: 0;
 }
-/* line 2458, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2460, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 footer .container {
   height: 140px;
 }
-/* line 2462, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2464, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .footerLogo {
   margin: -29px 10px 0;
   height: auto;
   width: auto;
   vertical-align: top;
 }
-/* line 2470, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2472, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .productOf {
   font-size: 10px;
   font-family: "proxima-nova", sans-serif;
@@ -8515,13 +8517,13 @@ footer .container {
   margin-left: 10px;
   margin-top: 30px;
 }
-/* line 2478, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2480, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .clinicLogo {
   width: 110px;
   display: inline;
   margin: 3px 0 0 10px;
 }
-/* line 2484, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2486, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .footerRays {
   position: relative;
   margin-top: -565px;
@@ -8529,7 +8531,7 @@ footer .container {
   z-index: -5;
   margin-bottom: 0;
 }
-/* line 2493, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2495, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .footer ul,
 footer ul {
   float: left;
@@ -8537,13 +8539,13 @@ footer ul {
   margin-top: 20px;
   list-style-type: none;
 }
-/* line 2500, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2502, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .footer ul li,
 footer ul li {
   float: left;
   margin-right: 0;
 }
-/* line 2504, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2506, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .footer ul li a,
 footer ul li a {
   color: #000000;
@@ -8552,7 +8554,7 @@ footer ul li a {
   font-weight: 400;
   font-size: 12px;
 }
-/* line 2508, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2510, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .footer ul li a:hover,
 footer ul li a:hover {
   background-color: none;
@@ -8560,7 +8562,7 @@ footer ul li a:hover {
 }
 /* ----- End Footer ----- */
 /* ----- Feedback ----- */
-/* line 2522, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2524, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedback {
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
@@ -8574,7 +8576,7 @@ footer ul li a:hover {
   border-top: 5px solid #c7d1e4;
   padding-bottom: 8px;
 }
-/* line 2535, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2537, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedback a {
   padding: 3px 10px 8px;
   color: #ffffff;
@@ -8583,7 +8585,7 @@ footer ul li a:hover {
   font-weight: 700;
 }
 /* ----- End Feedback ----- */
-/* line 2551, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2553, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .utilityNav {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -8594,11 +8596,11 @@ footer ul li a:hover {
   letter-spacing: 1px;
   padding: 5px;
 }
-/* line 2558, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2560, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .utilityNav:hover {
   color: #000000;
 }
-/* line 2563, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2565, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .footerNav {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -8608,31 +8610,31 @@ footer ul li a:hover {
   color: #000000;
   padding: 5px;
 }
-/* line 2569, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2571, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .footerNav:hover {
   color: #ffffff;
 }
-/* line 2574, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2576, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu ul li.active:before {
   content: "•";
   color: #73a534;
   position: relative;
   margin-right: 5px;
 }
-/* line 2582, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2584, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu {
   font-size: 18px;
   text-transform: uppercase;
 }
-/* line 2585, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2587, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu a {
   color: #ffffff;
 }
-/* line 2588, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2590, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu ul {
   border-radius: 0 0 5px 5px;
 }
-/* line 2590, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2592, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu ul li {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -8640,12 +8642,12 @@ footer ul li a:hover {
   background-color: #73a534;
   border-radius: 5px;
 }
-/* line 2594, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2596, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu ul li a {
   padding: 10px;
   display: inline-block;
 }
-/* line 2598, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2600, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu ul li ul {
   background-color: #ffffff;
   border: 2px solid #c7d1e4;
@@ -8653,7 +8655,7 @@ footer ul li a:hover {
   box-shadow: 2px 2px 2px #e3e8f2;
   text-align: left;
 }
-/* line 2604, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2606, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu ul li ul li {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -8662,50 +8664,50 @@ footer ul li a:hover {
   border-radius: 0;
   padding: 10px;
 }
-/* line 2610, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2612, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu ul li ul li:first-child:hover {
   background-color: #ffffff;
   color: #000000;
 }
-/* line 2615, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2617, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu ul li ul li:last-child {
   border-radius: 0 0 3px 3px;
 }
-/* line 2618, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2620, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu ul li ul li a {
   color: #000000;
 }
-/* line 2621, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2623, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu ul li ul li:hover {
   background-color: #73a534;
 }
-/* line 2623, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2625, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .menu ul li ul li:hover a {
   color: #ffffff;
 }
-/* line 2633, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2635, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .currentCustomer {
   color: #d3e1c1;
 }
-/* line 2635, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2637, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .currentCustomer span {
   color: #73a534;
 }
-/* line 2638, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2640, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .currentCustomer ul li {
   background-color: #eaf1e0;
   color: #d3e1c1;
 }
-/* line 2642, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2644, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .currentCustomer ul li.active:before {
   margin: 0 -5px 0 5px;
 }
-/* line 2648, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2650, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .dashboard .customer {
   font-size: 20px;
   text-transform: capitalize;
 }
-/* line 2652, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2654, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .dashboard label {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -8714,26 +8716,26 @@ footer ul li a:hover {
   text-transform: uppercase;
   color: #939598;
 }
-/* line 2657, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2659, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .dashboard label span {
   color: #73a534;
   margin-left: .5em;
 }
-/* line 2662, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2664, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .dashboard .number {
   font-size: 24px;
   color: #73a534;
 }
-/* line 2668, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2670, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedback .nav-pills > li > a {
   color: #8ea2ca;
 }
-/* line 2672, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2674, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 h2.roadblock,
 .roadblock {
   color: #a72c31;
 }
-/* line 2677, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2679, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #loginPopover {
   position: fixed;
   top: 100px;
@@ -8746,7 +8748,7 @@ h2.roadblock,
   margin-left: -213px;
   text-align: center;
 }
-/* line 2692, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2694, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #overlay {
   position: fixed;
   top: 0;
@@ -8763,25 +8765,25 @@ h2.roadblock,
 /* -------------------------------------------------------------------------- */
 /*                            Sales Force Styling                             */
 /* -------------------------------------------------------------------------- */
-/* line 2713, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2715, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 img.skiplink {
   display: none;
 }
-/* line 2717, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2719, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bodyDiv {
   font-size: 100%;
   margin-bottom: 40px;
 }
-/* line 2722, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2724, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock,
 .individualPalette .bPageBlock {
   border: none;
 }
-/* line 2726, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2728, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .pbHeader {
   background-color: #ffffff;
 }
-/* line 2728, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2730, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .pbHeader h2 {
   color: #f49ac2;
   font-size: 47px;
@@ -8790,29 +8792,29 @@ img.skiplink {
   font-weight: 700;
   text-transform: capitalize;
 }
-/* line 2734, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2736, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .pbHeader .pbButton {
   float: right;
 }
-/* line 2737, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2739, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .pbHeader .pbTitle {
   width: 80%;
 }
-/* line 2742, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2744, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .pbBottomButtons {
   float: right;
   margin-bottom: 20px;
 }
-/* line 2747, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2749, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .pbBody {
   padding: 20px 0;
 }
-/* line 2749, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2751, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .pbBody .pbSubheader {
   background-color: #ffffff;
   border-bottom: 1px solid #c7c8ca;
 }
-/* line 2752, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2754, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .pbBody .pbSubheader h3,
 .bPageBlock .pbBody .pbSubheader h3 a {
   color: #8ea2ca;
@@ -8820,7 +8822,7 @@ img.skiplink {
   font-style: normal;
   font-weight: 700;
 }
-/* line 2757, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2759, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .pbBody .pbSubsection {
   margin-top: 20px;
   margin-bottom: 60px;
@@ -8828,34 +8830,34 @@ img.skiplink {
   font-style: normal;
   font-weight: 400;
 }
-/* line 2761, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2763, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .pbBody .pbSubsection label {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 700;
   margin-top: 3px;
 }
-/* line 2768, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2770, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .requiredLegend {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
 }
-/* line 2772, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2774, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .requiredExample {
   border-left: none;
   font-size: 80%;
   vertical-align: 1px;
   width: 100%;
 }
-/* line 2777, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2779, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .requiredExample:before {
   content: "*";
   font-size: 16px;
   color: #a72c31;
 }
-/* line 2783, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2785, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .requiredInput .requiredBlock {
   background-color: #ffffff;
   bottom: 1px;
@@ -8864,12 +8866,12 @@ img.skiplink {
   top: 1px;
   width: 1px;
 }
-/* line 2791, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2793, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .requiredMark {
   color: #a72c31;
   margin-right: 3px;
 }
-/* line 2796, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2798, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 select,
 textarea,
 input[type="text"],
@@ -8891,7 +8893,7 @@ input[type="color"],
   font-style: normal;
   font-weight: 400;
 }
-/* line 2798, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2800, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 select:focus,
 textarea:focus,
 input[type="text"]:focus,
@@ -8912,23 +8914,23 @@ input[type="color"]:focus,
   border-color: #c7d1e4;
   box-shadow: #eaecf4;
 }
-/* line 2804, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2806, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .detailList .labelCol {
   font-size: 14px;
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 700;
 }
-/* line 2809, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2811, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .bPageBlock .detailList tr td,
 .bPageBlock .detailList tr th {
   border-bottom: none;
 }
-/* line 2813, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2815, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.bodyDiv table#bodyTable.outer tbody tr td#bodyCell.oRight form#editPage div.setup div#ep.bPageBlock div.pbBody div.message table.messageTable tbody tr td:first-child {
   display: none;
 }
-/* line 2817, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2819, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .infoM6,
 .infoM4,
 .infoM3,
@@ -8936,13 +8938,13 @@ html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.
 .infoS1 {
   border-color: #f9eec7;
 }
-/* line 2821, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2823, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .pbBody .message {
   background-color: #fbf4dc;
   color: #e8c31b;
   margin-bottom: 20px;
 }
-/* line 2825, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2827, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .pbBody .message .messageCell {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -8956,17 +8958,17 @@ html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.
     padding: 2px 2px 0 10px !important;
 }
 */
-/* line 2839, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2841, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .pbSubsection input[type="checkbox"] {
   float: left;
   margin: 6px 10px 0 20px;
 }
 /* ----- IdeaList ----- */
-/* line 2846, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2848, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .ideaNavCommunity {
   background-color: #ffffff !important;
 }
-/* line 2850, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2852, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .ideaFloatBlock label {
   text-align: left;
   font-size: 30px;
@@ -8976,42 +8978,42 @@ html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.
   font-weight: 700;
   margin-bottom: 10px;
 }
-/* line 2858, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2860, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .outer td.ideaNavCommunityLinksCell {
   vertical-align: middle;
 }
-/* line 2860, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2862, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .outer td.ideaNavCommunityLinksCell .myProfile a,
 .outer td.ideaNavCommunityLinksCell .recentReplies {
   color: #8ea2ca;
 }
-/* line 2862, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2864, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .outer td.ideaNavCommunityLinksCell .myProfile a:hover,
 .outer td.ideaNavCommunityLinksCell .recentReplies:hover {
   color: #73a534;
 }
-/* line 2868, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2870, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .communityIntro .banner {
   border: none;
   margin-bottom: 20px;
 }
-/* line 2873, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2875, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #ideaSubtabs {
   margin-bottom: 5px;
 }
-/* line 2875, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2877, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #ideaSubtabs #nav a {
   color: #8ea2ca;
 }
-/* line 2877, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2879, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #ideaSubtabs #nav a:hover {
   text-decoration: none;
 }
-/* line 2883, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2885, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #ideaSubtabs .bg {
   background: none !important;
 }
-/* line 2887, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2889, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #ideaSubtabs ul#nav li div {
   border-left: 2px solid #8ea2ca !important;
   border-right: 2px solid #8ea2ca !important;
@@ -9023,126 +9025,126 @@ html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.
   padding: 5px 20px;
   border-radius: 5px 5px 0 0;
 }
-/* line 2897, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2899, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #ideaSubtabs ul#nav li div .secondaryPalette {
   background-color: #c7d1e4 !important;
 }
-/* line 2903, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2905, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #ideaSubtabs ul#nav .ideasCurrentTab div {
   background-color: #c7d1e4 !important;
 }
-/* line 2909, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2911, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #ideaSubtabs ul#nav .ideasNonCurrentTab div {
   background-color: #e3e8f2 !important;
 }
-/* line 2914, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2916, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .ideaPageBlock .bPageBlock,
 .ideaPageBlock .individualPalette .bPageBlock {
   background-color: #c7d1e4;
   border-radius: 4px 4px 0 0;
 }
-/* line 2919, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2921, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .ideaListContainer {
   background-color: #c7d1e4;
   border: 2px solid #8ea2ca;
   border-radius: 5px;
 }
-/* line 2923, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2925, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .ideaListContainer .pbHeader,
 .ideaListContainer .pbBody {
   background-color: #c7d1e4;
 }
-/* line 2926, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2928, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .ideaListContainer .pbHeader {
   padding: 10px 0;
   border-radius: 4px 4px 0 0;
 }
-/* line 2929, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2931, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .ideaListContainer .pbHeader td.pbTitle {
   display: none;
 }
-/* line 2932, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2934, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .ideaListContainer .pbHeader td.pbButton {
   float: right !important;
   margin-top: 15px !important;
   margin-right: 20px;
 }
-/* line 2937, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2939, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .ideaListContainer .pbHeader td.viewCategory {
   float: left !important;
   margin-left: 20px;
 }
-/* line 2944, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2946, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .ideaBlock .pbBody {
   padding: 0;
 }
-/* line 2948, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2950, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .ideaList {
   padding-top: 0px !important;
 }
-/* line 2952, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2954, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .ideaList li {
   border-top: 2px solid #8ea2ca;
   clear: both;
   margin: 10px 0 10px !important;
   padding: 0;
 }
-/* line 2959, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2961, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedIcon {
   display: none !important;
 }
-/* line 2963, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2965, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 select#c {
   display: none;
 }
 /* ----- IdeaList ----- */
 /* ----- Post Idea ----- */
-/* line 2971, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2973, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageBlock div.apexp div.individualPalette div.ideaBlock div#thePage:mainLayout:formIdea:pb.bPageBlock {
   background-color: #ffffff !important;
 }
-/* line 2975, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2977, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #thePage\:mainLayout\:formIdea\:pb {
   background-color: #ffffff !important;
 }
-/* line 2986, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2988, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .pbBottomButtons {
   width: 240px;
 }
-/* line 2988, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2990, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .pbBottomButtons .pbTitle {
   width: 30%;
 }
-/* line 2990, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2992, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .pbBottomButtons .pbTitle input[type="submit"] {
   margin-right: 10px;
 }
-/* line 2996, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 2998, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .multiSelectPicklistRow select[multiple],
 .multiSelectPicklistRow select[size] {
   height: 130px;
 }
-/* line 3001, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3003, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .multiSelectPicklistTable .multiSelectPicklistRow .multiSelectPicklistCell {
   background-color: #ffffff;
 }
-/* line 3003, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3005, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .multiSelectPicklistTable .multiSelectPicklistRow .multiSelectPicklistCell a {
   margin: 0 5px;
 }
 /* ----- Post Idea ----- */
 /* ----- Chatter Answers ----- */
-/* line 3012, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3014, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #cs\3A theFeed {
   border-top: 1px dotted #636466;
 }
-/* line 3017, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3019, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #cs\3A theFeed .feeditemfirstentity {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 300;
 }
-/* line 3022, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3024, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .usericon,
 #cs\3A profile .usericon {
   -webkit-box-shadow: none;
@@ -9153,12 +9155,12 @@ form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageB
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 3028, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3030, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #cs\3A searchAskInput,
 #cs\3A searchAskInputShadow {
   font-size: 1em;
 }
-/* line 3032, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3034, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #cs\3A searchAskButton {
   background-image: none;
   border: 0px;
@@ -9166,50 +9168,50 @@ form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageB
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 3039, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3041, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .cxsingleitemdetailfeed {
   font-size: 1em;
   color: #636466;
   margin-bottom: 0px;
 }
-/* line 3047, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3049, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer {
   line-height: 20px;
 }
-/* line 3049, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3051, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer .feeditemcommentbody {
   margin-top: 5px;
 }
-/* line 3051, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3053, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer .feeditemcommentbody .feeditemfooter {
   margin-top: 5px;
 }
-/* line 3055, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3057, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer .feeditemcommentnew {
   padding-right: 15px;
   padding-left: 45px;
 }
-/* line 3058, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3060, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer .feeditemcommentnew .foobar {
   margin-bottom: 10px;
 }
-/* line 3061, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3063, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer .feeditemcommentnew .newcommentbutton {
   margin-bottom: 5px;
 }
-/* line 3066, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3068, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer .feeditemextras .feeditemcommentplaceholder {
   padding-right: 15px;
   padding-left: 50px;
 }
-/* line 3071, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3073, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .usericon img {
   border: none;
   border-radius: 5px;
   width: 100%;
   height: auto;
 }
-/* line 3078, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3080, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feeditemfooter,
 .feedcommentuser {
   font-family: "proxima-nova", sans-serif;
@@ -9218,34 +9220,34 @@ form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageB
   padding: 0px;
   color: #000000;
 }
-/* line 3084, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3086, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedcommentuser {
   margin-bottom: 5px;
   font-size: 14px !important;
   line-height: 14px;
   display: inline-block;
 }
-/* line 3092, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3094, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedText .feedcommenttext {
   line-height: 24px;
 }
-/* line 3097, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3099, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feeditemfooter li {
   display: inline;
 }
-/* line 3099, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3101, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feeditemfooter li .csDropdown li {
   display: inline-block;
 }
-/* line 3103, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3105, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csMinx {
   display: inline-block;
 }
-/* line 3107, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3109, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csMini .threecolumn {
   background-color: #fff;
 }
-/* line 3112, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3114, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #cs\3A searchAskInputContainer {
   font-size: 1em;
   -webkit-box-shadow: inset 2px 2px 0px #f1f1f2;
@@ -9253,30 +9255,30 @@ form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageB
   box-shadow: inset 2px 2px 0px #f1f1f2;
   border: 1px solid #636466;
 }
-/* line 3120, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3122, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #cs\3A searchAskInputContainer input {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 3126, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3128, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 ul.feeditemfooter li {
   margin-bottom: 0px;
   color: #bbbbbb;
   display: inline;
 }
-/* line 3130, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3132, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 ul.feeditemfooter li .feeditemtimestamp {
   color: #bbbbbb;
 }
-/* line 3133, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3135, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 ul.feeditemfooter li:after {
   content: "|";
   color: #bbbbbb;
   padding-left: 8px;
   margin-right: 5px;
 }
-/* line 3139, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3141, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 ul.feeditemfooter li.cxafterlike:after,
 ul.feeditemfooter li.cxlike:after,
 ul.feeditemfooter li.cxfollow:after,
@@ -9285,62 +9287,62 @@ ul.feeditemfooter li:last-child:after {
   margin-right: 0;
   padding-left: 5px;
 }
-/* line 3147, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3149, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 ul.feeditemfooter li .csDropdown li {
   display: inline-block;
 }
-/* line 3149, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3151, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 ul.feeditemfooter li .csDropdown li:after {
   content: "";
 }
-/* line 3154, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3156, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csoptimizequestion .csfeedcontainer .feeditemseparatingdot {
   display: none;
 }
-/* line 3157, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3159, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 ul.feeditemfooter li ul.csDropdown li:after {
   content: "";
 }
-/* line 3160, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3162, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csDropdown a:hover {
   background-color: transparent;
   color: #5a77b2;
 }
-/* line 3165, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3167, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csMinx .csDropdown {
   width: auto;
   padding: 5px;
 }
-/* line 3170, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3172, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .breadCrumbs a {
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
   transition: none;
 }
-/* line 3175, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3177, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer .cxquestionheader .feeditemtext,
 .csfeedcontainer .cxquestionheader .feeditemtext a {
   line-height: 1.2em;
   color: #636466;
   margin-bottom: 0;
 }
-/* line 3182, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3184, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer a {
   color: #8ea2ca;
 }
-/* line 3184, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3186, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer a:hover {
   color: #5a77b2;
 }
-/* line 3189, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3191, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csMini .threecolumn .mainContent {
   border: 0px;
   -webkit-border-radius: 0px 0px 5px 5px;
   -moz-border-radius: 0px 0px 5px 5px;
   border-radius: 0px 0px 5px 5px;
 }
-/* line 3198, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3200, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedcriterialinks ul {
   background-color: #e3e8f2;
   -webkit-border-radius: 4px 0px 0px 4px;
@@ -9349,7 +9351,7 @@ ul.feeditemfooter li ul.csDropdown li:after {
   padding: 6px 0px;
   border-right: 1px solid #8ea2ca;
 }
-/* line 3205, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3207, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csoptimizequestion .leftContent .feedcriterialinks li.selected a {
   background-color: #ffffff;
   border: 1px solid #8ea2ca;
@@ -9361,40 +9363,40 @@ ul.feeditemfooter li ul.csDropdown li:after {
   margin-left: -10px;
   margin-right: -1px;
 }
-/* line 3219, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3221, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csoptimizequestion .leftContent .datacategorylinks li.selected a {
   background-color: #e3e8f2;
 }
-/* line 3229, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3231, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csMini #cs\:footer,
 .csMini .threecolumn {
   background-image: none;
 }
-/* line 3234, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3236, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .cxSearchOrPost .button,
 .cxPostButtons a.button,
 .cxSearchOrPost a.button:hover,
 .cxPostButtons a.button:hover {
   background-color: #009fc3;
 }
-/* line 3239, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3241, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csMini #cs\:footer {
   display: none;
 }
-/* line 3245, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3247, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csselecttopicmsg {
   font-size: 0.8em;
 }
-/* line 3249, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3251, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csMini .threecolumn {
   float: left;
 }
-/* line 3256, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3258, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csInfo {
   border: 1px solid #e8c31b;
   background-color: #fbf4dc;
 }
-/* line 3261, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3263, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #cs\3A searchAskForm.tbsearchAskForm #cs\3A searchAskButton,
 #cs\3A searchAskForm.tbsearchAskForm #cs\3A searchAgainButton {
   background: #8ea2ca;
@@ -9403,7 +9405,7 @@ ul.feeditemfooter li ul.csDropdown li:after {
   -moz-box-shadow: 2px 2px 2px #c7d1e4;
   border: 2px solid #8ea2ca;
 }
-/* line 3270, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3272, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .breadCrumbs .current span,
 .breadCrumbs .current a:hover span,
 .togglePill .selected a {
@@ -9413,14 +9415,14 @@ ul.feeditemfooter li ul.csDropdown li:after {
   background: #8ea2ca;
   color: #fff;
 }
-/* line 3278, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3280, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .breadCrumbs .current span:hover,
 .breadCrumbs .current a:hover span:hover,
 .togglePill .selected a:hover {
   background: #5a77b2;
   border-color: #5a77b2;
 }
-/* line 3283, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3285, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .breadCrumbs span,
 .breadCrumbs span,
 .togglePill a {
@@ -9431,19 +9433,19 @@ ul.feeditemfooter li ul.csDropdown li:after {
   font-size: .917em;
   font-weight: 700;
 }
-/* line 3292, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3294, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .breadCrumbs span:hover,
 .breadCrumbs span:hover,
 .togglePill a:hover {
   background: #5a77b2;
   color: #ffffff;
 }
-/* line 3297, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3299, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .breadCrumbs a,
 .breadCrumbs a:hover {
   background: none;
 }
-/* line 3300, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3302, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .breadCrumbs a:after,
 .breadCrumbs a:hover:after {
   width: 0px;
@@ -9452,15 +9454,15 @@ ul.feeditemfooter li ul.csDropdown li:after {
   border-width: 10px 0 10px 15px;
   border-color: transparent transparent transparent #eaecf4;
 }
-/* line 3308, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3310, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .breadCrumbs a:hover span {
   color: #ffffff;
 }
-/* line 3311, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3313, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .breadCrumbs .current span {
   padding-left: 10px;
 }
-/* line 3314, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3316, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .breadCrumbs .cxquestionbreadcrumb:after {
   width: 0px;
   height: 0px;
@@ -9468,17 +9470,17 @@ ul.feeditemfooter li ul.csDropdown li:after {
   border-width: 10px 0 10px 15px;
   border-color: transparent transparent transparent #eaecf4;
 }
-/* line 3322, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3324, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer .showmorecommentscontainer a {
   background: #e3e8f2;
   font-size: 1em;
   color: #8ea2ca;
 }
-/* line 3326, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3328, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer .showmorecommentscontainer a:hover {
   color: #5a77b2;
 }
-/* line 3331, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3333, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer .feeditemcomment,
 .csfeedcontainer .feedcommentsshowmore,
 .csfeedcontainer .feeditemcommentplaceholder,
@@ -9487,7 +9489,7 @@ ul.feeditemfooter li ul.csDropdown li:after {
   background: #eaecf4;
   border: none;
 }
-/* line 3336, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3338, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer .feedcommentarrow {
   height: 5px;
   background: none;
@@ -9499,28 +9501,28 @@ ul.feeditemfooter li ul.csDropdown li:after {
   border-bottom: 5px solid #e3e8f2;
   display: block !important;
 }
-/* line 3348, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3350, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csfeedcontainer .feeditem {
   border-bottom: 1px dotted #c7d1e4;
 }
 /* icons */
-/* line 3354, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3356, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .cxfeedcomment .cxafterlike {
   width: 25px;
   height: 25px;
   background: url("http://changemachine.familiar-studio.com/images/question-icons.png") 1px -5px no-repeat;
 }
-/* line 3358, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3360, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .cxfeedcomment .cxafterlike:hover {
   background-position: 1px -30px;
 }
-/* line 3362, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3364, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .cxfeedcomment .cxafterdislike {
   width: 25px;
   height: 25px;
   background: url("http://changemachine.familiar-studio.com/images/question-icons.png") -23px -5px no-repeat;
 }
-/* line 3366, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3368, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .cxfeedcomment .cxafterdislike:hover {
   background-position: -23px -30px;
 }
@@ -9535,72 +9537,72 @@ ul.feeditemfooter li ul.csDropdown li:after {
 	}
 }
 */
-/* line 3382, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3384, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedItemBestReplyIcon {
   background: url("http://changemachine.familiar-studio.com/images/best_answer_badge.png") 0 0 no-repeat;
   background-size: 27px 27px;
   background-size: 22px 30px;
 }
-/* line 3388, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3390, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .iconBestAnswers,
 .csSelectBestReplyIcon {
   vertical-align: middle;
   background: transparent url("http://changemachine.familiar-studio.com/images/best_answer_badge_small.png") 0 0 no-repeat !important;
   margin-right: 3px;
 }
-/* line 3393, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3395, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .iconBestAnswers:hover,
 .csSelectBestReplyIcon:hover {
   background: transparent url("http://changemachine.familiar-studio.com/images/best_answer_badge_small.png") 0 0 no-repeat;
 }
-/* line 3398, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3400, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .cxselectbestreplyink:hover {
   background: transparent url("http://changemachine.familiar-studio.com/images/best_answer_badge_small.png") 0 0 no-repeat;
 }
-/* line 3402, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3404, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .leftContent .feedcriterialinks li img,
 .feedItemBestReplyIcon,
 .csSubicon {
   top: 4px;
   left: 10px;
 }
-/* line 3409, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3411, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csreputationcontent {
   width: 190px;
 }
-/* line 3411, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3413, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csreputationcontent .csreputationlevelcontainer {
   font-family: "ff-meta-serif-web-pro", serif;
   font-style: normal;
   font-weight: 700;
   padding: 3px 7px 0;
 }
-/* line 3415, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3417, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csreputationcontent .csreputationlabel {
   color: #939598;
   margin-top: 3px;
 }
-/* line 3419, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3421, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csreputationcontent .cstotalpostum {
   background-color: #eaecf4;
   color: #8ea2ca;
 }
-/* line 3423, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3425, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csreputationcontent .csbestanswernum {
   background-color: #e2ebd7;
   color: #73a534;
 }
-/* line 3428, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3430, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feeditemactionlink {
   overflow: hidden;
 }
-/* line 3431, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3433, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 a.cxaddcommentaction {
   color: transparent;
   position: relative;
   left: -43px;
 }
-/* line 3435, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3437, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 a.cxaddcommentaction:before {
   content: "Discuss";
   visibility: visible;
@@ -9609,15 +9611,15 @@ a.cxaddcommentaction:before {
   left: 43px;
   top: 1px;
 }
-/* line 3443, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3445, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 a.cxaddcommentaction:hover {
   color: transparent;
 }
-/* line 3445, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3447, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 a.cxaddcommentaction:hover:before {
   color: #5a77b2;
 }
-/* line 3451, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3453, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feeditem .csCustomerSupportTag {
   color: transparent;
   position: relative;
@@ -9625,7 +9627,7 @@ a.cxaddcommentaction:hover:before {
   display: inline-block;
   min-width: 200px;
 }
-/* line 3457, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3459, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feeditem .csCustomerSupportTag:before {
   content: "(Change Machine Staff)";
   color: #f49ac2;
@@ -9633,31 +9635,31 @@ a.cxaddcommentaction:hover:before {
   left: 50px;
   top: 0px;
 }
-/* line 3466, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3468, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .usericon .csCustomerSupportSubIcon {
   display: none;
 }
-/* line 3469, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3471, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .csCustomerSupportUserIcon img {
   border: 2px solid #f49ac2;
 }
-/* line 3474, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3476, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedprivatequestion .privatenotice,
 .feedprivatequestion .feeditemcontent {
   background-color: #fef6fa;
   border: none;
 }
-/* line 3479, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3481, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedprivatequestion .privatenotice {
   border-bottom: none;
   color: #f49ac2;
   background-image: none;
 }
-/* line 3484, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3486, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedprivatequestion .feeditemcontent {
   padding-bottom: 10px;
 }
-/* line 3488, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3490, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedprivatequestion .privatenotice {
   color: transparent;
   position: relative;
@@ -9667,7 +9669,7 @@ a.cxaddcommentaction:hover:before {
   top: 2px;
   border-bottom: 1px solid #fcdfec;
 }
-/* line 3496, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3498, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .feedprivatequestion .privatenotice:before {
   content: "Private question to Change Machine Staff";
   color: #f49ac2;
@@ -9689,41 +9691,41 @@ a.cxaddcommentaction:hover:before {
 */
 /* ----- Chatter Answers ----- */
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-moz-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3/2), all and (min-device-pixel-ratio: 1.5) {
-  /* line 3522, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+  /* line 3524, /Users/brian/Sites/Change-Machine/less/changemachine.less */
   .cxfeedcomment .cxafterlike {
     width: 25px;
     height: 25px;
     background: url("http://changemachine.familiar-studio.com/images/question-icons@2x.png") 1px -5px no-repeat;
   }
-  /* line 3526, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+  /* line 3528, /Users/brian/Sites/Change-Machine/less/changemachine.less */
   .cxfeedcomment .cxafterlike:hover {
     background-position: 1px -30px;
   }
-  /* line 3530, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+  /* line 3532, /Users/brian/Sites/Change-Machine/less/changemachine.less */
   .cxfeedcomment .cxafterdislike {
     width: 25px;
     height: 25px;
     background: url("http://changemachine.familiar-studio.com/images/question-icons@2x.png") -23px -5px no-repeat;
   }
-  /* line 3534, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+  /* line 3536, /Users/brian/Sites/Change-Machine/less/changemachine.less */
   .cxfeedcomment .cxafterdislike:hover {
     background-position: -23px -30px;
   }
 }
-/* line 3541, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3543, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #action-plan {
   margin-left: -30px;
 }
-/* line 3547, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3549, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #action-plan .thumbnail h3 {
   font-size: 1em;
   text-transform: none;
 }
-/* line 3554, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3556, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #action-plan .thumbnail a.edit {
   font-size: 0.8em;
 }
-/* line 3559, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3561, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 #action-plan .thumbnail i {
   border: 1px solid #bbbbbb;
   padding: 1px;
@@ -9734,49 +9736,49 @@ a.cxaddcommentaction:hover:before {
 /* -------------------------------------------------------------------------- */
 /* Form Assembly */
 /* -------------------------------------------------------------------------- */
-/* line 3584, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3586, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .wFormContainer {
   border-width: 0px !important;
   font-family: "ff-meta-serif-web-pro", serif;
   font-style: normal;
   font-weight: 500;
 }
-/* line 3592, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3594, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .wFormContainer .wForm label {
   font-family: "ff-meta-serif-web-pro", serif;
   font-style: normal;
   font-weight: 500;
 }
-/* line 3597, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3599, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .wFormContainer .wForm .errMsg {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 700;
 }
-/* line 3603, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3605, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .wFormContainer .wForm #tfa_91-T {
   display: none;
 }
-/* line 3607, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3609, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .wFormContainer .wForm .errFld {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 3612, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3614, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .wFormContainer .wForm label.postField {
   font-size: 14px;
   max-width: 600px;
 }
-/* line 3618, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3620, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .wFormContainer .wForm h4 {
   font-size: 18px;
 }
-/* line 3623, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3625, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .wFormContainer .wForm .label {
   background-color: none;
 }
-/* line 3628, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3630, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .wFormContainer .wForm .wfPageNextButton,
 .wFormContainer .wForm .wfPagingButtons input {
   background-image: none;
@@ -9791,7 +9793,7 @@ a.cxaddcommentaction:hover:before {
   border: none;
   text-transform: uppercase;
 }
-/* line 3640, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+/* line 3642, /Users/brian/Sites/Change-Machine/less/changemachine.less */
 .wFormContainer .supportInfo {
   display: none;
 }
@@ -9799,7 +9801,7 @@ a.cxaddcommentaction:hover:before {
 /* END Form Assembly */
 /* -------------------------------------------------------------------------- */
 @media print {
-  /* line 3656, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+  /* line 3658, /Users/brian/Sites/Change-Machine/less/changemachine.less */
   #cls-menu,
   .navbar,
   .video,
@@ -9809,15 +9811,15 @@ a.cxaddcommentaction:hover:before {
   .btn {
     display: none;
   }
-  /* line 3661, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+  /* line 3663, /Users/brian/Sites/Change-Machine/less/changemachine.less */
   .page-header {
     margin-top: 50px;
   }
-  /* line 3665, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+  /* line 3667, /Users/brian/Sites/Change-Machine/less/changemachine.less */
   body .wrapper {
     border: none;
   }
-  /* line 3670, /Users/brian/Sites/Change-Machine/less/changemachine.less */
+  /* line 3672, /Users/brian/Sites/Change-Machine/less/changemachine.less */
   a.worksheet,
   a.tipsheet {
     padding-left: 0px;
