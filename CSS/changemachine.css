@@ -1259,7 +1259,7 @@ input[type="checkbox"][readonly] {
 .control-group.error .input-prepend .add-on,
 .control-group.error .input-append .add-on {
   color: #b94a48;
-  background-color: #a72c31;
+  background-color: #a62e37;
   border-color: #b94a48;
 }
 .control-group.success .control-label,
@@ -1874,7 +1874,7 @@ table th[class*="span"],
   background-color: #d3e1c1;
 }
 .table tbody tr.error td {
-  background-color: #a72c31;
+  background-color: #a62e37;
 }
 .table tbody tr.warning td {
   background-color: #f9eec7;
@@ -1886,7 +1886,7 @@ table th[class*="span"],
   background-color: #c7d9b0;
 }
 .table-hover tbody tr.error:hover td {
-  background-color: #93272b;
+  background-color: #922830;
 }
 .table-hover tbody tr.warning:hover td {
   background-color: #f7e7b0;
@@ -2800,17 +2800,17 @@ input[type="button"].btn-block {
 .btn-danger {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #a72c31;
-  background-image: -moz-linear-gradient(top, #a72c31, #a72c31);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a72c31), to(#a72c31));
-  background-image: -webkit-linear-gradient(top, #a72c31, #a72c31);
-  background-image: -o-linear-gradient(top, #a72c31, #a72c31);
-  background-image: linear-gradient(to bottom, #a72c31, #a72c31);
+  background-color: #a62e37;
+  background-image: -moz-linear-gradient(top, #a62e37, #a62e37);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a62e37), to(#a62e37));
+  background-image: -webkit-linear-gradient(top, #a62e37, #a62e37);
+  background-image: -o-linear-gradient(top, #a62e37, #a62e37);
+  background-image: linear-gradient(to bottom, #a62e37, #a62e37);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa72c31', endColorstr='#ffa72c31', GradientType=0);
-  border-color: #a72c31 #a72c31 #6a1c1f;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa62e37', endColorstr='#ffa62e37', GradientType=0);
+  border-color: #a62e37 #a62e37 #6a1d23;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #a72c31;
+  *background-color: #a62e37;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2821,12 +2821,12 @@ input[type="button"].btn-block {
 .btn-danger.disabled,
 .btn-danger[disabled] {
   color: #ffffff;
-  background-color: #a72c31;
-  *background-color: #93272b;
+  background-color: #a62e37;
+  *background-color: #922830;
 }
 .btn-danger:active,
 .btn-danger.active {
-  background-color: #7f2125 \9;
+  background-color: #7e232a \9;
 }
 .btn-success {
   color: #ffffff;
@@ -3110,7 +3110,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #f89406;
 }
 .btn-group.open .btn-danger.dropdown-toggle {
-  background-color: #a72c31;
+  background-color: #a62e37;
 }
 .btn-group.open .btn-success.dropdown-toggle {
   background-color: #73a534;
@@ -3222,9 +3222,9 @@ input[type="submit"].btn.btn-mini {
 }
 .alert-danger,
 .alert-error {
-  background-color: #a72c31;
-  border-color: #9b2940;
-  box-shadow: 2px 2px 0 #9b2940 inset;
+  background-color: #a62e37;
+  border-color: #9a2b46;
+  box-shadow: 2px 2px 0 #9a2b46 inset;
   color: #b94a48;
 }
 .alert-danger h4,
@@ -5333,7 +5333,7 @@ h6 {
   color: #000000;
 }
 #action-nav li.Roadblock a {
-  color: #a72c31;
+  color: #a62e37;
   background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
   background-repeat: no-repeat;
   background-size: 16px auto;
@@ -5824,14 +5824,14 @@ body .wrapper {
   overflow: inherit;
 }
 .milestone-block ul.action-list li.Roadblock {
-  color: #a72c31;
+  color: #a62e37;
   background-image: url("https://www.visualaids.org/changemachine/images/roadblockRED.png");
   background-repeat: no-repeat;
   background-size: 16px auto;
   background-position: 2px 2px;
 }
 .milestone-block ul.action-list li.Roadblock a {
-  color: #a72c31;
+  color: #a62e37;
 }
 .milestone-block ul.action-list li li {
   font-family: "ff-meta-serif-web-pro", serif;
@@ -6276,7 +6276,7 @@ body div.container div.wrapper div.row div.span8 ul.unstyled li span span form d
   background-color: #73a534;
 }
 body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:nth-child(3) {
-  background-color: #a72c31;
+  background-color: #a62e37;
 }
 body div.container div.wrapper div.row div.span8 ul.unstyled li span span form div.btn-group a:nth-child(4) {
   background-color: #939598;
@@ -6345,10 +6345,10 @@ background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transpare
   background-color: #587e28;
 }
 .action-list .action-buttons .btn-danger {
-  background-color: #a72c31;
+  background-color: #a62e37;
 }
 .action-list .action-buttons .btn-danger:hover {
-  background-color: #7f2125;
+  background-color: #7e232a;
 }
 .milestone-block ul.action-list li.Roadblock a.btn {
   color: #ffffff;
@@ -6537,7 +6537,7 @@ a.showDetails {
 /* ----- End Main Content ----- */
 /* ----- Customer Page ----- */
 .customer {
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 .customer .btn {
   border-radius: 8px;
@@ -6706,7 +6706,7 @@ a.showDetails {
 }
 .customer-tabs {
   padding: 0 -10px;
-  margin: 0 0 15px;
+  margin: 0 -15px 15px;
   background-color: #e6e7e8;
 }
 .customer-tabs li {
@@ -6729,6 +6729,9 @@ a.showDetails {
   padding-top: 10px;
 }
 .customer-tabs li a {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   color: #000000;
   border: 1px solid transparent;
 }
@@ -6748,7 +6751,7 @@ a.showDetails {
   padding: 5px 12px 1px;
 }
 .customer .span12 .btn.delete {
-  background-color: #a72c31;
+  background-color: #a62e37;
   background-image: none;
 }
 .customer .bPageBlock {
@@ -6938,7 +6941,7 @@ ul.search-results li.Roadblock h4 {
   padding-left: 25px;
 }
 ul.search-results li.Roadblock h4 a {
-  color: #a72c31;
+  color: #a62e37;
 }
 /*
 .search-results-block {
@@ -7398,7 +7401,7 @@ footer ul li a:hover {
 }
 h2.roadblock,
 .roadblock {
-  color: #a72c31;
+  color: #a62e37;
 }
 #loginPopover {
   position: fixed;
@@ -7502,7 +7505,7 @@ img.skiplink {
 .requiredExample:before {
   content: "*";
   font-size: 16px;
-  color: #a72c31;
+  color: #a62e37;
 }
 .bPageBlock .requiredInput .requiredBlock {
   background-color: #ffffff;
@@ -7513,7 +7516,7 @@ img.skiplink {
   width: 1px;
 }
 .bPageBlock .requiredMark {
-  color: #a72c31;
+  color: #a62e37;
   margin-right: 3px;
 }
 select,
@@ -7579,14 +7582,14 @@ html.wf-ffmetaserifwebpro-i7-active body.hasMotif div.container div.wrapper div.
 }
 .pbBody .message {
   background-color: #fbf4dc;
-  color: #e8c31b;
+  color: #fffde9;
   margin-bottom: 20px;
 }
 .pbBody .message .messageCell {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #a72c31;
+  color: #a62e37;
 }
 /* removed for Customer Personal Info page */
 /*
@@ -7948,7 +7951,7 @@ ul.feeditemfooter li ul.csDropdown li:after {
   float: left;
 }
 .csInfo {
-  border: 1px solid #e8c31b;
+  border: 1px solid #fffde9;
   background-color: #fbf4dc;
 }
 #cs\3A searchAskForm.tbsearchAskForm #cs\3A searchAskButton,
@@ -8237,6 +8240,260 @@ a.cxaddcommentaction:hover:before {
 /* -------------------------------------------------------------------------- */
 /*                          End Sales Force Styling                           */
 /* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* Action Plan */
+/* -------------------------------------------------------------------------- */
+#kanban #kanban-menu hr {
+  clear: both;
+  margin-bottom: 0px;
+}
+#kanban #kanban-menu h3 {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  color: #c7d1e4;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  padding-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+#kanban #kanban-controls {
+  height: 40px;
+  margin-bottom: 10px;
+}
+#kanban #kanban-controls a.btn {
+  margin: 0px 0px 10px 10px;
+}
+#kanban #board-background {
+  background-image: url('http://thefinancialclinic.change.cs9.force.com/resource/actionPlanGraphics/action_plan_bg.png');
+  border-top: 1px solid #d4d6d6;
+  background-size: 936px auto;
+  background-repeat: repeat-y;
+  margin-left: -10px;
+  padding-left: 10px;
+  margin-right: -10px;
+  padding-right: 10px;
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+}
+#kanban #action-plan ul li .thumbnail {
+  height: 90px;
+  background-color: #fffde9;
+  border-radius: 0px;
+  -webkit-box-shadow: 4px 4px 0px -2px #dfdfd7;
+  -moz-box-shadow: 4px 4px 0px -2px #dfdfd7;
+  box-shadow: 4px 4px 0px -2px #dfdfd7;
+  border: none;
+}
+#kanban #action-plan ul li .thumbnail .check-done {
+  float: right;
+}
+#kanban #action-plan ul li .thumbnail h3 {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+#kanban #action-plan ul li .thumbnail h6 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+#kanban #action-plan ul li .thumbnail .edit-link {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  text-transform: uppercase;
+  padding: 8px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #8ea2ca;
+  background-image: -moz-linear-gradient(top, #8ea2ca, #8ea2ca);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8ea2ca), to(#8ea2ca));
+  background-image: -webkit-linear-gradient(top, #8ea2ca, #8ea2ca);
+  background-image: -o-linear-gradient(top, #8ea2ca, #8ea2ca);
+  background-image: linear-gradient(to bottom, #8ea2ca, #8ea2ca);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8ea2ca', endColorstr='#ff8ea2ca', GradientType=0);
+  border-color: #8ea2ca #8ea2ca #5a77b2;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #8ea2ca;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: none;
+  *border: 0;
+  border-bottom-color: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  *margin-left: .3em;
+  box-shadow: 2px 2px 2px #e3e8f2;
+  border-color: #c5c5c5;
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -ms-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: none;
+  background-image: none !important;
+  padding: 0px 6px;
+  line-height: 15px;
+  font-size: 11px;
+  border-radius: 4px;
+  position: absolute;
+  letter-spacing: 1px;
+  bottom: 10px;
+  right: 10px;
+}
+#kanban #action-plan ul li .thumbnail .edit-link:hover,
+#kanban #action-plan ul li .thumbnail .edit-link:active,
+#kanban #action-plan ul li .thumbnail .edit-link.active,
+#kanban #action-plan ul li .thumbnail .edit-link.disabled,
+#kanban #action-plan ul li .thumbnail .edit-link[disabled] {
+  color: #333333;
+  background-color: #8ea2ca;
+  *background-color: #7d94c2;
+}
+#kanban #action-plan ul li .thumbnail .edit-link:active,
+#kanban #action-plan ul li .thumbnail .edit-link.active {
+  background-color: #6b85ba \9;
+}
+#kanban #action-plan ul li .thumbnail .edit-link:first-child {
+  *margin-left: 0;
+}
+#kanban #action-plan ul li .thumbnail .edit-link:hover {
+  background-color: #5a77b2;
+  color: #ffffff;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+#kanban #action-plan ul li .thumbnail .edit-link:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#kanban #action-plan ul li .thumbnail .edit-link.active,
+#kanban #action-plan ul li .thumbnail .edit-link:active {
+  background-image: none;
+  outline: 0;
+  background-color: #9fb0d2;
+  color: #ffffff;
+}
+#kanban #action-plan ul li .thumbnail .edit-link.disabled,
+#kanban #action-plan ul li .thumbnail .edit-link[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#kanban .modal.fade.in {
+  top: 20%;
+}
+#kanban .modal {
+  -webkit-box-shadow: 1px 2px 0px 2px #dfdfd7;
+  -moz-box-shadow: 1px 2px 0px 2px #dfdfd7;
+  box-shadow: 1px 2px 0px 2px #dfdfd7;
+  border-radius: 0px;
+  border: none;
+  line-height: 20px !important;
+}
+#kanban .modal p.excerpt {
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+#kanban .modal .modal-body {
+  padding-top: 14px;
+}
+#kanban .modal .redactor_box {
+  background-color: transparent !important;
+  border: none;
+}
+#kanban .modal .redactor_box .redactor_rich-text {
+  background-color: transparent !important;
+  padding: 0px;
+  margin-top: 20px;
+  padding-left: 0px;
+  border: none;
+}
+#kanban .modal .redactor_box .redactor_rich-text ul,
+#kanban .modal .redactor_box .redactor_rich-text li,
+#kanban .modal .redactor_box .redactor_rich-text p {
+  font-size: 14px !important;
+  color: black;
+  font-family: "ff-meta-serif-web-pro", serif !important;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 0px !important;
+  line-height: 20px !important;
+}
+#kanban .modal .close {
+  font-size: 40px;
+}
+#kanban .modal #action-selector select {
+  margin-bottom: 0px;
+}
+#kanban .modal label {
+  font-family: "felt-tip-roman", serif;
+  color: #a62e37;
+  font-size: 22px;
+  line-height: 20px !important;
+  margin-bottom: 2px;
+}
+#kanban .modal select {
+  font-size: 18px;
+  margin-right: 10px;
+  height: 40px;
+}
+#kanban .modal .modal-background {
+  background: #fffde9 url('http://thefinancialclinic.change.cs9.force.com/resource/actionPlanGraphics/action_plan-card_bg.png');
+  background-size: 5px auto;
+}
+#kanban .modal .modal-header {
+  background-color: #fffde9;
+  padding: 18px 15px;
+  border-bottom: 1px solid #a62e37;
+}
+#kanban .modal .modal-header #custom-title-block {
+  margin-top: 10px;
+}
+#kanban .modal .modal-header h6 {
+  font-size: 0.8em;
+  font-weight: 400;
+  margin: 0px;
+}
+#kanban .modal .modal-footer {
+  background-color: transparent !important;
+  border-top: none;
+}
+#kanban .modal .modal-footer a.delete-link {
+  color: #a62e37;
+}
+.modal-backdrop {
+  background-color: #e3e8f2;
+}
 /* -------------------------------------------------------------------------- */
 /* Form Assembly */
 /* -------------------------------------------------------------------------- */

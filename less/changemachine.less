@@ -340,6 +340,7 @@ h6 {
 .btn {
   .proximaB();
   color: @white;
+ 
   text-shadow: none;
 }
 
@@ -1786,7 +1787,7 @@ a.showDetails {
 /* ----- Customer Page ----- */
 
 .customer {
-	padding-bottom: 40px;
+	padding-bottom: 0px;
 	.btn {
 		border-radius: 8px;
 	}
@@ -1945,7 +1946,7 @@ a.showDetails {
 
 	.customer-tabs {
 		padding: 0 -10px;
-		margin: 0 0 15px;
+		margin: 0 -15px 15px;
 		background-color: @lightestgray;
 		li {
 			color: @blue;
@@ -1966,6 +1967,7 @@ a.showDetails {
 			    }
 			}
 			a {
+				.proximaR();
 				color: @black;
 				border: 1px solid transparent;
 				&:hover {
@@ -3573,6 +3575,263 @@ a.cxaddcommentaction {
 /*                          End Sales Force Styling                           */
 
 /* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+/* Action Plan */
+/* -------------------------------------------------------------------------- */
+
+
+
+#kanban {
+	#kanban-menu {
+		
+		
+		
+		hr {
+			
+			clear: both;
+			margin-bottom: 0px;
+			
+		}
+		
+		h3 {
+		
+			.proximaB();
+			
+			text-align: center;
+			color: @lightblue;
+			letter-spacing: 1px;
+			
+			
+			font-size: 0.8em;
+			
+			padding-top: 5px;
+			margin-top: 10px;
+			margin-bottom: 0px;
+			text-transform: uppercase;
+		}
+	}
+	
+	
+	#kanban-controls {
+		height: 40px;
+		margin-bottom: 10px;
+		
+		a.btn {
+			
+			margin: 0px 0px 10px 10px;
+		}
+	}
+
+	#board-background {
+		
+			background-image: url('http://thefinancialclinic.change.cs9.force.com/resource/actionPlanGraphics/action_plan_bg.png');
+		border-top: 1px solid #d4d6d6;
+		background-size: 936px auto;
+		background-repeat: repeat-y;
+		
+		margin-left: -10px;
+		padding-left: 10px;
+		
+		margin-right: -10px;
+		padding-right: 10px;
+		
+		margin-bottom: -50px;
+		padding-bottom: 50px;
+		
+	}
+
+	#action-plan {
+		
+		
+	
+		
+		ul li .thumbnail {
+		
+			height: 90px;
+			
+			background-color: @yellow;
+			border-radius: 0px;
+			
+			.box-shadow(4px 4px 0px -2px #dfdfd7);
+			border: none;
+			
+			
+			
+			.check-done {
+				
+				.pull-right();
+			}
+			
+			h3 {
+				
+				.proximaR();
+				font-size: 1em;
+				margin-bottom: 20px;
+				
+			}
+			
+			h6 {
+				
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+			}
+			
+			.edit-link {
+				
+				.btn();
+				
+				padding: 0px 6px;
+				line-height: 15px;
+				
+				font-size: 11px;
+				border-radius: 4px;
+				
+				position: absolute;
+				letter-spacing: 1px;
+				bottom: 10px;
+				
+				right: 10px;
+			}
+			
+		}
+	
+		
+	}
+	
+	.modal.fade.in {
+		
+		top:20%;
+	}
+	
+	.modal {
+		
+			.box-shadow(1px 2px 0px 2px #dfdfd7);
+		border-radius: 0px;
+		
+		border: none;
+		
+		
+		line-height: 20px !important;
+		
+		p.excerpt {
+				
+				padding-bottom: 10px;
+				line-height: 20px;
+				
+			}
+		
+		.modal-body {
+			
+			padding-top:14px; 
+		}
+		
+		.redactor_box {
+		background-color: transparent !important;
+		
+		border: none;
+		
+			.redactor_rich-text {
+				background-color: transparent !important;
+				
+				padding: 0px;
+				margin-top: 20px;
+				padding-left: 0px;
+				border: none;
+				
+				ul, li, p {
+					font-size: 14px !important;
+					
+					color: black;
+						font-family: "ff-meta-serif-web-pro",serif !important;
+	font-style: normal;
+	font-weight: 500;
+					
+					margin-bottom: 0px !important;
+					line-height: 20px !important;
+				}
+				
+				
+			}
+		}
+		
+		.close {
+			
+			font-size: 40px;
+			
+		}
+		
+		#action-selector {
+			
+			select {
+				
+				margin-bottom: 0px;
+			}
+		}
+		
+		label {
+			
+			font-family: "felt-tip-roman", serif;
+			color: @red;
+			font-size: 22px;
+			line-height: 20px !important;
+			margin-bottom: 2px;
+		}
+		
+		select {
+			
+			font-size: 18px;
+			margin-right: 10px;
+			height: 40px;
+		}
+		
+		.modal-background {
+			
+			background:  @yellow url('http://thefinancialclinic.change.cs9.force.com/resource/actionPlanGraphics/action_plan-card_bg.png');
+			background-size: 5px auto;
+		}
+		.modal-header {
+		
+			background-color:@yellow ;
+			padding: 18px 15px;
+			
+			border-bottom: 1px solid @red;
+			
+			#custom-title-block {
+				
+				margin-top: 10px;
+			}
+			
+			 h6 {
+				 font-size: 0.8em;
+				 font-weight: 400;
+				 margin: 0px;
+			 }
+		}
+		
+		.modal-footer {
+			
+			
+			background-color: transparent !important;
+			
+			border-top: none;
+			
+			a.delete-link {
+				
+				color: @red;
+			}
+		}
+		
+	}
+	
+	
+}
+
+.modal-backdrop  {
+		
+		background-color:@lighterblue;
+	}
 
 
 /* -------------------------------------------------------------------------- */
