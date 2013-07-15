@@ -1,0 +1,472 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<script src="/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript?rel=1373578569000" type="text/javascript"></script><script src="/jslibrary/1367256616000/sfdc/JiffyStubs.js"></script><script src="/jslibrary/1368050176000/sfdc/SfdcCore.js" type="text/javascript"></script><script src="/static/101812/js/picklist.js" type="text/javascript"></script><script src="/jslibrary/1367256616000/sfdc/VFState.js" type="text/javascript"></script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+    
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+    <title>Change Machine</title>
+
+    <meta content="A community for the financial development field. LEARN how to support customers to achieve their goals through an interactive training platform. COACH customers to improve their financial security using dynamic tools that help measure progress. SHARE innovative ideas, ask questions, exchange experiences, and shape policies" name="description" />
+    <meta content="width=device-width" name="viewport" />
+
+
+    <meta content="sqSgV3GBA4zi9ZvZ4A0KEaCX_54F1bLYwVdGjMeQp38" name="google-site-verification" />
+
+    <script src="//use.typekit.net/auk4xrm.js" type="text/javascript"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
+
+
+
+
+    
+   
+          <LINK HREF="http://thefinancialclinic.change.cs11.force.com/resource/1373823252000/FancyBox/jquery.fancybox.css" REL="stylesheet" TYPE="text/css" />
+
+
+      <LINK HREF="http://thefinancialclinic.change.cs11.force.com/resource/1370379551000/presentationcss" REL="stylesheet" TYPE="text/css" />
+
+      <LINK HREF="http://thefinancialclinic.change.cs11.force.com/resource/1371599095000/ChangeMachineCSS" REL="stylesheet" TYPE="text/css" />
+
+      
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/changemachine.css" />	
+	
+
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  
+
+ <script src="http://thefinancialclinic.change.cs11.force.com/resource/1367509433000/ChangeMachineJS"></script>
+
+    <script src="http://thefinancialclinic.change.cs11.force.com/resource/1354913132000/BootstrapJS/bootstrap.min.js"></script>
+    <script src="http://thefinancialclinic.change.cs11.force.com/resource/1358177568000/HTML5shiv"></script>
+
+   
+   <script src="http://thefinancialclinic.change.cs11.force.com/resource/1373823252000/FancyBox/jquery.fancybox.pack.js"></script>
+
+
+
+
+    <script>
+
+    $j = jQuery.noConflict();
+
+       $j(document).ready(function() {
+        
+        // Support for AJAX loaded modal window.
+        // Focuses on first input textbox after it loads the window.
+        $j('[data-toggle="modal-ajax"]').click(function(e) {
+          e.preventDefault();
+          var url = $j(this).attr('href');
+          if (url.indexOf('#') == 0) {
+           $j(url).modal('open');
+          } else {
+            $j.get(url, function(data) {
+              $j('<div class="modal hide fade">' + data + '</div>').modal();
+            });
+          }
+
+        });
+        
+      });
+
+    </script>
+
+
+
+<!--[if lt IE 10]>
+    <link REL="stylesheet" type="text/css" href="/resource/1370386009000/IEStyles/ie9.css" />
+
+<![endif]-->
+
+
+
+   <!--[if lt IE 9]>
+
+    <link REL="stylesheet" type="text/css" href="/resource/1370386009000/IEStyles/ie.css"/>
+   <![endif]-->
+
+    <!--[if lt IE 8]>
+      <style>
+        .action-hide { display:none; }
+      </style>
+    <![endif]-->
+
+
+    
+
+    <script type="text/javascript">
+(function (d, t) {
+  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  bh.type = 'text/javascript';
+  bh.src = '//www.bugherd.com/sidebarv2.js?apikey=qkjc1ukwjmq5pou9uaytaq';
+  s.parentNode.insertBefore(bh, s);
+  })(document, 'script');
+</script>
+
+</head>
+<body id="assesment">
+
+
+<div id="full-page">
+  <header>
+    <div class="container">
+      <div class="topWrapper">
+      
+    
+            <div id="brand">
+              <a href="/">
+                <img src="http://thefinancialclinic.change.cs11.force.com/resource/1367507424000/ChangeMachineHeaderLogo" style="float:left" width="200px" />
+              </a>
+            </div><span id="j_id0:j_id1:j_id8">
+          <div class="header-block">
+            <ul class="nav nav-pills">
+              <li class="dropdown ">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Learn
+              
+                </a>
+                <ul class="dropdown-menu">
+ <li><a href="/learn/intro">Introduction</a></li>
+ <li><a href="/blog">Blog</a></li>
+                  <li class="divider"></li>
+                    <li class="">
+                      <a href="/section/Goals">
+                        
+                        Goals
+                      </a>
+                    </li>
+                 </ul>
+              </li>
+              <li class="vertical-divider"></li>
+              <li class="dropdown ">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                 Coach
+               
+                </a>
+                
+                <ul class="dropdown-menu">
+                    <li class="">
+                      <a href="/changemachine_customer?id=a0HZ0000003fq16MAA">
+                        John Smith
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="/changemachine_customer?id=a0HZ0000003fqCqMAI">
+                        Samantha Green
+                      </a>
+                    </li>
+                     <li class="divider"></li>
+                   <li><a href="/customers">All your customers</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/changemachine_customer_new"><strong>+</strong> Add a customer</a></li>
+               
+                 
+                </ul>
+              </li>
+              <li class="vertical-divider"></li>
+              <li class="dropdown ">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Share
+                 
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/ideas/ideaList.apexp">Ideas</a></li>
+                </ul>
+              </li>
+              <li class="vertical-divider"></li>
+            </ul>
+            
+          </div>
+          <div class="header-block">
+
+            
+            <ul class="unstyled profile-links">
+            <li><a href="/_ui/core/portal/PortalUserMyProfilePage/d">My Profile</a></li>
+            <li><a href="/secur/logout.jsp">Logout</a></li>
+            </ul>
+          
+          </div>
+
+          <div class="header-block">
+          <form action="/changemachine_search" class="navbar-search pull-right" id="main-search" method="GET" name="sbsearch">
+                  <input autocomplete="off" class="search-query" id="str" name="q" title="Enter search keywords" type="text" />
+                  <button class="btn" type="submit">Search</button>
+                </form>
+          </div></span>
+     
+            
+            
+            
+
+                
+                
+    
+      </div> 
+      <div class="midWrapper">
+        
+      </div>
+     </div>
+  </header>
+  
+  <div class="wrapper">
+    <div class="container">
+<form id="j_id0:j_id1:j_id21" name="j_id0:j_id1:j_id21" method="post" action="/changemachine_assessment?id=a07Z000000AAidmIAD" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id0:j_id1:j_id21" value="j_id0:j_id1:j_id21" />
+
+        <div class="page-header " id="action-header">
+
+          <div class="row ">
+            <div class="span3">
+                <h1>
+                  <a href="/section/Goals">Goals</a>
+                </h1>
+            </div>
+            <div class="span9">
+                <h2>
+                  Execute a Strategy to Achieve an Action-Driven Goal -
+                </h2>
+            </div>
+          </div>
+         </div>
+
+         <div id="action-title">
+        <div class="row">
+          
+          <div class="span9 offset3 ">
+            <h3 class=" ">Assessment: Goals Assesment</h3>
+          </div>
+        </div>
+        </div>
+
+         	<div>
+               <div class="row ">
+               
+                
+                <div class="span3"><span id="j_id0:j_id1:j_id21:j_id23">
+                    <div data-offset-top="255" data-spy="affix" data-top="20" id="action-nav">
+                      <ul class="nav nav-tabs nav-stacked">
+                        <li>
+                            <a href="/milestone/Execute-a-Strategy-to-Achieve-an-Action-Driven-Goal">Introduction</a>
+                          </li>
+                          <li class="Action ">
+                            <a href="/action/Identify-a-Short-Term,-Action-Driven-Goal"> Identify a Short-Term, Action-Driven Goal</a>
+                          </li>
+                          <li class="Action ">
+                            <a href="/action/Identify-Areas-of-Financial-Security-Necessary-to-Achie"> Identify Areas of Financial Security Necessary to Achieve Goal</a>
+                          </li>
+                          <li class="Action ">
+                            <a href="/action/Develop-a-Short-Term-Strategy-to-Achieve-Goal"> Develop a Short-Term Strategy to Achieve Goal</a>
+                          </li>
+                          <li class="Roadblock ">
+                            <a href="/action/Reorient-Customers-With-Deficit-Oriented-Goals"> Reorient Customers With Deficit-Oriented Goals</a>
+                          </li>
+                          <li class="Roadblock ">
+                            <a href="/action/Support-Customers-that-Can't-Identify-Goals"> Support Customers that Can't Identify Goals</a>
+                          </li>
+                          <li class=" active">
+                            <a href="/action/Goals-Assesment"> Goals Assesment</a>
+                          </li>
+                      </ul>
+                      </div></span>
+                </div>
+            
+      
+
+
+
+               	<div class="span9">
+
+                  
+                    
+                
+
+                    
+                    <div class="actionDetails"><span id="j_id0:j_id1:j_id21:ActiveQuestion"><span id="j_id0:j_id1:j_id21:j_id29"></span>
+
+                      <div id="currentQuestion" style="">
+                      <h2>3 </h2><p dir="ltr" style="">
+	<span id="docs-internal-guid-45f56bba-cebd-4882-a520-5f1311e003e8"><span style="font-size: 15px; font-family: Arial; ">During your coaching session, you asked Sandra a bunch of powerful questions and she came up with a list of five goals:</span></span></p>
+<p dir="ltr" style="">
+	<span id="docs-internal-guid-45f56bba-cebd-4882-a520-5f1311e003e8"><span style="font-size: 15px; font-family: Arial; ">I. Get out of student loan debt.</span></span></p>
+<p dir="ltr" style="">
+	<span id="docs-internal-guid-45f56bba-cebd-4882-a520-5f1311e003e8"><span style="font-size: 15px; font-family: Arial; ">II. Enroll in alternative teaching certification program to become ESL teacher.</span></span></p>
+<p dir="ltr" style="">
+	<span id="docs-internal-guid-45f56bba-cebd-4882-a520-5f1311e003e8"><span style="font-size: 15px; font-family: Arial; ">III. Get out of credit card debt.</span></span></p>
+<p dir="ltr" style="">
+	<span id="docs-internal-guid-45f56bba-cebd-4882-a520-5f1311e003e8"><span style="font-size: 15px; font-family: Arial; ">IV. Move into a larger apartment in a better neighborhood.</span></span></p>
+<p dir="ltr" style="">
+	<span id="docs-internal-guid-45f56bba-cebd-4882-a520-5f1311e003e8"><span style="font-size: 15px; font-family: Arial; ">V. Save for Kevin’s college education.</span></span></p>
+<p dir="ltr" style="">
+	<span id="docs-internal-guid-45f56bba-cebd-4882-a520-5f1311e003e8"><span style="font-size: 15px; font-family: Arial; ">Which of these goals meet the criteria of action-driven goals?</span></span></p>
+<div>
+	 </div><table>
+	<tr>
+<td>
+<input type="radio" name="j_id0:j_id1:j_id21:j_id58" id="j_id0:j_id1:j_id21:j_id58:0" value="a0AZ0000004EXxsMAG" /><label for="j_id0:j_id1:j_id21:j_id58:0"> II. only</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="j_id0:j_id1:j_id21:j_id58" id="j_id0:j_id1:j_id21:j_id58:1" value="a0AZ0000004EXyCMAW" /><label for="j_id0:j_id1:j_id21:j_id58:1"> All of the above</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="j_id0:j_id1:j_id21:j_id58" id="j_id0:j_id1:j_id21:j_id58:2" value="a0AZ0000004EXxnMAG" /><label for="j_id0:j_id1:j_id21:j_id58:2"> I. and III.</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="j_id0:j_id1:j_id21:j_id58" id="j_id0:j_id1:j_id21:j_id58:3" value="a0AZ0000004EXy2MAG" /><label for="j_id0:j_id1:j_id21:j_id58:3"> None of the above</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="j_id0:j_id1:j_id21:j_id58" id="j_id0:j_id1:j_id21:j_id58:4" value="a0AZ0000004EXy7MAG" /><label for="j_id0:j_id1:j_id21:j_id58:4"> II., IV., and V.</label></td>
+	</tr>
+</table>
+
+                      <a class="btn" href="#" onclick="saveAnswer(); return false;">Submit Answer</a><span id="j_id0:j_id1:j_id21:checkStatus"><span id="j_id0:j_id1:j_id21:checkStatus.start" style="display: none">(checking answer...)</span><span id="j_id0:j_id1:j_id21:checkStatus.stop"></span></span>
+                        </div><script id="j_id0:j_id1:j_id21:j_id62" type="text/javascript">saveAnswer=function(){A4J.AJAX.Submit('j_id0:j_id1:j_id21',null,{'status':'j_id0:j_id1:j_id21:checkStatus','oncomplete':function(request,event,data){$j('#answerModal').modal({ keyboard: false, backdrop: 'static' }, 'show');},'similarityGroupingId':'j_id0:j_id1:j_id21:j_id62','parameters':{'j_id0:j_id1:j_id21:j_id62':'j_id0:j_id1:j_id21:j_id62'} } )};
+</script>
+
+                      
+
+                      <article id="case-study-collapsed" style="">
+                        <hr />
+                        <h3>Case Study</h3><span style="font-family: Arial; font-size: 15px; ">You’ve recently met Sandra, a 25-year-old single mother with a 6-year-old boy named Kevin. She graduated from college with a BA in Spanish about three years ago and has had many assorted short-term jobs from office administrative work to translation services, but at the end of every project she completes, she’s always told something along the lines of, “We’d love to bring you on permanently because we’re confident you would be a great employee, but our budget won’t allow it.”</span><br><br><span id="docs-internal-guid-7f817bc2-95bc-ddac-e25e-39607390d408"><span style="font-size: 15px; font-family: Arial; ">Now Sandra is earning $13 an hour as a receptionist at a nonprofit. She was told when she started that she would only be working for three months to fill in for an employee on maternity leave. When Sandra is unemployed, she needs to use credit cards to meet basic expenses and her balances have ballooned to around $15,000, but she’s not totally sure because she hasn’t seen her credit report. Sandra also has $50,000 in federal student loan debt. She was able to get a deferment for a while, but now she’s getting bills saying that she owes $500/month. Kevin’s father left the house and went to Peru five years ago and Sandra has been unable to get him to contribute one penny in child support. Sandra sometimes even uses credit card cash advances to pay her rent. Her minimum balance payments are about $300 per month and the interest rate on her cards is about 19%. Each time Sandra needs to pay a bill, the rent, or go grocery shopping she has major difficulty getting enough money together to make the payment. She’s even considered going online to get a payday loan.</span></span>
+                      </article></span>
+          
+
+
+            
+                    </div>
+                    
+                    
+                   
+
+
+               	</div>
+
+                
+               	
+               </div>
+          
+               </div>
+
+
+
+ <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal hide fade" id="answerModal" role="dialog" tabindex="-1"><span id="j_id0:j_id1:j_id21:answersModal">
+
+  <div class="modal-header">
+    
+    <h3 id="myModalLabel">A. </h3>
+  </div>
+  <div class="modal-body">
+    <p>
+    <strong class="text-error">
+    This isnt the best answer
+    </strong>
+    </p>
+  </div>
+  <div class="modal-footer">
+  
+    <a class="btn btn-primary" href="/action/Goals-Assesment">
+
+
+    Try Again</a>
+  </div></span>
+</div>
+
+
+
+           <script>
+
+ $j('div.actionDetails a[href*="tipsheet"]').each( function() {
+
+  $j(this).addClass('tipsheet');
+  $j(this).fancybox({type: 'ajax'});
+ });
+
+  $j('div.actionDetails a[href*="worksheet"]').each( function() {
+
+  $j(this).addClass('worksheet');
+ });
+
+
+
+
+
+
+</script><span id="j_id0:j_id1:j_id21:j_id76"></span><div id="j_id0:j_id1:j_id21:j_id90"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="ACzdsXmvOW9nWL1DUCZoiTzkoZ/b" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateCSRF" name="com.salesforce.visualforce.ViewStateCSRF" value="GnpE5YQES7wqnEySZBmyhpjkMSZzk5xfVJbeW.LtR9OWKP6bv0V05JE7wiW5286jCxZC7Qfj2KXfhwXbLgy8pFONyEAva.RxKkSS89adSIFLpuJgMe5syRq6Xxe19uVB9.gtzhOZmZvp9Y5pXlJSWAU629VWxTDwegEzdaPohVsuIrVz" /></span></span>
+    </div>
+  </div>
+
+   </div>
+  
+  <footer>
+    <div class="container">
+         
+
+      <div class="row">
+
+        <div class="span3">
+          <img class="footerLogo" src="http://thefinancialclinic.change.cs11.force.com/resource/1367507424000/ChangeMachineFooterLogo" />
+
+        </div>
+
+        <div class="span3">
+          <p class="productOf">A Product of</p>
+
+            <a href="http://thefinancialclinic.org/"><img class="clinicLogo" src="http://changemachine.familiar-studio.com/images/financial_clinic-footer-logo.png" /></a>
+
+        </div>
+
+
+        <div class="span6">
+
+        <ul class="nav nav-pills"><span id="j_id0:j_id1:j_id81">
+                        <li><a href="/_ui/core/portal/PortalUserMyProfilePage/d">Your Profile</a></li>
+                            <li><a href="/secur/logout.jsp">Logout</a></li></span>
+
+
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/supporters">Our Supporters</a></li>
+               <li><a href="/about">About Us</a></li>
+              <li><a href="/changemachine_license">License Agreement</a></li>
+              
+             
+         </ul>
+
+         </div>
+
+       </div>
+             <img class="footerRays" src="https://www.visualaids.org/changemachine/images/raysCropped.png" /> 
+
+    </div>
+  </footer><span id="j_id0:j_id1:j_id84">
+ <div class="feedback">
+ 
+
+  
+   <a href="/answers?cid=09aG0000000Xdy7">
+  
+      Support
+ 
+   </a>
+   
+   </div></span>
+
+</body>
+</html><script type="text/javascript">Sfdc.onReady(function(){
+	SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:j_id1:j_id21"]);
+
+});</script>
