@@ -2457,11 +2457,137 @@ body .worksheet-page .page-header {
 // ASSESMENT
 
 #assesment {
-	.action-title {
-		background-color: @pink;
+	#action-title {
+		background-color: @lightpink;
+		border-color: @pink;
+		h3 {
+			color: @pink;
+			.proximaR();
+			font-size: 1.2em;
+		}
+		img {
+			width: 90px;
+			float: right;
+			margin-top: -37px;
+		}
+	}
+	#action-nav {
+		width: 100%;
+		max-width: none;
+		li.active {
+			&:after {
+				content: "";
+				height: 30px;
+				width: 30px;
+				background: url("http://thefinancialclinic.change.cs11.force.com/resource/1373921231000/assesmentAssets/button_assessment.png");
+				background-size: 100%;
+				float: right;
+				margin-top: -36px;
+				margin-right: 20px;
+			}
+			a {
+				border-color: @pink;
+				border-right: none;
+				background-color: @lightpink;
+				color: @pink;
+				.proximaR();
+				font-size: 1.1em;
+			}
+		}	
+	}
+	#currentQuestion {
+		h2 {
+			.proximaR();
+			color: @lightblue;
+			font-size: 3.9em;
+			line-height: 1em;
+			margin: 0;
+			float: right;
+		}
+		.the-question {
+			.metaBook();
+			font-size: 1.1em;
+			line-height: 1.6em;
+		}
+		table {
+			.proximaL();
+			font-size: 1em;
+			input[type="radio"] {
+				display: inline-block;
+				margin: -5px 10px 0 0;
+			}
+			label {
+				display: inline-block;
+				margin: 10px 0 0;
+				font-size: 1.1em;
+				font-weight: 100;
+			}
+		}
+		.question-footer {
+			border-top: 1px dotted @lightblue;
+			border-bottom: 1px dotted @lightblue;
+			overflow: hidden;
+			margin: 20px;
+			padding: 10px 0;
+			width: 636px;
+			.span5 {
+				margin-left: 0;
+			}
+			h6 {
+				margin-top: 5px;
+				font-weight: normal;
+			}
+			.submit-box {
+				border-left: 1px solid @lightblue;
+				padding: 5px 0 5px 20px;
+			}
+			.btn {
+				border: none;
+				color: @white;
+				padding: 7px 29px;
+			}
+		}
+	}
+	article {
+		.metaBook();
+		h3 {
+			.metaBold();
+			color: @gray;
+			font-size: 1.2em;
+		}
+	}
+	#answerModal {
+		border: none;
+		border-radius: 5px;
+		.modal-header,
+		.modal-footer {
+			background-color: @lightblue;
+		}
+		.modal-header {
+			border-radius: 5px 5px 0 0;
+		}
+		.modal-footer {
+			border: none;
+		}
+		h3 {
+			font-size: 1.3em;
+		}
+		.modal-body {
+			font-size: 1.1em;
+		}
+		.btn-primary {
+			background-color: @blue;
+			&:hover {
+				background-color: @linkColorHover;
+			}
+		}
 	}
 }
 
+.modal-backdrop  {
+	background-color: @blue;
+	opacity: .7;
+}
 
 /* -------------------------------------------------------------------------------- */
 
@@ -3844,9 +3970,9 @@ a.cxaddcommentaction {
 }
 
 .modal-backdrop  {
-		
-		background-color:@lighterblue;
-	}
+	background-color: @blue;
+	opacity: .7;
+}
 
 
 /* -------------------------------------------------------------------------- */
