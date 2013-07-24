@@ -1,4 +1,5 @@
 @import "bootstrap.less";
+@import "presentation.less";
 
 /* ----- START UNIVERSAL CSS ----- */
 
@@ -1020,7 +1021,15 @@ body .wrapper {
 			
 		    }
 	    }
-
+		li.Assessment {
+			background-image: url("http://thefinancialclinic.change.cs11.force.com/resource/1373921231000/assesmentAssets/button_assessment.png");
+			background-repeat: no-repeat;
+		    background-size: 16px auto;
+		    background-position: 2px 2px;
+		    a {
+			    border: none;
+		    }
+	    }
 		li li {
 			.metaBook();
 			color: inherit;
@@ -2131,6 +2140,9 @@ a.showDetails {
 
 ul.pager {
 	margin-bottom: 60px;
+	li:before {
+		content: "";
+	}
 	a {
 		.proximaB();
 		background-color: none;
