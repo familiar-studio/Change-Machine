@@ -390,7 +390,7 @@ h6 {
 		margin-bottom: 0px;
 		background-color: @lighterblue;
 		.border-radius(4px 0px 0px 4px);
-		margin: 0px 0px 0px 10px;
+		margin: 0px 0px 0px 0px;
 		padding: 6px 0px;
 		border-right: 1px solid @blue;
 	}
@@ -457,6 +457,27 @@ h6 {
 			background-color: @white;
 		}
 	}
+	
+	li.Assessment {
+			&:after {
+				content: "";
+				height: 30px;
+				width: 30px;
+				background: url("http://thefinancialclinic.change.cs11.force.com/resource/1373921231000/assesmentAssets/button_assessment.png");
+				background-size: 100%;
+				float: right;
+				margin-top: -36px;
+				margin-right: 20px;
+			}
+			a {
+				border-color: @pink !important;
+				border-right: none;
+				background-color: @lightpink;
+				color: @pink;
+				.proximaR();
+				
+			}
+		}	
 }
 
 #action-nav {
@@ -549,7 +570,7 @@ header {
 	border-left: 10px solid @lightblue;
 	border-right: 10px solid @lightblue;
 */
-	width: 100%;
+	 	width: @gridRowWidth + 30px;
 	margin: 0 auto;
 	height: 99px;
 	padding: 10px 0 0;
@@ -677,7 +698,7 @@ header {
 	background-color: @lighterblue;
 	border-left: 5px solid @lighterblue;
 	border-right: 5px solid @lighterblue;
- 	width: @gridRowWidth + 20px;
+ 	width: @gridRowWidth + 35px;
 	margin: -15px auto 0;
 	padding: 0;
 	margin-left: -15px;
@@ -840,7 +861,7 @@ body .wrapper {
 	border-bottom: 5px solid @lighterblue;
 	border-right: 5px solid @lighterblue;
 	border-left: 5px solid @lighterblue;
- 	width: @gridRowWidth + 20px;
+ 	width: @gridRowWidth + 35px;
 	margin: 0 auto;
 	padding: 0 0 30px;
 	
@@ -2679,28 +2700,7 @@ body .worksheet-page .page-header {
 			float: left;
 		}
 	}
-	#action-nav {
-		li.active {
-			&:after {
-				content: "";
-				height: 30px;
-				width: 30px;
-				background: url("http://thefinancialclinic.change.cs11.force.com/resource/1373921231000/assesmentAssets/button_assessment.png");
-				background-size: 100%;
-				float: right;
-				margin-top: -36px;
-				margin-right: 20px;
-			}
-			a {
-				border-color: @pink !important;
-				border-right: none;
-				background-color: @lightpink;
-				color: @pink;
-				.proximaR();
-				font-size: 1.1em;
-			}
-		}	
-	}
+	
 }
 
 .modal-backdrop  {
@@ -4242,3 +4242,4 @@ padding-left: 0px;
 
 
 
+ 
