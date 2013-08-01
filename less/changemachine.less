@@ -2715,16 +2715,67 @@ body .worksheet-page .page-header {
 
 // Debt
 .debt-screen {
-	#name_chart > div {
+	#name_chart {
+		> div {
 		margin: 0 auto;
+		color: @lightblue;
+		font-weight: 100;
+		}
 		g {
-			rect {
-				border-top: 1px solid @lightergray;
+			text-transform: capitalize;
+			margin: 10px 0;
+			line-height: 30px;
+			g {
+				&:last-child {
+					color: @red;
+				}
 			}
 		}
 	}
 }
 
+.customer-table tbody {
+	.th {
+		border-bottom: 2px solid @gray;
+		td {
+			padding-bottom: 0;
+			&.rightAlign h6 {
+				width: 60px;
+				display: inline-block;
+			}
+		}
+		h6 {
+			font-size: .7em;
+			text-transform: uppercase;
+		}
+	}
+	tr { 
+		border-bottom: 1px solid @grayLightest;
+		td {
+			color: @black;
+			padding: 12px 5px;
+			vertical-align: bottom;
+			&:first-child {
+				font-weight: 400;
+			}
+		}
+	}
+	.rightAlign {
+		text-align: right;
+	}
+	.faded {
+		color: @grayLighter;
+	}
+	.Urgent {
+		background-color: lighten(@red, 50%);
+	}
+	.up {
+		color: @green;
+	}
+	.down {
+		color: @red;
+	}
+}
 
 /* -------------------------------------------------------------------------------- */
 // BLOG

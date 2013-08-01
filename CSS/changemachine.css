@@ -10349,9 +10349,56 @@ body .worksheet-page .page-header {
 /* -------------------------------------------------------------------------------- */
 .debt-screen #name_chart > div {
   margin: 0 auto;
+  color: #c7d1e4;
+  font-weight: 100;
 }
-.debt-screen #name_chart > div g rect {
-  border-top: 1px solid #c7c8ca;
+.debt-screen #name_chart g {
+  text-transform: capitalize;
+  margin: 10px 0;
+  line-height: 30px;
+}
+.debt-screen #name_chart g g:last-child {
+  color: #a62e37;
+}
+.customer-table tbody .th {
+  border-bottom: 2px solid #636466;
+}
+.customer-table tbody .th td {
+  padding-bottom: 0;
+}
+.customer-table tbody .th td.rightAlign h6 {
+  width: 60px;
+  display: inline-block;
+}
+.customer-table tbody .th h6 {
+  font-size: .7em;
+  text-transform: uppercase;
+}
+.customer-table tbody tr {
+  border-bottom: 1px solid #f1f1f2;
+}
+.customer-table tbody tr td {
+  color: #000000;
+  padding: 12px 5px;
+  vertical-align: bottom;
+}
+.customer-table tbody tr td:first-child {
+  font-weight: 400;
+}
+.customer-table tbody .rightAlign {
+  text-align: right;
+}
+.customer-table tbody .faded {
+  color: #bbbbbb;
+}
+.customer-table tbody .Urgent {
+  background-color: #f6dddf;
+}
+.customer-table tbody .up {
+  color: #73a534;
+}
+.customer-table tbody .down {
+  color: #a62e37;
 }
 /* -------------------------------------------------------------------------------- */
 #blog .page-header {
