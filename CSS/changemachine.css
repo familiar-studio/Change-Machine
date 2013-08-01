@@ -10347,6 +10347,129 @@ body .worksheet-page .page-header {
   opacity: .7;
 }
 /* -------------------------------------------------------------------------------- */
+.debt-screen #name_chart > div {
+  margin: 0 auto;
+}
+.debt-screen #name_chart > div g rect {
+  border-top: 1px solid #c7c8ca;
+}
+/* -------------------------------------------------------------------------------- */
+#blog .page-header {
+  border-bottom: 5px solid #000;
+  margin-bottom: 20px;
+}
+#blog .page-header h1 {
+  font-size: 2.3em;
+}
+#blog article {
+  border-bottom: 1px solid #939598;
+  margin-bottom: 20px;
+}
+#blog article img {
+  margin-bottom: 10px;
+  display: block;
+  width: 655px;
+  /* necessary? */
+
+}
+#blog article h2 {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+#blog article h2 a {
+  color: #000;
+}
+#blog article h5 {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-size: .9em;
+  font-weight: 400;
+  color: #939598;
+  display: inline-block;
+  margin: 0;
+}
+#blog article h5 a {
+  color: #000;
+}
+#blog article .top-meta {
+  border-top: 1px solid #e6e7e8;
+  border-bottom: 1px solid #e6e7e8;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+#blog article .bottom-meta {
+  padding-bottom: 10px;
+}
+#blog article .bottom-meta h5 a {
+  border-bottom: 2px dotted #939598;
+}
+#blog article .share-meta {
+  border-bottom: 1px solid #e6e7e8;
+  margin-bottom: 10px;
+  padding: 0px 0 2px;
+}
+#blog article .share-meta h5 {
+  vertical-align: super;
+}
+#blog article .share-meta h5 a {
+  border-bottom: 2px dotted #939598;
+}
+#blog article .share-meta .fb-like {
+  margin-right: 15px;
+}
+#blog article .share-meta .twitter-share-button {
+  width: 90px !important;
+}
+#blog article .share-meta .IN-widget {
+  margin-right: 15px;
+}
+#blog #blogSidebar .sidebar-block {
+  background-color: #d8dfec;
+  box-shadow: inset 2px 2px 0px #c7d1e4;
+}
+#blog #blogSidebar .sidebar-block h5 {
+  padding: 0;
+  color: #8ea2ca;
+}
+#blog #blogSidebar .sidebar-block p {
+  margin: 0 -14px 0 -13px;
+  background-color: #e3e8f2;
+  padding: 10px 12px;
+}
+#blog #blogSidebar .sidebar-block .btn {
+  display: block;
+  width: 80px;
+  margin-top: 10px;
+}
+#blog #blogSidebar h4 {
+  color: #939598;
+}
+#blog #blogSidebar ul {
+  list-style-type: none;
+  margin: 10px 0 40px;
+}
+#blog #blogSidebar ul li a {
+  color: #000;
+  border-bottom: 2px dotted #939598;
+}
+#blog #blogSidebar ul li a:hover {
+  color: #939598;
+}
+#blog #blogSidebar .twitter-timeline {
+  margin-bottom: 40px;
+}
+#blog #blogSidebar .fb-like-box {
+  width: 100%;
+  margin-bottom: 40px;
+}
+#blog #blogSidebar .fb-like-box > span {
+  width: 100%;
+}
+#blog #blogSidebar .fb-like-box > span > iframe {
+  width: 100%;
+}
 /* ----- Footer ----- */
 footer * {
   margin: 0;
