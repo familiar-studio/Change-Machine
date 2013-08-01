@@ -1,2 +1,8 @@
 
 .DS_Store
+
+*.crt
+
+changemachine.dev.crt
+
+changemachine.dev.key
