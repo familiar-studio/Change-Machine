@@ -1176,6 +1176,18 @@ body .wrapper {
 		height: 18px;
 		margin: 3px 0 5px;
 	}
+	&.factsheets {
+		background-color: @lighterblue;
+		box-shadow: inset 2px 2px 0px @lightblue;
+		h5 {
+			color: @blue;
+			padding-left: 0;
+		}
+		ul {
+			background-color: @lightestblue;
+			padding: 10px;
+		}
+	}
 }
 
 .sidebar-hide {
@@ -2862,7 +2874,8 @@ body .worksheet-page .page-header {
 			}
 			.btn {
 				display: block;
-				width: 80px;
+				width: auto;
+				display: inline-block;
 				margin-top: 10px;
 			}
 		}
@@ -3155,11 +3168,130 @@ text-align: center;
     z-index: 100;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* -------------------------------------------------------------------------- */
 
 /*                            Sales Force Styling                             */
 
 /* -------------------------------------------------------------------------- */
+
+
+
+/* Goals Chatter */
+
+.feedmainandrightbar {
+	width: 646px;
+	.feedmain {
+		width: 479px;
+	}
+	.feedrightbar {
+		margin: 0;
+	}
+}
+
+.chatterexpando {
+	.feedpage.zen {
+		width: 646px;
+		padding-left: 0;
+	}
+}
+
+.publishercontainer {
+	padding: 10px 0 20px;
+	max-width: 685px;
+}
+
+/*
+.publishercontainer ul.publisherFeedItemTypeChoices {
+	display: none;
+}
+*/
+
+.publishercontainer .publisherTextAreaInner {
+	background-image: none;
+}
+
+.publisherTextAreaInner textarea,
+.publisherTextAreaInner textarea:focus {
+	border-color: transparent;
+	box-shadow: none;
+}
+
+.publishercontainer .alignTop .publisherTextAreaInner,
+.defaultState .TextPost .publisherTextAreaInner,
+.publisherWrapper {
+	border-radius: 0;
+}
+
+.publishercontainer .bottomBar {
+	border: none;
+}
+
+.zen .zen-highlightBtn,
+.publishercontainer.defaultState #publishersharebutton:hover,
+.zen .zen-btn {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+.zen .zen-btn.zen-highlightBtn:hover,
+.zen .zen-btn:hover {
+	background: none;
+}
+
+.publishercontainer .bottomBarLeft {
+	display: none;
+}
+
+.feedcontainer {
+}
+
+.feedcontainer a,
+.feedcontainer .feedSortMenuContainer .zen-trigger {
+
+}
+.feedcontainer a:hover,
+.feedcontainer .feedSortMenuContainer .zen-trigger:hover {
+
+}
+
+.feeditemtext,
+.feedcommenttext {
+}
+
+.feedcontainer .feeditemcomment, .feedcontainer .feedcommentsshowmore, .feedcontainer .feeditemcommentplaceholder, .feedcontainer .feeditemlike {
+	border: none;
+}
+
+.feedcontainer .feeditemcommenttext textarea.foobar {
+	box-shadow: none;
+}
+
+.feedcontainer .feeditemcommenttext textarea.foobar {
+	box-shadow: none;
+	border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 img.skiplink {
 	display: none;

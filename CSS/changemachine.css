@@ -8849,6 +8849,18 @@ body .wrapper {
   height: 18px;
   margin: 3px 0 5px;
 }
+.sidebar-block.factsheets {
+  background-color: #e3e8f2;
+  box-shadow: inset 2px 2px 0px #c7d1e4;
+}
+.sidebar-block.factsheets h5 {
+  color: #8ea2ca;
+  padding-left: 0;
+}
+.sidebar-block.factsheets ul {
+  background-color: #eaecf4;
+  padding: 10px;
+}
 .sidebar-hide {
   background: url("https://www.visualaids.org/changemachine/images/open_close.png") -60px 18px;
   background-size: 78px 45px;
@@ -10487,7 +10499,8 @@ body .worksheet-page .page-header {
 }
 #blog #blogSidebar .sidebar-block .btn {
   display: block;
-  width: 80px;
+  width: auto;
+  display: inline-block;
   margin-top: 10px;
 }
 #blog #blogSidebar h4 {
@@ -10751,6 +10764,72 @@ h2.roadblock,
 /* -------------------------------------------------------------------------- */
 /*                            Sales Force Styling                             */
 /* -------------------------------------------------------------------------- */
+/* Goals Chatter */
+.feedmainandrightbar {
+  width: 646px;
+}
+.feedmainandrightbar .feedmain {
+  width: 479px;
+}
+.feedmainandrightbar .feedrightbar {
+  margin: 0;
+}
+.chatterexpando .feedpage.zen {
+  width: 646px;
+  padding-left: 0;
+}
+.publishercontainer {
+  padding: 10px 0 20px;
+  max-width: 685px;
+}
+/*
+.publishercontainer ul.publisherFeedItemTypeChoices {
+	display: none;
+}
+*/
+.publishercontainer .publisherTextAreaInner {
+  background-image: none;
+}
+.publisherTextAreaInner textarea,
+.publisherTextAreaInner textarea:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+.publishercontainer .alignTop .publisherTextAreaInner,
+.defaultState .TextPost .publisherTextAreaInner,
+.publisherWrapper {
+  border-radius: 0;
+}
+.publishercontainer .bottomBar {
+  border: none;
+}
+.zen .zen-highlightBtn,
+.publishercontainer.defaultState #publishersharebutton:hover,
+.zen .zen-btn {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.zen .zen-btn.zen-highlightBtn:hover,
+.zen .zen-btn:hover {
+  background: none;
+}
+.publishercontainer .bottomBarLeft {
+  display: none;
+}
+.feedcontainer .feeditemcomment,
+.feedcontainer .feedcommentsshowmore,
+.feedcontainer .feeditemcommentplaceholder,
+.feedcontainer .feeditemlike {
+  border: none;
+}
+.feedcontainer .feeditemcommenttext textarea.foobar {
+  box-shadow: none;
+}
+.feedcontainer .feeditemcommenttext textarea.foobar {
+  box-shadow: none;
+  border-radius: 0;
+}
 img.skiplink {
   display: none;
 }
