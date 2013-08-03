@@ -36,6 +36,25 @@
 /* ----- End Spans ----- */
 
 
+
+/* ----- Salesforce default overrides ----- */
+
+h1, h2, h3, h4, h5, h6 {
+
+
+display: block;
+}
+
+
+body button, body .x-btn, body .btn, body .btnDisabled, body .btnCancel, body .menuButton .menuButtonButton {
+	
+	padding: 8px;
+	font-size: 1em;
+	border-bottom-color: none;
+	
+	background-color:  @blue;
+}
+
 /* ----- Fonts ----- */
 
 .proximaL {
@@ -80,6 +99,15 @@
 	font-weight: 400;
 }
 
+.input-append .add-on, .input-prepend .add-on {
+	
+	background-color: #eeeeee;
+}
+
+.text-center {
+	
+	text-align: center;
+}
 
 /* ----- End Fonts ----- */
 
@@ -147,6 +175,8 @@ legend {
 }
 
 a, .btn, h1, h2, h3, h4, h5, h6, .affix {
+
+
 	-webkit-transition: all 0.15s ease;
   	-moz-transition:    all 0.15s ease;
   	-ms-transition:     all 0.15s ease;
@@ -349,9 +379,27 @@ h6 {
 
 .btn {
   .proximaB();
+  
+  font-family:  "proxima-nova",sans-serif !important;
   color: @white;
+  
+  background-color: @blue;
+
  
   text-shadow: none;
+  border: none ;
+
+  
+  
+}
+
+
+
+
+
+.fancybox-nav {
+	
+	width: 5%;
 }
 
 .btn, .button, .formulaButton, .btnWhatsNew {
@@ -857,6 +905,11 @@ header {
 	.box-shadow(0 0 6px rgba(0,0,0,0.3));
 	width: @gridRowWidth + 30px;
 	margin: 0 auto;
+	
+	.container {
+		
+		background: white;
+	}
 }
 
 iframe.video {
@@ -1835,6 +1888,11 @@ a.showDetails {
 /* ----- Customer Page ----- */
 
 
+.no-results {
+	
+	margin: 100px;
+}
+
 #active-meeting {
 	
 	margin-top: 10px;
@@ -1940,7 +1998,9 @@ a.showDetails {
 				color: @black;
 				.metaBold();
 				font-size: 36px;
-				margin: 0;
+				margin: 0px 10px 0px 0px;
+				border-right: 1px solid @lightergray;
+				padding-right: 12px;
 			}
 		}
 		.customer-heading-right {
@@ -2055,29 +2115,32 @@ a.showDetails {
 
 	.customer-tabs {
 		padding: 0px 0px 0px 20px;
-		margin: 0 -17px 20px;
-		background-color: @lightestgray;
+		margin: 0 -18px 20px;
+		background-color: @lighterblue;
+		height: 33px;
 		li {
 			color: @blue;
 			border: 1px solid transparent;
 			border-radius: 8px 8px 0 0;
 			margin: 0 10px;
-			font-size: 18px;
-			height: 35px;
+			
+			height: 10px;
 			&.active {
-				border-top: 2px solid @lightestgray;
-				border-left: 2px solid @lightestgray;
-				border-right: 2px solid @lightestgray;
+				border-top: 2px solid @lighterblue;
+				border-left: 2px solid @lighterblue;
+				border-right: 2px solid @lighterblue;
 				background-color: @white;
-			    height: 42px;
-			    margin-top: -8px;
+			    height: 37px;
+			    margin-top: -7px;
 			    a {
 				    color: @green;
-				    padding-top: 10px;
+				    padding-top: 11px;
 			    }
 			}
 			a {
 				.proximaR();
+				font-size: 21px;
+			line-height: 13px;
 				color: @black;
 				border: 1px solid transparent;
 				&:hover {
@@ -2087,9 +2150,66 @@ a.showDetails {
 			}
 		}
 	}
-
+	
+	.customer-highlights {
+		
+		h6 {
+			
+			font-size: 0.6em;
+			font-weight: normal;
+			margin: 0px;
+			
+		}
+		
+		h3 {
+			
+			.metaBold();
+		}
+		
+		
+		li {
+			
+			border-right: 1px solid @grayLighter;
+			margin: 0px 10px 0px 0px;
+		}
+	}
+	
+	.customer-communication {
+		
+		margin: 5px 0px 0px 10px
+	}
+	.btn-icon {
+		width: 20px;
+		height: 10px;
+	
+		background-image:url('/resource/customerCommunicationsSprites') !important;
+		background-size: 100px auto;
+		background-repeat: no-repeat;
+		
+		
+	}
+	
+	.email-icon {
+		
+		background-position: -74px 5px;
+	}
+	
+	.sms-icon {
+		background-position: 10px 5px;
+		
+	}
+	
+	.phone-icon {
+		background-position: -33px 5px;
+		
+	}
 
 .customer {			/*   Personal Info   */
+
+	.listHoverLinks {
+		
+		display: none;
+	}
 	.span12 .btn {
 		padding: 3px 12px;
 		margin: 10px 0px 10px 10px;
@@ -2105,7 +2225,7 @@ a.showDetails {
 		padding: 10px;
 		.pbHeader {
 			.pbTitle {
-				width: 100%;
+				
 				border-top: 2px dotted @lightestgray;
 				padding-top: 10px;
 			}
@@ -2126,7 +2246,7 @@ a.showDetails {
 			padding-top: 0;
 			.pbSubheader {
 				border-bottom: none;
-				border-top: 2px dotted @lightestgray;
+			
 				padding-top: 10px;
 				h3 {
 					.metaBold();
@@ -2141,13 +2261,13 @@ a.showDetails {
 		.detailList {
 			.labelCol {
 				text-align: right;
-				.proximaB();
-				color: @lightergray;
-				font-size: 11px;
+				.proximaL();
+				color: @lightgray;
+				font-size: 14px;
 				text-transform: uppercase;
 				width: 250px;
-				vertical-align: bottom;
-				line-height: 16px;
+				vertical-align: middle;
+				line-height: 21px;
 			}
 			.dataCol {
 				font-size: 18px;
@@ -2155,11 +2275,12 @@ a.showDetails {
 				.proximaL();
 				padding-left: 10px;
 				width: 410px;
-				vertical-align: bottom;
+				vertical-align: middle;
 			}
 			tbody {
 				tr {
-					height: 30px;
+					height: 35px;
+					border-bottom:1px solid @grayLightest;
 				}
 			}
 			.list .iconColumn, .list .actionColumn {
@@ -2187,7 +2308,7 @@ a.showDetails {
 	}
 	.bRelatedList {
 		.pbHeader {
-			border-top: 2px dotted #E6E7E8;
+			border-top: 2px solid @gray;
 			margin-bottom: 10px;
 			.pbTitle {
 				border-top: none;
@@ -2636,6 +2757,9 @@ body .worksheet-page .page-header {
 		right: 0;
 		border-top: 20px solid @white;
 		border-bottom: 20px solid @white;
+		
+		padding: 7px;
+		display: block;
 		&:hover {
 			background-color: darken(@lightblue, 20%);
 		}
@@ -2691,12 +2815,15 @@ body .worksheet-page .page-header {
 			border-top: 1px dotted @lightblue;
 			border-bottom: 1px dotted @lightblue;
 			overflow: hidden;
-			margin: 20px;
+			
 			padding: 10px 0;
-			width: 636px;
+			margin-bottom: 20px;
+			margin-left: @gridGutterWidth;
+			
 			.span5 {
-				margin-left: 0;
+				margin-left: 0px;
 			}
+			
 			h6 {
 				margin-top: 5px;
 				font-weight: normal;
@@ -2996,6 +3123,7 @@ footer * {
 
 footer .container {
 	height: 140px;
+	background: transparent !important;
 }
 
 .footerLogo {
@@ -3270,8 +3398,39 @@ text-align: center;
 	}
 	.feedrightbar {
 		margin: 0;
+		width: 130px;
+		
+		#moreFollowersLink {
+			
+			display: none;
+		}
 	}
 }
+
+
+.cxallfeedactions .bookmarked {
+	background-image: url(/img/chatter/sprites/sprite_images/chattersupersprite.png?v=184-9);
+	background-position: 0 -484px;
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: absolute;
+	right: -27px;
+	top: -20px;
+}
+
+
+.zen .zen-assistiveText {
+position: absolute !important;
+height: 1px;
+width: 1px;
+overflow: hidden;
+clip: rect(1px 1px 1px 1px);
+clip: rect(1px,1px,1px,1px);
+}
+
+
+
 
 .chatterexpando {
 	.feedpage.zen {
@@ -3283,6 +3442,11 @@ text-align: center;
 .publishercontainer {
 	padding: 10px 0 20px;
 	max-width: 685px;
+}
+
+.publisherFeedItemTypeChoices {
+	
+	display: none;
 }
 
 /*
@@ -3322,6 +3486,28 @@ text-align: center;
 .zen .zen-btn:hover {
 	background: none;
 }
+
+.zen-btn {
+	
+	.btn();
+}
+
+.publishercontainer .publishertextarea  {
+	
+	width: 95%;
+}
+
+.feedcommentfooter {
+	
+	font-size: 0.8em;
+}
+
+.feeditempreamble {
+	
+	.proximaL();
+	font-size: 11px;
+}
+
 
 .publishercontainer .bottomBarLeft {
 	display: none;
@@ -3753,7 +3939,9 @@ form#thePage:mainLayout:formIdea div#thePage:mainLayout:formIdea:j_id3.ideaPageB
 }
 
 .feeditemfooter li {
-	display: inline;
+	
+	list-style: none;
+	
 	.csDropdown li {
 		display: inline-block;
 	}
@@ -4064,6 +4252,34 @@ border: none;
 	left: 10px;
 }
 
+.feedcontainer .zen-select {
+	 ul.zen-options {
+	 	display: none;
+	 }
+	 &.zen-open {
+		 
+		 ul.zen-options {
+			 display: block;
+			 
+			 background-color: white;
+			 list-style: none;
+		 }
+	 }
+	 .feeditemActionMenuButton  {
+		
+		width: 5px;
+		float: right;
+	}
+}
+
+
+.zen-mediaBody, .zen-mls, .zen-imgExt {
+	
+	margin-left: 4px;
+}
+
+
+
 .csreputationcontent {
 	width: 190px;
 	.csreputationlevelcontainer {
@@ -4087,17 +4303,8 @@ border: none;
 	overflow: hidden;
 }
 a.cxaddcommentaction {
-	color: transparent;
 	position: relative;
-	left: -43px;
-	&:before {
-		content: "Discuss";
-		visibility: visible;
-		color: darken(@blue, 20%);
-		position: absolute;
-		left: 43px;
-		top: 1px;
-	}
+	
 	&:hover {
 	color: transparent;
 		&:before {
@@ -4198,7 +4405,7 @@ a.cxaddcommentaction {
 
 #action-plan {
 	
-	margin-left: -30px;
+	margin-left: -9px;
 	
 	.thumbnail  {
 	
@@ -4281,7 +4488,7 @@ a.cxaddcommentaction {
 		
 			background-image: url('/resource/actionPlanGraphics/action_plan_bg.png');
 		clear: left;
-		background-size: 1024px auto;
+		background-size: 1033px auto;
 		background-repeat: repeat-y;
 		
 		margin-left: -20px;
@@ -4566,7 +4773,14 @@ a.cxaddcommentaction {
 
 /* END Form Assembly */
 /* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
+/* apex detail */
+
+/* -------------------------------------------------------------------------- */
+
+/* END  apex detail */
+/* -------------------------------------------------------------------------- */
 
 @media print {
 
