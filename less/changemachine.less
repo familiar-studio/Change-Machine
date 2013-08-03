@@ -102,9 +102,18 @@ body {
 }
 
 
+
 label {
 	
 	font-size: 16px;
+}
+
+legend {
+	
+	font-size: 18px;
+	line-height: 20px;
+	
+	margin-bottom: 0px;
 }
 
 .control-group {
@@ -1825,6 +1834,95 @@ a.showDetails {
 
 /* ----- Customer Page ----- */
 
+
+#active-meeting {
+	
+	margin-top: 10px;
+	margin-bottom: 20px;
+
+	padding-top: 10px;
+	border-bottom: 1px solid #d4d6d6;
+	border-top: 1px solid #d4d6d6;
+	
+
+	
+	
+	.meeting-baselines {
+		
+		li {
+			text-align: center;
+			min-width: 110px;
+			max-width: 200px;
+			border-right: 1px solid @grayLighter;
+			vertical-align: top;
+			height: 120px;
+			margin: 0px;
+			
+			&:hover {
+				
+				background-color: @lightestblue;
+			}
+			hgroup {
+				
+				display: block;
+			}
+			h3 {
+				
+				.metaBold();
+			}
+			
+			h6 {
+				color: @black;
+				font-weight: normal;
+			}
+			
+			hgroup.text-success h3 {
+				
+				color: @green;
+			}
+			hgroup.text-error h3 {
+				
+				color: @red;
+			}
+		}
+		
+		li.last-baseline {
+			
+			h6, h4 {
+				color: @grayLighter;
+			}
+		}
+		
+		.bigDate {
+		
+			background-color: @lightestblue;
+			text-align: center;
+			width: 90px;
+			
+			box-shadow: 3px 3px 0px 0px @grayLighter;
+			padding: 10px 0px;
+			
+			h3 {
+				.metaBook();
+				font-size: 4em;
+				color: @gray;
+				margin: 0px;
+				line-height: 1em;
+			}
+			h5, h6 {
+				margin: 0px;
+				.proximaL();
+				
+			}
+		}	
+	}
+}
+
+
+
+
+
+
 .customer {
 	padding-bottom: 0px;
 	.btn {
@@ -1832,51 +1930,23 @@ a.showDetails {
 	}
 	.page-header {
 		.customer-heading-top {
-			margin: 5px 10px 10px;
+			
 			border-bottom: 1px solid @lightergray;
+			margin-bottom: 10px;
 		}
 		.customer-heading-left {
 			display: inline-block;
 			h1 {
 				color: @black;
 				.metaBold();
-				font-size: 40px;
+				font-size: 36px;
 				margin: 0;
 			}
 		}
 		.customer-heading-right {
 			float: right;
 			display: inline-block;
-			.customer-totals {
-				list-style-type: none;
-				margin: 0;
-				li {
-					float: right;
-					padding-right: 10px;
-					margin-right: 10px;
-					border-right: 1px solid @lightergray;
-					text-align: right;
-					&:first-child {
-						padding-right: 0;
-						margin-right: 0;
-						border: none;
-					}
-				}
-				h6 {
-					.proximaR();
-					font-size: 10px;
-					text-align: left;
-					padding-left: 0;
-					margin-top: 0;
-					margin-bottom: 5px;
-					display: block;
-				}
-				span {
-					font-size: 20px;
-					.metaBold();
-					color: @gray;
-				}
-			}
+			
 		}
 		.customer-heading-bottom {
 			margin-bottom: 10px;
@@ -1984,8 +2054,8 @@ a.showDetails {
 }
 
 	.customer-tabs {
-		padding: 0 -10px;
-		margin: 0 -15px 15px;
+		padding: 0px 0px 0px 20px;
+		margin: 0 -17px 20px;
 		background-color: @lightestgray;
 		li {
 			color: @blue;
@@ -1993,13 +2063,14 @@ a.showDetails {
 			border-radius: 8px 8px 0 0;
 			margin: 0 10px;
 			font-size: 18px;
+			height: 35px;
 			&.active {
 				border-top: 2px solid @lightestgray;
 				border-left: 2px solid @lightestgray;
 				border-right: 2px solid @lightestgray;
 				background-color: @white;
-			    height: 40px;
-			    margin-top: -3px;
+			    height: 42px;
+			    margin-top: -8px;
 			    a {
 				    color: @green;
 				    padding-top: 10px;
@@ -2746,22 +2817,22 @@ body .worksheet-page .page-header {
 	}
 }
 
-.customer-table tbody {
-	.th {
+.customer-table {
+	thead {
 		border-bottom: 2px solid @gray;
-		td {
-			padding-bottom: 0;
-			&.rightAlign h6 {
-				width: 60px;
-				display: inline-block;
-			}
-		}
-		h6 {
+		th {
+			padding: 5px;
 			font-size: .7em;
 			text-transform: uppercase;
+			font-weight: 700;
+			line-height: 1.3em;
+			&.rightAlign {
+				text-align: right;
+			}
 		}
 	}
-	tr { 
+	
+	tbody tr { 
 		border-bottom: 1px solid @grayLightest;
 		td {
 			color: @black;
@@ -2772,15 +2843,19 @@ body .worksheet-page .page-header {
 			}
 		}
 	}
-	.rightAlign {
-		text-align: right;
-	}
-	.faded {
+	
+	.muted {
 		color: @grayLighter;
 	}
 	.Urgent {
 		background-color: lighten(@red, 50%);
 	}
+	
+	.text-right, .text-right span  {
+		
+		text-align: right;
+	}
+	
 	.up {
 		color: @green;
 	}
@@ -4204,19 +4279,21 @@ a.cxaddcommentaction {
 
 	#board-background {
 		
-			background-image: url('http://thefinancialclinic.change.cs9.force.com/resource/actionPlanGraphics/action_plan_bg.png');
-		border-top: 1px solid #d4d6d6;
-		background-size: 936px auto;
+			background-image: url('/resource/actionPlanGraphics/action_plan_bg.png');
+		clear: left;
+		background-size: 1024px auto;
 		background-repeat: repeat-y;
 		
-		margin-left: -10px;
-		padding-left: 10px;
+		margin-left: -20px;
+		padding-left: 20px;
 		
-		margin-right: -10px;
-		padding-right: 10px;
+		margin-right: -20px;
+		padding-right: 20px;
 		
 		margin-bottom: -50px;
 		padding-bottom: 50px;
+		width: 100%;
+		min-height: 300px;
 		
 	}
 
