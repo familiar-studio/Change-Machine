@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Gridster</title>
+		
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+ 
+ <link href="/CSS/jquery.gridster.css" rel="stylesheet">
+
+		
+		<!-- Latest compiled and minified JavaScript -->
+<!-- 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script> -->
+
+
+		 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	
+	      <script src="/js/jquery.gridster.js"></script>
+	     
+	      <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+	      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
+	      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/0.7.4/angular-strap.min.js"></script>
+	      
+	      <script src="/js/actionplan-angular.js"></script>
+	</head>
+	<body>
+	
+		<div ng-app="ChangeMachineApp">
+		
+			<div ng-controller="ActionsCtrl">
+				<input ng-model="single.name"/>
+				<a class="btn" ng-click="addAction(single)">Add</a>
+				
+				<a class="btn" ng-click="changeMeeting(otherActions)">Change</a>
+				{{single.name}}
+				
+				
+				
+				<div gridster>
+					<ul class="thumbnails" style="list-style:none;" >
+						<li ng-repeat="action in actions" gridster-item data-row="{{action.row}}" data-col="{{action.column}}">
+							<div class="thumbnail">
+								<h1>{{ action.name }}</h1>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</div>	
+	</body>
+</html>
