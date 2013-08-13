@@ -137,9 +137,11 @@ label {
 }
 
 legend {
-	
-	font-size: 18px;
+	.proximaB();
+	border-bottom: 1px solid @grayLighter;
+	font-size: 14px;
 	line-height: 20px;
+	color: @blue;
 	
 	margin-bottom: 0px;
 }
@@ -632,6 +634,19 @@ header {
 	height: 99px;
 	padding: 10px 0 0;
 	
+	#sign-in-header {
+		
+		margin-right: 20px;
+margin-top: 10px;
+font-size: 14px;
+
+		.btn {
+			
+			padding:3px 10px;
+		}
+
+	}
+	
 	
 	img {
 		max-width: 227px;
@@ -717,6 +732,7 @@ header {
 			height: 30px;
 			box-shadow: 2px 2px 2px @lightblue;
 			font-size: 12px;
+			border-width: 0px;
 		
 			&:hover {
 				background-color: darken(@blue, 15%);
@@ -2499,9 +2515,14 @@ ul.search-results li {
 body .worksheet-page,
 body .worksheet-page .page-header {
 	background-color: @lighterblue !important;
+	
+	
 }
 
 .worksheet-page {
+
+margin-left: -20px;
+	margin-right: -20px;
 	.page-header {
 		margin: 0 105px;
 		padding-top: 40px;
@@ -3311,6 +3332,39 @@ footer ul {
 	}
 }
 
+#customer-edit {
+	.page-header {
+		
+		margin-left: 165px;
+	}
+	h1 {
+		
+		color: @pink;
+	}
+	
+	.control-group, {
+		
+		padding-left: 70px;
+	}
+	
+	
+	
+	.form-actions {
+		padding-left: 250px;
+		border-top: 3px solid black;
+		background-color: transparent;
+	}
+}
+
+.multiSelectPicklistRow select {
+	width: 175px !important;
+}
+	
+.multiSelectPicklistTable .multiSelectPicklistRow .multiSelectPicklistCell {
+	
+	background-color: transparent !important;
+}
+
 .dashboard {
 	.customer {
 		font-size: 20px;
@@ -3545,7 +3599,10 @@ clip: rect(1px,1px,1px,1px);
 
 
 
-
+.chatterHover.chatterHover-right>.wrapper, .chatterHover.chatterHover-left>.wrapper  {
+	
+	max-width: 200px;
+}
 
 
 
@@ -4446,7 +4503,7 @@ a.cxaddcommentaction {
 #kanban {
 	#kanban-menu {
 		
-		
+		clear:both;
 		
 		hr {
 			
@@ -4475,7 +4532,7 @@ a.cxaddcommentaction {
 	
 	
 	#kanban-controls {
-		height: 40px;
+		height: 200px;
 		margin-bottom: 10px;
 		
 		a.btn {
@@ -4563,13 +4620,20 @@ a.cxaddcommentaction {
 		
 	}
 	
-	.modal.fade.in {
-		
-		top:20%;
-	}
 	
-	.modal {
-		
+	
+	
+}
+
+
+
+
+
+
+	
+	.modal #modal-card {
+			background:  @yellow url('/resource/actionPlanGraphics/action_plan-card_bg.png');
+			background-size: 5px auto;
 			.box-shadow(1px 2px 0px 2px #dfdfd7);
 		border-radius: 0px;
 		
@@ -4590,6 +4654,10 @@ a.cxaddcommentaction {
 			padding-top:14px; 
 		}
 		
+		textarea {
+			
+			width: 90%;
+		}
 		.redactor_box {
 		background-color: transparent !important;
 		
@@ -4651,8 +4719,7 @@ a.cxaddcommentaction {
 		
 		.modal-background {
 			
-			background:  @yellow url('http://thefinancialclinic.change.cs9.force.com/resource/actionPlanGraphics/action_plan-card_bg.png');
-			background-size: 5px auto;
+			
 		}
 		.modal-header {
 		
@@ -4687,9 +4754,8 @@ a.cxaddcommentaction {
 		}
 		
 	}
-	
-	
-}
+		
+
 
 .modal-backdrop  {
 	background-color: @blue;
@@ -4819,15 +4885,64 @@ padding-left: 0px;
 	display: none;
 }
 
+.feedcontainer .feeditemcomment, .feedcontainer .feedcommentsshowmore, .feedcontainer .feeditemcommentplaceholder, .feedcontainer .feeditemlike  {
+	
+	background-color: @lightestblue;
+}
+
+
+.chatterNavigationGroup li a {
+	
+	font-size: 15px;
+	line-height: 28px;
+}
+
+.profileSectionBody {
+	
+	font-size: 13px;
+}
+
+.feeditembody .feedcontainer, .feeditemtext, .cxfeeditemtext  {
+.metaBook();
+line-height: 20px;
+font-size: 15px;
+
+}
+
+.feedcontainer .feeditemfooter, .feedcontainer .feedcommentfooter  {
+	
+	margin-top: 10px;
+}
+
+.chatterNavigationGroup li, .groupListFilters li {
+	.proximaR();
+}
+
+.threecolumn .headerContent  {
+	
+	display: none;
+}
+
+.topicInput .input {
+
+min-width: 90%;
+margin-left: 10px;
+margin-right: 10px;
+
+}
+
+.bodyDiv h3 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+/*
 .mainContent, .userProfilePage .mainContent  {
 	
 	margin-left: 170px;
 }
 
-.bodyDiv, .zen .zen-bodyZen  {
-  
-  border:0px;
-}
+
 
 .threecolumn .leftContent, .chatter-avatarFull .chatter-photo, .userProfilePage .leftContent .profileImage, .userProfilePage .leftContent   {
 	
@@ -4837,6 +4952,12 @@ padding-left: 0px;
 .threecolumn, .userProfilePage {
 	
 	width: 960px;
+}
+*/
+
+.bodyDiv, .zen .zen-bodyZen  {
+  
+  border:0px;
 }
 
 .zen .zen-bodyZen, .bodyDiv {

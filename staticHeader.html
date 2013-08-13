@@ -22,16 +22,16 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script> 
 
 
-    <link href="/resource/ChangeMachineCSS" REL="stylesheet" type="text/css" />
-
+    <link href="/resource/StaticCSS" REL="stylesheet" type="text/css" />
+ <link href="/CSS/staticheader.css" REL="stylesheet" type="text/css" />
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 
 
-     <script src="/resource/1367509433000/ChangeMachineJS"></script>
+     <script src="/resource/ChangeMachineJS"></script>
 
-    <script src="/resource/1354913132000/BootstrapJS/bootstrap.min.js"></script>
-    <script src="/resource/1358177568000/HTML5shiv"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="/resource/HTML5shiv"></script>
 
    
    <style>
@@ -134,7 +134,7 @@
     
             <div id="brand">
               <a href="/">
-                <img src="/resource/1367507424000/ChangeMachineHeaderLogo" style="float:left" width="200px" />
+                <img src="http://www.change-machine.org/resource/ChangeMachineHeaderLogo" style="float:left" width="200px" />
               </a>
             </div>
           
@@ -146,7 +146,7 @@
               
                 </a>
                 <ul class="dropdown-menu">
- <li><a href="/learn">Introduction</a></li>
+ <li><a href="/learn/intro">Introduction</a></li>
 
                   <li class="divider"></li>
                     <li class="">
@@ -186,23 +186,16 @@
                       </a>
                     </li>
                  </ul>
+               
               </li>
               <li class="vertical-divider"></li>
               <li class="dropdown ">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <a  href="/customers">
                  Coach
                
                 </a>
                 
-                <ul class="dropdown-menu">
-                 
-                     <li class="divider"></li>
-                   <li><a href="/customers">All your customers</a></li>
-                  <li class="divider"></li>
-                  <li><a href="/changemachine_customer_new"><strong>+</strong> Add a customer</a></li>
                
-                 
-                </ul>
               </li>
               <li class="vertical-divider"></li>
               <li class="dropdown ">
@@ -210,17 +203,20 @@
                   Share
                  
                 </a>
+                
                 <ul class="dropdown-menu">
-                    <li><a href="/_ui/core/chatter/ui/ChatterPage" >My Feed</a></li>
-                    
-                     
-              
+                  
+				<li><a href="/blog">Blog</a></li>
+                  <li><a href="/_ui/core/chatter/ui/ChatterPage">Chatter Community</a></li>
+                 
                   <li><a href="/ideas/ideaList.apexp">Ideas</a></li>
                 </ul>
+                
               </li>
               <li class="vertical-divider"></li>
             </ul>
           </div>
+       <!--
           <div class="header-block">
 
             
@@ -236,7 +232,7 @@
                   <input autocomplete="off" class="search-query" id="str" name="q" title="Enter search keywords" type="text" />
                   <button class="btn" type="submit">Search</button>
                 </form>
-          </div>
+          </div>-->
       
       
 

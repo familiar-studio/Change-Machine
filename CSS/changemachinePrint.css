@@ -246,6 +246,14 @@ ul > li {
 	
  }
  
+
+ ul.unstyled > li {
+list-style-image: none;
+
+list-style:none;
+padding-left:0px;
+ }
+
  ul {
 	 
 	 margin-left: 5px;
@@ -397,6 +405,136 @@ table td:first-child, table th:first-child  {
 	    margin-bottom: 4px;
     }
 
+
+.action-plan #coach-box {
+  
+  border:none;
+
+  border-left: 1px solid #8da1ca;
+
+  padding-left:20px;
+}
+
+
+.action-plan .page-header h2  {
+  color:#73a534;
+
+}
+
+.note-card {
+  
+  background-color: #fffde9;
+  
+  padding:5px 20px 20px;
+  box-shadow: 4px 4px 0px -2px #dfdfd7;
+  margin-bottom:10px;
+
+}
+
+.note-card .note-header {
+  
+  border-bottom:1px solid #a62e37;
+margin:0px -20px;
+  padding:0px 20px;
+
+  margin-bottom:20px;
+
+}
+
+.note-card .note-header h3 {
+  
+  font-weight:normal;
+  
+  color:black;
+
+  margin:0px;
+
+  padding:10px 0px;
+}
+
+.note-card .note-body {
+  
+  background-image:  url('http://thefinancialclinic.change.cs9.force.com/resource/actionPlanGraphics/printable_action_plan_bg.png');
+
+ margin:0px -20px;
+  padding:0px 20px;
+   background-size: 5px auto;
+   background-repeat:repeat;
+    
+}
+
+.notes-block {
+  
+  padding-top:10px;
+}
+
+/*
+.note-card {
+  
+  width:320px;
+
+  float:left;
+  margin-left:20px;
+}
+
+#doing-section {
+  margin-left: -20px;
+
+}
+*/
+
+.note-card .note-body p  {
+  font-family:Georgia;
+  line-height:20px;
+  margin:0px;
+  padding:0px;
+}
+
+.note-card .note-body p strong, .note-card .note-body p b {
+  color:black;
+}
+
+
+
+h2.section-heading {
+  clear:left;
+  text-transform:uppercase;
+
+  font-size:18px;
+}
+
+ul.next-check-in, ul.done {
+  
+  margin-bottom:10px;
+}
+
+
+ul.next-check-in li {
+  
+  color:#c6c8ca;
+}
+
+ul.done li {
+  
+  color:#73a533;
+}
+
+ul.next-check-in li, ul.done li {
+  
+  font-size:20px;
+  font-weight:bold;
+}
+
+.coach-notes, .customer-notes {
+
+  clear:left;
+}
+
+.customer-notes  {
+    margin-bottom: 20px; 
+
+}
+
 /*
 .tips {
   width: 200px;
@@ -413,9 +551,10 @@ table td:first-child, table th:first-child  {
   background-position: 90px 0px;
 }
 
-
-
-
+hr {
+border-top:1px solid #8ea2c9;
+border-bottom:1px solid #ffffff;
+}
 .clinic-logo {
 	position: running(clinic);
 	background-image: url("https://cs10.salesforce.com/resource/1355504427000/CMlogoprint");

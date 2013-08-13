@@ -2421,6 +2421,8 @@
         var actual_row = el_grid_data.row;
         var moved = [];
         var y_diff = y_units;
+        
+        if (y_units < 0) return;
 
         if (!$widget) { return false; }
 
