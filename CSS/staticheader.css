@@ -203,3 +203,7 @@ html .brandPrimaryBrd {
 #globalHeaderBar {
   display: none;
 }
+/* Ideas specific styles */
+body .ideaList  {
+  width: 960px !important;
+}
